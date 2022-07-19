@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+title: Morpheus Organization
+logo: logo.png
+description: A set of sparse matrix data structures and algorithms across backends, capable of efficiently switching at run-time to be used as building blocks in numericall simulations.
+show_downloads: false
