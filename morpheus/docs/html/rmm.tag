@@ -1330,6 +1330,13 @@
     </member>
     <member kind="variable">
       <type>constexpr bool</type>
+      <name>is_default_v</name>
+      <anchorfile>group__typetraits.html</anchorfile>
+      <anchor>gac06bb2cb217b1b4c8ea338b74e375df5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>constexpr bool</type>
       <name>is_coo_matrix_format_container_v</name>
       <anchorfile>group__typetraits.html</anchorfile>
       <anchor>gaab871dced6b1e06a8f9ff29ca344257a</anchor>
@@ -1382,13 +1389,6 @@
       <name>has_generic_space_v</name>
       <anchorfile>group__typetraits.html</anchorfile>
       <anchor>ga068f260f8aa20e138749efb5b8e65614</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>constexpr bool</type>
-      <name>is_default_v</name>
-      <anchorfile>group__typetraits.html</anchorfile>
-      <anchor>gac06bb2cb217b1b4c8ea338b74e375df5</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -1620,9 +1620,9 @@
     <name>wrappers_and_tags</name>
     <title>Wrappers and Tags</title>
     <filename>group__wrappers__and__tags.html</filename>
+    <subgroup>other_tags</subgroup>
     <subgroup>storage_format_tags</subgroup>
     <subgroup>wrappers</subgroup>
-    <subgroup>other_tags</subgroup>
   </compound>
   <compound kind="group">
     <name>utilities</name>
@@ -1635,6 +1635,7 @@
     <name>typetraits</name>
     <title>Type Traits</title>
     <filename>group__typetraits.html</filename>
+    <class kind="class">Morpheus::is_default</class>
     <class kind="class">Morpheus::is_coo_matrix_format_container</class>
     <class kind="class">Morpheus::is_csr_matrix_format_container</class>
     <class kind="class">Morpheus::is_dia_matrix_format_container</class>
@@ -1642,7 +1643,6 @@
     <class kind="class">Morpheus::is_dense_matrix_format_container</class>
     <class kind="class">Morpheus::is_dense_vector_format_container</class>
     <class kind="class">Morpheus::has_generic_space</class>
-    <class kind="class">Morpheus::is_default</class>
     <class kind="class">Morpheus::has_tag_trait</class>
     <class kind="class">Morpheus::is_matrix_container</class>
     <class kind="class">Morpheus::is_sparse_matrix_container</class>
@@ -1688,6 +1688,13 @@
       <name>remove_cvref_t</name>
       <anchorfile>group__typetraits.html</anchorfile>
       <anchor>gad32c93c9ff637e7ece7c5b6fb12d0b76</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>constexpr bool</type>
+      <name>is_default_v</name>
+      <anchorfile>group__typetraits.html</anchorfile>
+      <anchor>gac06bb2cb217b1b4c8ea338b74e375df5</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -1744,13 +1751,6 @@
       <name>has_generic_space_v</name>
       <anchorfile>group__typetraits.html</anchorfile>
       <anchor>ga068f260f8aa20e138749efb5b8e65614</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>constexpr bool</type>
-      <name>is_default_v</name>
-      <anchorfile>group__typetraits.html</anchorfile>
-      <anchor>gac06bb2cb217b1b4c8ea338b74e375df5</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -1979,9 +1979,23 @@
     </member>
   </compound>
   <compound kind="group">
+    <name>other_tags</name>
+    <title>Other Tags</title>
+    <filename>group__other__tags.html</filename>
+    <class kind="struct">Morpheus::Default</class>
+  </compound>
+  <compound kind="group">
+    <name>generic_containers</name>
+    <title>Generic Containers</title>
+    <filename>group__generic__containers.html</filename>
+    <class kind="struct">Morpheus::UnaryContainer&lt; Container&lt; T &gt;, Ts... &gt;</class>
+    <class kind="struct">Morpheus::UnaryContainer&lt; Container&lt; T &gt;, Set&lt; Ts... &gt; &gt;</class>
+  </compound>
+  <compound kind="group">
     <name>containers</name>
     <title>Containers</title>
     <filename>group__containers.html</filename>
+    <subgroup>generic_containers</subgroup>
     <subgroup>containers_1d</subgroup>
   </compound>
   <compound kind="group">
@@ -2013,22 +2027,12 @@
     <name>metaprogramming</name>
     <title>Metaprogramming</title>
     <filename>group__metaprogramming.html</filename>
-    <subgroup>other_tags</subgroup>
-    <subgroup>typetraits</subgroup>
     <class kind="struct">Morpheus::TypeList</class>
     <class kind="struct">Morpheus::Set</class>
     <class kind="struct">Morpheus::IndexedTypeList</class>
     <class kind="struct">Morpheus::TypeList&lt; Set&lt; Head_... &gt;, Tail_... &gt;</class>
     <class kind="struct">Morpheus::concat&lt; TypeList&lt; Ts... &gt;, TypeList&lt; Us... &gt; &gt;</class>
     <class kind="struct">Morpheus::cross_product&lt; TypeList&lt; Ts... &gt;, TypeList&lt; Us... &gt; &gt;</class>
-    <class kind="struct">Morpheus::UnaryContainer&lt; Container&lt; T &gt;, Ts... &gt;</class>
-    <class kind="struct">Morpheus::UnaryContainer&lt; Container&lt; T &gt;, Set&lt; Ts... &gt; &gt;</class>
-  </compound>
-  <compound kind="group">
-    <name>other_tags</name>
-    <title>Other Tags</title>
-    <filename>group__other__tags.html</filename>
-    <class kind="struct">Morpheus::Default</class>
   </compound>
   <compound kind="page">
     <name>index</name>

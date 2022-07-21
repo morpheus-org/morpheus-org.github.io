@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type_20traits_396',['Type Traits',['../group__typetraits.html',1,'']]]
+  ['storage_20format_20tags_397',['Storage Format Tags',['../group__storage__format__tags.html',1,'']]]
 ];

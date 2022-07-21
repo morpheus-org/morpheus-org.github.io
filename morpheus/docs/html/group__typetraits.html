@@ -68,7 +68,7 @@ $(function() {
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">Type Traits<div class="ingroups"><a class="el" href="group__utilities.html">Utilities</a><a class="el" href="group__utilities.html">Utilities</a> &raquo;  &#124; <a class="el" href="group__metaprogramming.html">Metaprogramming</a></div></div>  </div>
+<div class="title">Type Traits<div class="ingroups"><a class="el" href="group__utilities.html">Utilities</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -79,14 +79,16 @@ Collaboration diagram for Type Traits:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__typetraits.png" border="0" usemap="#group____typetraits" alt=""/></div>
 <map name="group____typetraits" id="group____typetraits">
-<area shape="rect" href="group__utilities.html" title=" " alt="" coords="40,5,113,31"/>
-<area shape="rect" title="Various tools for examining the different types available and relationships between them during compi..." alt="" coords="196,31,287,56"/>
-<area shape="rect" href="group__metaprogramming.html" title="Various metaprogrammes." alt="" coords="5,55,148,80"/>
+<area shape="rect" href="group__utilities.html" title=" " alt="" coords="5,5,79,31"/>
+<area shape="rect" title="Various tools for examining the different types available and relationships between them during compi..." alt="" coords="127,5,217,31"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1is__default.html">Morpheus::is_default&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> is a <code><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a></code> type.  <a href="classMorpheus_1_1is__default.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1is__coo__matrix__format__container.html">Morpheus::is_coo_matrix_format_container&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> is a valid COO Sparse Matrix Format Container i.e is valid matrix container and has <code><a class="el" href="structMorpheus_1_1CooFormatTag.html" title="Tag used to mark containers as Matrix containers (Sparse) with Coordinate (COO) Storage Format.">CooFormatTag</a></code> as <code>tag</code> member trait.  <a href="classMorpheus_1_1is__coo__matrix__format__container.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,9 +109,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1has__generic__space.html">Morpheus::has_generic_space&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> has a valid generic space.  <a href="classMorpheus_1_1has__generic__space.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1is__default.html">Morpheus::is_default&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> is a <code><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a></code> type.  <a href="classMorpheus_1_1is__default.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1has__tag__trait.html">Morpheus::has_tag_trait&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <code>T</code> has <code>tag</code> as a member trait.  <a href="classMorpheus_1_1has__tag__trait.html#details">More...</a><br /></td></tr>
@@ -224,6 +223,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:gac06bb2cb217b1b4c8ea338b74e375df5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gac06bb2cb217b1b4c8ea338b74e375df5"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typetraits.html#gac06bb2cb217b1b4c8ea338b74e375df5">Morpheus::is_default_v</a> = <a class="el" href="classMorpheus_1_1is__default.html">is_default</a>&lt;T&gt;::value</td></tr>
+<tr class="memdesc:gac06bb2cb217b1b4c8ea338b74e375df5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Short-hand to <code><a class="el" href="classMorpheus_1_1is__default.html" title="Checks if the given type T is a Default type.">is_default</a></code>.  <a href="group__typetraits.html#gac06bb2cb217b1b4c8ea338b74e375df5">More...</a><br /></td></tr>
+<tr class="separator:gac06bb2cb217b1b4c8ea338b74e375df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaab871dced6b1e06a8f9ff29ca344257a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:gaab871dced6b1e06a8f9ff29ca344257a"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typetraits.html#gaab871dced6b1e06a8f9ff29ca344257a">Morpheus::is_coo_matrix_format_container_v</a></td></tr>
 <tr class="memdesc:gaab871dced6b1e06a8f9ff29ca344257a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Short-hand to <code><a class="el" href="classMorpheus_1_1is__coo__matrix__format__container.html" title="Checks if the given type T is a valid COO Sparse Matrix Format Container i.e is valid matrix containe...">is_coo_matrix_format_container</a></code>.  <a href="group__typetraits.html#gaab871dced6b1e06a8f9ff29ca344257a">More...</a><br /></td></tr>
@@ -256,10 +259,6 @@ Variables</h2></td></tr>
 <tr class="memitem:ga068f260f8aa20e138749efb5b8e65614"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typetraits.html#ga068f260f8aa20e138749efb5b8e65614">Morpheus::has_generic_space_v</a> = <a class="el" href="classMorpheus_1_1has__generic__space.html">has_generic_space</a>&lt;T&gt;::value</td></tr>
 <tr class="memdesc:ga068f260f8aa20e138749efb5b8e65614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Short-hand to <code><a class="el" href="classMorpheus_1_1has__generic__space.html" title="Checks if the given type T has a valid generic space.">has_generic_space</a></code>.  <a href="group__typetraits.html#ga068f260f8aa20e138749efb5b8e65614">More...</a><br /></td></tr>
 <tr class="separator:ga068f260f8aa20e138749efb5b8e65614"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac06bb2cb217b1b4c8ea338b74e375df5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gac06bb2cb217b1b4c8ea338b74e375df5"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typetraits.html#gac06bb2cb217b1b4c8ea338b74e375df5">Morpheus::is_default_v</a> = <a class="el" href="classMorpheus_1_1is__default.html">is_default</a>&lt;T&gt;::value</td></tr>
-<tr class="memdesc:gac06bb2cb217b1b4c8ea338b74e375df5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Short-hand to <code><a class="el" href="classMorpheus_1_1is__default.html" title="Checks if the given type T is a Default type.">is_default</a></code>.  <a href="group__typetraits.html#gac06bb2cb217b1b4c8ea338b74e375df5">More...</a><br /></td></tr>
-<tr class="separator:gac06bb2cb217b1b4c8ea338b74e375df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaedc7ab203e4f7d440fbe0cf76e5370d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Variant &gt; </td></tr>
 <tr class="memitem:gaaedc7ab203e4f7d440fbe0cf76e5370d"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">Morpheus::is_variant_member_v</a></td></tr>
 <tr class="memdesc:gaaedc7ab203e4f7d440fbe0cf76e5370d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> is a member of <code>Variant</code> container such as <code>std::variant</code> or <code>mpark::variant</code>.  <a href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">More...</a><br /></td></tr>
