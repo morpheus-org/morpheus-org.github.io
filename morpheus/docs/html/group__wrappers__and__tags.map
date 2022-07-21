@@ -1,5 +1,6 @@
 <map id="Wrappers and Tags" name="Wrappers and Tags">
-<area shape="rect" id="node1" href="$group__storage__format__tags.html" title="Data structures used to tag data types." alt="" coords="188,5,332,31"/>
-<area shape="rect" id="node2" href="$group__wrappers.html" title="Data structures used to wrap around data types." alt="" coords="221,55,299,80"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,31,140,56"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,55,151,80"/>
+<area shape="rect" id="node2" href="$group__wrappers.html" title="Data structures used to wrap around data types." alt="" coords="234,5,318,31"/>
+<area shape="rect" id="node3" href="$group__storage__format__tags.html" title="Data structures used to tag data types." alt="" coords="199,55,353,80"/>
+<area shape="rect" id="node4" href="$group__other__tags.html" title="Other data structures used to tag data types." alt="" coords="231,104,321,129"/>
 </map>

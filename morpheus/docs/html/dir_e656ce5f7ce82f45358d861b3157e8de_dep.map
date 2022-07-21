@@ -1,9 +1,0 @@
-<map id="Dia" name="Dia">
-<area shape="rect" id="node2" href="dir_b5aedd516ab37f97b06c3d7df8289c10.html" title="Cuda" alt="" coords="424,63,496,111"/>
-<area shape="rect" id="node3" href="dir_78155f0469956ea225b7bd2960491c33.html" title="Kernels" alt="" coords="328,63,400,111"/>
-<area shape="rect" id="node4" href="dir_2d12124ace2064c1a7190f13187673c4.html" title="Kokkos" alt="" coords="232,63,304,111"/>
-<area shape="rect" id="node5" href="dir_922ff8b61d05965483c510f658e46983.html" title="OpenMP" alt="" coords="134,63,207,111"/>
-<area shape="rect" id="node6" href="dir_5ae2441645c75dbe5a96603cc90c221d.html" title="Serial" alt="" coords="37,63,109,111"/>
-<area shape="rect" id="clust2" href="dir_e656ce5f7ce82f45358d861b3157e8de.html" alt="" coords="27,52,603,121"/>
-<area shape="rect" id="clust1" href="dir_b19ac8d57de3663da67bd771cc3deea6.html" title="impl" alt="" coords="16,16,613,132"/>
-</map>

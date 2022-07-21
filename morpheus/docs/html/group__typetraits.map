@@ -1,4 +1,5 @@
 <map id="Type Traits" name="Type Traits">
-<area shape="rect" id="node1" title="Various tools for examining the different types available and relationships between them during compi..." alt="" coords="120,5,207,31"/>
-<area shape="rect" id="node2" href="$group__utilities.html" title=" " alt="" coords="5,5,72,31"/>
+<area shape="rect" id="node1" href="$group__utilities.html" title=" " alt="" coords="40,5,113,31"/>
+<area shape="rect" id="node2" title="Various tools for examining the different types available and relationships between them during compi..." alt="" coords="196,31,287,56"/>
+<area shape="rect" id="node3" href="$group__metaprogramming.html" title="Various metaprogrammes." alt="" coords="5,55,148,80"/>
 </map>

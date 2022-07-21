@@ -1,4 +1,6 @@
 <map id="Metaprogramming" name="Metaprogramming">
-<area shape="rect" id="node1" title="Various metaprogrammes." alt="" coords="120,5,247,31"/>
-<area shape="rect" id="node2" href="$group__utilities.html" title=" " alt="" coords="5,5,72,31"/>
+<area shape="rect" id="node1" href="$group__utilities.html" title=" " alt="" coords="5,31,79,56"/>
+<area shape="rect" id="node4" title="Various metaprogrammes." alt="" coords="127,31,269,56"/>
+<area shape="rect" id="node2" href="$group__typetraits.html" title="Various tools for examining the different types available and relationships between them during compi..." alt="" coords="317,5,408,31"/>
+<area shape="rect" id="node3" href="$group__other__tags.html" title="Other data structures used to tag data types." alt="" coords="317,55,408,80"/>
 </map>

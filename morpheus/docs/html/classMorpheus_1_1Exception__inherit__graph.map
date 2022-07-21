@@ -1,9 +1,9 @@
 <map id="Morpheus::Exception" name="Morpheus::Exception">
-<area shape="rect" id="node1" title=" " alt="" coords="157,122,303,149"/>
-<area shape="rect" id="node3" href="$classMorpheus_1_1FormatConversionException.html" title=" " alt="" coords="359,5,554,47"/>
-<area shape="rect" id="node4" href="$classMorpheus_1_1IOException.html" title=" " alt="" coords="377,71,536,98"/>
-<area shape="rect" id="node5" href="$classMorpheus_1_1InvalidInputException.html" title=" " alt="" coords="351,122,563,149"/>
-<area shape="rect" id="node6" href="$classMorpheus_1_1NotImplementedException.html" title=" " alt="" coords="365,173,548,215"/>
-<area shape="rect" id="node7" href="$classMorpheus_1_1RuntimeException.html" title=" " alt="" coords="359,239,554,266"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,122,109,149"/>
+<area shape="rect" id="node1" title=" " alt="" coords="168,122,327,149"/>
+<area shape="rect" id="node3" href="$classMorpheus_1_1FormatConversionException.html" title=" " alt="" coords="385,5,599,47"/>
+<area shape="rect" id="node4" href="$classMorpheus_1_1InvalidInputException.html" title=" " alt="" coords="375,71,609,98"/>
+<area shape="rect" id="node5" href="$classMorpheus_1_1IOException.html" title=" " alt="" coords="406,122,578,149"/>
+<area shape="rect" id="node6" href="$classMorpheus_1_1NotImplementedException.html" title=" " alt="" coords="390,173,594,215"/>
+<area shape="rect" id="node7" href="$classMorpheus_1_1RuntimeException.html" title=" " alt="" coords="385,239,599,266"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,122,120,149"/>
 </map>

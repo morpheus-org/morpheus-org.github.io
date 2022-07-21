@@ -1,5 +1,5 @@
 <map id="Utilities" name="Utilities">
-<area shape="rect" id="node1" href="$group__metaprogramming.html" title="Various metaprogrammes." alt="" coords="120,5,247,31"/>
-<area shape="rect" id="node2" href="$group__typetraits.html" title="Various tools for examining the different types available and relationships between them during compi..." alt="" coords="140,55,227,80"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,31,72,56"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,79,56"/>
+<area shape="rect" id="node2" href="$group__typetraits.html" title="Various tools for examining the different types available and relationships between them during compi..." alt="" coords="153,5,243,31"/>
+<area shape="rect" id="node3" href="$group__metaprogramming.html" title="Various metaprogrammes." alt="" coords="127,55,269,80"/>
 </map>

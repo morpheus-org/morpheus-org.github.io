@@ -1,7 +1,7 @@
 <map id="Morpheus::Impl::SparseMatrixTag" name="Morpheus::Impl::SparseMatrixTag">
-<area shape="rect" id="node1" title="Tag used to mark containers as Sparse Matrices." alt="" coords="179,80,397,107"/>
-<area shape="rect" id="node3" href="$structMorpheus_1_1CooFormatTag.html" title="Tag used to mark containers as Matrix containers (Sparse) with Coordinate (COO) Storage Format." alt="" coords="5,155,179,181"/>
-<area shape="rect" id="node4" href="$structMorpheus_1_1CsrFormatTag.html" title="Tag used to mark containers as Matrix containers (Sparse) with Compressed Sparse Row (CSR) Storage Fo..." alt="" coords="203,155,373,181"/>
-<area shape="rect" id="node5" href="$structMorpheus_1_1DiaFormatTag.html" title="Tag used to mark containers as Matrix containers (Sparse) with Diagonal (DIA) Storage Format." alt="" coords="398,155,567,181"/>
-<area shape="rect" id="node2" href="$structMorpheus_1_1Impl_1_1MatrixTag.html" title="Tag used to mark containers as Matrices." alt="" coords="199,5,377,32"/>
+<area shape="rect" id="node1" title="Tag used to mark containers as Sparse Matrices." alt="" coords="189,80,427,107"/>
+<area shape="rect" id="node3" href="$structMorpheus_1_1CooFormatTag.html" title="Tag used to mark containers as Matrix containers (Sparse) with Coordinate (COO) Storage Format." alt="" coords="5,155,192,181"/>
+<area shape="rect" id="node4" href="$structMorpheus_1_1CsrFormatTag.html" title="Tag used to mark containers as Matrix containers (Sparse) with Compressed Sparse Row (CSR) Storage Fo..." alt="" coords="217,155,399,181"/>
+<area shape="rect" id="node5" href="$structMorpheus_1_1DiaFormatTag.html" title="Tag used to mark containers as Matrix containers (Sparse) with Diagonal (DIA) Storage Format." alt="" coords="424,155,608,181"/>
+<area shape="rect" id="node2" href="$structMorpheus_1_1Impl_1_1MatrixTag.html" title="Tag used to mark containers as Matrices." alt="" coords="211,5,405,32"/>
 </map>

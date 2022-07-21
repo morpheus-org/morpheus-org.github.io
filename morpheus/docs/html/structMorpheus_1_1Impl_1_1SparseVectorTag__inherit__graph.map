@@ -1,4 +1,4 @@
 <map id="Morpheus::Impl::SparseVectorTag" name="Morpheus::Impl::SparseVectorTag">
-<area shape="rect" id="node1" title="Tag used to mark containers as Sparse Vectors." alt="" coords="5,80,225,107"/>
-<area shape="rect" id="node2" href="$structMorpheus_1_1Impl_1_1VectorTag.html" title="Tag used to mark containers as Vectors." alt="" coords="26,5,205,32"/>
+<area shape="rect" id="node1" title="Tag used to mark containers as Sparse Vectors." alt="" coords="5,80,244,107"/>
+<area shape="rect" id="node2" href="$structMorpheus_1_1Impl_1_1VectorTag.html" title="Tag used to mark containers as Vectors." alt="" coords="27,5,222,32"/>
 </map>
