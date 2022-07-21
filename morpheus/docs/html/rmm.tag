@@ -757,6 +757,12 @@
     <base>Morpheus::Exception</base>
   </compound>
   <compound kind="struct">
+    <name>Morpheus::generate_unary_typelist</name>
+    <filename>structMorpheus_1_1generate__unary__typelist.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+  </compound>
+  <compound kind="struct">
     <name>Morpheus::GenericSpace</name>
     <filename>structMorpheus_1_1GenericSpace.html</filename>
     <templarg></templarg>
@@ -1175,18 +1181,10 @@
     <templarg>Tail_</templarg>
   </compound>
   <compound kind="struct">
-    <name>Morpheus::UnaryContainer&lt; Container&lt; T &gt;, Set&lt; Ts... &gt; &gt;</name>
-    <filename>structMorpheus_1_1UnaryContainer_3_01Container_3_01T_01_4_00_01Set_3_01Ts_8_8_8_01_4_01_4.html</filename>
-    <templarg>Container</templarg>
+    <name>Morpheus::UnaryContainer</name>
+    <filename>structMorpheus_1_1UnaryContainer.html</filename>
     <templarg></templarg>
-    <templarg>Ts</templarg>
-  </compound>
-  <compound kind="struct">
-    <name>Morpheus::UnaryContainer&lt; Container&lt; T &gt;, Ts... &gt;</name>
-    <filename>structMorpheus_1_1UnaryContainer_3_01Container_3_01T_01_4_00_01Ts_8_8_8_01_4.html</filename>
-    <templarg>Container</templarg>
     <templarg></templarg>
-    <templarg>Ts</templarg>
   </compound>
   <compound kind="struct">
     <name>Morpheus::ValueType</name>
@@ -1222,6 +1220,7 @@
     <class kind="struct">Morpheus::DynamicMatrixFormatTag</class>
     <class kind="class">Morpheus::Exception</class>
     <class kind="class">Morpheus::FormatConversionException</class>
+    <class kind="struct">Morpheus::generate_unary_typelist</class>
     <class kind="struct">Morpheus::GenericSpace</class>
     <class kind="struct">Morpheus::has_access</class>
     <class kind="class">Morpheus::has_generic_space</class>
@@ -1275,8 +1274,7 @@
     <class kind="struct">Morpheus::Set</class>
     <class kind="struct">Morpheus::TypeList</class>
     <class kind="struct">Morpheus::TypeList&lt; Set&lt; Head_... &gt;, Tail_... &gt;</class>
-    <class kind="struct">Morpheus::UnaryContainer&lt; Container&lt; T &gt;, Set&lt; Ts... &gt; &gt;</class>
-    <class kind="struct">Morpheus::UnaryContainer&lt; Container&lt; T &gt;, Ts... &gt;</class>
+    <class kind="struct">Morpheus::UnaryContainer</class>
     <class kind="struct">Morpheus::ValueType</class>
     <class kind="struct">Morpheus::VectorFormatTag</class>
     <member kind="typedef">
@@ -1988,8 +1986,19 @@
     <name>generic_containers</name>
     <title>Generic Containers</title>
     <filename>group__generic__containers.html</filename>
-    <class kind="struct">Morpheus::UnaryContainer&lt; Container&lt; T &gt;, Ts... &gt;</class>
-    <class kind="struct">Morpheus::UnaryContainer&lt; Container&lt; T &gt;, Set&lt; Ts... &gt; &gt;</class>
+    <class kind="struct">Morpheus::UnaryContainer</class>
+  </compound>
+  <compound kind="group">
+    <name>metaprogramming</name>
+    <title>Metaprogramming</title>
+    <filename>group__metaprogramming.html</filename>
+    <class kind="struct">Morpheus::generate_unary_typelist</class>
+    <class kind="struct">Morpheus::TypeList</class>
+    <class kind="struct">Morpheus::Set</class>
+    <class kind="struct">Morpheus::IndexedTypeList</class>
+    <class kind="struct">Morpheus::TypeList&lt; Set&lt; Head_... &gt;, Tail_... &gt;</class>
+    <class kind="struct">Morpheus::concat&lt; TypeList&lt; Ts... &gt;, TypeList&lt; Us... &gt; &gt;</class>
+    <class kind="struct">Morpheus::cross_product&lt; TypeList&lt; Ts... &gt;, TypeList&lt; Us... &gt; &gt;</class>
   </compound>
   <compound kind="group">
     <name>containers</name>
@@ -2022,17 +2031,6 @@
     <class kind="struct">Morpheus::GenericSpace</class>
     <class kind="struct">Morpheus::IndexType</class>
     <class kind="struct">Morpheus::ValueType</class>
-  </compound>
-  <compound kind="group">
-    <name>metaprogramming</name>
-    <title>Metaprogramming</title>
-    <filename>group__metaprogramming.html</filename>
-    <class kind="struct">Morpheus::TypeList</class>
-    <class kind="struct">Morpheus::Set</class>
-    <class kind="struct">Morpheus::IndexedTypeList</class>
-    <class kind="struct">Morpheus::TypeList&lt; Set&lt; Head_... &gt;, Tail_... &gt;</class>
-    <class kind="struct">Morpheus::concat&lt; TypeList&lt; Ts... &gt;, TypeList&lt; Us... &gt; &gt;</class>
-    <class kind="struct">Morpheus::cross_product&lt; TypeList&lt; Ts... &gt;, TypeList&lt; Us... &gt; &gt;</class>
   </compound>
   <compound kind="page">
     <name>index</name>

@@ -120,6 +120,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1FormatConversionException.html">FormatConversionException</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMorpheus_1_1generate__unary__typelist.html">generate_unary_typelist</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a <code><a class="el" href="structMorpheus_1_1TypeList.html" title="Compile-time type list.">TypeList</a></code> of <code><a class="el" href="structMorpheus_1_1UnaryContainer.html" title="A wrapper that constructs a new container type from ContainerType using as type arguments the types i...">UnaryContainer</a></code> where each container is a specific <a class="el" href="namespaceMorpheus.html">Morpheus</a> Container type with a variadic number of template arguments.  <a href="structMorpheus_1_1generate__unary__typelist.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMorpheus_1_1GenericSpace.html">GenericSpace</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper that converts a valid custom space into a generic one.  <a href="structMorpheus_1_1GenericSpace.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,11 +276,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMorpheus_1_1TypeList_3_01Set_3_01Head___8_8_8_01_4_00_01Tail___8_8_8_01_4.html">TypeList&lt; Set&lt; Head_... &gt;, Tail_... &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile-time linked-list like type list specialisation for when the types passed are <code><a class="el" href="structMorpheus_1_1Set.html" title="Compile-time set.">Set</a></code>.  <a href="structMorpheus_1_1TypeList_3_01Set_3_01Head___8_8_8_01_4_00_01Tail___8_8_8_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMorpheus_1_1UnaryContainer_3_01Container_3_01T_01_4_00_01Set_3_01Ts_8_8_8_01_4_01_4.html">UnaryContainer&lt; Container&lt; T &gt;, Set&lt; Ts... &gt; &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of <code>UnaryContainer</code> that packs the template arguments as a <code><a class="el" href="structMorpheus_1_1Set.html" title="Compile-time set.">Set</a></code>.  <a href="structMorpheus_1_1UnaryContainer_3_01Container_3_01T_01_4_00_01Set_3_01Ts_8_8_8_01_4_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMorpheus_1_1UnaryContainer_3_01Container_3_01T_01_4_00_01Ts_8_8_8_01_4.html">UnaryContainer&lt; Container&lt; T &gt;, Ts... &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper that constructs a container type from the template parameters provided.  <a href="structMorpheus_1_1UnaryContainer_3_01Container_3_01T_01_4_00_01Ts_8_8_8_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMorpheus_1_1UnaryContainer.html">UnaryContainer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper that constructs a new container type from <code>ContainerType</code> using as type arguments the types in <code>TypeSet</code>.  <a href="structMorpheus_1_1UnaryContainer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper that checks if the provided type is a scalar type.  <a href="structMorpheus_1_1ValueType.html#details">More...</a><br /></td></tr>
@@ -796,7 +796,7 @@ Variables</h2></td></tr>
 <p>Contributing Authors: Christodoulos Stylianou (<a href="#" onclick="location.href='mai'+'lto:'+'c.s'+'ty'+'lia'+'no'+'u@e'+'d.'+'ac.'+'uk'; return false;">c.sty<span style="display: none;">.nosp@m.</span>lian<span style="display: none;">.nosp@m.</span>ou@ed<span style="display: none;">.nosp@m.</span>.ac.<span style="display: none;">.nosp@m.</span>uk</a>)</p>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><pre class="fragment">http://www.apache.org/licenses/LICENSE-2.0
 </pre><p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
-<p><a class="el" href="Morpheus__ContainerFactory_8hpp_source.html">Morpheus_ContainerFactory.hpp</a></p>
+<p>Morpheus_ContainerFactory.hpp</p>
 <p>EPCC, The University of Edinburgh</p>
 <p>(c) 2021 - 2022 The University of Edinburgh</p>
 <p>Contributing Authors: Christodoulos Stylianou (<a href="#" onclick="location.href='mai'+'lto:'+'c.s'+'ty'+'lia'+'no'+'u@e'+'d.'+'ac.'+'uk'; return false;">c.sty<span style="display: none;">.nosp@m.</span>lian<span style="display: none;">.nosp@m.</span>ou@ed<span style="display: none;">.nosp@m.</span>.ac.<span style="display: none;">.nosp@m.</span>uk</a>)</p>
@@ -892,7 +892,7 @@ Variables</h2></td></tr>
 <p>Contributing Authors: Christodoulos Stylianou (<a href="#" onclick="location.href='mai'+'lto:'+'c.s'+'ty'+'lia'+'no'+'u@e'+'d.'+'ac.'+'uk'; return false;">c.sty<span style="display: none;">.nosp@m.</span>lian<span style="display: none;">.nosp@m.</span>ou@ed<span style="display: none;">.nosp@m.</span>.ac.<span style="display: none;">.nosp@m.</span>uk</a>)</p>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><pre class="fragment">http://www.apache.org/licenses/LICENSE-2.0
 </pre><p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
-<p><a class="el" href="Morpheus__Metaprogramming_8hpp_source.html">Morpheus_Metaprogramming.hpp</a></p>
+<p>Morpheus_Metaprogramming.hpp</p>
 <p>EPCC, The University of Edinburgh</p>
 <p>(c) 2021 - 2022 The University of Edinburgh</p>
 <p>Contributing Authors: Christodoulos Stylianou (<a href="#" onclick="location.href='mai'+'lto:'+'c.s'+'ty'+'lia'+'no'+'u@e'+'d.'+'ac.'+'uk'; return false;">c.sty<span style="display: none;">.nosp@m.</span>lian<span style="display: none;">.nosp@m.</span>ou@ed<span style="display: none;">.nosp@m.</span>.ac.<span style="display: none;">.nosp@m.</span>uk</a>)</p>

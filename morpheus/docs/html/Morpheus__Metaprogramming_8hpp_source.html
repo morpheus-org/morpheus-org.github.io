@@ -75,135 +75,57 @@ $(function() {
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef MORPHEUS_METAPROGRAMMING_HPP</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define MORPHEUS_METAPROGRAMMING_HPP</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;impl/Morpheus_Metaprogramming.hpp&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceMorpheus.html">Morpheus</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// Forward declarations</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">struct </span>TypeList;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">struct </span>Set;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span>... Ts&gt;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">struct </span>IndexedTypeList;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">struct </span>cross_product;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">struct </span>concat;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">namespace </span>Impl {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">// forward decl</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">struct </span>cross_product;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T&gt;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">struct </span>concat;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts, <span class="keyword">typename</span>... Us&gt;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">struct </span>concat&lt;TypeList&lt;Ts...&gt;, TypeList&lt;Us...&gt;&gt; {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">using</span> type = TypeList&lt;Ts..., Us...&gt;;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// Partially specialise the empty cases.</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Us&gt;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">struct </span>cross_product&lt;TypeList&lt;&gt;, TypeList&lt;Us...&gt;&gt; {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">using</span> type = TypeList&lt;&gt;;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Us&gt;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">struct </span>cross_product&lt;TypeList&lt;Us...&gt;, TypeList&lt;&gt;&gt; {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">using</span> type = TypeList&lt;&gt;;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">struct </span>cross_product&lt;TypeList&lt;&gt;, TypeList&lt;&gt;&gt; {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">using</span> type = TypeList&lt;&gt;;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">// Generic Case</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts, <span class="keyword">typename</span> U, <span class="keyword">typename</span>... Us&gt;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">struct </span>cross_product&lt;TypeList&lt;T, Ts...&gt;, TypeList&lt;U, Us...&gt;&gt; {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">using</span> type = <span class="keyword">typename</span> concat&lt;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keyword">typename</span> concat&lt;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          TypeList&lt;Set&lt;T, U&gt;&gt;,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          <span class="keyword">typename</span> cross_product&lt;TypeList&lt;T&gt;, TypeList&lt;Us...&gt;&gt;::type&gt;::type,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keyword">typename</span> cross_product&lt;TypeList&lt;Ts...&gt;, TypeList&lt;U, Us...&gt;&gt;::type&gt;::type;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T, <span class="keyword">typename</span>... Ts, <span class="keyword">typename</span> U, <span class="keyword">typename</span>... Us&gt;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">struct </span>cross_product&lt;TypeList&lt;Set&lt;T...&gt;, Ts...&gt;, TypeList&lt;U, Us...&gt;&gt; {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">using</span> type = <span class="keyword">typename</span> concat&lt;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="keyword">typename</span> concat&lt;TypeList&lt;Set&lt;T..., U&gt;&gt;,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                      <span class="keyword">typename</span> cross_product&lt;TypeList&lt;Set&lt;T...&gt;&gt;,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                             TypeList&lt;Us...&gt;&gt;::type&gt;::type,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="keyword">typename</span> cross_product&lt;TypeList&lt;Ts...&gt;, TypeList&lt;U, Us...&gt;&gt;::type&gt;::type;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts, <span class="keyword">typename</span>... U, <span class="keyword">typename</span>... Us&gt;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">struct </span>cross_product&lt;TypeList&lt;T, Ts...&gt;, TypeList&lt;Set&lt;U...&gt;, Us...&gt;&gt; {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">using</span> type = <span class="keyword">typename</span> concat&lt;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keyword">typename</span> concat&lt;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          TypeList&lt;Set&lt;T, U...&gt;&gt;,</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;          <span class="keyword">typename</span> cross_product&lt;TypeList&lt;T&gt;, TypeList&lt;Us...&gt;&gt;::type&gt;::type,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keyword">typename</span> cross_product&lt;TypeList&lt;Ts...&gt;,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                             TypeList&lt;Set&lt;U...&gt;, Us...&gt;&gt;::type&gt;::type;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T, <span class="keyword">typename</span>... Ts, <span class="keyword">typename</span>... U, <span class="keyword">typename</span>... Us&gt;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">struct </span>cross_product&lt;TypeList&lt;Set&lt;T...&gt;, Ts...&gt;, TypeList&lt;Set&lt;U...&gt;, Us...&gt;&gt; {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keyword">using</span> type = <span class="keyword">typename</span> concat&lt;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keyword">typename</span> concat&lt;TypeList&lt;Set&lt;T..., U...&gt;&gt;,</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                      <span class="keyword">typename</span> cross_product&lt;TypeList&lt;Set&lt;T...&gt;&gt;,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                             TypeList&lt;Us...&gt;&gt;::type&gt;::type,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keyword">typename</span> cross_product&lt;TypeList&lt;Ts...&gt;,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                             TypeList&lt;Set&lt;U...&gt;, Us...&gt;&gt;::type&gt;::type;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}  <span class="comment">// namespace Impl</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="structMorpheus_1_1TypeList.html">  143</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a> {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keyword">using</span> <a class="code" href="structMorpheus_1_1TypeList.html">type</a> = <a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Ts...&gt;;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;};</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="structMorpheus_1_1Set.html">  153</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1Set.html">Set</a> {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keyword">using</span> <a class="code" href="structMorpheus_1_1Set.html">type</a> = <a class="code" href="structMorpheus_1_1Set.html">Set</a>&lt;Ts...&gt;;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceMorpheus.html">Morpheus</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structMorpheus_1_1TypeList.html">   47</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">using</span> <a class="code" href="structMorpheus_1_1TypeList.html">type</a> = <a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Ts...&gt;;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structMorpheus_1_1Set.html">   57</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1Set.html">Set</a> {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">using</span> <a class="code" href="structMorpheus_1_1Set.html">type</a> = <a class="code" href="structMorpheus_1_1Set.html">Set</a>&lt;Ts...&gt;;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span>... Ts&gt;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="structMorpheus_1_1IndexedTypeList.html">   67</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1IndexedTypeList.html">IndexedTypeList</a> {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">using</span> type = <span class="keyword">typename</span> std::tuple_element&lt;N, std::tuple&lt;Ts...&gt;&gt;::type;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Head_&gt;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;<a class="code" href="structMorpheus_1_1Set.html">Set</a>&lt;Head_...&gt;&gt; {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">using</span> Head = <a class="code" href="structMorpheus_1_1Set.html">Set</a>&lt;Head_...&gt;;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">using</span> Tail = void;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Head_, <span class="keyword">typename</span>... Tail_&gt;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="structMorpheus_1_1TypeList_3_01Set_3_01Head___8_8_8_01_4_00_01Tail___8_8_8_01_4.html">   91</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;<a class="code" href="structMorpheus_1_1Set.html">Set</a>&lt;Head_...&gt;, Tail_...&gt; {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">using</span> <a class="code" href="structMorpheus_1_1Set.html">Head</a> = <a class="code" href="structMorpheus_1_1Set.html">Set</a>&lt;Head_...&gt;;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">using</span> <a class="code" href="structMorpheus_1_1TypeList.html">Tail</a> = <a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Tail_...&gt;;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts, <span class="keyword">typename</span>... Us&gt;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="structMorpheus_1_1concat_3_01TypeList_3_01Ts_8_8_8_01_4_00_01TypeList_3_01Us_8_8_8_01_4_01_4.html">  122</a></span>&#160;<span class="keyword">struct </span>concat&lt;<a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Ts...&gt;, <a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Us...&gt;&gt; {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keyword">using</span> type = <span class="keyword">typename</span> Impl::concat&lt;<a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Ts...&gt;, <a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Us...&gt;&gt;::type;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts, <span class="keyword">typename</span>... Us&gt;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="structMorpheus_1_1cross__product_3_01TypeList_3_01Ts_8_8_8_01_4_00_01TypeList_3_01Us_8_8_8_01_4_01_4.html">  152</a></span>&#160;<span class="keyword">struct </span>cross_product&lt;<a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Ts...&gt;, <a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Us...&gt;&gt; {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keyword">using</span> type =</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <span class="keyword">typename</span> Impl::cross_product&lt;<a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Ts...&gt;, <a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Us...&gt;&gt;::type;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;};</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span>... Ts&gt;</div>
-<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="structMorpheus_1_1IndexedTypeList.html">  163</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1IndexedTypeList.html">IndexedTypeList</a> {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keyword">using</span> type = <span class="keyword">typename</span> std::tuple_element&lt;N, std::tuple&lt;Ts...&gt;&gt;::type;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;};</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Head_&gt;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;<a class="code" href="structMorpheus_1_1Set.html">Set</a>&lt;Head_...&gt;&gt; {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keyword">using</span> Head = <a class="code" href="structMorpheus_1_1Set.html">Set</a>&lt;Head_...&gt;;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keyword">using</span> Tail = void;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;};</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Head_, <span class="keyword">typename</span>... Tail_&gt;</div>
-<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="structMorpheus_1_1TypeList_3_01Set_3_01Head___8_8_8_01_4_00_01Tail___8_8_8_01_4.html">  187</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;<a class="code" href="structMorpheus_1_1Set.html">Set</a>&lt;Head_...&gt;, Tail_...&gt; {</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keyword">using</span> <a class="code" href="structMorpheus_1_1Set.html">Head</a> = <a class="code" href="structMorpheus_1_1Set.html">Set</a>&lt;Head_...&gt;;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keyword">using</span> <a class="code" href="structMorpheus_1_1TypeList.html">Tail</a> = <a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Tail_...&gt;;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;};</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts, <span class="keyword">typename</span>... Us&gt;</div>
-<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="structMorpheus_1_1concat_3_01TypeList_3_01Ts_8_8_8_01_4_00_01TypeList_3_01Us_8_8_8_01_4_01_4.html">  218</a></span>&#160;<span class="keyword">struct </span>concat&lt;<a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Ts...&gt;, <a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Us...&gt;&gt; {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keyword">using</span> type = <span class="keyword">typename</span> Impl::concat&lt;<a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Ts...&gt;, <a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Us...&gt;&gt;::type;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;};</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts, <span class="keyword">typename</span>... Us&gt;</div>
-<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="structMorpheus_1_1cross__product_3_01TypeList_3_01Ts_8_8_8_01_4_00_01TypeList_3_01Us_8_8_8_01_4_01_4.html">  248</a></span>&#160;<span class="keyword">struct </span>cross_product&lt;<a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Ts...&gt;, <a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Us...&gt;&gt; {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keyword">using</span> type =</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      <span class="keyword">typename</span> Impl::cross_product&lt;<a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Ts...&gt;, <a class="code" href="structMorpheus_1_1TypeList.html">TypeList</a>&lt;Us...&gt;&gt;::type;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;};</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_METAPROGRAMMING_HPP</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_METAPROGRAMMING_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructMorpheus_1_1Set_html"><div class="ttname"><a href="structMorpheus_1_1Set.html">Morpheus::Set</a></div><div class="ttdoc">Compile-time set.</div><div class="ttdef"><b>Definition:</b> Morpheus_Metaprogramming.hpp:153</div></div>
-<div class="ttc" id="astructMorpheus_1_1TypeList_html"><div class="ttname"><a href="structMorpheus_1_1TypeList.html">Morpheus::TypeList</a></div><div class="ttdoc">Compile-time type list.</div><div class="ttdef"><b>Definition:</b> Morpheus_Metaprogramming.hpp:143</div></div>
+<div class="ttc" id="astructMorpheus_1_1Set_html"><div class="ttname"><a href="structMorpheus_1_1Set.html">Morpheus::Set</a></div><div class="ttdoc">Compile-time set.</div><div class="ttdef"><b>Definition:</b> Morpheus_Metaprogramming.hpp:57</div></div>
+<div class="ttc" id="astructMorpheus_1_1TypeList_html"><div class="ttname"><a href="structMorpheus_1_1TypeList.html">Morpheus::TypeList</a></div><div class="ttdoc">Compile-time type list.</div><div class="ttdef"><b>Definition:</b> Morpheus_Metaprogramming.hpp:47</div></div>
 <div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
-<div class="ttc" id="astructMorpheus_1_1IndexedTypeList_html"><div class="ttname"><a href="structMorpheus_1_1IndexedTypeList.html">Morpheus::IndexedTypeList</a></div><div class="ttdoc">Compile-time type list with indexed access.</div><div class="ttdef"><b>Definition:</b> Morpheus_Metaprogramming.hpp:163</div></div>
+<div class="ttc" id="astructMorpheus_1_1IndexedTypeList_html"><div class="ttname"><a href="structMorpheus_1_1IndexedTypeList.html">Morpheus::IndexedTypeList</a></div><div class="ttdoc">Compile-time type list with indexed access.</div><div class="ttdef"><b>Definition:</b> Morpheus_Metaprogramming.hpp:67</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
