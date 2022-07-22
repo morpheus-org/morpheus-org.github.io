@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['formatconversionexception_44',['FormatConversionException',['../classMorpheus_1_1FormatConversionException.html',1,'Morpheus']]]
+  ['exception_44',['Exception',['../classMorpheus_1_1Exception.html',1,'Morpheus']]]
 ];

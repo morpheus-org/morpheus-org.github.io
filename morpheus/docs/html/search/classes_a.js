@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['print_5ffn_310',['print_fn',['../structMorpheus_1_1Impl_1_1print__fn.html',1,'Morpheus::Impl']]]
+  ['notimplementedexception_313',['NotImplementedException',['../classMorpheus_1_1NotImplementedException.html',1,'Morpheus']]]
 ];

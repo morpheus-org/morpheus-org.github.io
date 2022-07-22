@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['generate_5funary_5ftypelist_241',['generate_unary_typelist',['../structMorpheus_1_1generate__unary__typelist.html',1,'Morpheus']]],
-  ['genericspace_242',['GenericSpace',['../structMorpheus_1_1GenericSpace.html',1,'Morpheus']]]
+  ['formatconversionexception_243',['FormatConversionException',['../classMorpheus_1_1FormatConversionException.html',1,'Morpheus']]]
 ];

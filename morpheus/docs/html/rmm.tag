@@ -33,6 +33,12 @@
     <filename>structMorpheus_1_1Impl_1_1any__type__resize__from__mat.html</filename>
   </compound>
   <compound kind="struct">
+    <name>Morpheus::BinaryContainer</name>
+    <filename>structMorpheus_1_1BinaryContainer.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+  </compound>
+  <compound kind="struct">
     <name>Morpheus::concat&lt; TypeList&lt; Ts... &gt;, TypeList&lt; Us... &gt; &gt;</name>
     <filename>structMorpheus_1_1concat_3_01TypeList_3_01Ts_8_8_8_01_4_00_01TypeList_3_01Us_8_8_8_01_4_01_4.html</filename>
     <templarg>Ts</templarg>
@@ -757,6 +763,12 @@
     <base>Morpheus::Exception</base>
   </compound>
   <compound kind="struct">
+    <name>Morpheus::generate_binary_typelist</name>
+    <filename>structMorpheus_1_1generate__binary__typelist.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+  </compound>
+  <compound kind="struct">
     <name>Morpheus::generate_unary_typelist</name>
     <filename>structMorpheus_1_1generate__unary__typelist.html</filename>
     <templarg></templarg>
@@ -1203,6 +1215,7 @@
   <compound kind="namespace">
     <name>Morpheus</name>
     <filename>namespaceMorpheus.html</filename>
+    <class kind="struct">Morpheus::BinaryContainer</class>
     <class kind="struct">Morpheus::concat&lt; TypeList&lt; Ts... &gt;, TypeList&lt; Us... &gt; &gt;</class>
     <class kind="struct">Morpheus::CooFormatTag</class>
     <class kind="class">Morpheus::CooMatrix</class>
@@ -1220,6 +1233,7 @@
     <class kind="struct">Morpheus::DynamicMatrixFormatTag</class>
     <class kind="class">Morpheus::Exception</class>
     <class kind="class">Morpheus::FormatConversionException</class>
+    <class kind="struct">Morpheus::generate_binary_typelist</class>
     <class kind="struct">Morpheus::generate_unary_typelist</class>
     <class kind="struct">Morpheus::GenericSpace</class>
     <class kind="struct">Morpheus::has_access</class>
@@ -1987,12 +2001,14 @@
     <title>Generic Containers</title>
     <filename>group__generic__containers.html</filename>
     <class kind="struct">Morpheus::UnaryContainer</class>
+    <class kind="struct">Morpheus::BinaryContainer</class>
   </compound>
   <compound kind="group">
     <name>metaprogramming</name>
     <title>Metaprogramming</title>
     <filename>group__metaprogramming.html</filename>
     <class kind="struct">Morpheus::generate_unary_typelist</class>
+    <class kind="struct">Morpheus::generate_binary_typelist</class>
     <class kind="struct">Morpheus::TypeList</class>
     <class kind="struct">Morpheus::Set</class>
     <class kind="struct">Morpheus::IndexedTypeList</class>

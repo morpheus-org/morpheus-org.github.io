@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['tag_183',['tag',['../classMorpheus_1_1DenseVector.html#ad3fb1fa5af09d8f09d59d037774c5246',1,'Morpheus::DenseVector']]],
-  ['traits_184',['traits',['../classMorpheus_1_1DenseVector.html#afa62e1f7b71748d785ea3416f415fa48',1,'Morpheus::DenseVector']]],
-  ['transpose_185',['transpose',['../namespaceMorpheus.html#a2d66ed2eb8f52705f5ef927091184c27',1,'Morpheus']]],
-  ['type_186',['type',['../classMorpheus_1_1DenseVector.html#a622350d4a72fcad1ca8e235041fe6da4',1,'Morpheus::DenseVector']]],
-  ['typelist_187',['TypeList',['../structMorpheus_1_1TypeList.html',1,'Morpheus']]],
-  ['typelist_3c_20set_3c_20head_5f_2e_2e_2e_20_3e_2c_20tail_5f_2e_2e_2e_20_3e_188',['TypeList&lt; Set&lt; Head_... &gt;, Tail_... &gt;',['../structMorpheus_1_1TypeList_3_01Set_3_01Head___8_8_8_01_4_00_01Tail___8_8_8_01_4.html',1,'Morpheus']]],
-  ['type_20traits_189',['Type Traits',['../group__typetraits.html',1,'']]]
+  ['set_175',['Set',['../structMorpheus_1_1Set.html',1,'Morpheus']]],
+  ['set_5ffunctor_176',['set_functor',['../structMorpheus_1_1DenseMatrix_1_1set__functor.html',1,'Morpheus::DenseMatrix&lt; ValueType, Properties &gt;::set_functor'],['../structMorpheus_1_1Impl_1_1set__functor.html',1,'Morpheus::Impl::set_functor&lt; View, ValueType &gt;']]],
+  ['set_5fvalue_177',['set_value',['../namespaceMorpheus.html#a3dea2af2fbe8ae1d3d1d263ef89e3bd1',1,'Morpheus']]],
+  ['set_5fvalues_178',['set_values',['../namespaceMorpheus.html#aa46f7d39fdcad442287ea4f159c3cb7d',1,'Morpheus']]],
+  ['sharedmemory_179',['SharedMemory',['../structMorpheus_1_1Impl_1_1Kernels_1_1SharedMemory.html',1,'Morpheus::Impl::Kernels']]],
+  ['sharedmemory_3c_20double_20_3e_180',['SharedMemory&lt; double &gt;',['../structMorpheus_1_1Impl_1_1Kernels_1_1SharedMemory_3_01double_01_4.html',1,'Morpheus::Impl::Kernels']]],
+  ['size_181',['size',['../classMorpheus_1_1DenseVector.html#af81ce5e3ac507d627726017510c06781',1,'Morpheus::DenseVector']]],
+  ['sparsematrixtag_182',['SparseMatrixTag',['../structMorpheus_1_1Impl_1_1SparseMatrixTag.html',1,'Morpheus::Impl']]],
+  ['sparsevectortag_183',['SparseVectorTag',['../structMorpheus_1_1Impl_1_1SparseVectorTag.html',1,'Morpheus::Impl']]],
+  ['storage_20format_20tags_184',['Storage Format Tags',['../group__storage__format__tags.html',1,'']]]
 ];

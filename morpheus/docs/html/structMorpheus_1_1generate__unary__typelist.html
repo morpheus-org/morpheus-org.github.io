@@ -75,7 +75,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Generates a <code><a class="el" href="structMorpheus_1_1TypeList.html" title="Compile-time type list.">TypeList</a></code> of <code><a class="el" href="structMorpheus_1_1UnaryContainer.html" title="A wrapper that constructs a new container type from ContainerType using as type arguments the types i...">UnaryContainer</a></code> where each container is a specific <a class="el" href="namespaceMorpheus.html">Morpheus</a> Container type with a variadic number of template arguments.  
+<p>Generates a <code><a class="el" href="structMorpheus_1_1TypeList.html" title="Compile-time type list.">TypeList</a></code> of <code><a class="el" href="structMorpheus_1_1UnaryContainer.html" title="A wrapper that constructs a new container type from ContainerType using as arguments the types in Typ...">UnaryContainer</a></code> where each container type is generated from each combination of types in the <code>U</code> type list.  
  <a href="structMorpheus_1_1generate__unary__typelist.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Morpheus__ContainerFactory_8hpp_source.html">Morpheus_ContainerFactory.hpp</a>&gt;</code></p>
@@ -90,7 +90,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = typename 
 <div class="textblock"><h3>template&lt;typename Container, typename U&gt;<br />
 struct Morpheus::generate_unary_typelist&lt; Container, U &gt;</h3>
 
-<p>Generates a <code><a class="el" href="structMorpheus_1_1TypeList.html" title="Compile-time type list.">TypeList</a></code> of <code><a class="el" href="structMorpheus_1_1UnaryContainer.html" title="A wrapper that constructs a new container type from ContainerType using as type arguments the types i...">UnaryContainer</a></code> where each container is a specific <a class="el" href="namespaceMorpheus.html">Morpheus</a> Container type with a variadic number of template arguments. </p>
+<p>Generates a <code><a class="el" href="structMorpheus_1_1TypeList.html" title="Compile-time type list.">TypeList</a></code> of <code><a class="el" href="structMorpheus_1_1UnaryContainer.html" title="A wrapper that constructs a new container type from ContainerType using as arguments the types in Typ...">UnaryContainer</a></code> where each container type is generated from each combination of types in the <code>U</code> type list. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Container</td><td>One of <a class="el" href="namespaceMorpheus.html">Morpheus</a> supported <code>Containers</code> </td></tr>

@@ -75,7 +75,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A wrapper that constructs a new container type from <code>ContainerType</code> using as type arguments the types in <code>TypeSet</code>.  
+<p>A wrapper that constructs a new container type from <code>ContainerType</code> using as arguments the types in <code>TypeSet</code>.  
  <a href="structMorpheus_1_1UnaryContainer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Morpheus__ContainerFactory_8hpp_source.html">Morpheus_ContainerFactory.hpp</a>&gt;</code></p>
@@ -90,9 +90,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = typename 
 <div class="textblock"><h3>template&lt;typename ContainerType, typename TypeSet&gt;<br />
 struct Morpheus::UnaryContainer&lt; ContainerType, TypeSet &gt;</h3>
 
-<p>A wrapper that constructs a new container type from <code>ContainerType</code> using as type arguments the types in <code>TypeSet</code>. </p>
-<dl class="section user"><dt>Overview</dt><dd>A wrapper that constructs a container type from a set of Type parameters. In the case where a template argument is passed as a <code><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a></code> this is ignored and not passed in the definition of the type. Note that the <code>Container</code> argument needs to specify a complete container type out of which we will be extracting which container that is and define a new type with the rest of the template arguments.</dd></dl>
-<p>Generates a <code><a class="el" href="structMorpheus_1_1UnaryContainer.html" title="A wrapper that constructs a new container type from ContainerType using as type arguments the types i...">UnaryContainer</a></code> from the arguments of the <code><a class="el" href="structMorpheus_1_1Set.html" title="Compile-time set.">Set</a></code> passed.</p>
+<p>A wrapper that constructs a new container type from <code>ContainerType</code> using as arguments the types in <code>TypeSet</code>. </p>
+<dl class="section user"><dt>Overview</dt><dd>A wrapper that constructs a container type from a set of Type parameters. In the case where a template argument is passed as a <code><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a></code> this is ignored and not passed in the definition of the type.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">ContainerType</td><td>The container type from which the new type will be generated from. </td></tr>
@@ -100,19 +99,18 @@ struct Morpheus::UnaryContainer&lt; ContainerType, TypeSet &gt;</h3>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">  #include &lt;Morpheus_Core.hpp&gt;</span></div>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;Morpheus_Core.hpp&gt;</span></div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">int</span> main(){</div>
-<div class="line">   <span class="keyword">using</span> D = <a class="code" href="structMorpheus_1_1Default.html">Morpheus::Default</a>; <span class="comment">// Short-hand for default tag</span></div>
-<div class="line">   <span class="keyword">using</span> params = <a class="code" href="structMorpheus_1_1Set.html">Morpheus::Set&lt;float, D, D, Kokkos::Serial&gt;</a>;</div>
-<div class="line">   <span class="keyword">using</span> ref = <a class="code" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector&lt;double&gt;</a>;</div>
-<div class="line">   <span class="keyword">using</span> Container = <a class="code" href="structMorpheus_1_1UnaryContainer.html">Morpheus::UnaryContainer&lt;ref, params&gt;</a>;</div>
+<div class="line"><span class="keywordtype">int</span> main(){</div>
+<div class="line"> <span class="keyword">using</span> D = <a class="code" href="structMorpheus_1_1Default.html">Morpheus::Default</a>; <span class="comment">// Short-hand for default tag</span></div>
+<div class="line"> <span class="keyword">using</span> params = <a class="code" href="structMorpheus_1_1Set.html">Morpheus::Set&lt;float, D, D, Kokkos::Serial&gt;</a>;</div>
+<div class="line"> <span class="keyword">using</span> ref = <a class="code" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector&lt;double&gt;</a>;</div>
+<div class="line"> <span class="keyword">using</span> Container = <a class="code" href="structMorpheus_1_1UnaryContainer.html">Morpheus::UnaryContainer&lt;ref, params&gt;</a>;</div>
 <div class="line"> </div>
-<div class="line">   <span class="keyword">using</span> res = <a class="code" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector&lt;float, Kokkos::Serial&gt;</a>;</div>
-<div class="line">   std::cout &lt;&lt; std::is_same&lt;Container, res&gt;::value &lt;&lt; std::endl; <span class="comment">// prints</span></div>
-<div class="line">1</div>
+<div class="line"> <span class="keyword">using</span> res = <a class="code" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector&lt;float, Kokkos::Serial&gt;</a>;</div>
+<div class="line"> std::cout &lt;&lt; std::is_same&lt;Container, res&gt;::value &lt;&lt; std::endl; <span class="comment">// prints 1</span></div>
 <div class="line"> </div>
-<div class="line">  }</div>
+<div class="line">}</div>
 </div><!-- fragment --> </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="Morpheus__ContainerFactory_8hpp_source.html">Morpheus_ContainerFactory.hpp</a></li>
@@ -120,7 +118,7 @@ struct Morpheus::UnaryContainer&lt; ContainerType, TypeSet &gt;</h3>
 </div><!-- contents -->
 <div class="ttc" id="astructMorpheus_1_1Set_html"><div class="ttname"><a href="structMorpheus_1_1Set.html">Morpheus::Set</a></div><div class="ttdoc">Compile-time set.</div><div class="ttdef"><b>Definition:</b> Morpheus_Metaprogramming.hpp:57</div></div>
 <div class="ttc" id="aclassMorpheus_1_1DenseVector_html"><div class="ttname"><a href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a></div><div class="ttdoc">The DenseVector container is a one-dimensional container that contains contiguous elements....</div><div class="ttdef"><b>Definition:</b> Morpheus_Fwd_DenseVector.hpp:30</div></div>
-<div class="ttc" id="astructMorpheus_1_1UnaryContainer_html"><div class="ttname"><a href="structMorpheus_1_1UnaryContainer.html">Morpheus::UnaryContainer</a></div><div class="ttdoc">A wrapper that constructs a new container type from ContainerType using as type arguments the types i...</div><div class="ttdef"><b>Definition:</b> Morpheus_ContainerFactory.hpp:129</div></div>
+<div class="ttc" id="astructMorpheus_1_1UnaryContainer_html"><div class="ttname"><a href="structMorpheus_1_1UnaryContainer.html">Morpheus::UnaryContainer</a></div><div class="ttdoc">A wrapper that constructs a new container type from ContainerType using as arguments the types in Typ...</div><div class="ttdef"><b>Definition:</b> Morpheus_ContainerFactory.hpp:123</div></div>
 <div class="ttc" id="astructMorpheus_1_1Default_html"><div class="ttname"><a href="structMorpheus_1_1Default.html">Morpheus::Default</a></div><div class="ttdoc">A Default tag is used to denote the use of default types.</div><div class="ttdef"><b>Definition:</b> Morpheus_ContainerFactory.hpp:42</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

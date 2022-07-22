@@ -1,22 +1,6 @@
 var searchData=
 [
-  ['has_5faccess_243',['has_access',['../structMorpheus_1_1has__access.html',1,'Morpheus']]],
-  ['has_5fdense_5fmatrix_5ftag_244',['has_dense_matrix_tag',['../classMorpheus_1_1Impl_1_1has__dense__matrix__tag.html',1,'Morpheus::Impl']]],
-  ['has_5fdense_5fvector_5ftag_245',['has_dense_vector_tag',['../classMorpheus_1_1Impl_1_1has__dense__vector__tag.html',1,'Morpheus::Impl']]],
-  ['has_5fdynamic_5fmatrix_5ftag_246',['has_dynamic_matrix_tag',['../classMorpheus_1_1Impl_1_1has__dynamic__matrix__tag.html',1,'Morpheus::Impl']]],
-  ['has_5fgeneric_5fspace_247',['has_generic_space',['../classMorpheus_1_1has__generic__space.html',1,'Morpheus']]],
-  ['has_5findex_5ftype_248',['has_index_type',['../classMorpheus_1_1has__index__type.html',1,'Morpheus']]],
-  ['has_5flayout_249',['has_layout',['../classMorpheus_1_1has__layout.html',1,'Morpheus']]],
-  ['has_5fmatrix_5ftag_250',['has_matrix_tag',['../classMorpheus_1_1Impl_1_1has__matrix__tag.html',1,'Morpheus::Impl']]],
-  ['has_5fmemory_5fspace_251',['has_memory_space',['../classMorpheus_1_1has__memory__space.html',1,'Morpheus']]],
-  ['has_5fsame_5fformat_252',['has_same_format',['../classMorpheus_1_1has__same__format.html',1,'Morpheus']]],
-  ['has_5fsame_5findex_5ftype_253',['has_same_index_type',['../classMorpheus_1_1has__same__index__type.html',1,'Morpheus']]],
-  ['has_5fsame_5flayout_254',['has_same_layout',['../classMorpheus_1_1has__same__layout.html',1,'Morpheus']]],
-  ['has_5fsame_5fmemory_5fspace_255',['has_same_memory_space',['../classMorpheus_1_1has__same__memory__space.html',1,'Morpheus']]],
-  ['has_5fsame_5fvalue_5ftype_256',['has_same_value_type',['../classMorpheus_1_1has__same__value__type.html',1,'Morpheus']]],
-  ['has_5fsparse_5fmatrix_5ftag_257',['has_sparse_matrix_tag',['../classMorpheus_1_1Impl_1_1has__sparse__matrix__tag.html',1,'Morpheus::Impl']]],
-  ['has_5fsparse_5fvector_5ftag_258',['has_sparse_vector_tag',['../classMorpheus_1_1Impl_1_1has__sparse__vector__tag.html',1,'Morpheus::Impl']]],
-  ['has_5ftag_5ftrait_259',['has_tag_trait',['../classMorpheus_1_1has__tag__trait.html',1,'Morpheus']]],
-  ['has_5fvalue_5ftype_260',['has_value_type',['../classMorpheus_1_1has__value__type.html',1,'Morpheus']]],
-  ['has_5fvector_5ftag_261',['has_vector_tag',['../classMorpheus_1_1Impl_1_1has__vector__tag.html',1,'Morpheus::Impl']]]
+  ['generate_5fbinary_5ftypelist_244',['generate_binary_typelist',['../structMorpheus_1_1generate__binary__typelist.html',1,'Morpheus']]],
+  ['generate_5funary_5ftypelist_245',['generate_unary_typelist',['../structMorpheus_1_1generate__unary__typelist.html',1,'Morpheus']]],
+  ['genericspace_246',['GenericSpace',['../structMorpheus_1_1GenericSpace.html',1,'Morpheus']]]
 ];
