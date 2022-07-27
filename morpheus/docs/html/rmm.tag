@@ -109,6 +109,314 @@
     <filename>classMorpheus_1_1CooMatrix.html</filename>
     <templarg></templarg>
     <templarg>Properties</templarg>
+    <member kind="typedef">
+      <type>Impl::ContainerTraits&lt; CooMatrix, ValueType, Properties... &gt;</type>
+      <name>traits</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>aa7cc14457039a1de139df6c15771c5d0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::type</type>
+      <name>type</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>ab2a15db3b6540417d805f0f5493bfe5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename MatrixFormatTag&lt; Morpheus::CooFormatTag &gt;::tag</type>
+      <name>tag</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a4da283479022caa6e2d3326a1de37a08</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::value_type</type>
+      <name>value_type</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a1a7605b01cec7fc4de4809659e4156b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::non_const_value_type</type>
+      <name>non_const_value_type</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a9da1d0cb1489af3ed411c20ebd63c8e7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::index_type</type>
+      <name>index_type</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a2016562cf53c66a6c331cb18d881726b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::non_const_index_type</type>
+      <name>non_const_index_type</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a78eff14ef73661c140598ae6fea4c868</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Morpheus::DenseVector&lt; index_type, index_type, array_layout, execution_space, memory_traits &gt;</type>
+      <name>index_array_type</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a92d668389d36874c7fb8a19152305a0f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Morpheus::DenseVector&lt; value_type, index_type, array_layout, execution_space, memory_traits &gt;</type>
+      <name>value_array_type</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>ad6eaf940a9fc720d06eda1ab3467683a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~CooMatrix</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a4cb7f63463b15247a095c96ab6701f5f</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CooMatrix</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>aa00bcb2546a738715936d7554bba5e8b</anchor>
+      <arglist>(const CooMatrix &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CooMatrix</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>ae9efe5a006d5ddc59a277f48da781093</anchor>
+      <arglist>(CooMatrix &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>CooMatrix &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a5ad1c0d805175c323fbbf980091a4fe9</anchor>
+      <arglist>(const CooMatrix &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>CooMatrix &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a6c46706e16c43cdeb1b21b0676bb4a74</anchor>
+      <arglist>(CooMatrix &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CooMatrix</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>ace4cbe031bc2091737e7a20bc2769488</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CooMatrix</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a9ebc9496ac7ae404f3171040b6d7a6b5</anchor>
+      <arglist>(const index_type num_rows, const index_type num_cols, const index_type num_entries)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CooMatrix</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a53dc7c370e17934d649962125e8ab0b4</anchor>
+      <arglist>(const index_type num_rows, const index_type num_cols, const index_type num_entries, IndexArray rind, IndexArray cind, ValueArray vals, typename std::enable_if&lt; is_dense_vector_format_container&lt; ValueArray &gt;::value &amp;&amp;is_dense_vector_format_container&lt; IndexArray &gt;::value &amp;&amp;!ValueArray::memory_traits::is_unmanaged &amp;&amp;!IndexArray::memory_traits::is_unmanaged &gt;::type *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CooMatrix</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a49af802f875756d423ea31dc2a737a19</anchor>
+      <arglist>(const CooMatrix&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; is_format_compatible&lt; CooMatrix, CooMatrix&lt; VR, PR... &gt;&gt;::value &gt;::type *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::enable_if&lt; is_format_compatible&lt; CooMatrix, CooMatrix&lt; VR, PR... &gt; &gt;::value, CooMatrix &amp; &gt;::type</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a2041d697f5045aae3dd1f85d2dc8e531</anchor>
+      <arglist>(const CooMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CooMatrix</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a326ae977b8855d84af4e766f19b84773</anchor>
+      <arglist>(const DynamicMatrix&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; is_dynamically_compatible&lt; CooMatrix, DynamicMatrix&lt; VR, PR... &gt;&gt;::value &gt;::type *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::enable_if&lt; is_dynamically_compatible&lt; CooMatrix, DynamicMatrix&lt; VR, PR... &gt; &gt;::value, CooMatrix &amp; &gt;::type</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a7b2ec194d872e11832784a6880391ac2</anchor>
+      <arglist>(const DynamicMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CooMatrix</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a4074b74cd7194f2e371984b93464f08a</anchor>
+      <arglist>(const MatrixType &amp;src)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>reference</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a5b6860de41dce1a8318436d2a8eaf8c7</anchor>
+      <arglist>(const MatrixType &amp;src)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resize</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>ad3bba22770fe35c848636378adf3fafe</anchor>
+      <arglist>(const index_type num_rows, const index_type num_cols, const index_type num_entries)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resize</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a534784002f83aac5d582d36532c99ad8</anchor>
+      <arglist>(const CooMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>CooMatrix &amp;</type>
+      <name>allocate</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a2ae842de5c2ae47e75e82774a84f2acf</anchor>
+      <arglist>(const CooMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sort_by_row</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a7a4d0e2ef238a05ad472a78fb4819705</anchor>
+      <arglist>(void)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sort</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>ab7e3815ae0a5b256954ae3d94b1e401e</anchor>
+      <arglist>(void)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>is_sorted_by_row</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>acbec6c0e049d7b9e16583e4b0af10ded</anchor>
+      <arglist>(void)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>is_sorted</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>ab69fcffe309e40b99bfc4a9dbee5f417</anchor>
+      <arglist>(void)</arglist>
+    </member>
+    <member kind="function">
+      <type>formats_e</type>
+      <name>format_enum</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a4129a8ae8f77f8240d2493fd4a663047</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>format_index</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>ac4cff7ee3ae0ea90ff71dc96768de994</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION index_array_reference</type>
+      <name>row_indices</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a657abae7a53c2aea6ec29ec61e9b97f2</anchor>
+      <arglist>(index_type n)</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION index_array_reference</type>
+      <name>column_indices</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a2746bee0c9aae5fca0c74b83b3514b09</anchor>
+      <arglist>(index_type n)</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION value_array_reference</type>
+      <name>values</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>adb8762ccba06bf2fb7994c5ad27c52f1</anchor>
+      <arglist>(index_type n)</arglist>
+    </member>
+    <member kind="function">
+      <type>const MORPHEUS_FORCEINLINE_FUNCTION index_array_reference</type>
+      <name>crow_indices</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a03925fe38ceec7bffb20abfd3836069f</anchor>
+      <arglist>(index_type n) const</arglist>
+    </member>
+    <member kind="function">
+      <type>const MORPHEUS_FORCEINLINE_FUNCTION index_array_reference</type>
+      <name>ccolumn_indices</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a793e049301c697b748d1d3c52572249f</anchor>
+      <arglist>(index_type n) const</arglist>
+    </member>
+    <member kind="function">
+      <type>const MORPHEUS_FORCEINLINE_FUNCTION value_array_reference</type>
+      <name>cvalues</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a4ea07399ac7807e4b163609fffd25a1b</anchor>
+      <arglist>(index_type n) const</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION index_array_type &amp;</type>
+      <name>row_indices</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a73d4add56283a54719b105b6f703666b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION index_array_type &amp;</type>
+      <name>column_indices</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a4acc605306252f9b3b171c649b53dba2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION value_array_type &amp;</type>
+      <name>values</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a0d6f2dc4e2806f05e0ab0f9437565d63</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const MORPHEUS_FORCEINLINE_FUNCTION index_array_type &amp;</type>
+      <name>crow_indices</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a3a6ade4f6542f4c262097cff0bb0e0fb</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const MORPHEUS_FORCEINLINE_FUNCTION index_array_type &amp;</type>
+      <name>ccolumn_indices</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>a906afb490e4b08141d8436be68f3fd6c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const MORPHEUS_FORCEINLINE_FUNCTION value_array_type &amp;</type>
+      <name>cvalues</name>
+      <anchorfile>classMorpheus_1_1CooMatrix.html</anchorfile>
+      <anchor>abf9e313831c26812329ac8b4c785fee8</anchor>
+      <arglist>() const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>Morpheus::Impl::copy_fn</name>
@@ -140,7 +448,6 @@
     <filename>classMorpheus_1_1DenseMatrix.html</filename>
     <templarg></templarg>
     <templarg>Properties</templarg>
-    <class kind="struct">Morpheus::DenseMatrix::set_functor</class>
   </compound>
   <compound kind="class">
     <name>DenseMatrix&lt; value_type, index_type, array_layout, execution_space, memory_traits &gt;</name>
@@ -219,6 +526,13 @@
     </member>
     <member kind="function">
       <type></type>
+      <name>~DenseVector</name>
+      <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
+      <anchor>adebea5003f4cffe808ecac634ea855a1</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
       <name>DenseVector</name>
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
       <anchor>a4a49fbc638b359f312faa4537c680257</anchor>
@@ -263,8 +577,8 @@
       <type></type>
       <name>DenseVector</name>
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
-      <anchor>a23af2de3926b18262c1a6dceda4d90af</anchor>
-      <arglist>(const size_t n, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;(memory_traits::is_unmanaged)&gt;::type *=nullptr)</arglist>
+      <anchor>adfd8ad0ed4f43dab650924cff29b3adc</anchor>
+      <arglist>(const size_t n, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;is_same_value_type&lt; value_type, ValuePtr &gt;::value &amp;&amp;memory_traits::is_unmanaged &gt;::type *=nullptr)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -272,6 +586,27 @@
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
       <anchor>a39fead6fa5ac780dd38982a5679b9bce</anchor>
       <arglist>(const size_t n, Generator rand_pool, const value_type range_low, const value_type range_high)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseVector</name>
+      <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
+      <anchor>ab61e73f7578c92fcd09c94fa3ddb6476</anchor>
+      <arglist>(const DenseVector&lt; VR, PR... &gt; &amp;src, typename std::enable_if_t&lt; is_compatible&lt; DenseVector, DenseVector&lt; VR, PR... &gt;&gt;::value &gt; *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::enable_if_t&lt; is_compatible&lt; DenseVector, DenseVector&lt; VR, PR... &gt; &gt;::value, DenseVector &amp; &gt;</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
+      <anchor>a5e4aa1c259a6525efa696d6247698cbd</anchor>
+      <arglist>(const DenseVector&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>DenseVector &amp;</type>
+      <name>allocate</name>
+      <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
+      <anchor>a4d143da5f7b73f1fc3027f69da647a95</anchor>
+      <arglist>(const DenseVector&lt; VR, PR... &gt; &amp;src)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -405,6 +740,13 @@
     </member>
     <member kind="function">
       <type></type>
+      <name>~DenseVector</name>
+      <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
+      <anchor>adebea5003f4cffe808ecac634ea855a1</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
       <name>DenseVector</name>
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
       <anchor>a4a49fbc638b359f312faa4537c680257</anchor>
@@ -435,8 +777,8 @@
       <type></type>
       <name>DenseVector</name>
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
-      <anchor>a23af2de3926b18262c1a6dceda4d90af</anchor>
-      <arglist>(const size_t n, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;(memory_traits::is_unmanaged)&gt;::type *=nullptr)</arglist>
+      <anchor>adfd8ad0ed4f43dab650924cff29b3adc</anchor>
+      <arglist>(const size_t n, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;is_same_value_type&lt; value_type, ValuePtr &gt;::value &amp;&amp;memory_traits::is_unmanaged &gt;::type *=nullptr)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -444,6 +786,13 @@
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
       <anchor>a39fead6fa5ac780dd38982a5679b9bce</anchor>
       <arglist>(const size_t n, Generator rand_pool, const value_type range_low, const value_type range_high)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseVector</name>
+      <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
+      <anchor>ab61e73f7578c92fcd09c94fa3ddb6476</anchor>
+      <arglist>(const DenseVector&lt; VR, PR... &gt; &amp;src, typename std::enable_if_t&lt; is_compatible&lt; DenseVector, DenseVector&lt; VR, PR... &gt;&gt;::value &gt; *=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>DenseVector &amp;</type>
@@ -458,6 +807,20 @@
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
       <anchor>a93f6376fdea98dbac5d7794228260f12</anchor>
       <arglist>(DenseVector &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>std::enable_if_t&lt; is_compatible&lt; DenseVector, DenseVector&lt; VR, PR... &gt; &gt;::value, DenseVector &amp; &gt;</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
+      <anchor>a5e4aa1c259a6525efa696d6247698cbd</anchor>
+      <arglist>(const DenseVector&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>DenseVector &amp;</type>
+      <name>allocate</name>
+      <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
+      <anchor>a4d143da5f7b73f1fc3027f69da647a95</anchor>
+      <arglist>(const DenseVector&lt; VR, PR... &gt; &amp;src)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -591,6 +954,13 @@
     </member>
     <member kind="function">
       <type></type>
+      <name>~DenseVector</name>
+      <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
+      <anchor>adebea5003f4cffe808ecac634ea855a1</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
       <name>DenseVector</name>
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
       <anchor>a4a49fbc638b359f312faa4537c680257</anchor>
@@ -621,8 +991,8 @@
       <type></type>
       <name>DenseVector</name>
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
-      <anchor>a23af2de3926b18262c1a6dceda4d90af</anchor>
-      <arglist>(const size_t n, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;(memory_traits::is_unmanaged)&gt;::type *=nullptr)</arglist>
+      <anchor>adfd8ad0ed4f43dab650924cff29b3adc</anchor>
+      <arglist>(const size_t n, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;is_same_value_type&lt; value_type, ValuePtr &gt;::value &amp;&amp;memory_traits::is_unmanaged &gt;::type *=nullptr)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -630,6 +1000,13 @@
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
       <anchor>a39fead6fa5ac780dd38982a5679b9bce</anchor>
       <arglist>(const size_t n, Generator rand_pool, const value_type range_low, const value_type range_high)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseVector</name>
+      <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
+      <anchor>ab61e73f7578c92fcd09c94fa3ddb6476</anchor>
+      <arglist>(const DenseVector&lt; VR, PR... &gt; &amp;src, typename std::enable_if_t&lt; is_compatible&lt; DenseVector, DenseVector&lt; VR, PR... &gt;&gt;::value &gt; *=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>DenseVector &amp;</type>
@@ -644,6 +1021,20 @@
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
       <anchor>a93f6376fdea98dbac5d7794228260f12</anchor>
       <arglist>(DenseVector &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>std::enable_if_t&lt; is_compatible&lt; DenseVector, DenseVector&lt; VR, PR... &gt; &gt;::value, DenseVector &amp; &gt;</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
+      <anchor>a5e4aa1c259a6525efa696d6247698cbd</anchor>
+      <arglist>(const DenseVector&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>DenseVector &amp;</type>
+      <name>allocate</name>
+      <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
+      <anchor>a4d143da5f7b73f1fc3027f69da647a95</anchor>
+      <arglist>(const DenseVector&lt; VR, PR... &gt; &amp;src)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1153,12 +1544,21 @@
     <templarg>Ts</templarg>
   </compound>
   <compound kind="struct">
-    <name>Morpheus::DenseMatrix::set_functor</name>
-    <filename>structMorpheus_1_1DenseMatrix_1_1set__functor.html</filename>
-  </compound>
-  <compound kind="struct">
     <name>Morpheus::Impl::set_functor</name>
     <filename>structMorpheus_1_1Impl_1_1set__functor.html</filename>
+    <templarg></templarg>
+    <templarg>Types</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>Morpheus::Impl::set_functor&lt; View, ValueType &gt;</name>
+    <filename>structMorpheus_1_1Impl_1_1set__functor_3_01View_00_01ValueType_01_4.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+  </compound>
+  <compound kind="struct">
+    <name>Morpheus::Impl::set_functor&lt; View, ValueType, IndexType &gt;</name>
+    <filename>structMorpheus_1_1Impl_1_1set__functor_3_01View_00_01ValueType_00_01IndexType_01_4.html</filename>
+    <templarg></templarg>
     <templarg></templarg>
     <templarg></templarg>
   </compound>
@@ -2017,10 +2417,17 @@
     <class kind="struct">Morpheus::cross_product&lt; TypeList&lt; Ts... &gt;, TypeList&lt; Us... &gt; &gt;</class>
   </compound>
   <compound kind="group">
+    <name>containers_2d</name>
+    <title>2D Containers</title>
+    <filename>group__containers__2d.html</filename>
+    <class kind="class">Morpheus::CooMatrix</class>
+  </compound>
+  <compound kind="group">
     <name>containers</name>
     <title>Containers</title>
     <filename>group__containers.html</filename>
     <subgroup>generic_containers</subgroup>
+    <subgroup>containers_2d</subgroup>
     <subgroup>containers_1d</subgroup>
   </compound>
   <compound kind="group">

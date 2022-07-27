@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['wrappers_404',['Wrappers',['../group__wrappers.html',1,'']]],
-  ['wrappers_20and_20tags_405',['Wrappers and Tags',['../group__wrappers__and__tags.html',1,'']]]
+  ['utilities_442',['Utilities',['../group__utilities.html',1,'']]]
 ];

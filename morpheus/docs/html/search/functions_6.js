@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['set_5fvalue_339',['set_value',['../namespaceMorpheus.html#a3dea2af2fbe8ae1d3d1d263ef89e3bd1',1,'Morpheus']]],
-  ['set_5fvalues_340',['set_values',['../namespaceMorpheus.html#aa46f7d39fdcad442287ea4f159c3cb7d',1,'Morpheus']]],
-  ['size_341',['size',['../classMorpheus_1_1DenseVector.html#af81ce5e3ac507d627726017510c06781',1,'Morpheus::DenseVector']]]
+  ['operator_28_29_366',['operator()',['../classMorpheus_1_1DenseVector.html#aaddc431aa2517a5145ae0ff39737fd9b',1,'Morpheus::DenseVector']]],
+  ['operator_3d_367',['operator=',['../classMorpheus_1_1CooMatrix.html#a5ad1c0d805175c323fbbf980091a4fe9',1,'Morpheus::CooMatrix::operator=(const CooMatrix &amp;)=default'],['../classMorpheus_1_1CooMatrix.html#a6c46706e16c43cdeb1b21b0676bb4a74',1,'Morpheus::CooMatrix::operator=(CooMatrix &amp;&amp;)=default'],['../classMorpheus_1_1CooMatrix.html#a2041d697f5045aae3dd1f85d2dc8e531',1,'Morpheus::CooMatrix::operator=(const CooMatrix&lt; VR, PR... &gt; &amp;src)'],['../classMorpheus_1_1CooMatrix.html#a7b2ec194d872e11832784a6880391ac2',1,'Morpheus::CooMatrix::operator=(const DynamicMatrix&lt; VR, PR... &gt; &amp;src)'],['../classMorpheus_1_1CooMatrix.html#a5b6860de41dce1a8318436d2a8eaf8c7',1,'Morpheus::CooMatrix::operator=(const MatrixType &amp;src)=delete'],['../classMorpheus_1_1DenseVector.html#a6204565ffb63c90a2636bc7a761bd92b',1,'Morpheus::DenseVector::operator=(const DenseVector &amp;)=default'],['../classMorpheus_1_1DenseVector.html#a93f6376fdea98dbac5d7794228260f12',1,'Morpheus::DenseVector::operator=(DenseVector &amp;&amp;)=default'],['../classMorpheus_1_1DenseVector.html#a5e4aa1c259a6525efa696d6247698cbd',1,'Morpheus::DenseVector::operator=(const DenseVector&lt; VR, PR... &gt; &amp;src)']]],
+  ['operator_5b_5d_368',['operator[]',['../classMorpheus_1_1DenseVector.html#abf6b1bcaa2bde7622ecbbcca18d7aa73',1,'Morpheus::DenseVector']]]
 ];

@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Morpheus::is_compatible\l\< T1, T2 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMorpheus_1_1is__compatible.html",tooltip="Checks if the two types are compatible containers i.e are in the same memory space and have the same ..."];
+}

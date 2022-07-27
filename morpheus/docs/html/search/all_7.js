@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['generate_5fbinary_5ftypelist_46',['generate_binary_typelist',['../structMorpheus_1_1generate__binary__typelist.html',1,'Morpheus']]],
-  ['generate_5funary_5ftypelist_47',['generate_unary_typelist',['../structMorpheus_1_1generate__unary__typelist.html',1,'Morpheus']]],
-  ['generic_20containers_48',['Generic Containers',['../group__generic__containers.html',1,'']]],
-  ['genericspace_49',['GenericSpace',['../structMorpheus_1_1GenericSpace.html',1,'Morpheus']]],
-  ['get_5fdiagonal_50',['get_diagonal',['../namespaceMorpheus.html#a15b3f14de5849f379c2938ac6032f635',1,'Morpheus']]]
+  ['format_5fenum_51',['format_enum',['../classMorpheus_1_1CooMatrix.html#a4129a8ae8f77f8240d2493fd4a663047',1,'Morpheus::CooMatrix']]],
+  ['format_5findex_52',['format_index',['../classMorpheus_1_1CooMatrix.html#ac4cff7ee3ae0ea90ff71dc96768de994',1,'Morpheus::CooMatrix']]],
+  ['formatconversionexception_53',['FormatConversionException',['../classMorpheus_1_1FormatConversionException.html',1,'Morpheus']]]
 ];

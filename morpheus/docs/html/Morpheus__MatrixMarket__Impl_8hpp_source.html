@@ -179,30 +179,30 @@ $(function() {
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  std::istringstream(tokens[1]) &gt;&gt; num_cols;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  std::istringstream(tokens[2]) &gt;&gt; num_entries;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  coo.resize(num_rows, num_cols, num_entries);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#ad3bba22770fe35c848636378adf3fafe">resize</a>(num_rows, num_cols, num_entries);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <a class="code" href="structMorpheus_1_1IndexType.html">IndexType</a> num_entries_read = 0;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="comment">// read file contents</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">if</span> (banner.type == <span class="stringliteral">&quot;pattern&quot;</span>) {</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">while</span> (num_entries_read &lt; coo.nnnz() &amp;&amp; !input.eof()) {</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      input &gt;&gt; coo.row_indices(num_entries_read);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      input &gt;&gt; coo.column_indices(num_entries_read);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      input &gt;&gt; coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">row_indices</a>(num_entries_read);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      input &gt;&gt; coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">column_indices</a>(num_entries_read);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      num_entries_read++;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">auto</span> values_begin = coo.values().data();</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">auto</span> values_end   = coo.values().data() + coo.values().size();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">auto</span> values_begin = coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#adb8762ccba06bf2fb7994c5ad27c52f1">values</a>().data();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">auto</span> values_end   = coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#adb8762ccba06bf2fb7994c5ad27c52f1">values</a>().data() + coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#adb8762ccba06bf2fb7994c5ad27c52f1">values</a>().size();</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    std::fill(values_begin, values_end, ValueType(1));</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (banner.type == <span class="stringliteral">&quot;real&quot;</span> || banner.type == <span class="stringliteral">&quot;integer&quot;</span>) {</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">while</span> (num_entries_read &lt; coo.nnnz() &amp;&amp; !input.eof()) {</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      ValueType real;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      input &gt;&gt; coo.row_indices(num_entries_read);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      input &gt;&gt; coo.column_indices(num_entries_read);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      input &gt;&gt; coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">row_indices</a>(num_entries_read);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      input &gt;&gt; coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">column_indices</a>(num_entries_read);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      input &gt;&gt; real;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      coo.values(num_entries_read) = real;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#adb8762ccba06bf2fb7994c5ad27c52f1">values</a>(num_entries_read) = real;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      num_entries_read++;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (banner.type == <span class="stringliteral">&quot;complex&quot;</span>) {</div>
@@ -220,16 +220,16 @@ $(function() {
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="comment">// check validity of row and column index data</span></div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordflow">if</span> (coo.nnnz() &gt; 0) {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keyword">auto</span> row_indices_begin = coo.row_indices().data();</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keyword">auto</span> row_indices_end = coo.row_indices().data() + coo.row_indices().size();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keyword">auto</span> row_indices_begin = coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">row_indices</a>().data();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keyword">auto</span> row_indices_end = coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">row_indices</a>().data() + coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">row_indices</a>().size();</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    IndexType min_row_index =</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        *std::min_element(row_indices_begin, row_indices_end);</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    IndexType max_row_index =</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        *std::max_element(row_indices_begin, row_indices_end);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keyword">auto</span> column_indices_begin = coo.column_indices().data();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keyword">auto</span> column_indices_begin = coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">column_indices</a>().data();</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keyword">auto</span> column_indices_end =</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        coo.column_indices().data() + coo.column_indices().size();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">column_indices</a>().data() + coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">column_indices</a>().size();</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    IndexType min_col_index =</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        *std::min_element(column_indices_begin, column_indices_end);</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    IndexType max_col_index =</div>
@@ -248,8 +248,8 @@ $(function() {
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="comment">// convert base-1 indices to base-0</span></div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordflow">for</span> (IndexType n = 0; n &lt; coo.nnnz(); n++) {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    coo.row_indices(n) -= 1;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    coo.column_indices(n) -= 1;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">row_indices</a>(n) -= 1;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">column_indices</a>(n) -= 1;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  }</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="comment">// expand symmetric formats to &quot;general&quot; format</span></div>
@@ -257,7 +257,7 @@ $(function() {
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    IndexType off_diagonals = 0;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">for</span> (IndexType n = 0; n &lt; coo.nnnz(); n++)</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <span class="keywordflow">if</span> (coo.row_indices(n) != coo.column_indices(n)) off_diagonals++;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <span class="keywordflow">if</span> (coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">row_indices</a>(n) != coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">column_indices</a>(n)) off_diagonals++;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    IndexType general_num_entries = coo.nnnz() + off_diagonals;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
@@ -269,16 +269,16 @@ $(function() {
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      <span class="keywordflow">for</span> (IndexType n = 0; n &lt; coo.nnnz(); n++) {</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="comment">// copy entry over</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        general.row_indices(nnz)    = coo.row_indices(n);</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        general.column_indices(nnz) = coo.column_indices(n);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        general.values(nnz)         = coo.values(n);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        general.row_indices(nnz)    = coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">row_indices</a>(n);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        general.column_indices(nnz) = coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">column_indices</a>(n);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        general.values(nnz)         = coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#adb8762ccba06bf2fb7994c5ad27c52f1">values</a>(n);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        nnz++;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="comment">// duplicate off-diagonals</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">if</span> (coo.row_indices(n) != coo.column_indices(n)) {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;          general.row_indices(nnz)    = coo.column_indices(n);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;          general.column_indices(nnz) = coo.row_indices(n);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;          general.values(nnz)         = coo.values(n);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">if</span> (coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">row_indices</a>(n) != coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">column_indices</a>(n)) {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;          general.row_indices(nnz)    = coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">column_indices</a>(n);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;          general.column_indices(nnz) = coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">row_indices</a>(n);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;          general.values(nnz)         = coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#adb8762ccba06bf2fb7994c5ad27c52f1">values</a>(n);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;          nnz++;</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        }</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      }</div>
@@ -426,9 +426,9 @@ $(function() {
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;         &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; size_t(coo.nnnz()); i++) {</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    output &lt;&lt; (coo.row_indices(i) + 1) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    output &lt;&lt; (coo.column_indices(i) + 1) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    Morpheus::Io::Impl::write_value(output, coo.values(i));</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    output &lt;&lt; (coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">row_indices</a>(i) + 1) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    output &lt;&lt; (coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">column_indices</a>(i) + 1) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    Morpheus::Io::Impl::write_value(output, coo.<a class="code" href="classMorpheus_1_1CooMatrix.html#adb8762ccba06bf2fb7994c5ad27c52f1">values</a>(i));</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    output &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  }</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;}</div>
@@ -501,7 +501,9 @@ $(function() {
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_MATRIX_MARKET_IMPL_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassMorpheus_1_1CooMatrix_html_a2746bee0c9aae5fca0c74b83b3514b09"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">Morpheus::CooMatrix::column_indices</a></div><div class="ttdeci">MORPHEUS_FORCEINLINE_FUNCTION index_array_reference column_indices(index_type n)</div><div class="ttdoc">Returns a reference to the column index of the matrix with index n.</div><div class="ttdef"><b>Definition:</b> Morpheus_CooMatrix.hpp:458</div></div>
 <div class="ttc" id="astructMorpheus_1_1ValueType_html"><div class="ttname"><a href="structMorpheus_1_1ValueType.html">Morpheus::ValueType</a></div><div class="ttdoc">A wrapper that checks if the provided type is a scalar type.</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:92</div></div>
+<div class="ttc" id="aclassMorpheus_1_1CooMatrix_html_adb8762ccba06bf2fb7994c5ad27c52f1"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html#adb8762ccba06bf2fb7994c5ad27c52f1">Morpheus::CooMatrix::values</a></div><div class="ttdeci">MORPHEUS_FORCEINLINE_FUNCTION value_array_reference values(index_type n)</div><div class="ttdoc">Returns a reference to the value of the matrix with index n.</div><div class="ttdef"><b>Definition:</b> Morpheus_CooMatrix.hpp:468</div></div>
 <div class="ttc" id="agroup__typetraits_html_ga27ca23776f88aaad08396bcb4db3b54a"><div class="ttname"><a href="group__typetraits.html#ga27ca23776f88aaad08396bcb4db3b54a">Morpheus::is_host_memory_space_v</a></div><div class="ttdeci">constexpr bool is_host_memory_space_v</div><div class="ttdoc">Short-hand to is_host_memory_space.</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:1126</div></div>
 <div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
 <div class="ttc" id="astructMorpheus_1_1Io_1_1Impl_1_1matrix__market__banner_html"><div class="ttname"><a href="structMorpheus_1_1Io_1_1Impl_1_1matrix__market__banner.html">Morpheus::Io::Impl::matrix_market_banner</a></div><div class="ttdef"><b>Definition:</b> Morpheus_MatrixMarket_Impl.hpp:66</div></div>
@@ -510,7 +512,9 @@ $(function() {
 <div class="ttc" id="aclassMorpheus_1_1IOException_html"><div class="ttname"><a href="classMorpheus_1_1IOException.html">Morpheus::IOException</a></div><div class="ttdef"><b>Definition:</b> Morpheus_Exceptions.hpp:51</div></div>
 <div class="ttc" id="astructMorpheus_1_1IndexType_html"><div class="ttname"><a href="structMorpheus_1_1IndexType.html">Morpheus::IndexType</a></div><div class="ttdoc">A wrapper that checks if the provided type is an integral type.</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:80</div></div>
 <div class="ttc" id="aclassMorpheus_1_1DenseMatrix_html"><div class="ttname"><a href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a></div><div class="ttdef"><b>Definition:</b> Morpheus_Fwd_DenseMatrix.hpp:29</div></div>
-<div class="ttc" id="aclassMorpheus_1_1CooMatrix_html"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a></div><div class="ttdef"><b>Definition:</b> Morpheus_Fwd_CooMatrix.hpp:29</div></div>
+<div class="ttc" id="aclassMorpheus_1_1CooMatrix_html_a657abae7a53c2aea6ec29ec61e9b97f2"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">Morpheus::CooMatrix::row_indices</a></div><div class="ttdeci">MORPHEUS_FORCEINLINE_FUNCTION index_array_reference row_indices(index_type n)</div><div class="ttdoc">Returns a reference to the row index of the matrix with index n.</div><div class="ttdef"><b>Definition:</b> Morpheus_CooMatrix.hpp:446</div></div>
+<div class="ttc" id="aclassMorpheus_1_1CooMatrix_html_ad3bba22770fe35c848636378adf3fafe"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html#ad3bba22770fe35c848636378adf3fafe">Morpheus::CooMatrix::resize</a></div><div class="ttdeci">void resize(const index_type num_rows, const index_type num_cols, const index_type num_entries)</div><div class="ttdoc">Resizes CooMatrix with shape of (num_rows, num_cols) and sets number of non-zero entries to num_entri...</div><div class="ttdef"><b>Definition:</b> Morpheus_CooMatrix.hpp:359</div></div>
+<div class="ttc" id="aclassMorpheus_1_1CooMatrix_html"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a></div><div class="ttdoc">Implementation of the Coordinate (COO) Sparse Matrix Format Representation.</div><div class="ttdef"><b>Definition:</b> Morpheus_Fwd_CooMatrix.hpp:29</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

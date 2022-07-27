@@ -72,38 +72,36 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classMorpheus_1_1CooMatrix-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Morpheus::CooMatrix&lt; ValueType, Properties &gt; Class Template Reference</div>  </div>
+<div class="title">Morpheus::CooMatrix&lt; ValueType, Properties &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__containers.html">Containers</a> &raquo; <a class="el" href="group__containers__2d.html">2D Containers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implementation of the Coordinate (COO) Sparse Matrix Format Representation.  
+ <a href="classMorpheus_1_1CooMatrix.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Morpheus__CooMatrix_8hpp_source.html">Morpheus_CooMatrix.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa7cc14457039a1de139df6c15771c5d0"><td class="memItemLeft" align="right" valign="top"><a id="aa7cc14457039a1de139df6c15771c5d0"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>traits</b> = <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
+<tr class="memitem:aa7cc14457039a1de139df6c15771c5d0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#aa7cc14457039a1de139df6c15771c5d0">traits</a> = <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
 <tr class="separator:aa7cc14457039a1de139df6c15771c5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2a15db3b6540417d805f0f5493bfe5c"><td class="memItemLeft" align="right" valign="top"><a id="ab2a15db3b6540417d805f0f5493bfe5c"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = typename traits::type</td></tr>
+<tr class="memitem:ab2a15db3b6540417d805f0f5493bfe5c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">type</a> = typename traits::type</td></tr>
 <tr class="separator:ab2a15db3b6540417d805f0f5493bfe5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdd77a2297075ff7738a0a96628392b0"><td class="memItemLeft" align="right" valign="top"><a id="acdd77a2297075ff7738a0a96628392b0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> = <a class="el" href="classMorpheus_1_1Impl_1_1MatrixBase.html">Impl::MatrixBase</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
 <tr class="separator:acdd77a2297075ff7738a0a96628392b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4da283479022caa6e2d3326a1de37a08"><td class="memItemLeft" align="right" valign="top"><a id="a4da283479022caa6e2d3326a1de37a08"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>tag</b> = typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt; <a class="el" href="structMorpheus_1_1CooFormatTag.html">Morpheus::CooFormatTag</a> &gt;::tag</td></tr>
+<tr class="memitem:a4da283479022caa6e2d3326a1de37a08"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a4da283479022caa6e2d3326a1de37a08">tag</a> = typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt; <a class="el" href="structMorpheus_1_1CooFormatTag.html">Morpheus::CooFormatTag</a> &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#a4da283479022caa6e2d3326a1de37a08">tag</a></td></tr>
 <tr class="separator:a4da283479022caa6e2d3326a1de37a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a7605b01cec7fc4de4809659e4156b1"><td class="memItemLeft" align="right" valign="top"><a id="a1a7605b01cec7fc4de4809659e4156b1"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td></tr>
+<tr class="memitem:a1a7605b01cec7fc4de4809659e4156b1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a1a7605b01cec7fc4de4809659e4156b1">value_type</a> = typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td></tr>
 <tr class="separator:a1a7605b01cec7fc4de4809659e4156b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9da1d0cb1489af3ed411c20ebd63c8e7"><td class="memItemLeft" align="right" valign="top"><a id="a9da1d0cb1489af3ed411c20ebd63c8e7"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>non_const_value_type</b> = typename traits::non_const_value_type</td></tr>
+<tr class="memitem:a9da1d0cb1489af3ed411c20ebd63c8e7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a9da1d0cb1489af3ed411c20ebd63c8e7">non_const_value_type</a> = typename traits::non_const_value_type</td></tr>
 <tr class="separator:a9da1d0cb1489af3ed411c20ebd63c8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b916b820fa94a4551a49006ea9d5722"><td class="memItemLeft" align="right" valign="top"><a id="a3b916b820fa94a4551a49006ea9d5722"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = typename traits::index_type</td></tr>
 <tr class="separator:a3b916b820fa94a4551a49006ea9d5722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2016562cf53c66a6c331cb18d881726b"><td class="memItemLeft" align="right" valign="top"><a id="a2016562cf53c66a6c331cb18d881726b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>index_type</b> = typename traits::index_type</td></tr>
+<tr class="memitem:a2016562cf53c66a6c331cb18d881726b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> = typename traits::index_type</td></tr>
 <tr class="separator:a2016562cf53c66a6c331cb18d881726b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78eff14ef73661c140598ae6fea4c868"><td class="memItemLeft" align="right" valign="top"><a id="a78eff14ef73661c140598ae6fea4c868"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>non_const_index_type</b> = typename traits::non_const_index_type</td></tr>
+<tr class="memitem:a78eff14ef73661c140598ae6fea4c868"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a78eff14ef73661c140598ae6fea4c868">non_const_index_type</a> = typename traits::non_const_index_type</td></tr>
 <tr class="separator:a78eff14ef73661c140598ae6fea4c868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d0cf017b37146578d09eb10a003db4"><td class="memItemLeft" align="right" valign="top"><a id="a74d0cf017b37146578d09eb10a003db4"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>array_layout</b> = typename traits::array_layout</td></tr>
@@ -135,153 +133,1513 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = type
 <tr class="memitem:ac0229e188b53c2630e1fbc2392950b66"><td class="memItemLeft" align="right" valign="top"><a id="ac0229e188b53c2630e1fbc2392950b66"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b> = typename traits::const_reference</td></tr>
 <tr class="separator:ac0229e188b53c2630e1fbc2392950b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92d668389d36874c7fb8a19152305a0f"><td class="memItemLeft" align="right" valign="top"><a id="a92d668389d36874c7fb8a19152305a0f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>index_array_type</b> = <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt; index_type, index_type, array_layout, execution_space, memory_traits &gt;</td></tr>
+<tr class="memitem:a92d668389d36874c7fb8a19152305a0f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f">index_array_type</a> = <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>, <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>, array_layout, execution_space, memory_traits &gt;</td></tr>
 <tr class="separator:a92d668389d36874c7fb8a19152305a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c8256ff1775643f19c62ee01c2a40dd"><td class="memItemLeft" align="right" valign="top"><a id="a4c8256ff1775643f19c62ee01c2a40dd"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_index_array_type</b> = const <a class="el" href="classMorpheus_1_1DenseVector.html">index_array_type</a></td></tr>
-<tr class="separator:a4c8256ff1775643f19c62ee01c2a40dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf3bd658e683ee50c42f5795438dd743"><td class="memItemLeft" align="right" valign="top"><a id="aaf3bd658e683ee50c42f5795438dd743"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>index_array_pointer</b> = typename index_array_type::value_array_pointer</td></tr>
 <tr class="separator:aaf3bd658e683ee50c42f5795438dd743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a374d62dcc5b34002dd0159dbcac222a8"><td class="memItemLeft" align="right" valign="top"><a id="a374d62dcc5b34002dd0159dbcac222a8"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>index_array_reference</b> = typename index_array_type::value_array_reference</td></tr>
 <tr class="separator:a374d62dcc5b34002dd0159dbcac222a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc4187d0b98379f7bd6ed7e61df2113d"><td class="memItemLeft" align="right" valign="top"><a id="acc4187d0b98379f7bd6ed7e61df2113d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_index_array_reference</b> = const index_array_reference</td></tr>
-<tr class="separator:acc4187d0b98379f7bd6ed7e61df2113d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6eaf940a9fc720d06eda1ab3467683a"><td class="memItemLeft" align="right" valign="top"><a id="ad6eaf940a9fc720d06eda1ab3467683a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_array_type</b> = <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt; value_type, index_type, array_layout, execution_space, memory_traits &gt;</td></tr>
+<tr class="memitem:ad6eaf940a9fc720d06eda1ab3467683a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#ad6eaf940a9fc720d06eda1ab3467683a">value_array_type</a> = <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html#a1a7605b01cec7fc4de4809659e4156b1">value_type</a>, <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>, array_layout, execution_space, memory_traits &gt;</td></tr>
 <tr class="separator:ad6eaf940a9fc720d06eda1ab3467683a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add3a83c53ab5c8aedc903a3cbd1be449"><td class="memItemLeft" align="right" valign="top"><a id="add3a83c53ab5c8aedc903a3cbd1be449"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_value_array_type</b> = const <a class="el" href="classMorpheus_1_1DenseVector.html">value_array_type</a></td></tr>
-<tr class="separator:add3a83c53ab5c8aedc903a3cbd1be449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af857da4eb88d2fbe9e1b9fc9461e5767"><td class="memItemLeft" align="right" valign="top"><a id="af857da4eb88d2fbe9e1b9fc9461e5767"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>value_array_pointer</b> = typename value_array_type::value_array_pointer</td></tr>
 <tr class="separator:af857da4eb88d2fbe9e1b9fc9461e5767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af774a9f9e37302ba84d24e9cc781e77c"><td class="memItemLeft" align="right" valign="top"><a id="af774a9f9e37302ba84d24e9cc781e77c"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>value_array_reference</b> = typename value_array_type::value_array_reference</td></tr>
 <tr class="separator:af774a9f9e37302ba84d24e9cc781e77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb2e47036578c3ec19071afb5ccb6b80"><td class="memItemLeft" align="right" valign="top"><a id="acb2e47036578c3ec19071afb5ccb6b80"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_value_array_reference</b> = const value_array_reference</td></tr>
-<tr class="separator:acb2e47036578c3ec19071afb5ccb6b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4cb7f63463b15247a095c96ab6701f5f"><td class="memItemLeft" align="right" valign="top"><a id="a4cb7f63463b15247a095c96ab6701f5f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a4cb7f63463b15247a095c96ab6701f5f">~CooMatrix</a> ()=default</td></tr>
+<tr class="memdesc:a4cb7f63463b15247a095c96ab6701f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> destructor. <br /></td></tr>
+<tr class="separator:a4cb7f63463b15247a095c96ab6701f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa00bcb2546a738715936d7554bba5e8b"><td class="memItemLeft" align="right" valign="top"><a id="aa00bcb2546a738715936d7554bba5e8b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CooMatrix</b> (const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;)=default</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#aa00bcb2546a738715936d7554bba5e8b">CooMatrix</a> (const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;)=default</td></tr>
+<tr class="memdesc:aa00bcb2546a738715936d7554bba5e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> copy contructor (shallow copy) of a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container from another <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:aa00bcb2546a738715936d7554bba5e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9efe5a006d5ddc59a277f48da781093"><td class="memItemLeft" align="right" valign="top"><a id="ae9efe5a006d5ddc59a277f48da781093"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CooMatrix</b> (<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;&amp;)=default</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#ae9efe5a006d5ddc59a277f48da781093">CooMatrix</a> (<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:ae9efe5a006d5ddc59a277f48da781093"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> move contructor (shallow copy) of a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container from another <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:ae9efe5a006d5ddc59a277f48da781093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ad1c0d805175c323fbbf980091a4fe9"><td class="memItemLeft" align="right" valign="top"><a id="a5ad1c0d805175c323fbbf980091a4fe9"></a>
-<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;)=default</td></tr>
+<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a5ad1c0d805175c323fbbf980091a4fe9">operator=</a> (const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;)=default</td></tr>
+<tr class="memdesc:a5ad1c0d805175c323fbbf980091a4fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> copy assignment (shallow copy) of a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container from another <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:a5ad1c0d805175c323fbbf980091a4fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c46706e16c43cdeb1b21b0676bb4a74"><td class="memItemLeft" align="right" valign="top"><a id="a6c46706e16c43cdeb1b21b0676bb4a74"></a>
-<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;&amp;)=default</td></tr>
+<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a6c46706e16c43cdeb1b21b0676bb4a74">operator=</a> (<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:a6c46706e16c43cdeb1b21b0676bb4a74"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> move assignment (shallow copy) of a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container from another <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:a6c46706e16c43cdeb1b21b0676bb4a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ebc9496ac7ae404f3171040b6d7a6b5"><td class="memItemLeft" align="right" valign="top"><a id="a9ebc9496ac7ae404f3171040b6d7a6b5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CooMatrix</b> (const index_type num_rows, const index_type num_cols, const index_type num_entries)</td></tr>
+<tr class="memitem:ace4cbe031bc2091737e7a20bc2769488"><td class="memItemLeft" align="right" valign="top"><a id="ace4cbe031bc2091737e7a20bc2769488"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#ace4cbe031bc2091737e7a20bc2769488">CooMatrix</a> ()</td></tr>
+<tr class="memdesc:ace4cbe031bc2091737e7a20bc2769488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> object. <br /></td></tr>
+<tr class="separator:ace4cbe031bc2091737e7a20bc2769488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ebc9496ac7ae404f3171040b6d7a6b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a9ebc9496ac7ae404f3171040b6d7a6b5">CooMatrix</a> (const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> num_rows, const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> num_cols, const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> num_entries)</td></tr>
+<tr class="memdesc:a9ebc9496ac7ae404f3171040b6d7a6b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> object with shape (num_rows, num_cols) and number of non-zeros equal to num_entries.  <a href="classMorpheus_1_1CooMatrix.html#a9ebc9496ac7ae404f3171040b6d7a6b5">More...</a><br /></td></tr>
 <tr class="separator:a9ebc9496ac7ae404f3171040b6d7a6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a47089c7da947317525c8b03a2a91c3"><td class="memTemplParams" colspan="2"><a id="a8a47089c7da947317525c8b03a2a91c3"></a>
+<tr class="memitem:aad925d78f69391a9e6a059d23c305550"><td class="memTemplParams" colspan="2"><a id="aad925d78f69391a9e6a059d23c305550"></a>
 template&lt;typename ValuePtr , typename IndexPtr &gt; </td></tr>
-<tr class="memitem:a8a47089c7da947317525c8b03a2a91c3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CooMatrix</b> (const index_type num_rows, const index_type num_cols, const index_type num_entries, IndexPtr rind_ptr, IndexPtr cind_ptr, ValuePtr vals_ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;std::is_pointer&lt; IndexPtr &gt;::value &gt;::type *=nullptr)</td></tr>
-<tr class="separator:a8a47089c7da947317525c8b03a2a91c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fc33d964ef67b3ee26248ce8dcbb6b9"><td class="memTemplParams" colspan="2"><a id="a7fc33d964ef67b3ee26248ce8dcbb6b9"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a7fc33d964ef67b3ee26248ce8dcbb6b9"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CooMatrix</b> (const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, typename <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt;::type &gt;::value &gt;::type *=nullptr)</td></tr>
-<tr class="separator:a7fc33d964ef67b3ee26248ce8dcbb6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a456328dcec5fddd2ea34d4d7af4685e9"><td class="memTemplParams" colspan="2"><a id="a456328dcec5fddd2ea34d4d7af4685e9"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a456328dcec5fddd2ea34d4d7af4685e9"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, typename <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt;::type &gt;::value, <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
-<tr class="separator:a456328dcec5fddd2ea34d4d7af4685e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae91bc153eba5e629360de805363387ee"><td class="memTemplParams" colspan="2"><a id="ae91bc153eba5e629360de805363387ee"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:ae91bc153eba5e629360de805363387ee"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CooMatrix</b> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, typename <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;::type &gt;::value &gt;::type *=nullptr)</td></tr>
-<tr class="separator:ae91bc153eba5e629360de805363387ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a015cf1279fecfd0ecf8a0247aace8041"><td class="memTemplParams" colspan="2"><a id="a015cf1279fecfd0ecf8a0247aace8041"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a015cf1279fecfd0ecf8a0247aace8041"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, typename <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;::type &gt;::value, <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
-<tr class="separator:a015cf1279fecfd0ecf8a0247aace8041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4074b74cd7194f2e371984b93464f08a"><td class="memTemplParams" colspan="2"><a id="a4074b74cd7194f2e371984b93464f08a"></a>
-template&lt;typename MatrixType &gt; </td></tr>
-<tr class="memitem:a4074b74cd7194f2e371984b93464f08a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CooMatrix</b> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memitem:aad925d78f69391a9e6a059d23c305550"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CooMatrix</b> (const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> num_rows, const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> num_cols, const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> num_entries, IndexPtr rind_ptr, IndexPtr cind_ptr, ValuePtr vals_ptr, typename std::enable_if&lt;(std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__same__value__type.html">is_same_value_type</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html#a1a7605b01cec7fc4de4809659e4156b1">value_type</a>, ValuePtr &gt;::value &amp;&amp;memory_traits::is_unmanaged) &amp;&amp;(std::is_pointer&lt; IndexPtr &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__same__index__type.html">is_same_index_type</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>, IndexPtr &gt;::value &amp;&amp;memory_traits::is_unmanaged)&gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">type</a> *=nullptr)</td></tr>
+<tr class="separator:aad925d78f69391a9e6a059d23c305550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53dc7c370e17934d649962125e8ab0b4"><td class="memTemplParams" colspan="2">template&lt;typename ValueArray , typename IndexArray &gt; </td></tr>
+<tr class="memitem:a53dc7c370e17934d649962125e8ab0b4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a53dc7c370e17934d649962125e8ab0b4">CooMatrix</a> (const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> num_rows, const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> num_cols, const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> num_entries, IndexArray rind, IndexArray cind, ValueArray vals, typename std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dense__vector__format__container.html">is_dense_vector_format_container</a>&lt; ValueArray &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__dense__vector__format__container.html">is_dense_vector_format_container</a>&lt; IndexArray &gt;::value &amp;&amp;!ValueArray::memory_traits::is_unmanaged &amp;&amp;!IndexArray::memory_traits::is_unmanaged &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:a53dc7c370e17934d649962125e8ab0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> object with shape (num_rows, num_cols) and number of non-zeros equal to num_entries and assign the indices and values from <code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> arrays.  <a href="classMorpheus_1_1CooMatrix.html#a53dc7c370e17934d649962125e8ab0b4">More...</a><br /></td></tr>
+<tr class="separator:a53dc7c370e17934d649962125e8ab0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49af802f875756d423ea31dc2a737a19"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:a49af802f875756d423ea31dc2a737a19"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a49af802f875756d423ea31dc2a737a19">CooMatrix</a> (const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:a49af802f875756d423ea31dc2a737a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a>.  <a href="classMorpheus_1_1CooMatrix.html#a49af802f875756d423ea31dc2a737a19">More...</a><br /></td></tr>
+<tr class="separator:a49af802f875756d423ea31dc2a737a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2041d697f5045aae3dd1f85d2dc8e531"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:a2041d697f5045aae3dd1f85d2dc8e531"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt; &gt;::value, <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp; &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a2041d697f5045aae3dd1f85d2dc8e531">operator=</a> (const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:a2041d697f5045aae3dd1f85d2dc8e531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a>.  <a href="classMorpheus_1_1CooMatrix.html#a2041d697f5045aae3dd1f85d2dc8e531">More...</a><br /></td></tr>
+<tr class="separator:a2041d697f5045aae3dd1f85d2dc8e531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a326ae977b8855d84af4e766f19b84773"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:a326ae977b8855d84af4e766f19b84773"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a326ae977b8855d84af4e766f19b84773">CooMatrix</a> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:a326ae977b8855d84af4e766f19b84773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>.  <a href="classMorpheus_1_1CooMatrix.html#a326ae977b8855d84af4e766f19b84773">More...</a><br /></td></tr>
+<tr class="separator:a326ae977b8855d84af4e766f19b84773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2ec194d872e11832784a6880391ac2"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:a7b2ec194d872e11832784a6880391ac2"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &gt;::value, <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp; &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a7b2ec194d872e11832784a6880391ac2">operator=</a> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:a7b2ec194d872e11832784a6880391ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>.  <a href="classMorpheus_1_1CooMatrix.html#a7b2ec194d872e11832784a6880391ac2">More...</a><br /></td></tr>
+<tr class="separator:a7b2ec194d872e11832784a6880391ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4074b74cd7194f2e371984b93464f08a"><td class="memTemplParams" colspan="2">template&lt;typename MatrixType &gt; </td></tr>
+<tr class="memitem:a4074b74cd7194f2e371984b93464f08a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a4074b74cd7194f2e371984b93464f08a">CooMatrix</a> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memdesc:a4074b74cd7194f2e371984b93464f08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations.  <a href="classMorpheus_1_1CooMatrix.html#a4074b74cd7194f2e371984b93464f08a">More...</a><br /></td></tr>
 <tr class="separator:a4074b74cd7194f2e371984b93464f08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b6860de41dce1a8318436d2a8eaf8c7"><td class="memTemplParams" colspan="2"><a id="a5b6860de41dce1a8318436d2a8eaf8c7"></a>
-template&lt;typename MatrixType &gt; </td></tr>
-<tr class="memitem:a5b6860de41dce1a8318436d2a8eaf8c7"><td class="memTemplItemLeft" align="right" valign="top">reference&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memitem:a5b6860de41dce1a8318436d2a8eaf8c7"><td class="memTemplParams" colspan="2">template&lt;typename MatrixType &gt; </td></tr>
+<tr class="memitem:a5b6860de41dce1a8318436d2a8eaf8c7"><td class="memTemplItemLeft" align="right" valign="top">reference&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a5b6860de41dce1a8318436d2a8eaf8c7">operator=</a> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memdesc:a5b6860de41dce1a8318436d2a8eaf8c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign to <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations.  <a href="classMorpheus_1_1CooMatrix.html#a5b6860de41dce1a8318436d2a8eaf8c7">More...</a><br /></td></tr>
 <tr class="separator:a5b6860de41dce1a8318436d2a8eaf8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3bba22770fe35c848636378adf3fafe"><td class="memItemLeft" align="right" valign="top"><a id="ad3bba22770fe35c848636378adf3fafe"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (const index_type num_rows, const index_type num_cols, const index_type num_entries)</td></tr>
+<tr class="memitem:ad3bba22770fe35c848636378adf3fafe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#ad3bba22770fe35c848636378adf3fafe">resize</a> (const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> num_rows, const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> num_cols, const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> num_entries)</td></tr>
+<tr class="memdesc:ad3bba22770fe35c848636378adf3fafe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> with shape of (num_rows, num_cols) and sets number of non-zero entries to num_entries.  <a href="classMorpheus_1_1CooMatrix.html#ad3bba22770fe35c848636378adf3fafe">More...</a><br /></td></tr>
 <tr class="separator:ad3bba22770fe35c848636378adf3fafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a534784002f83aac5d582d36532c99ad8"><td class="memTemplParams" colspan="2"><a id="a534784002f83aac5d582d36532c99ad8"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a534784002f83aac5d582d36532c99ad8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>resize</b> (const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memitem:a534784002f83aac5d582d36532c99ad8"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:a534784002f83aac5d582d36532c99ad8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a534784002f83aac5d582d36532c99ad8">resize</a> (const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:a534784002f83aac5d582d36532c99ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> with the shape and number of non-zero entries of another <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> with different parameters.  <a href="classMorpheus_1_1CooMatrix.html#a534784002f83aac5d582d36532c99ad8">More...</a><br /></td></tr>
 <tr class="separator:a534784002f83aac5d582d36532c99ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ae842de5c2ae47e75e82774a84f2acf"><td class="memTemplParams" colspan="2"><a id="a2ae842de5c2ae47e75e82774a84f2acf"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a2ae842de5c2ae47e75e82774a84f2acf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>allocate</b> (const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memitem:a2ae842de5c2ae47e75e82774a84f2acf"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:a2ae842de5c2ae47e75e82774a84f2acf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a2ae842de5c2ae47e75e82774a84f2acf">allocate</a> (const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:a2ae842de5c2ae47e75e82774a84f2acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory from another <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container with different properties.  <a href="classMorpheus_1_1CooMatrix.html#a2ae842de5c2ae47e75e82774a84f2acf">More...</a><br /></td></tr>
 <tr class="separator:a2ae842de5c2ae47e75e82774a84f2acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a4d0e2ef238a05ad472a78fb4819705"><td class="memItemLeft" align="right" valign="top"><a id="a7a4d0e2ef238a05ad472a78fb4819705"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sort_by_row</b> (void)</td></tr>
+<tr class="memitem:a7a4d0e2ef238a05ad472a78fb4819705"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a7a4d0e2ef238a05ad472a78fb4819705">sort_by_row</a> (void)</td></tr>
+<tr class="memdesc:a7a4d0e2ef238a05ad472a78fb4819705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts matrix elements by row index.  <a href="classMorpheus_1_1CooMatrix.html#a7a4d0e2ef238a05ad472a78fb4819705">More...</a><br /></td></tr>
 <tr class="separator:a7a4d0e2ef238a05ad472a78fb4819705"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a11f7a957ff9b34b6f978cca6bcc3a3"><td class="memItemLeft" align="right" valign="top"><a id="a0a11f7a957ff9b34b6f978cca6bcc3a3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sort_by_row_and_column</b> (void)</td></tr>
-<tr class="separator:a0a11f7a957ff9b34b6f978cca6bcc3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbec6c0e049d7b9e16583e4b0af10ded"><td class="memItemLeft" align="right" valign="top"><a id="acbec6c0e049d7b9e16583e4b0af10ded"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_sorted_by_row</b> (void)</td></tr>
+<tr class="memitem:ab7e3815ae0a5b256954ae3d94b1e401e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#ab7e3815ae0a5b256954ae3d94b1e401e">sort</a> (void)</td></tr>
+<tr class="memdesc:ab7e3815ae0a5b256954ae3d94b1e401e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts matrix elements by row index first and then by column index.  <a href="classMorpheus_1_1CooMatrix.html#ab7e3815ae0a5b256954ae3d94b1e401e">More...</a><br /></td></tr>
+<tr class="separator:ab7e3815ae0a5b256954ae3d94b1e401e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbec6c0e049d7b9e16583e4b0af10ded"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#acbec6c0e049d7b9e16583e4b0af10ded">is_sorted_by_row</a> (void)</td></tr>
+<tr class="memdesc:acbec6c0e049d7b9e16583e4b0af10ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether matrix elements are sorted by row index.  <a href="classMorpheus_1_1CooMatrix.html#acbec6c0e049d7b9e16583e4b0af10ded">More...</a><br /></td></tr>
 <tr class="separator:acbec6c0e049d7b9e16583e4b0af10ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab69fcffe309e40b99bfc4a9dbee5f417"><td class="memItemLeft" align="right" valign="top"><a id="ab69fcffe309e40b99bfc4a9dbee5f417"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_sorted</b> (void)</td></tr>
+<tr class="memitem:ab69fcffe309e40b99bfc4a9dbee5f417"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#ab69fcffe309e40b99bfc4a9dbee5f417">is_sorted</a> (void)</td></tr>
+<tr class="memdesc:ab69fcffe309e40b99bfc4a9dbee5f417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether matrix elements are sorted by row and column index.  <a href="classMorpheus_1_1CooMatrix.html#ab69fcffe309e40b99bfc4a9dbee5f417">More...</a><br /></td></tr>
 <tr class="separator:ab69fcffe309e40b99bfc4a9dbee5f417"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4129a8ae8f77f8240d2493fd4a663047"><td class="memItemLeft" align="right" valign="top"><a id="a4129a8ae8f77f8240d2493fd4a663047"></a>
-formats_e&#160;</td><td class="memItemRight" valign="bottom"><b>format_enum</b> () const</td></tr>
+<tr class="memitem:a4129a8ae8f77f8240d2493fd4a663047"><td class="memItemLeft" align="right" valign="top">formats_e&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a4129a8ae8f77f8240d2493fd4a663047">format_enum</a> () const</td></tr>
+<tr class="memdesc:a4129a8ae8f77f8240d2493fd4a663047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the format enum assigned to the <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container.  <a href="classMorpheus_1_1CooMatrix.html#a4129a8ae8f77f8240d2493fd4a663047">More...</a><br /></td></tr>
 <tr class="separator:a4129a8ae8f77f8240d2493fd4a663047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4cff7ee3ae0ea90ff71dc96768de994"><td class="memItemLeft" align="right" valign="top"><a id="ac4cff7ee3ae0ea90ff71dc96768de994"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>format_index</b> () const</td></tr>
+<tr class="memitem:ac4cff7ee3ae0ea90ff71dc96768de994"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#ac4cff7ee3ae0ea90ff71dc96768de994">format_index</a> () const</td></tr>
+<tr class="memdesc:ac4cff7ee3ae0ea90ff71dc96768de994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the equivalent index to the format enum assigned to the <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container.  <a href="classMorpheus_1_1CooMatrix.html#ac4cff7ee3ae0ea90ff71dc96768de994">More...</a><br /></td></tr>
 <tr class="separator:ac4cff7ee3ae0ea90ff71dc96768de994"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a657abae7a53c2aea6ec29ec61e9b97f2"><td class="memItemLeft" align="right" valign="top"><a id="a657abae7a53c2aea6ec29ec61e9b97f2"></a>
-MORPHEUS_FORCEINLINE_FUNCTION index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>row_indices</b> (index_type n)</td></tr>
+<tr class="memitem:a657abae7a53c2aea6ec29ec61e9b97f2"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">row_indices</a> (<a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> n)</td></tr>
+<tr class="memdesc:a657abae7a53c2aea6ec29ec61e9b97f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the row index of the matrix with index <code>n</code>.  <a href="classMorpheus_1_1CooMatrix.html#a657abae7a53c2aea6ec29ec61e9b97f2">More...</a><br /></td></tr>
 <tr class="separator:a657abae7a53c2aea6ec29ec61e9b97f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2746bee0c9aae5fca0c74b83b3514b09"><td class="memItemLeft" align="right" valign="top"><a id="a2746bee0c9aae5fca0c74b83b3514b09"></a>
-MORPHEUS_FORCEINLINE_FUNCTION index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>column_indices</b> (index_type n)</td></tr>
+<tr class="memitem:a2746bee0c9aae5fca0c74b83b3514b09"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">column_indices</a> (<a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> n)</td></tr>
+<tr class="memdesc:a2746bee0c9aae5fca0c74b83b3514b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the column index of the matrix with index <code>n</code>.  <a href="classMorpheus_1_1CooMatrix.html#a2746bee0c9aae5fca0c74b83b3514b09">More...</a><br /></td></tr>
 <tr class="separator:a2746bee0c9aae5fca0c74b83b3514b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb8762ccba06bf2fb7994c5ad27c52f1"><td class="memItemLeft" align="right" valign="top"><a id="adb8762ccba06bf2fb7994c5ad27c52f1"></a>
-MORPHEUS_FORCEINLINE_FUNCTION value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>values</b> (index_type n)</td></tr>
+<tr class="memitem:adb8762ccba06bf2fb7994c5ad27c52f1"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#adb8762ccba06bf2fb7994c5ad27c52f1">values</a> (<a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> n)</td></tr>
+<tr class="memdesc:adb8762ccba06bf2fb7994c5ad27c52f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the value of the matrix with index <code>n</code>.  <a href="classMorpheus_1_1CooMatrix.html#adb8762ccba06bf2fb7994c5ad27c52f1">More...</a><br /></td></tr>
 <tr class="separator:adb8762ccba06bf2fb7994c5ad27c52f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab74135455709b287532a555e725aa546"><td class="memItemLeft" align="right" valign="top"><a id="ab74135455709b287532a555e725aa546"></a>
-MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>crow_indices</b> (index_type n) const</td></tr>
-<tr class="separator:ab74135455709b287532a555e725aa546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb5245bbf01980bbe0e284f87766abcf"><td class="memItemLeft" align="right" valign="top"><a id="adb5245bbf01980bbe0e284f87766abcf"></a>
-MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>ccolumn_indices</b> (index_type n) const</td></tr>
-<tr class="separator:adb5245bbf01980bbe0e284f87766abcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19abc152b50896dade05b5f18e107fa3"><td class="memItemLeft" align="right" valign="top"><a id="a19abc152b50896dade05b5f18e107fa3"></a>
-MORPHEUS_FORCEINLINE_FUNCTION const_value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>cvalues</b> (index_type n) const</td></tr>
-<tr class="separator:a19abc152b50896dade05b5f18e107fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73d4add56283a54719b105b6f703666b"><td class="memItemLeft" align="right" valign="top"><a id="a73d4add56283a54719b105b6f703666b"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>row_indices</b> ()</td></tr>
+<tr class="memitem:a03925fe38ceec7bffb20abfd3836069f"><td class="memItemLeft" align="right" valign="top">const MORPHEUS_FORCEINLINE_FUNCTION index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a03925fe38ceec7bffb20abfd3836069f">crow_indices</a> (<a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> n) const</td></tr>
+<tr class="memdesc:a03925fe38ceec7bffb20abfd3836069f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the row index of the matrix with index <code>n</code>.  <a href="classMorpheus_1_1CooMatrix.html#a03925fe38ceec7bffb20abfd3836069f">More...</a><br /></td></tr>
+<tr class="separator:a03925fe38ceec7bffb20abfd3836069f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793e049301c697b748d1d3c52572249f"><td class="memItemLeft" align="right" valign="top">const MORPHEUS_FORCEINLINE_FUNCTION index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a793e049301c697b748d1d3c52572249f">ccolumn_indices</a> (<a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> n) const</td></tr>
+<tr class="memdesc:a793e049301c697b748d1d3c52572249f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the column index of the matrix with index <code>n</code>.  <a href="classMorpheus_1_1CooMatrix.html#a793e049301c697b748d1d3c52572249f">More...</a><br /></td></tr>
+<tr class="separator:a793e049301c697b748d1d3c52572249f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea07399ac7807e4b163609fffd25a1b"><td class="memItemLeft" align="right" valign="top">const MORPHEUS_FORCEINLINE_FUNCTION value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a4ea07399ac7807e4b163609fffd25a1b">cvalues</a> (<a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> n) const</td></tr>
+<tr class="memdesc:a4ea07399ac7807e4b163609fffd25a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the value of the matrix with index <code>n</code>.  <a href="classMorpheus_1_1CooMatrix.html#a4ea07399ac7807e4b163609fffd25a1b">More...</a><br /></td></tr>
+<tr class="separator:a4ea07399ac7807e4b163609fffd25a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d4add56283a54719b105b6f703666b"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f">index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a73d4add56283a54719b105b6f703666b">row_indices</a> ()</td></tr>
+<tr class="memdesc:a73d4add56283a54719b105b6f703666b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the row indices of the matrix.  <a href="classMorpheus_1_1CooMatrix.html#a73d4add56283a54719b105b6f703666b">More...</a><br /></td></tr>
 <tr class="separator:a73d4add56283a54719b105b6f703666b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4acc605306252f9b3b171c649b53dba2"><td class="memItemLeft" align="right" valign="top"><a id="a4acc605306252f9b3b171c649b53dba2"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>column_indices</b> ()</td></tr>
+<tr class="memitem:a4acc605306252f9b3b171c649b53dba2"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f">index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a4acc605306252f9b3b171c649b53dba2">column_indices</a> ()</td></tr>
+<tr class="memdesc:a4acc605306252f9b3b171c649b53dba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the column indices of the matrix.  <a href="classMorpheus_1_1CooMatrix.html#a4acc605306252f9b3b171c649b53dba2">More...</a><br /></td></tr>
 <tr class="separator:a4acc605306252f9b3b171c649b53dba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d6f2dc4e2806f05e0ab0f9437565d63"><td class="memItemLeft" align="right" valign="top"><a id="a0d6f2dc4e2806f05e0ab0f9437565d63"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>values</b> ()</td></tr>
+<tr class="memitem:a0d6f2dc4e2806f05e0ab0f9437565d63"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CooMatrix.html#ad6eaf940a9fc720d06eda1ab3467683a">value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a0d6f2dc4e2806f05e0ab0f9437565d63">values</a> ()</td></tr>
+<tr class="memdesc:a0d6f2dc4e2806f05e0ab0f9437565d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the values of the matrix.  <a href="classMorpheus_1_1CooMatrix.html#a0d6f2dc4e2806f05e0ab0f9437565d63">More...</a><br /></td></tr>
 <tr class="separator:a0d6f2dc4e2806f05e0ab0f9437565d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5ac7b15f39e207a5cfbfc321f3689c1"><td class="memItemLeft" align="right" valign="top"><a id="aa5ac7b15f39e207a5cfbfc321f3689c1"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>crow_indices</b> () const</td></tr>
-<tr class="separator:aa5ac7b15f39e207a5cfbfc321f3689c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65790687c130ebee8ccf5ba9d2ea2127"><td class="memItemLeft" align="right" valign="top"><a id="a65790687c130ebee8ccf5ba9d2ea2127"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ccolumn_indices</b> () const</td></tr>
-<tr class="separator:a65790687c130ebee8ccf5ba9d2ea2127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a714ea5e860cf645bc4d94899b4100dcd"><td class="memItemLeft" align="right" valign="top"><a id="a714ea5e860cf645bc4d94899b4100dcd"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>cvalues</b> () const</td></tr>
-<tr class="separator:a714ea5e860cf645bc4d94899b4100dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a6ade4f6542f4c262097cff0bb0e0fb"><td class="memItemLeft" align="right" valign="top">const MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f">index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a3a6ade4f6542f4c262097cff0bb0e0fb">crow_indices</a> () const</td></tr>
+<tr class="memdesc:a3a6ade4f6542f4c262097cff0bb0e0fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the row indices of the matrix.  <a href="classMorpheus_1_1CooMatrix.html#a3a6ade4f6542f4c262097cff0bb0e0fb">More...</a><br /></td></tr>
+<tr class="separator:a3a6ade4f6542f4c262097cff0bb0e0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906afb490e4b08141d8436be68f3fd6c"><td class="memItemLeft" align="right" valign="top">const MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f">index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#a906afb490e4b08141d8436be68f3fd6c">ccolumn_indices</a> () const</td></tr>
+<tr class="memdesc:a906afb490e4b08141d8436be68f3fd6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the column indices of the matrix.  <a href="classMorpheus_1_1CooMatrix.html#a906afb490e4b08141d8436be68f3fd6c">More...</a><br /></td></tr>
+<tr class="separator:a906afb490e4b08141d8436be68f3fd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf9e313831c26812329ac8b4c785fee8"><td class="memItemLeft" align="right" valign="top">const MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CooMatrix.html#ad6eaf940a9fc720d06eda1ab3467683a">value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CooMatrix.html#abf9e313831c26812329ac8b4c785fee8">cvalues</a> () const</td></tr>
+<tr class="memdesc:abf9e313831c26812329ac8b4c785fee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the values of the matrix.  <a href="classMorpheus_1_1CooMatrix.html#abf9e313831c26812329ac8b4c785fee8">More...</a><br /></td></tr>
+<tr class="separator:abf9e313831c26812329ac8b4c785fee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class ValueType, class... Properties&gt;<br />
+class Morpheus::CooMatrix&lt; ValueType, Properties &gt;</h3>
+
+<p>Implementation of the Coordinate (COO) Sparse Matrix Format Representation. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname"><a class="el" href="structMorpheus_1_1ValueType.html" title="A wrapper that checks if the provided type is a scalar type.">ValueType</a></td><td>Type of values to store </td></tr>
+    <tr><td class="paramname">Properties</td><td>Optional properties to modify the behaviour of the container. Sensible defaults are selected based on the configuration. Please refer to <a class="el" href="Morpheus__ContainerTraits_8hpp_source.html">impl/Morpheus_ContainerTraits.hpp</a> to find out more about the valid properties.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Overview</dt><dd>The <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container is a two-dimensional container that represents a sparse matrix. This container is the implementation of the Coordinate Format (COO), that is also known as the "triplet" format because it stores pairs of "ijv" of the matrix. In general, it is a fast and convenient format for constructing sparse matrices. It is a polymorphic container in the sense that it can store scalar or integer type values, on host or device depending how the template parameters are selected.</dd></dl>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;Morpheus_Core.hpp&gt;</span></div>
+<div class="line"><span class="comment">// Matrix to Build</span></div>
+<div class="line"><span class="comment">// [1 * 2]</span></div>
+<div class="line"><span class="comment">// [* * 3]</span></div>
+<div class="line"><span class="comment">// [* 4 *]</span></div>
+<div class="line"><span class="keywordtype">int</span> main(){</div>
+<div class="line"> <span class="keyword">using</span> Matrix = <a class="code" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix&lt;double, Kokkos::HostSpace&gt;</a>;</div>
+<div class="line"> <span class="keyword">using</span> <a class="code" href="classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f">index_array_type</a> = <span class="keyword">typename</span> Matrix::index_array_type;</div>
+<div class="line"> <span class="keyword">using</span> <a class="code" href="classMorpheus_1_1CooMatrix.html#ad6eaf940a9fc720d06eda1ab3467683a">value_array_type</a> = <span class="keyword">typename</span> Matrix::value_array_type;</div>
+<div class="line"> </div>
+<div class="line"> <a class="code" href="classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f">index_array_type</a> i(4, 0), j(4, 0);</div>
+<div class="line"> <a class="code" href="classMorpheus_1_1CooMatrix.html#ad6eaf940a9fc720d06eda1ab3467683a">value_array_type</a> v(4,0);</div>
+<div class="line"> </div>
+<div class="line"> i[0] = 0; j[0] = 0; v[0] = 1;</div>
+<div class="line"> i[1] = 0; j[1] = 2; v[1] = 2;</div>
+<div class="line"> i[2] = 1; j[2] = 2; v[2] = 3;</div>
+<div class="line"> i[3] = 2; j[3] = 1; v[3] = 4;</div>
+<div class="line"> </div>
+<div class="line"> <span class="comment">// Construct the matrix from i,j,v</span></div>
+<div class="line"> <a class="code" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix&lt;double, Kokkos::HostSpace&gt;</a> A(3, 3, 4, i, j, v);</div>
+<div class="line"> </div>
+<div class="line"> Morpheus::print(A); <span class="comment">// prints A</span></div>
+<div class="line">}</div>
+</div><!-- fragment --> </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a92d668389d36874c7fb8a19152305a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d668389d36874c7fb8a19152305a0f">&#9670;&nbsp;</a></span>index_array_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f">index_array_type</a> =  <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt;<a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>, <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>, array_layout, execution_space, memory_traits&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of <code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> that holds the index_type data </p>
+
+</div>
+</div>
+<a id="a2016562cf53c66a6c331cb18d881726b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2016562cf53c66a6c331cb18d881726b">&#9670;&nbsp;</a></span>index_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a> =  typename traits::index_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of the indices held by the container - can be const </p>
+
+</div>
+</div>
+<a id="a78eff14ef73661c140598ae6fea4c868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78eff14ef73661c140598ae6fea4c868">&#9670;&nbsp;</a></span>non_const_index_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#a78eff14ef73661c140598ae6fea4c868">non_const_index_type</a> =  typename traits::non_const_index_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The non-constant type of the indices held by the container </p>
+
+</div>
+</div>
+<a id="a9da1d0cb1489af3ed411c20ebd63c8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9da1d0cb1489af3ed411c20ebd63c8e7">&#9670;&nbsp;</a></span>non_const_value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#a9da1d0cb1489af3ed411c20ebd63c8e7">non_const_value_type</a> =  typename traits::non_const_value_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The non-constant type of the values held by the container </p>
+
+</div>
+</div>
+<a id="a4da283479022caa6e2d3326a1de37a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4da283479022caa6e2d3326a1de37a08">&#9670;&nbsp;</a></span>tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#a4da283479022caa6e2d3326a1de37a08">tag</a> =  typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt;<a class="el" href="structMorpheus_1_1CooFormatTag.html">Morpheus::CooFormatTag</a>&gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#a4da283479022caa6e2d3326a1de37a08">tag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The tag associated specificaly to the particular container </p>
+
+</div>
+</div>
+<a id="aa7cc14457039a1de139df6c15771c5d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7cc14457039a1de139df6c15771c5d0">&#9670;&nbsp;</a></span>traits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#aa7cc14457039a1de139df6c15771c5d0">traits</a> =  <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt;<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The traits associated with the particular container </p>
+
+</div>
+</div>
+<a id="ab2a15db3b6540417d805f0f5493bfe5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2a15db3b6540417d805f0f5493bfe5c">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">type</a> =  typename traits::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The complete type of the container </p>
+
+</div>
+</div>
+<a id="ad6eaf940a9fc720d06eda1ab3467683a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6eaf940a9fc720d06eda1ab3467683a">&#9670;&nbsp;</a></span>value_array_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#ad6eaf940a9fc720d06eda1ab3467683a">value_array_type</a> =  <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt;<a class="el" href="classMorpheus_1_1CooMatrix.html#a1a7605b01cec7fc4de4809659e4156b1">value_type</a>, <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>, array_layout, execution_space, memory_traits&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of <code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> that holds the value_type data </p>
+
+</div>
+</div>
+<a id="a1a7605b01cec7fc4de4809659e4156b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a7605b01cec7fc4de4809659e4156b1">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#a1a7605b01cec7fc4de4809659e4156b1">value_type</a> =  typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of the values held by the container - can be const </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9ebc9496ac7ae404f3171040b6d7a6b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ebc9496ac7ae404f3171040b6d7a6b5">&#9670;&nbsp;</a></span>CooMatrix() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_entries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> object with shape (num_rows, num_cols) and number of non-zeros equal to num_entries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_rows</td><td>Number of rows of the matrix. </td></tr>
+    <tr><td class="paramname">num_cols</td><td>Number of columns of the matrix. </td></tr>
+    <tr><td class="paramname">num_entries</td><td>Number of non-zero values in the matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a53dc7c370e17934d649962125e8ab0b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53dc7c370e17934d649962125e8ab0b4">&#9670;&nbsp;</a></span>CooMatrix() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;typename ValueArray , typename IndexArray &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_entries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IndexArray&#160;</td>
+          <td class="paramname"><em>rind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IndexArray&#160;</td>
+          <td class="paramname"><em>cind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValueArray&#160;</td>
+          <td class="paramname"><em>vals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dense__vector__format__container.html">is_dense_vector_format_container</a>&lt; ValueArray &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__dense__vector__format__container.html">is_dense_vector_format_container</a>&lt; IndexArray &gt;::value &amp;&amp;!ValueArray::memory_traits::is_unmanaged &amp;&amp;!IndexArray::memory_traits::is_unmanaged &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">type</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> object with shape (num_rows, num_cols) and number of non-zeros equal to num_entries and assign the indices and values from <code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> arrays. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ValueArray</td><td>Value type <a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a> type. </td></tr>
+    <tr><td class="paramname">IndexArray</td><td>Index type <a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a> type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_rows</td><td>Number of rows of the matrix. </td></tr>
+    <tr><td class="paramname">num_cols</td><td>Number of columns of the matrix. </td></tr>
+    <tr><td class="paramname">num_entries</td><td>Number of non-zero values in the matrix. </td></tr>
+    <tr><td class="paramname">rind</td><td><code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> containing the row indices of the matrix. </td></tr>
+    <tr><td class="paramname">cind</td><td><code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> containing the column indices of the matrix. </td></tr>
+    <tr><td class="paramname">vals</td><td><code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> containing the values of the matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a49af802f875756d423ea31dc2a737a19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49af802f875756d423ea31dc2a737a19">&#9670;&nbsp;</a></span>CooMatrix() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;, <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">type</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a>. </p>
+<dl class="section user"><dt>Constructs a CooMatrix from another compatible CooMatrix i.e a</dt><dd>matrix that satisfies the <code><a class="el" href="structMorpheus_1_1is__format__compatible.html" title="Checks if the two types are format compatible containers i.e are compatible containers and have the s...">is_format_compatible</a></code> check.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of Values the Other Matrix holds. </td></tr>
+    <tr><td class="paramname">PR</td><td>Properties of the Other Matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The matrix we are constructing from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a326ae977b8855d84af4e766f19b84773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a326ae977b8855d84af4e766f19b84773">&#9670;&nbsp;</a></span>CooMatrix() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">type</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>. </p>
+<dl class="section user"><dt>Overview</dt><dd>Constructs a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> i.e a matrix that satisfies the <code><a class="el" href="classMorpheus_1_1is__dynamically__compatible.html" title="Checks if the two types are dynamically compatible containers i.e are compatible containers and at le...">is_dynamically_compatible</a></code> check. Note that when the active type of the dynamic matrix is different from the concrete type, this will result in an exception thrown.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of Values the Other Matrix holds. </td></tr>
+    <tr><td class="paramname">PR</td><td>Properties of the Other Matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The matrix we are constructing from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4074b74cd7194f2e371984b93464f08a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4074b74cd7194f2e371984b93464f08a">&#9670;&nbsp;</a></span>CooMatrix() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const MatrixType &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MatrixType</td><td>Any of the supported storage formats. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source container. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2ae842de5c2ae47e75e82774a84f2acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae842de5c2ae47e75e82774a84f2acf">&#9670;&nbsp;</a></span>allocate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&amp; <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::allocate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allocates memory from another <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container with different properties. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Value Type of the container we are allocating from. </td></tr>
+    <tr><td class="paramname">PR</td><td>Optional properties of the container we are allocating from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The <code><a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a></code> container we are allocating from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a906afb490e4b08141d8436be68f3fd6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906afb490e4b08141d8436be68f3fd6c">&#9670;&nbsp;</a></span>ccolumn_indices() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f">index_array_type</a>&amp; <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::ccolumn_indices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a const-reference to the column indices of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>index_array_type&amp; A const-reference to the column indices. </dd></dl>
+
+</div>
+</div>
+<a id="a793e049301c697b748d1d3c52572249f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a793e049301c697b748d1d3c52572249f">&#9670;&nbsp;</a></span>ccolumn_indices() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const MORPHEUS_FORCEINLINE_FUNCTION index_array_reference <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::ccolumn_indices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a const-reference to the column index of the matrix with index <code>n</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Index of the value to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Column index at index <code>n</code> </dd></dl>
+
+</div>
+</div>
+<a id="a4acc605306252f9b3b171c649b53dba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4acc605306252f9b3b171c649b53dba2">&#9670;&nbsp;</a></span>column_indices() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f">index_array_type</a>&amp; <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::column_indices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the column indices of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>index_array_type&amp; A reference to the column indices. </dd></dl>
+
+</div>
+</div>
+<a id="a2746bee0c9aae5fca0c74b83b3514b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2746bee0c9aae5fca0c74b83b3514b09">&#9670;&nbsp;</a></span>column_indices() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION index_array_reference <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::column_indices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the column index of the matrix with index <code>n</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Index of the value to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Column index at index <code>n</code> </dd></dl>
+
+</div>
+</div>
+<a id="a3a6ade4f6542f4c262097cff0bb0e0fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a6ade4f6542f4c262097cff0bb0e0fb">&#9670;&nbsp;</a></span>crow_indices() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f">index_array_type</a>&amp; <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::crow_indices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a const-reference to the row indices of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>const index_array_type&amp; A const reference to the row indices. </dd></dl>
+
+</div>
+</div>
+<a id="a03925fe38ceec7bffb20abfd3836069f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03925fe38ceec7bffb20abfd3836069f">&#9670;&nbsp;</a></span>crow_indices() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const MORPHEUS_FORCEINLINE_FUNCTION index_array_reference <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::crow_indices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a const-reference to the row index of the matrix with index <code>n</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Index of the value to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Row index at index <code>n</code> </dd></dl>
+
+</div>
+</div>
+<a id="abf9e313831c26812329ac8b4c785fee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9e313831c26812329ac8b4c785fee8">&#9670;&nbsp;</a></span>cvalues() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CooMatrix.html#ad6eaf940a9fc720d06eda1ab3467683a">value_array_type</a>&amp; <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::cvalues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the values of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>values_array_type&amp; A reference to the values. </dd></dl>
+
+</div>
+</div>
+<a id="a4ea07399ac7807e4b163609fffd25a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea07399ac7807e4b163609fffd25a1b">&#9670;&nbsp;</a></span>cvalues() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const MORPHEUS_FORCEINLINE_FUNCTION value_array_reference <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::cvalues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a const-reference to the value of the matrix with index <code>n</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Index of the value to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value of the element at index <code>n</code> </dd></dl>
+
+</div>
+</div>
+<a id="a4129a8ae8f77f8240d2493fd4a663047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4129a8ae8f77f8240d2493fd4a663047">&#9670;&nbsp;</a></span>format_enum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">formats_e <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::format_enum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the format enum assigned to the <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container. </p>
+<dl class="section return"><dt>Returns</dt><dd>formats_e The format enum </dd></dl>
+
+</div>
+</div>
+<a id="ac4cff7ee3ae0ea90ff71dc96768de994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4cff7ee3ae0ea90ff71dc96768de994">&#9670;&nbsp;</a></span>format_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::format_index </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the equivalent index to the format enum assigned to the <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> container. </p>
+<dl class="section return"><dt>Returns</dt><dd>int The equivalent index to <code>format_e</code> </dd></dl>
+
+</div>
+</div>
+<a id="ab69fcffe309e40b99bfc4a9dbee5f417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab69fcffe309e40b99bfc4a9dbee5f417">&#9670;&nbsp;</a></span>is_sorted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::is_sorted </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines whether matrix elements are sorted by row and column index. </p>
+
+</div>
+</div>
+<a id="acbec6c0e049d7b9e16583e4b0af10ded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbec6c0e049d7b9e16583e4b0af10ded">&#9670;&nbsp;</a></span>is_sorted_by_row()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::is_sorted_by_row </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines whether matrix elements are sorted by row index. </p>
+
+</div>
+</div>
+<a id="a2041d697f5045aae3dd1f85d2dc8e531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2041d697f5045aae3dd1f85d2dc8e531">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt;<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt;VR, PR...&gt; &gt;::value, <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;&gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">type</a> <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a>. </p>
+<dl class="section user"><dt>Overview</dt><dd>Assigns a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> i.e a matrix that satisfies the <code><a class="el" href="structMorpheus_1_1is__format__compatible.html" title="Checks if the two types are format compatible containers i.e are compatible containers and have the s...">is_format_compatible</a></code> check.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of Values the Other Matrix holds. </td></tr>
+    <tr><td class="paramname">PR</td><td>Properties of the Other Matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The matrix we are assigning from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7b2ec194d872e11832784a6880391ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b2ec194d872e11832784a6880391ac2">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt;<a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt;VR, PR...&gt; &gt;::value, <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a> &amp;&gt;::<a class="el" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">type</a> <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>. </p>
+<dl class="section user"><dt>Overview</dt><dd>Assigns a <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> i.e a matrix that satisfies the <code><a class="el" href="classMorpheus_1_1is__dynamically__compatible.html" title="Checks if the two types are dynamically compatible containers i.e are compatible containers and at le...">is_dynamically_compatible</a></code> check. Note that when the active type of the dynamic matrix is different from the concrete type, this will result in an exception thrown.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of Values the Other Matrix holds. </td></tr>
+    <tr><td class="paramname">PR</td><td>Properties of the Other Matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The matrix we are assigning from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5b6860de41dce1a8318436d2a8eaf8c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6860de41dce1a8318436d2a8eaf8c7">&#9670;&nbsp;</a></span>operator=() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">reference <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const MatrixType &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assign to <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MatrixType</td><td>Any of the supported storage formats. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source container. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a534784002f83aac5d582d36532c99ad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a534784002f83aac5d582d36532c99ad8">&#9670;&nbsp;</a></span>resize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CooMatrix.html">CooMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resizes <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> with the shape and number of non-zero entries of another <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> with different parameters. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of values the source matrix stores. </td></tr>
+    <tr><td class="paramname">PR</td><td>Other properties of source matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> we are resizing from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad3bba22770fe35c848636378adf3fafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3bba22770fe35c848636378adf3fafe">&#9670;&nbsp;</a></span>resize() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_entries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resizes <a class="el" href="classMorpheus_1_1CooMatrix.html" title="Implementation of the Coordinate (COO) Sparse Matrix Format Representation.">CooMatrix</a> with shape of (num_rows, num_cols) and sets number of non-zero entries to num_entries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_rows</td><td>Number of rows of resized matrix. </td></tr>
+    <tr><td class="paramname">num_cols</td><td>Number of columns of resized matrix. </td></tr>
+    <tr><td class="paramname">num_entries</td><td>Number of non-zero entries in resized matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a73d4add56283a54719b105b6f703666b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d4add56283a54719b105b6f703666b">&#9670;&nbsp;</a></span>row_indices() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f">index_array_type</a>&amp; <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::row_indices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the row indices of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>index_array_type&amp; A reference to the row indices. </dd></dl>
+
+</div>
+</div>
+<a id="a657abae7a53c2aea6ec29ec61e9b97f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a657abae7a53c2aea6ec29ec61e9b97f2">&#9670;&nbsp;</a></span>row_indices() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION index_array_reference <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::row_indices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the row index of the matrix with index <code>n</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Index of the value to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Row index at index <code>n</code> </dd></dl>
+
+</div>
+</div>
+<a id="ab7e3815ae0a5b256954ae3d94b1e401e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e3815ae0a5b256954ae3d94b1e401e">&#9670;&nbsp;</a></span>sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::sort </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sorts matrix elements by row index first and then by column index. </p>
+
+</div>
+</div>
+<a id="a7a4d0e2ef238a05ad472a78fb4819705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a4d0e2ef238a05ad472a78fb4819705">&#9670;&nbsp;</a></span>sort_by_row()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::sort_by_row </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sorts matrix elements by row index. </p>
+
+</div>
+</div>
+<a id="a0d6f2dc4e2806f05e0ab0f9437565d63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d6f2dc4e2806f05e0ab0f9437565d63">&#9670;&nbsp;</a></span>values() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CooMatrix.html#ad6eaf940a9fc720d06eda1ab3467683a">value_array_type</a>&amp; <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::values </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the values of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>value_array_type&amp; A reference to the values. </dd></dl>
+
+</div>
+</div>
+<a id="adb8762ccba06bf2fb7994c5ad27c52f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb8762ccba06bf2fb7994c5ad27c52f1">&#9670;&nbsp;</a></span>values() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION value_array_reference <a class="el" href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::values </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b">index_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the value of the matrix with index <code>n</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Index of the value to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value of the element at index <code>n</code> </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="Morpheus__Fwd__CooMatrix_8hpp_source.html">Morpheus_Fwd_CooMatrix.hpp</a></li>
 <li><a class="el" href="Morpheus__CooMatrix_8hpp_source.html">Morpheus_CooMatrix.hpp</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassMorpheus_1_1CooMatrix_html_a92d668389d36874c7fb8a19152305a0f"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f">Morpheus::CooMatrix::index_array_type</a></div><div class="ttdeci">Morpheus::DenseVector&lt; index_type, index_type, array_layout, execution_space, memory_traits &gt; index_array_type</div><div class="ttdef"><b>Definition:</b> Morpheus_CooMatrix.hpp:127</div></div>
+<div class="ttc" id="aclassMorpheus_1_1CooMatrix_html_ad6eaf940a9fc720d06eda1ab3467683a"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html#ad6eaf940a9fc720d06eda1ab3467683a">Morpheus::CooMatrix::value_array_type</a></div><div class="ttdeci">Morpheus::DenseVector&lt; value_type, index_type, array_layout, execution_space, memory_traits &gt; value_array_type</div><div class="ttdef"><b>Definition:</b> Morpheus_CooMatrix.hpp:135</div></div>
+<div class="ttc" id="aclassMorpheus_1_1CooMatrix_html"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html">Morpheus::CooMatrix</a></div><div class="ttdoc">Implementation of the Coordinate (COO) Sparse Matrix Format Representation.</div><div class="ttdef"><b>Definition:</b> Morpheus_Fwd_CooMatrix.hpp:29</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

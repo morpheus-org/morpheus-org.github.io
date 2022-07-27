@@ -82,9 +82,24 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae534dd9c135d5b84c59dc1a0e05ef2da"><td class="memItemLeft" align="right" valign="top"><a id="ae534dd9c135d5b84c59dc1a0e05ef2da"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = typename Impl::UnaryContainerProxy&lt; ContainerType, TypeSet &gt;::type</td></tr>
-<tr class="separator:ae534dd9c135d5b84c59dc1a0e05ef2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121065feb73cd50a18d83e2328acc981"><td class="memItemLeft" align="right" valign="top"><a id="a121065feb73cd50a18d83e2328acc981"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>proxy</b> = typename Impl::UnaryContainerProxy&lt; ContainerType, TypeSet &gt;</td></tr>
+<tr class="separator:a121065feb73cd50a18d83e2328acc981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3837fdd93b19fe993eee5646c25cc97c"><td class="memItemLeft" align="right" valign="top"><a id="a3837fdd93b19fe993eee5646c25cc97c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = typename proxy::type</td></tr>
+<tr class="separator:a3837fdd93b19fe993eee5646c25cc97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c5ba63e0497f2962611bf0ebd0a983"><td class="memItemLeft" align="right" valign="top"><a id="a51c5ba63e0497f2962611bf0ebd0a983"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = typename proxy::value_type</td></tr>
+<tr class="separator:a51c5ba63e0497f2962611bf0ebd0a983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60833126e49154da795e8f984f6b92c7"><td class="memItemLeft" align="right" valign="top"><a id="a60833126e49154da795e8f984f6b92c7"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>index_type</b> = typename proxy::index_type</td></tr>
+<tr class="separator:a60833126e49154da795e8f984f6b92c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae01ec163b70c413789306b3398b38e3"><td class="memItemLeft" align="right" valign="top"><a id="aae01ec163b70c413789306b3398b38e3"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>array_layout</b> = typename proxy::array_layout</td></tr>
+<tr class="separator:aae01ec163b70c413789306b3398b38e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd4879405023f9d2d14d9d977408dcb"><td class="memItemLeft" align="right" valign="top"><a id="aafd4879405023f9d2d14d9d977408dcb"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>execution_space</b> = typename proxy::execution_space</td></tr>
+<tr class="separator:aafd4879405023f9d2d14d9d977408dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename ContainerType, typename TypeSet&gt;<br />
@@ -118,7 +133,7 @@ struct Morpheus::UnaryContainer&lt; ContainerType, TypeSet &gt;</h3>
 </div><!-- contents -->
 <div class="ttc" id="astructMorpheus_1_1Set_html"><div class="ttname"><a href="structMorpheus_1_1Set.html">Morpheus::Set</a></div><div class="ttdoc">Compile-time set.</div><div class="ttdef"><b>Definition:</b> Morpheus_Metaprogramming.hpp:57</div></div>
 <div class="ttc" id="aclassMorpheus_1_1DenseVector_html"><div class="ttname"><a href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a></div><div class="ttdoc">The DenseVector container is a one-dimensional container that contains contiguous elements....</div><div class="ttdef"><b>Definition:</b> Morpheus_Fwd_DenseVector.hpp:30</div></div>
-<div class="ttc" id="astructMorpheus_1_1UnaryContainer_html"><div class="ttname"><a href="structMorpheus_1_1UnaryContainer.html">Morpheus::UnaryContainer</a></div><div class="ttdoc">A wrapper that constructs a new container type from ContainerType using as arguments the types in Typ...</div><div class="ttdef"><b>Definition:</b> Morpheus_ContainerFactory.hpp:123</div></div>
+<div class="ttc" id="astructMorpheus_1_1UnaryContainer_html"><div class="ttname"><a href="structMorpheus_1_1UnaryContainer.html">Morpheus::UnaryContainer</a></div><div class="ttdoc">A wrapper that constructs a new container type from ContainerType using as arguments the types in Typ...</div><div class="ttdef"><b>Definition:</b> Morpheus_ContainerFactory.hpp:124</div></div>
 <div class="ttc" id="astructMorpheus_1_1Default_html"><div class="ttname"><a href="structMorpheus_1_1Default.html">Morpheus::Default</a></div><div class="ttdoc">A Default tag is used to denote the use of default types.</div><div class="ttdef"><b>Definition:</b> Morpheus_ContainerFactory.hpp:42</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

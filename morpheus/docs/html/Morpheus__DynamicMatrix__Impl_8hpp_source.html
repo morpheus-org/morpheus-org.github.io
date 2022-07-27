@@ -98,9 +98,9 @@ $(function() {
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="comment">// Specialization for Coo resize with three arguments</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  result_type operator()(</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keyword">typename</span> CooMatrix&lt;ValueType, Properties...&gt;::type &amp;mat,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keyword">typename</span> <a class="code" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">CooMatrix&lt;ValueType, Properties...&gt;::type</a> &amp;mat,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">const</span> index_type nrows, <span class="keyword">const</span> index_type ncols, <span class="keyword">const</span> index_type nnnz) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    mat.resize(nrows, ncols, nnnz);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    mat.<a class="code" href="classMorpheus_1_1CooMatrix.html#ad3bba22770fe35c848636378adf3fafe">resize</a>(nrows, ncols, nnnz);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Specialization for Csr resize with three arguments</span></div>
@@ -124,10 +124,10 @@ $(function() {
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">// Unsupported formats won&#39;t compile</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  result_type operator()(</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keyword">typename</span> CooMatrix&lt;ValueType, Properties...&gt;::type &amp;mat, Args &amp;&amp;...args) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keyword">typename</span> <a class="code" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">CooMatrix&lt;ValueType, Properties...&gt;::type</a> &amp;mat, Args &amp;&amp;...args) {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a>(</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="stringliteral">&quot;Invalid use of the dynamic resize interface for current format (&quot;</span> +</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        std::to_string(mat.format_index()) + <span class="stringliteral">&quot;).&quot;</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        std::to_string(mat.<a class="code" href="classMorpheus_1_1CooMatrix.html#ac4cff7ee3ae0ea90ff71dc96768de994">format_index</a>()) + <span class="stringliteral">&quot;).&quot;</span>);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
@@ -257,6 +257,8 @@ $(function() {
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DYNAMICMATRIX_IMPL_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructMorpheus_1_1ValueType_html"><div class="ttname"><a href="structMorpheus_1_1ValueType.html">Morpheus::ValueType</a></div><div class="ttdoc">A wrapper that checks if the provided type is a scalar type.</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:92</div></div>
+<div class="ttc" id="aclassMorpheus_1_1CooMatrix_html_ab2a15db3b6540417d805f0f5493bfe5c"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">Morpheus::CooMatrix::type</a></div><div class="ttdeci">typename traits::type type</div><div class="ttdef"><b>Definition:</b> Morpheus_CooMatrix.hpp:97</div></div>
+<div class="ttc" id="aclassMorpheus_1_1CooMatrix_html_ac4cff7ee3ae0ea90ff71dc96768de994"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html#ac4cff7ee3ae0ea90ff71dc96768de994">Morpheus::CooMatrix::format_index</a></div><div class="ttdeci">int format_index() const</div><div class="ttdoc">Returns the equivalent index to the format enum assigned to the CooMatrix container.</div><div class="ttdef"><b>Definition:</b> Morpheus_CooMatrix.hpp:437</div></div>
 <div class="ttc" id="astructMorpheus_1_1Impl_1_1activate__impl_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1activate__impl.html">Morpheus::Impl::activate_impl</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:178</div></div>
 <div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
 <div class="ttc" id="astructMorpheus_1_1Impl_1_1any__type__allocate_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1any__type__allocate.html">Morpheus::Impl::any_type_allocate</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:125</div></div>
@@ -265,6 +267,7 @@ $(function() {
 <div class="ttc" id="astructMorpheus_1_1Impl_1_1any__type__assign_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1any__type__assign.html">Morpheus::Impl::any_type_assign</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:151</div></div>
 <div class="ttc" id="astructMorpheus_1_1Impl_1_1any__type__resize_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1any__type__resize.html">Morpheus::Impl::any_type_resize</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:39</div></div>
 <div class="ttc" id="astructMorpheus_1_1Impl_1_1any__type__resize__from__mat_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1any__type__resize__from__mat.html">Morpheus::Impl::any_type_resize_from_mat</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:99</div></div>
+<div class="ttc" id="aclassMorpheus_1_1CooMatrix_html_ad3bba22770fe35c848636378adf3fafe"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html#ad3bba22770fe35c848636378adf3fafe">Morpheus::CooMatrix::resize</a></div><div class="ttdeci">void resize(const index_type num_rows, const index_type num_cols, const index_type num_entries)</div><div class="ttdoc">Resizes CooMatrix with shape of (num_rows, num_cols) and sets number of non-zero entries to num_entri...</div><div class="ttdef"><b>Definition:</b> Morpheus_CooMatrix.hpp:359</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

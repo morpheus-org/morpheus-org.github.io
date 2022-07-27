@@ -1,6 +1,12 @@
 var searchData=
 [
-  ['non_5fconst_5findex_5ftype_163',['non_const_index_type',['../classMorpheus_1_1DenseVector.html#a99a7fb71a06f5c0330ad67eb9a5303f3',1,'Morpheus::DenseVector']]],
-  ['non_5fconst_5fvalue_5ftype_164',['non_const_value_type',['../classMorpheus_1_1DenseVector.html#ab6b6a979d460c873561fd7489db2533a',1,'Morpheus::DenseVector']]],
-  ['notimplementedexception_165',['NotImplementedException',['../classMorpheus_1_1NotImplementedException.html',1,'Morpheus']]]
+  ['matrix_5fmarket_5fbanner_165',['matrix_market_banner',['../structMorpheus_1_1Io_1_1Impl_1_1matrix__market__banner.html',1,'Morpheus::Io::Impl']]],
+  ['matrixbase_166',['MatrixBase',['../classMorpheus_1_1Impl_1_1MatrixBase.html',1,'Morpheus::Impl']]],
+  ['matrixformatsproxy_167',['MatrixFormatsProxy',['../structMorpheus_1_1Impl_1_1MatrixFormatsProxy.html',1,'Morpheus::Impl']]],
+  ['matrixformattag_168',['MatrixFormatTag',['../structMorpheus_1_1MatrixFormatTag.html',1,'Morpheus']]],
+  ['matrixtag_169',['MatrixTag',['../structMorpheus_1_1Impl_1_1MatrixTag.html',1,'Morpheus::Impl']]],
+  ['metaprogramming_170',['Metaprogramming',['../group__metaprogramming.html',1,'']]],
+  ['mirrorcontainertype_171',['MirrorContainerType',['../structMorpheus_1_1Impl_1_1MirrorContainerType.html',1,'Morpheus::Impl']]],
+  ['mirrortype_172',['MirrorType',['../structMorpheus_1_1Impl_1_1MirrorType.html',1,'Morpheus::Impl']]],
+  ['morpheus_173',['Morpheus',['../namespaceMorpheus.html',1,'']]]
 ];

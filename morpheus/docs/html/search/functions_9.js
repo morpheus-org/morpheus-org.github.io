@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['view_344',['view',['../classMorpheus_1_1DenseVector.html#a72766e786764c8fd8ba4efc3bdcad592',1,'Morpheus::DenseVector']]]
+  ['transpose_376',['transpose',['../namespaceMorpheus.html#a2d66ed2eb8f52705f5ef927091184c27',1,'Morpheus']]]
 ];

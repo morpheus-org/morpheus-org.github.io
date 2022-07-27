@@ -1,10 +1,17 @@
 var searchData=
 [
-  ['tag_185',['tag',['../classMorpheus_1_1DenseVector.html#ad3fb1fa5af09d8f09d59d037774c5246',1,'Morpheus::DenseVector']]],
-  ['traits_186',['traits',['../classMorpheus_1_1DenseVector.html#afa62e1f7b71748d785ea3416f415fa48',1,'Morpheus::DenseVector']]],
-  ['transpose_187',['transpose',['../namespaceMorpheus.html#a2d66ed2eb8f52705f5ef927091184c27',1,'Morpheus']]],
-  ['type_188',['type',['../classMorpheus_1_1DenseVector.html#a622350d4a72fcad1ca8e235041fe6da4',1,'Morpheus::DenseVector']]],
-  ['typelist_189',['TypeList',['../structMorpheus_1_1TypeList.html',1,'Morpheus']]],
-  ['typelist_3c_20set_3c_20head_5f_2e_2e_2e_20_3e_2c_20tail_5f_2e_2e_2e_20_3e_190',['TypeList&lt; Set&lt; Head_... &gt;, Tail_... &gt;',['../structMorpheus_1_1TypeList_3_01Set_3_01Head___8_8_8_01_4_00_01Tail___8_8_8_01_4.html',1,'Morpheus']]],
-  ['type_20traits_191',['Type Traits',['../group__typetraits.html',1,'']]]
+  ['set_187',['Set',['../structMorpheus_1_1Set.html',1,'Morpheus']]],
+  ['set_5ffunctor_188',['set_functor',['../structMorpheus_1_1Impl_1_1set__functor.html',1,'Morpheus::Impl']]],
+  ['set_5ffunctor_3c_20view_2c_20valuetype_20_3e_189',['set_functor&lt; View, ValueType &gt;',['../structMorpheus_1_1Impl_1_1set__functor_3_01View_00_01ValueType_01_4.html',1,'Morpheus::Impl']]],
+  ['set_5ffunctor_3c_20view_2c_20valuetype_2c_20indextype_20_3e_190',['set_functor&lt; View, ValueType, IndexType &gt;',['../structMorpheus_1_1Impl_1_1set__functor_3_01View_00_01ValueType_00_01IndexType_01_4.html',1,'Morpheus::Impl']]],
+  ['set_5fvalue_191',['set_value',['../namespaceMorpheus.html#a3dea2af2fbe8ae1d3d1d263ef89e3bd1',1,'Morpheus']]],
+  ['set_5fvalues_192',['set_values',['../namespaceMorpheus.html#aa46f7d39fdcad442287ea4f159c3cb7d',1,'Morpheus']]],
+  ['sharedmemory_193',['SharedMemory',['../structMorpheus_1_1Impl_1_1Kernels_1_1SharedMemory.html',1,'Morpheus::Impl::Kernels']]],
+  ['sharedmemory_3c_20double_20_3e_194',['SharedMemory&lt; double &gt;',['../structMorpheus_1_1Impl_1_1Kernels_1_1SharedMemory_3_01double_01_4.html',1,'Morpheus::Impl::Kernels']]],
+  ['size_195',['size',['../classMorpheus_1_1DenseVector.html#af81ce5e3ac507d627726017510c06781',1,'Morpheus::DenseVector']]],
+  ['sort_196',['sort',['../classMorpheus_1_1CooMatrix.html#ab7e3815ae0a5b256954ae3d94b1e401e',1,'Morpheus::CooMatrix']]],
+  ['sort_5fby_5frow_197',['sort_by_row',['../classMorpheus_1_1CooMatrix.html#a7a4d0e2ef238a05ad472a78fb4819705',1,'Morpheus::CooMatrix']]],
+  ['sparsematrixtag_198',['SparseMatrixTag',['../structMorpheus_1_1Impl_1_1SparseMatrixTag.html',1,'Morpheus::Impl']]],
+  ['sparsevectortag_199',['SparseVectorTag',['../structMorpheus_1_1Impl_1_1SparseVectorTag.html',1,'Morpheus::Impl']]],
+  ['storage_20format_20tags_200',['Storage Format Tags',['../group__storage__format__tags.html',1,'']]]
 ];

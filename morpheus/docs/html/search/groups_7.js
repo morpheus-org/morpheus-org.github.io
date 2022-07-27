@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['utilities_403',['Utilities',['../group__utilities.html',1,'']]]
+  ['type_20traits_441',['Type Traits',['../group__typetraits.html',1,'']]]
 ];
