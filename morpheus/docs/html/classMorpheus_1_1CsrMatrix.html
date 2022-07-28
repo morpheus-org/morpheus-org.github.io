@@ -72,38 +72,36 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classMorpheus_1_1CsrMatrix-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Morpheus::CsrMatrix&lt; ValueType, Properties &gt; Class Template Reference</div>  </div>
+<div class="title">Morpheus::CsrMatrix&lt; ValueType, Properties &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__containers.html">Containers</a> &raquo; <a class="el" href="group__containers__2d.html">2D Containers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.  
+ <a href="classMorpheus_1_1CsrMatrix.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Morpheus__CsrMatrix_8hpp_source.html">Morpheus_CsrMatrix.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae87f0386e567f7b512c95b3626524aec"><td class="memItemLeft" align="right" valign="top"><a id="ae87f0386e567f7b512c95b3626524aec"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>traits</b> = <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
+<tr class="memitem:ae87f0386e567f7b512c95b3626524aec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#ae87f0386e567f7b512c95b3626524aec">traits</a> = <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
 <tr class="separator:ae87f0386e567f7b512c95b3626524aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a995aabda5c2c0a083e3cb394bfbc4a"><td class="memItemLeft" align="right" valign="top"><a id="a3a995aabda5c2c0a083e3cb394bfbc4a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = typename traits::type</td></tr>
+<tr class="memitem:a3a995aabda5c2c0a083e3cb394bfbc4a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">type</a> = typename traits::type</td></tr>
 <tr class="separator:a3a995aabda5c2c0a083e3cb394bfbc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0a891ecfa7ada00f9d93fe8adf72845"><td class="memItemLeft" align="right" valign="top"><a id="ab0a891ecfa7ada00f9d93fe8adf72845"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> = <a class="el" href="classMorpheus_1_1Impl_1_1MatrixBase.html">Impl::MatrixBase</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
 <tr class="separator:ab0a891ecfa7ada00f9d93fe8adf72845"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab894a393c9ef519a9de4b062bbeb6a90"><td class="memItemLeft" align="right" valign="top"><a id="ab894a393c9ef519a9de4b062bbeb6a90"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>tag</b> = typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt; <a class="el" href="structMorpheus_1_1CsrFormatTag.html">Morpheus::CsrFormatTag</a> &gt;::tag</td></tr>
+<tr class="memitem:ab894a393c9ef519a9de4b062bbeb6a90"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#ab894a393c9ef519a9de4b062bbeb6a90">tag</a> = typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt; <a class="el" href="structMorpheus_1_1CsrFormatTag.html">Morpheus::CsrFormatTag</a> &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#ab894a393c9ef519a9de4b062bbeb6a90">tag</a></td></tr>
 <tr class="separator:ab894a393c9ef519a9de4b062bbeb6a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e10ee50fc8c5d96aa86501fabe071c5"><td class="memItemLeft" align="right" valign="top"><a id="a4e10ee50fc8c5d96aa86501fabe071c5"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td></tr>
+<tr class="memitem:a4e10ee50fc8c5d96aa86501fabe071c5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a4e10ee50fc8c5d96aa86501fabe071c5">value_type</a> = typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td></tr>
 <tr class="separator:a4e10ee50fc8c5d96aa86501fabe071c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89519fccc3a5d01caea6735b06d8a1fe"><td class="memItemLeft" align="right" valign="top"><a id="a89519fccc3a5d01caea6735b06d8a1fe"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>non_const_value_type</b> = typename traits::non_const_value_type</td></tr>
+<tr class="memitem:a89519fccc3a5d01caea6735b06d8a1fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a89519fccc3a5d01caea6735b06d8a1fe">non_const_value_type</a> = typename traits::non_const_value_type</td></tr>
 <tr class="separator:a89519fccc3a5d01caea6735b06d8a1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ccc1732deb46c973140bf539e6f5c09"><td class="memItemLeft" align="right" valign="top"><a id="a3ccc1732deb46c973140bf539e6f5c09"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = typename traits::index_type</td></tr>
 <tr class="separator:a3ccc1732deb46c973140bf539e6f5c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ba2c702b2806737e27a96e69a180b86"><td class="memItemLeft" align="right" valign="top"><a id="a5ba2c702b2806737e27a96e69a180b86"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>index_type</b> = typename traits::index_type</td></tr>
+<tr class="memitem:a5ba2c702b2806737e27a96e69a180b86"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> = typename traits::index_type</td></tr>
 <tr class="separator:a5ba2c702b2806737e27a96e69a180b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaad0df34cacdc390758548b77f570a6"><td class="memItemLeft" align="right" valign="top"><a id="aaaad0df34cacdc390758548b77f570a6"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>non_const_index_type</b> = typename traits::non_const_index_type</td></tr>
+<tr class="memitem:aaaad0df34cacdc390758548b77f570a6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#aaaad0df34cacdc390758548b77f570a6">non_const_index_type</a> = typename traits::non_const_index_type</td></tr>
 <tr class="separator:aaaad0df34cacdc390758548b77f570a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4149fbc716015282ce7bff2b5816730d"><td class="memItemLeft" align="right" valign="top"><a id="a4149fbc716015282ce7bff2b5816730d"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>array_layout</b> = typename traits::array_layout</td></tr>
@@ -135,11 +133,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = type
 <tr class="memitem:a0428bc2a49d4f50ff20ab13f3973c5b0"><td class="memItemLeft" align="right" valign="top"><a id="a0428bc2a49d4f50ff20ab13f3973c5b0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b> = typename traits::const_reference</td></tr>
 <tr class="separator:a0428bc2a49d4f50ff20ab13f3973c5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a757fb9ecec53862870a6be04456a97d8"><td class="memItemLeft" align="right" valign="top"><a id="a757fb9ecec53862870a6be04456a97d8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>index_array_type</b> = <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt; index_type, index_type, array_layout, execution_space, memory_traits &gt;</td></tr>
+<tr class="memitem:a757fb9ecec53862870a6be04456a97d8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a757fb9ecec53862870a6be04456a97d8">index_array_type</a> = <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>, <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>, array_layout, execution_space, memory_traits &gt;</td></tr>
 <tr class="separator:a757fb9ecec53862870a6be04456a97d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6dfa2725a1267d4cce6579f4f00c76f"><td class="memItemLeft" align="right" valign="top"><a id="ad6dfa2725a1267d4cce6579f4f00c76f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_index_array_type</b> = const <a class="el" href="classMorpheus_1_1DenseVector.html">index_array_type</a></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_index_array_type</b> = const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a757fb9ecec53862870a6be04456a97d8">index_array_type</a></td></tr>
 <tr class="separator:ad6dfa2725a1267d4cce6579f4f00c76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a245fc9a4a76ebbb1eb40510f324b901f"><td class="memItemLeft" align="right" valign="top"><a id="a245fc9a4a76ebbb1eb40510f324b901f"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>index_array_pointer</b> = typename index_array_type::value_array_pointer</td></tr>
@@ -150,11 +147,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>index_array_referenc
 <tr class="memitem:a1115bfc108f3704fbfb5bdb15860baef"><td class="memItemLeft" align="right" valign="top"><a id="a1115bfc108f3704fbfb5bdb15860baef"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>const_index_array_reference</b> = const index_array_reference</td></tr>
 <tr class="separator:a1115bfc108f3704fbfb5bdb15860baef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa988542650f1aeb77bdf6617f7ef15d4"><td class="memItemLeft" align="right" valign="top"><a id="aa988542650f1aeb77bdf6617f7ef15d4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_array_type</b> = <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt; value_type, index_type, array_layout, execution_space, memory_traits &gt;</td></tr>
+<tr class="memitem:aa988542650f1aeb77bdf6617f7ef15d4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#aa988542650f1aeb77bdf6617f7ef15d4">value_array_type</a> = <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html#a4e10ee50fc8c5d96aa86501fabe071c5">value_type</a>, <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>, array_layout, execution_space, memory_traits &gt;</td></tr>
 <tr class="separator:aa988542650f1aeb77bdf6617f7ef15d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b74320c3635c45698559a290fad150d"><td class="memItemLeft" align="right" valign="top"><a id="a2b74320c3635c45698559a290fad150d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_value_array_type</b> = const <a class="el" href="classMorpheus_1_1DenseVector.html">value_array_type</a></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_value_array_type</b> = const <a class="el" href="classMorpheus_1_1CsrMatrix.html#aa988542650f1aeb77bdf6617f7ef15d4">value_array_type</a></td></tr>
 <tr class="separator:a2b74320c3635c45698559a290fad150d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f33fa9ebf1bcc84f67f577b20a13c2"><td class="memItemLeft" align="right" valign="top"><a id="ae2f33fa9ebf1bcc84f67f577b20a13c2"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>value_array_pointer</b> = typename value_array_type::value_array_pointer</td></tr>
@@ -168,108 +164,1364 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>const_value_array_re
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4be1c1c94f672036b4ea9f1b3700dca1"><td class="memItemLeft" align="right" valign="top"><a id="a4be1c1c94f672036b4ea9f1b3700dca1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a4be1c1c94f672036b4ea9f1b3700dca1">~CsrMatrix</a> ()=default</td></tr>
+<tr class="memdesc:a4be1c1c94f672036b4ea9f1b3700dca1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> destructor. <br /></td></tr>
+<tr class="separator:a4be1c1c94f672036b4ea9f1b3700dca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e1b7b7b9a51fc3d4bcb79c6d4a12032"><td class="memItemLeft" align="right" valign="top"><a id="a9e1b7b7b9a51fc3d4bcb79c6d4a12032"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CsrMatrix</b> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;)=default</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a9e1b7b7b9a51fc3d4bcb79c6d4a12032">CsrMatrix</a> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;)=default</td></tr>
+<tr class="memdesc:a9e1b7b7b9a51fc3d4bcb79c6d4a12032"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> copy contructor (shallow copy) of a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container from another <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:a9e1b7b7b9a51fc3d4bcb79c6d4a12032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e64ffcfbff6656eed81191b68c355b"><td class="memItemLeft" align="right" valign="top"><a id="af0e64ffcfbff6656eed81191b68c355b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CsrMatrix</b> (<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;&amp;)=default</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#af0e64ffcfbff6656eed81191b68c355b">CsrMatrix</a> (<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:af0e64ffcfbff6656eed81191b68c355b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> move contructor (shallow copy) of a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container from another <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:af0e64ffcfbff6656eed81191b68c355b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac594f40ed2915ed3baa15ee552d8b38e"><td class="memItemLeft" align="right" valign="top"><a id="ac594f40ed2915ed3baa15ee552d8b38e"></a>
-<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;)=default</td></tr>
+<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#ac594f40ed2915ed3baa15ee552d8b38e">operator=</a> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;)=default</td></tr>
+<tr class="memdesc:ac594f40ed2915ed3baa15ee552d8b38e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> copy assignment (shallow copy) of a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container from another <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:ac594f40ed2915ed3baa15ee552d8b38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeb2bce9a8fab174942fe0554cd467e5"><td class="memItemLeft" align="right" valign="top"><a id="abeb2bce9a8fab174942fe0554cd467e5"></a>
-<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;&amp;)=default</td></tr>
+<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#abeb2bce9a8fab174942fe0554cd467e5">operator=</a> (<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:abeb2bce9a8fab174942fe0554cd467e5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> move assignment (shallow copy) of a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container from another <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:abeb2bce9a8fab174942fe0554cd467e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad05a9fe723447a0496334fdcdb041bfe"><td class="memItemLeft" align="right" valign="top"><a id="ad05a9fe723447a0496334fdcdb041bfe"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CsrMatrix</b> (const index_type num_rows, const index_type num_cols, const index_type num_entries)</td></tr>
+<tr class="memitem:a14ac55a88588c5110f7b1c81a7fa79fa"><td class="memItemLeft" align="right" valign="top"><a id="a14ac55a88588c5110f7b1c81a7fa79fa"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a14ac55a88588c5110f7b1c81a7fa79fa">CsrMatrix</a> ()</td></tr>
+<tr class="memdesc:a14ac55a88588c5110f7b1c81a7fa79fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> object. <br /></td></tr>
+<tr class="separator:a14ac55a88588c5110f7b1c81a7fa79fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05a9fe723447a0496334fdcdb041bfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#ad05a9fe723447a0496334fdcdb041bfe">CsrMatrix</a> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> num_rows, const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> num_cols, const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> num_entries)</td></tr>
+<tr class="memdesc:ad05a9fe723447a0496334fdcdb041bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> object with shape (num_rows, num_cols) and number of non-zeros equal to num_entries.  <a href="classMorpheus_1_1CsrMatrix.html#ad05a9fe723447a0496334fdcdb041bfe">More...</a><br /></td></tr>
 <tr class="separator:ad05a9fe723447a0496334fdcdb041bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64bf8c8dd6383336603680d3a026145b"><td class="memTemplParams" colspan="2"><a id="a64bf8c8dd6383336603680d3a026145b"></a>
+<tr class="memitem:a925c6f1759970d6e1c24387ab94ffd02"><td class="memTemplParams" colspan="2"><a id="a925c6f1759970d6e1c24387ab94ffd02"></a>
 template&lt;typename ValuePtr , typename IndexPtr &gt; </td></tr>
-<tr class="memitem:a64bf8c8dd6383336603680d3a026145b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CsrMatrix</b> (const index_type num_rows, const index_type num_cols, const index_type num_entries, IndexPtr roff_ptr, IndexPtr cind_ptr, ValuePtr vals_ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;std::is_pointer&lt; IndexPtr &gt;::value &gt;::type *=nullptr)</td></tr>
-<tr class="separator:a64bf8c8dd6383336603680d3a026145b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a937adf7363c9cb7b4514c390a0203ca7"><td class="memTemplParams" colspan="2"><a id="a937adf7363c9cb7b4514c390a0203ca7"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a937adf7363c9cb7b4514c390a0203ca7"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CsrMatrix</b> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, typename <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt;::type &gt;::value &gt;::type *=nullptr)</td></tr>
-<tr class="separator:a937adf7363c9cb7b4514c390a0203ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae41ff3751acaca96fd4e6d7be23cceff"><td class="memTemplParams" colspan="2"><a id="ae41ff3751acaca96fd4e6d7be23cceff"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:ae41ff3751acaca96fd4e6d7be23cceff"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, typename <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt;::type &gt;::value, <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
-<tr class="separator:ae41ff3751acaca96fd4e6d7be23cceff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af834cb701eda4543b553ec85ee71d716"><td class="memTemplParams" colspan="2"><a id="af834cb701eda4543b553ec85ee71d716"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:af834cb701eda4543b553ec85ee71d716"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CsrMatrix</b> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, typename <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;::type &gt;::value &gt;::type *=nullptr)</td></tr>
-<tr class="separator:af834cb701eda4543b553ec85ee71d716"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24827d2a08e0a5abab6d97bf49459a5d"><td class="memTemplParams" colspan="2"><a id="a24827d2a08e0a5abab6d97bf49459a5d"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a24827d2a08e0a5abab6d97bf49459a5d"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, typename <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;::type &gt;::value, <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
-<tr class="separator:a24827d2a08e0a5abab6d97bf49459a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82418a6d79edcc92dd28bf5ecc0d0962"><td class="memTemplParams" colspan="2"><a id="a82418a6d79edcc92dd28bf5ecc0d0962"></a>
-template&lt;typename MatrixType &gt; </td></tr>
-<tr class="memitem:a82418a6d79edcc92dd28bf5ecc0d0962"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CsrMatrix</b> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memitem:a925c6f1759970d6e1c24387ab94ffd02"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CsrMatrix</b> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> num_rows, const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> num_cols, const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> num_entries, IndexPtr roff_ptr, IndexPtr cind_ptr, ValuePtr vals_ptr, typename std::enable_if&lt;(std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__same__value__type.html">is_same_value_type</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html#a4e10ee50fc8c5d96aa86501fabe071c5">value_type</a>, ValuePtr &gt;::value &amp;&amp;memory_traits::is_unmanaged) &amp;&amp;(std::is_pointer&lt; IndexPtr &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__same__index__type.html">is_same_index_type</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>, IndexPtr &gt;::value &amp;&amp;memory_traits::is_unmanaged)&gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">type</a> *=nullptr)</td></tr>
+<tr class="separator:a925c6f1759970d6e1c24387ab94ffd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a14489815a68f1e98111a5504cc1f23"><td class="memTemplParams" colspan="2">template&lt;typename ValueArray , typename IndexArray &gt; </td></tr>
+<tr class="memitem:a7a14489815a68f1e98111a5504cc1f23"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a7a14489815a68f1e98111a5504cc1f23">CsrMatrix</a> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> num_rows, const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> num_cols, const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> num_entries, IndexArray roff, IndexArray cind, ValueArray vals, typename std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dense__vector__format__container.html">is_dense_vector_format_container</a>&lt; ValueArray &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__dense__vector__format__container.html">is_dense_vector_format_container</a>&lt; IndexArray &gt;::value &amp;&amp;!ValueArray::memory_traits::is_unmanaged &amp;&amp;!IndexArray::memory_traits::is_unmanaged &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:a7a14489815a68f1e98111a5504cc1f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> object with shape (num_rows, num_cols) and number of non-zeros equal to num_entries and assign the indices and values from <code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> arrays.  <a href="classMorpheus_1_1CsrMatrix.html#a7a14489815a68f1e98111a5504cc1f23">More...</a><br /></td></tr>
+<tr class="separator:a7a14489815a68f1e98111a5504cc1f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd48ab65bec53ef5795be06f3adf9793"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:acd48ab65bec53ef5795be06f3adf9793"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#acd48ab65bec53ef5795be06f3adf9793">CsrMatrix</a> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:acd48ab65bec53ef5795be06f3adf9793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a>.  <a href="classMorpheus_1_1CsrMatrix.html#acd48ab65bec53ef5795be06f3adf9793">More...</a><br /></td></tr>
+<tr class="separator:acd48ab65bec53ef5795be06f3adf9793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a087275d9a13ffd29108d31e858729eb5"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:a087275d9a13ffd29108d31e858729eb5"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt; &gt;::value, <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp; &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a087275d9a13ffd29108d31e858729eb5">operator=</a> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:a087275d9a13ffd29108d31e858729eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a>.  <a href="classMorpheus_1_1CsrMatrix.html#a087275d9a13ffd29108d31e858729eb5">More...</a><br /></td></tr>
+<tr class="separator:a087275d9a13ffd29108d31e858729eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accae65d68a27d11fa9f59de6b9db77b4"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:accae65d68a27d11fa9f59de6b9db77b4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#accae65d68a27d11fa9f59de6b9db77b4">CsrMatrix</a> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:accae65d68a27d11fa9f59de6b9db77b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>.  <a href="classMorpheus_1_1CsrMatrix.html#accae65d68a27d11fa9f59de6b9db77b4">More...</a><br /></td></tr>
+<tr class="separator:accae65d68a27d11fa9f59de6b9db77b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d91d28b3dbcaa24f9709779b20b2da2"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:a8d91d28b3dbcaa24f9709779b20b2da2"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &gt;::value, <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp; &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a8d91d28b3dbcaa24f9709779b20b2da2">operator=</a> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:a8d91d28b3dbcaa24f9709779b20b2da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>.  <a href="classMorpheus_1_1CsrMatrix.html#a8d91d28b3dbcaa24f9709779b20b2da2">More...</a><br /></td></tr>
+<tr class="separator:a8d91d28b3dbcaa24f9709779b20b2da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82418a6d79edcc92dd28bf5ecc0d0962"><td class="memTemplParams" colspan="2">template&lt;typename MatrixType &gt; </td></tr>
+<tr class="memitem:a82418a6d79edcc92dd28bf5ecc0d0962"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a82418a6d79edcc92dd28bf5ecc0d0962">CsrMatrix</a> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memdesc:a82418a6d79edcc92dd28bf5ecc0d0962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations.  <a href="classMorpheus_1_1CsrMatrix.html#a82418a6d79edcc92dd28bf5ecc0d0962">More...</a><br /></td></tr>
 <tr class="separator:a82418a6d79edcc92dd28bf5ecc0d0962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbb9909e29cdd875daac8b1351cc04cf"><td class="memTemplParams" colspan="2"><a id="acbb9909e29cdd875daac8b1351cc04cf"></a>
-template&lt;typename MatrixType &gt; </td></tr>
-<tr class="memitem:acbb9909e29cdd875daac8b1351cc04cf"><td class="memTemplItemLeft" align="right" valign="top">reference&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memitem:acbb9909e29cdd875daac8b1351cc04cf"><td class="memTemplParams" colspan="2">template&lt;typename MatrixType &gt; </td></tr>
+<tr class="memitem:acbb9909e29cdd875daac8b1351cc04cf"><td class="memTemplItemLeft" align="right" valign="top">reference&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#acbb9909e29cdd875daac8b1351cc04cf">operator=</a> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memdesc:acbb9909e29cdd875daac8b1351cc04cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign to <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations.  <a href="classMorpheus_1_1CsrMatrix.html#acbb9909e29cdd875daac8b1351cc04cf">More...</a><br /></td></tr>
 <tr class="separator:acbb9909e29cdd875daac8b1351cc04cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabf852bb7393bf7ad392a205fa457259"><td class="memItemLeft" align="right" valign="top"><a id="aabf852bb7393bf7ad392a205fa457259"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (const index_type num_rows, const index_type num_cols, const index_type num_entries)</td></tr>
+<tr class="memitem:aabf852bb7393bf7ad392a205fa457259"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#aabf852bb7393bf7ad392a205fa457259">resize</a> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> num_rows, const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> num_cols, const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> num_entries)</td></tr>
+<tr class="memdesc:aabf852bb7393bf7ad392a205fa457259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> with shape of (num_rows, num_cols) and sets number of non-zero entries to num_entries.  <a href="classMorpheus_1_1CsrMatrix.html#aabf852bb7393bf7ad392a205fa457259">More...</a><br /></td></tr>
 <tr class="separator:aabf852bb7393bf7ad392a205fa457259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7c2fe84864cc4d9bc0febe92753661a"><td class="memTemplParams" colspan="2"><a id="ad7c2fe84864cc4d9bc0febe92753661a"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:ad7c2fe84864cc4d9bc0febe92753661a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>resize</b> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memitem:ad7c2fe84864cc4d9bc0febe92753661a"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:ad7c2fe84864cc4d9bc0febe92753661a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#ad7c2fe84864cc4d9bc0febe92753661a">resize</a> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:ad7c2fe84864cc4d9bc0febe92753661a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> with the shape and number of non-zero entries of another <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> with different parameters.  <a href="classMorpheus_1_1CsrMatrix.html#ad7c2fe84864cc4d9bc0febe92753661a">More...</a><br /></td></tr>
 <tr class="separator:ad7c2fe84864cc4d9bc0febe92753661a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0318ff2808af534feb03c821769a6b33"><td class="memTemplParams" colspan="2"><a id="a0318ff2808af534feb03c821769a6b33"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a0318ff2808af534feb03c821769a6b33"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>allocate</b> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memitem:a0318ff2808af534feb03c821769a6b33"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:a0318ff2808af534feb03c821769a6b33"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a0318ff2808af534feb03c821769a6b33">allocate</a> (const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:a0318ff2808af534feb03c821769a6b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory from another <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container with different properties.  <a href="classMorpheus_1_1CsrMatrix.html#a0318ff2808af534feb03c821769a6b33">More...</a><br /></td></tr>
 <tr class="separator:a0318ff2808af534feb03c821769a6b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0ca97ba5c621da9bf2d33086eb6c108"><td class="memItemLeft" align="right" valign="top"><a id="ab0ca97ba5c621da9bf2d33086eb6c108"></a>
-formats_e&#160;</td><td class="memItemRight" valign="bottom"><b>format_enum</b> () const</td></tr>
+<tr class="memitem:ab0ca97ba5c621da9bf2d33086eb6c108"><td class="memItemLeft" align="right" valign="top">formats_e&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#ab0ca97ba5c621da9bf2d33086eb6c108">format_enum</a> () const</td></tr>
+<tr class="memdesc:ab0ca97ba5c621da9bf2d33086eb6c108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the format enum assigned to the <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container.  <a href="classMorpheus_1_1CsrMatrix.html#ab0ca97ba5c621da9bf2d33086eb6c108">More...</a><br /></td></tr>
 <tr class="separator:ab0ca97ba5c621da9bf2d33086eb6c108"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f00939dc9cb5b8bb210b582aadfe505"><td class="memItemLeft" align="right" valign="top"><a id="a7f00939dc9cb5b8bb210b582aadfe505"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>format_index</b> () const</td></tr>
+<tr class="memitem:a7f00939dc9cb5b8bb210b582aadfe505"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a7f00939dc9cb5b8bb210b582aadfe505">format_index</a> () const</td></tr>
+<tr class="memdesc:a7f00939dc9cb5b8bb210b582aadfe505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the equivalent index to the format enum assigned to the <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container.  <a href="classMorpheus_1_1CsrMatrix.html#a7f00939dc9cb5b8bb210b582aadfe505">More...</a><br /></td></tr>
 <tr class="separator:a7f00939dc9cb5b8bb210b582aadfe505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14ef01c2b5de08a2ad5ebdb0cf96e620"><td class="memItemLeft" align="right" valign="top"><a id="a14ef01c2b5de08a2ad5ebdb0cf96e620"></a>
-MORPHEUS_FORCEINLINE_FUNCTION index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>row_offsets</b> (index_type n)</td></tr>
+<tr class="memitem:a14ef01c2b5de08a2ad5ebdb0cf96e620"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a14ef01c2b5de08a2ad5ebdb0cf96e620">row_offsets</a> (<a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> n)</td></tr>
+<tr class="memdesc:a14ef01c2b5de08a2ad5ebdb0cf96e620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the row offset of the matrix with index <code>n</code>.  <a href="classMorpheus_1_1CsrMatrix.html#a14ef01c2b5de08a2ad5ebdb0cf96e620">More...</a><br /></td></tr>
 <tr class="separator:a14ef01c2b5de08a2ad5ebdb0cf96e620"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba0db3be95b165224ba4439035cc5475"><td class="memItemLeft" align="right" valign="top"><a id="aba0db3be95b165224ba4439035cc5475"></a>
-MORPHEUS_FORCEINLINE_FUNCTION index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>column_indices</b> (index_type n)</td></tr>
+<tr class="memitem:aba0db3be95b165224ba4439035cc5475"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#aba0db3be95b165224ba4439035cc5475">column_indices</a> (<a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> n)</td></tr>
+<tr class="memdesc:aba0db3be95b165224ba4439035cc5475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the column index of the matrix with index <code>n</code>.  <a href="classMorpheus_1_1CsrMatrix.html#aba0db3be95b165224ba4439035cc5475">More...</a><br /></td></tr>
 <tr class="separator:aba0db3be95b165224ba4439035cc5475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a852fc43005c1c2ebf9810e2b3c0d94a7"><td class="memItemLeft" align="right" valign="top"><a id="a852fc43005c1c2ebf9810e2b3c0d94a7"></a>
-MORPHEUS_FORCEINLINE_FUNCTION value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>values</b> (index_type n)</td></tr>
+<tr class="memitem:a852fc43005c1c2ebf9810e2b3c0d94a7"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a852fc43005c1c2ebf9810e2b3c0d94a7">values</a> (<a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> n)</td></tr>
+<tr class="memdesc:a852fc43005c1c2ebf9810e2b3c0d94a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the value of the matrix with index <code>n</code>.  <a href="classMorpheus_1_1CsrMatrix.html#a852fc43005c1c2ebf9810e2b3c0d94a7">More...</a><br /></td></tr>
 <tr class="separator:a852fc43005c1c2ebf9810e2b3c0d94a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea55043fa9260e28cb7392b67e970a3c"><td class="memItemLeft" align="right" valign="top"><a id="aea55043fa9260e28cb7392b67e970a3c"></a>
-MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>crow_offsets</b> (index_type n) const</td></tr>
+<tr class="memitem:aea55043fa9260e28cb7392b67e970a3c"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#aea55043fa9260e28cb7392b67e970a3c">crow_offsets</a> (<a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> n) const</td></tr>
+<tr class="memdesc:aea55043fa9260e28cb7392b67e970a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the row offset of the matrix with index <code>n</code>.  <a href="classMorpheus_1_1CsrMatrix.html#aea55043fa9260e28cb7392b67e970a3c">More...</a><br /></td></tr>
 <tr class="separator:aea55043fa9260e28cb7392b67e970a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6334d91b68b5f254f6b4c8447731fbf"><td class="memItemLeft" align="right" valign="top"><a id="ac6334d91b68b5f254f6b4c8447731fbf"></a>
-MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>ccolumn_indices</b> (index_type n) const</td></tr>
+<tr class="memitem:ac6334d91b68b5f254f6b4c8447731fbf"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#ac6334d91b68b5f254f6b4c8447731fbf">ccolumn_indices</a> (<a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> n) const</td></tr>
+<tr class="memdesc:ac6334d91b68b5f254f6b4c8447731fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the column index of the matrix with index <code>n</code>.  <a href="classMorpheus_1_1CsrMatrix.html#ac6334d91b68b5f254f6b4c8447731fbf">More...</a><br /></td></tr>
 <tr class="separator:ac6334d91b68b5f254f6b4c8447731fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3990091dd8825461f4f1e74e3aecbf7e"><td class="memItemLeft" align="right" valign="top"><a id="a3990091dd8825461f4f1e74e3aecbf7e"></a>
-MORPHEUS_FORCEINLINE_FUNCTION const_value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>cvalues</b> (index_type n) const</td></tr>
+<tr class="memitem:a3990091dd8825461f4f1e74e3aecbf7e"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION const_value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a3990091dd8825461f4f1e74e3aecbf7e">cvalues</a> (<a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> n) const</td></tr>
+<tr class="memdesc:a3990091dd8825461f4f1e74e3aecbf7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the value of the matrix with index <code>n</code>.  <a href="classMorpheus_1_1CsrMatrix.html#a3990091dd8825461f4f1e74e3aecbf7e">More...</a><br /></td></tr>
 <tr class="separator:a3990091dd8825461f4f1e74e3aecbf7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d1abf55922ec3b92866b5ec5baa71f2"><td class="memItemLeft" align="right" valign="top"><a id="a1d1abf55922ec3b92866b5ec5baa71f2"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>row_offsets</b> ()</td></tr>
+<tr class="memitem:a1d1abf55922ec3b92866b5ec5baa71f2"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CsrMatrix.html#a757fb9ecec53862870a6be04456a97d8">index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a1d1abf55922ec3b92866b5ec5baa71f2">row_offsets</a> ()</td></tr>
+<tr class="memdesc:a1d1abf55922ec3b92866b5ec5baa71f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the row offsets of the matrix.  <a href="classMorpheus_1_1CsrMatrix.html#a1d1abf55922ec3b92866b5ec5baa71f2">More...</a><br /></td></tr>
 <tr class="separator:a1d1abf55922ec3b92866b5ec5baa71f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a117cbe3d6219cc5d385df80c9e7f7a8b"><td class="memItemLeft" align="right" valign="top"><a id="a117cbe3d6219cc5d385df80c9e7f7a8b"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>column_indices</b> ()</td></tr>
+<tr class="memitem:a117cbe3d6219cc5d385df80c9e7f7a8b"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CsrMatrix.html#a757fb9ecec53862870a6be04456a97d8">index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a117cbe3d6219cc5d385df80c9e7f7a8b">column_indices</a> ()</td></tr>
+<tr class="memdesc:a117cbe3d6219cc5d385df80c9e7f7a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the column indices of the matrix.  <a href="classMorpheus_1_1CsrMatrix.html#a117cbe3d6219cc5d385df80c9e7f7a8b">More...</a><br /></td></tr>
 <tr class="separator:a117cbe3d6219cc5d385df80c9e7f7a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acca85793cd7fde85ce6a40e395f45490"><td class="memItemLeft" align="right" valign="top"><a id="acca85793cd7fde85ce6a40e395f45490"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>values</b> ()</td></tr>
+<tr class="memitem:acca85793cd7fde85ce6a40e395f45490"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CsrMatrix.html#aa988542650f1aeb77bdf6617f7ef15d4">value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#acca85793cd7fde85ce6a40e395f45490">values</a> ()</td></tr>
+<tr class="memdesc:acca85793cd7fde85ce6a40e395f45490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the values of the matrix.  <a href="classMorpheus_1_1CsrMatrix.html#acca85793cd7fde85ce6a40e395f45490">More...</a><br /></td></tr>
 <tr class="separator:acca85793cd7fde85ce6a40e395f45490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af27776038514423089f4fdda9c2b1adf"><td class="memItemLeft" align="right" valign="top"><a id="af27776038514423089f4fdda9c2b1adf"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>crow_offsets</b> () const</td></tr>
+<tr class="memitem:af27776038514423089f4fdda9c2b1adf"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#af27776038514423089f4fdda9c2b1adf">crow_offsets</a> () const</td></tr>
+<tr class="memdesc:af27776038514423089f4fdda9c2b1adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the row offsets of the matrix.  <a href="classMorpheus_1_1CsrMatrix.html#af27776038514423089f4fdda9c2b1adf">More...</a><br /></td></tr>
 <tr class="separator:af27776038514423089f4fdda9c2b1adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b6f1fcd352991e53cae017072df7ae6"><td class="memItemLeft" align="right" valign="top"><a id="a3b6f1fcd352991e53cae017072df7ae6"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ccolumn_indices</b> () const</td></tr>
+<tr class="memitem:a3b6f1fcd352991e53cae017072df7ae6"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a3b6f1fcd352991e53cae017072df7ae6">ccolumn_indices</a> () const</td></tr>
+<tr class="memdesc:a3b6f1fcd352991e53cae017072df7ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the column indices of the matrix.  <a href="classMorpheus_1_1CsrMatrix.html#a3b6f1fcd352991e53cae017072df7ae6">More...</a><br /></td></tr>
 <tr class="separator:a3b6f1fcd352991e53cae017072df7ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3532c85be54c2fdf173d702da79b542"><td class="memItemLeft" align="right" valign="top"><a id="ad3532c85be54c2fdf173d702da79b542"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>cvalues</b> () const</td></tr>
+<tr class="memitem:ad3532c85be54c2fdf173d702da79b542"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1CsrMatrix.html#ad3532c85be54c2fdf173d702da79b542">cvalues</a> () const</td></tr>
+<tr class="memdesc:ad3532c85be54c2fdf173d702da79b542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the values of the matrix.  <a href="classMorpheus_1_1CsrMatrix.html#ad3532c85be54c2fdf173d702da79b542">More...</a><br /></td></tr>
 <tr class="separator:ad3532c85be54c2fdf173d702da79b542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class ValueType, class... Properties&gt;<br />
+class Morpheus::CsrMatrix&lt; ValueType, Properties &gt;</h3>
+
+<p>Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname"><a class="el" href="structMorpheus_1_1ValueType.html" title="A wrapper that checks if the provided type is a scalar type.">ValueType</a></td><td>Type of values to store </td></tr>
+    <tr><td class="paramname">Properties</td><td>Optional properties to modify the behaviour of the container. Sensible defaults are selected based on the configuration. Please refer to <a class="el" href="Morpheus__ContainerTraits_8hpp_source.html">impl/Morpheus_ContainerTraits.hpp</a> to find out more about the valid properties.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Overview</dt><dd>The <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container is a two-dimensional container that represents a sparse matrix. This container is the compressed implementation of the COO Format, where the row indices array is compressed. In general, it allows for fast row access and matrix-vector multiplications and it is one of the most widely used formats. It is a polymorphic container in the sense that it can store scalar or integer type values, on host or device depending how the template parameters are selected.</dd></dl>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;Morpheus_Core.hpp&gt;</span></div>
+<div class="line"><span class="comment">// Matrix to Build</span></div>
+<div class="line"><span class="comment">// [1 * 2]</span></div>
+<div class="line"><span class="comment">// [* * 3]</span></div>
+<div class="line"><span class="comment">// [* 4 *]</span></div>
+<div class="line"><span class="keywordtype">int</span> main(){</div>
+<div class="line"> <span class="keyword">using</span> Matrix = <a class="code" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix&lt;double, Kokkos::HostSpace&gt;</a>;</div>
+<div class="line"> <span class="keyword">using</span> <a class="code" href="classMorpheus_1_1CsrMatrix.html#a757fb9ecec53862870a6be04456a97d8">index_array_type</a> = <span class="keyword">typename</span> Matrix::index_array_type;</div>
+<div class="line"> <span class="keyword">using</span> <a class="code" href="classMorpheus_1_1CsrMatrix.html#aa988542650f1aeb77bdf6617f7ef15d4">value_array_type</a> = <span class="keyword">typename</span> Matrix::value_array_type;</div>
+<div class="line"> </div>
+<div class="line"> <a class="code" href="classMorpheus_1_1CsrMatrix.html#a757fb9ecec53862870a6be04456a97d8">index_array_type</a> off(4, 0), j(4, 0);</div>
+<div class="line"> <a class="code" href="classMorpheus_1_1CsrMatrix.html#aa988542650f1aeb77bdf6617f7ef15d4">value_array_type</a> v(4,0);</div>
+<div class="line"> </div>
+<div class="line"> off[0] = 0; off[1] = 2; off[2] = 3; off[3] = 4;</div>
+<div class="line"> </div>
+<div class="line"> j[0] = 0; v[0] = 1;</div>
+<div class="line"> j[1] = 2; v[1] = 2;</div>
+<div class="line"> j[2] = 2; v[2] = 3;</div>
+<div class="line"> j[3] = 1; v[3] = 4;</div>
+<div class="line"> </div>
+<div class="line"> <span class="comment">// Construct the matrix from i,j,v</span></div>
+<div class="line"> Matrix A(3, 3, 4, i, j, v);</div>
+<div class="line"> </div>
+<div class="line"> Morpheus::print(A); <span class="comment">// prints A</span></div>
+<div class="line">}</div>
+</div><!-- fragment --> </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a757fb9ecec53862870a6be04456a97d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757fb9ecec53862870a6be04456a97d8">&#9670;&nbsp;</a></span>index_array_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a757fb9ecec53862870a6be04456a97d8">index_array_type</a> =  <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt;<a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>, <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>, array_layout, execution_space, memory_traits&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of <code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> that holds the index_type data </p>
+
+</div>
+</div>
+<a id="a5ba2c702b2806737e27a96e69a180b86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba2c702b2806737e27a96e69a180b86">&#9670;&nbsp;</a></span>index_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a> =  typename traits::index_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of the indices held by the container - can be const </p>
+
+</div>
+</div>
+<a id="aaaad0df34cacdc390758548b77f570a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaad0df34cacdc390758548b77f570a6">&#9670;&nbsp;</a></span>non_const_index_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#aaaad0df34cacdc390758548b77f570a6">non_const_index_type</a> =  typename traits::non_const_index_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The non-constant type of the indices held by the container </p>
+
+</div>
+</div>
+<a id="a89519fccc3a5d01caea6735b06d8a1fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89519fccc3a5d01caea6735b06d8a1fe">&#9670;&nbsp;</a></span>non_const_value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a89519fccc3a5d01caea6735b06d8a1fe">non_const_value_type</a> =  typename traits::non_const_value_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The non-constant type of the values held by the container </p>
+
+</div>
+</div>
+<a id="ab894a393c9ef519a9de4b062bbeb6a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab894a393c9ef519a9de4b062bbeb6a90">&#9670;&nbsp;</a></span>tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#ab894a393c9ef519a9de4b062bbeb6a90">tag</a> =  typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt;<a class="el" href="structMorpheus_1_1CsrFormatTag.html">Morpheus::CsrFormatTag</a>&gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#ab894a393c9ef519a9de4b062bbeb6a90">tag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The tag associated specificaly to the particular container </p>
+
+</div>
+</div>
+<a id="ae87f0386e567f7b512c95b3626524aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae87f0386e567f7b512c95b3626524aec">&#9670;&nbsp;</a></span>traits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#ae87f0386e567f7b512c95b3626524aec">traits</a> =  <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt;<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The traits associated with the particular container </p>
+
+</div>
+</div>
+<a id="a3a995aabda5c2c0a083e3cb394bfbc4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a995aabda5c2c0a083e3cb394bfbc4a">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">type</a> =  typename traits::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The complete type of the container </p>
+
+</div>
+</div>
+<a id="aa988542650f1aeb77bdf6617f7ef15d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa988542650f1aeb77bdf6617f7ef15d4">&#9670;&nbsp;</a></span>value_array_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#aa988542650f1aeb77bdf6617f7ef15d4">value_array_type</a> =  <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt;<a class="el" href="classMorpheus_1_1CsrMatrix.html#a4e10ee50fc8c5d96aa86501fabe071c5">value_type</a>, <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>, array_layout, execution_space, memory_traits&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of <code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> that holds the value_type data </p>
+
+</div>
+</div>
+<a id="a4e10ee50fc8c5d96aa86501fabe071c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e10ee50fc8c5d96aa86501fabe071c5">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a4e10ee50fc8c5d96aa86501fabe071c5">value_type</a> =  typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of the values held by the container - can be const </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad05a9fe723447a0496334fdcdb041bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05a9fe723447a0496334fdcdb041bfe">&#9670;&nbsp;</a></span>CsrMatrix() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_entries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> object with shape (num_rows, num_cols) and number of non-zeros equal to num_entries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_rows</td><td>Number of rows of the matrix. </td></tr>
+    <tr><td class="paramname">num_cols</td><td>Number of columns of the matrix. </td></tr>
+    <tr><td class="paramname">num_entries</td><td>Number of non-zero values in the matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7a14489815a68f1e98111a5504cc1f23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a14489815a68f1e98111a5504cc1f23">&#9670;&nbsp;</a></span>CsrMatrix() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;typename ValueArray , typename IndexArray &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_entries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IndexArray&#160;</td>
+          <td class="paramname"><em>roff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IndexArray&#160;</td>
+          <td class="paramname"><em>cind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValueArray&#160;</td>
+          <td class="paramname"><em>vals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dense__vector__format__container.html">is_dense_vector_format_container</a>&lt; ValueArray &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__dense__vector__format__container.html">is_dense_vector_format_container</a>&lt; IndexArray &gt;::value &amp;&amp;!ValueArray::memory_traits::is_unmanaged &amp;&amp;!IndexArray::memory_traits::is_unmanaged &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">type</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> object with shape (num_rows, num_cols) and number of non-zeros equal to num_entries and assign the indices and values from <code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> arrays. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ValueArray</td><td>Value type <a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a> type. </td></tr>
+    <tr><td class="paramname">IndexArray</td><td>Index type <a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a> type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_rows</td><td>Number of rows of the matrix. </td></tr>
+    <tr><td class="paramname">num_cols</td><td>Number of columns of the matrix. </td></tr>
+    <tr><td class="paramname">num_entries</td><td>Number of non-zero values in the matrix. </td></tr>
+    <tr><td class="paramname">rind</td><td><code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> containing the row indices of the matrix. </td></tr>
+    <tr><td class="paramname">cind</td><td><code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> containing the column indices of the matrix. </td></tr>
+    <tr><td class="paramname">vals</td><td><code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> containing the values of the matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acd48ab65bec53ef5795be06f3adf9793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd48ab65bec53ef5795be06f3adf9793">&#9670;&nbsp;</a></span>CsrMatrix() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;, <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">type</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a>. </p>
+<dl class="section user"><dt>Constructs a CsrMatrix from another compatible CsrMatrix i.e a</dt><dd>matrix that satisfies the <code><a class="el" href="structMorpheus_1_1is__format__compatible.html" title="Checks if the two types are format compatible containers i.e are compatible containers and have the s...">is_format_compatible</a></code> check.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of Values the Other Matrix holds. </td></tr>
+    <tr><td class="paramname">PR</td><td>Properties of the Other Matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The matrix we are constructing from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="accae65d68a27d11fa9f59de6b9db77b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accae65d68a27d11fa9f59de6b9db77b4">&#9670;&nbsp;</a></span>CsrMatrix() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">type</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>. </p>
+<dl class="section user"><dt>Overview</dt><dd>Constructs a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> i.e a matrix that satisfies the <code><a class="el" href="classMorpheus_1_1is__dynamically__compatible.html" title="Checks if the two types are dynamically compatible containers i.e are compatible containers and at le...">is_dynamically_compatible</a></code> check. Note that when the active type of the dynamic matrix is different from the concrete type, this will result in an exception thrown.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of Values the Other Matrix holds. </td></tr>
+    <tr><td class="paramname">PR</td><td>Properties of the Other Matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The matrix we are constructing from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a82418a6d79edcc92dd28bf5ecc0d0962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82418a6d79edcc92dd28bf5ecc0d0962">&#9670;&nbsp;</a></span>CsrMatrix() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const MatrixType &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MatrixType</td><td>Any of the supported storage formats. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source container. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0318ff2808af534feb03c821769a6b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0318ff2808af534feb03c821769a6b33">&#9670;&nbsp;</a></span>allocate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&amp; <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::allocate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allocates memory from another <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container with different properties. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Value Type of the container we are allocating from. </td></tr>
+    <tr><td class="paramname">PR</td><td>Optional properties of the container we are allocating from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The <code><a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a></code> container we are allocating from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b6f1fcd352991e53cae017072df7ae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b6f1fcd352991e53cae017072df7ae6">&#9670;&nbsp;</a></span>ccolumn_indices() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_index_array_type</a>&amp; <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::ccolumn_indices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a const-reference to the column indices of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>index_array_type&amp; A const-reference to the column indices. </dd></dl>
+
+</div>
+</div>
+<a id="ac6334d91b68b5f254f6b4c8447731fbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6334d91b68b5f254f6b4c8447731fbf">&#9670;&nbsp;</a></span>ccolumn_indices() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::ccolumn_indices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a const-reference to the column index of the matrix with index <code>n</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Index of the value to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Column index at index <code>n</code> </dd></dl>
+
+</div>
+</div>
+<a id="a117cbe3d6219cc5d385df80c9e7f7a8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a117cbe3d6219cc5d385df80c9e7f7a8b">&#9670;&nbsp;</a></span>column_indices() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CsrMatrix.html#a757fb9ecec53862870a6be04456a97d8">index_array_type</a>&amp; <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::column_indices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the column indices of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>index_array_type&amp; A reference to the column indices. </dd></dl>
+
+</div>
+</div>
+<a id="aba0db3be95b165224ba4439035cc5475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0db3be95b165224ba4439035cc5475">&#9670;&nbsp;</a></span>column_indices() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION index_array_reference <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::column_indices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the column index of the matrix with index <code>n</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Index of the value to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Column index at index <code>n</code> </dd></dl>
+
+</div>
+</div>
+<a id="af27776038514423089f4fdda9c2b1adf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27776038514423089f4fdda9c2b1adf">&#9670;&nbsp;</a></span>crow_offsets() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_index_array_type</a>&amp; <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::crow_offsets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a const-reference to the row offsets of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>const index_array_type&amp; A const reference to the row offsets. </dd></dl>
+
+</div>
+</div>
+<a id="aea55043fa9260e28cb7392b67e970a3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea55043fa9260e28cb7392b67e970a3c">&#9670;&nbsp;</a></span>crow_offsets() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::crow_offsets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a const-reference to the row offset of the matrix with index <code>n</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Index of the value to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Row offset at index <code>n</code> </dd></dl>
+
+</div>
+</div>
+<a id="ad3532c85be54c2fdf173d702da79b542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3532c85be54c2fdf173d702da79b542">&#9670;&nbsp;</a></span>cvalues() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_value_array_type</a>&amp; <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::cvalues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the values of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>values_array_type&amp; A reference to the values. </dd></dl>
+
+</div>
+</div>
+<a id="a3990091dd8825461f4f1e74e3aecbf7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3990091dd8825461f4f1e74e3aecbf7e">&#9670;&nbsp;</a></span>cvalues() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION const_value_array_reference <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::cvalues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a const-reference to the value of the matrix with index <code>n</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Index of the value to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value of the element at index <code>n</code> </dd></dl>
+
+</div>
+</div>
+<a id="ab0ca97ba5c621da9bf2d33086eb6c108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ca97ba5c621da9bf2d33086eb6c108">&#9670;&nbsp;</a></span>format_enum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">formats_e <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::format_enum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the format enum assigned to the <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container. </p>
+<dl class="section return"><dt>Returns</dt><dd>formats_e The format enum </dd></dl>
+
+</div>
+</div>
+<a id="a7f00939dc9cb5b8bb210b582aadfe505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f00939dc9cb5b8bb210b582aadfe505">&#9670;&nbsp;</a></span>format_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::format_index </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the equivalent index to the format enum assigned to the <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> container. </p>
+<dl class="section return"><dt>Returns</dt><dd>int The equivalent index to <code>format_e</code> </dd></dl>
+
+</div>
+</div>
+<a id="a087275d9a13ffd29108d31e858729eb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a087275d9a13ffd29108d31e858729eb5">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt;<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt;VR, PR...&gt; &gt;::value, <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;&gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">type</a> <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a>. </p>
+<dl class="section user"><dt>Overview</dt><dd>Assigns a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> i.e a matrix that satisfies the <code><a class="el" href="structMorpheus_1_1is__format__compatible.html" title="Checks if the two types are format compatible containers i.e are compatible containers and have the s...">is_format_compatible</a></code> check.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of Values the Other Matrix holds. </td></tr>
+    <tr><td class="paramname">PR</td><td>Properties of the Other Matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The matrix we are assigning from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d91d28b3dbcaa24f9709779b20b2da2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d91d28b3dbcaa24f9709779b20b2da2">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt;<a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt;VR, PR...&gt; &gt;::value, <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a> &amp;&gt;::<a class="el" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">type</a> <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>. </p>
+<dl class="section user"><dt>Overview</dt><dd>Assigns a <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> i.e a matrix that satisfies the <code><a class="el" href="classMorpheus_1_1is__dynamically__compatible.html" title="Checks if the two types are dynamically compatible containers i.e are compatible containers and at le...">is_dynamically_compatible</a></code> check. Note that when the active type of the dynamic matrix is different from the concrete type, this will result in an exception thrown.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of Values the Other Matrix holds. </td></tr>
+    <tr><td class="paramname">PR</td><td>Properties of the Other Matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The matrix we are assigning from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acbb9909e29cdd875daac8b1351cc04cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb9909e29cdd875daac8b1351cc04cf">&#9670;&nbsp;</a></span>operator=() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">reference <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const MatrixType &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assign to <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MatrixType</td><td>Any of the supported storage formats. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source container. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7c2fe84864cc4d9bc0febe92753661a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c2fe84864cc4d9bc0febe92753661a">&#9670;&nbsp;</a></span>resize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CsrMatrix.html">CsrMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resizes <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> with the shape and number of non-zero entries of another <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> with different parameters. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of values the source matrix stores. </td></tr>
+    <tr><td class="paramname">PR</td><td>Other properties of source matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> we are resizing from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aabf852bb7393bf7ad392a205fa457259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf852bb7393bf7ad392a205fa457259">&#9670;&nbsp;</a></span>resize() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_entries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resizes <a class="el" href="classMorpheus_1_1CsrMatrix.html" title="Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.">CsrMatrix</a> with shape of (num_rows, num_cols) and sets number of non-zero entries to num_entries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_rows</td><td>Number of rows of resized matrix. </td></tr>
+    <tr><td class="paramname">num_cols</td><td>Number of columns of resized matrix. </td></tr>
+    <tr><td class="paramname">num_entries</td><td>Number of non-zero entries in resized matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1d1abf55922ec3b92866b5ec5baa71f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d1abf55922ec3b92866b5ec5baa71f2">&#9670;&nbsp;</a></span>row_offsets() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CsrMatrix.html#a757fb9ecec53862870a6be04456a97d8">index_array_type</a>&amp; <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::row_offsets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the row offsets of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>index_array_type&amp; A reference to the row offsets. </dd></dl>
+
+</div>
+</div>
+<a id="a14ef01c2b5de08a2ad5ebdb0cf96e620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14ef01c2b5de08a2ad5ebdb0cf96e620">&#9670;&nbsp;</a></span>row_offsets() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION index_array_reference <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::row_offsets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the row offset of the matrix with index <code>n</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Index of the value to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Row offset at index <code>n</code> </dd></dl>
+
+</div>
+</div>
+<a id="acca85793cd7fde85ce6a40e395f45490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acca85793cd7fde85ce6a40e395f45490">&#9670;&nbsp;</a></span>values() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1CsrMatrix.html#aa988542650f1aeb77bdf6617f7ef15d4">value_array_type</a>&amp; <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::values </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the values of the matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>value_array_type&amp; A reference to the values. </dd></dl>
+
+</div>
+</div>
+<a id="a852fc43005c1c2ebf9810e2b3c0d94a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a852fc43005c1c2ebf9810e2b3c0d94a7">&#9670;&nbsp;</a></span>values() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION value_array_reference <a class="el" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::values </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86">index_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the value of the matrix with index <code>n</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Index of the value to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value of the element at index <code>n</code> </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="Morpheus__Fwd__CsrMatrix_8hpp_source.html">Morpheus_Fwd_CsrMatrix.hpp</a></li>
 <li><a class="el" href="Morpheus__CsrMatrix_8hpp_source.html">Morpheus_CsrMatrix.hpp</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassMorpheus_1_1CsrMatrix_html"><div class="ttname"><a href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a></div><div class="ttdoc">Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.</div><div class="ttdef"><b>Definition:</b> Morpheus_Fwd_CsrMatrix.hpp:29</div></div>
+<div class="ttc" id="aclassMorpheus_1_1CsrMatrix_html_aa988542650f1aeb77bdf6617f7ef15d4"><div class="ttname"><a href="classMorpheus_1_1CsrMatrix.html#aa988542650f1aeb77bdf6617f7ef15d4">Morpheus::CsrMatrix::value_array_type</a></div><div class="ttdeci">Morpheus::DenseVector&lt; value_type, index_type, array_layout, execution_space, memory_traits &gt; value_array_type</div><div class="ttdef"><b>Definition:</b> Morpheus_CsrMatrix.hpp:138</div></div>
+<div class="ttc" id="aclassMorpheus_1_1CsrMatrix_html_a757fb9ecec53862870a6be04456a97d8"><div class="ttname"><a href="classMorpheus_1_1CsrMatrix.html#a757fb9ecec53862870a6be04456a97d8">Morpheus::CsrMatrix::index_array_type</a></div><div class="ttdeci">Morpheus::DenseVector&lt; index_type, index_type, array_layout, execution_space, memory_traits &gt; index_array_type</div><div class="ttdef"><b>Definition:</b> Morpheus_CsrMatrix.hpp:128</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -438,6 +438,286 @@
     <filename>classMorpheus_1_1CsrMatrix.html</filename>
     <templarg></templarg>
     <templarg>Properties</templarg>
+    <member kind="typedef">
+      <type>Impl::ContainerTraits&lt; CsrMatrix, ValueType, Properties... &gt;</type>
+      <name>traits</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>ae87f0386e567f7b512c95b3626524aec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::type</type>
+      <name>type</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a3a995aabda5c2c0a083e3cb394bfbc4a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename MatrixFormatTag&lt; Morpheus::CsrFormatTag &gt;::tag</type>
+      <name>tag</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>ab894a393c9ef519a9de4b062bbeb6a90</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::value_type</type>
+      <name>value_type</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a4e10ee50fc8c5d96aa86501fabe071c5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::non_const_value_type</type>
+      <name>non_const_value_type</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a89519fccc3a5d01caea6735b06d8a1fe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::index_type</type>
+      <name>index_type</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a5ba2c702b2806737e27a96e69a180b86</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::non_const_index_type</type>
+      <name>non_const_index_type</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>aaaad0df34cacdc390758548b77f570a6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Morpheus::DenseVector&lt; index_type, index_type, array_layout, execution_space, memory_traits &gt;</type>
+      <name>index_array_type</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a757fb9ecec53862870a6be04456a97d8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Morpheus::DenseVector&lt; value_type, index_type, array_layout, execution_space, memory_traits &gt;</type>
+      <name>value_array_type</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>aa988542650f1aeb77bdf6617f7ef15d4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~CsrMatrix</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a4be1c1c94f672036b4ea9f1b3700dca1</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CsrMatrix</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a9e1b7b7b9a51fc3d4bcb79c6d4a12032</anchor>
+      <arglist>(const CsrMatrix &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CsrMatrix</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>af0e64ffcfbff6656eed81191b68c355b</anchor>
+      <arglist>(CsrMatrix &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>CsrMatrix &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>ac594f40ed2915ed3baa15ee552d8b38e</anchor>
+      <arglist>(const CsrMatrix &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>CsrMatrix &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>abeb2bce9a8fab174942fe0554cd467e5</anchor>
+      <arglist>(CsrMatrix &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CsrMatrix</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a14ac55a88588c5110f7b1c81a7fa79fa</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CsrMatrix</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>ad05a9fe723447a0496334fdcdb041bfe</anchor>
+      <arglist>(const index_type num_rows, const index_type num_cols, const index_type num_entries)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CsrMatrix</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a7a14489815a68f1e98111a5504cc1f23</anchor>
+      <arglist>(const index_type num_rows, const index_type num_cols, const index_type num_entries, IndexArray roff, IndexArray cind, ValueArray vals, typename std::enable_if&lt; is_dense_vector_format_container&lt; ValueArray &gt;::value &amp;&amp;is_dense_vector_format_container&lt; IndexArray &gt;::value &amp;&amp;!ValueArray::memory_traits::is_unmanaged &amp;&amp;!IndexArray::memory_traits::is_unmanaged &gt;::type *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CsrMatrix</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>acd48ab65bec53ef5795be06f3adf9793</anchor>
+      <arglist>(const CsrMatrix&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; is_format_compatible&lt; CsrMatrix, CsrMatrix&lt; VR, PR... &gt;&gt;::value &gt;::type *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::enable_if&lt; is_format_compatible&lt; CsrMatrix, CsrMatrix&lt; VR, PR... &gt; &gt;::value, CsrMatrix &amp; &gt;::type</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a087275d9a13ffd29108d31e858729eb5</anchor>
+      <arglist>(const CsrMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CsrMatrix</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>accae65d68a27d11fa9f59de6b9db77b4</anchor>
+      <arglist>(const DynamicMatrix&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; is_dynamically_compatible&lt; CsrMatrix, DynamicMatrix&lt; VR, PR... &gt;&gt;::value &gt;::type *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::enable_if&lt; is_dynamically_compatible&lt; CsrMatrix, DynamicMatrix&lt; VR, PR... &gt; &gt;::value, CsrMatrix &amp; &gt;::type</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a8d91d28b3dbcaa24f9709779b20b2da2</anchor>
+      <arglist>(const DynamicMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CsrMatrix</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a82418a6d79edcc92dd28bf5ecc0d0962</anchor>
+      <arglist>(const MatrixType &amp;src)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>reference</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>acbb9909e29cdd875daac8b1351cc04cf</anchor>
+      <arglist>(const MatrixType &amp;src)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resize</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>aabf852bb7393bf7ad392a205fa457259</anchor>
+      <arglist>(const index_type num_rows, const index_type num_cols, const index_type num_entries)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resize</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>ad7c2fe84864cc4d9bc0febe92753661a</anchor>
+      <arglist>(const CsrMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>CsrMatrix &amp;</type>
+      <name>allocate</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a0318ff2808af534feb03c821769a6b33</anchor>
+      <arglist>(const CsrMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>formats_e</type>
+      <name>format_enum</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>ab0ca97ba5c621da9bf2d33086eb6c108</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>format_index</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a7f00939dc9cb5b8bb210b582aadfe505</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION index_array_reference</type>
+      <name>row_offsets</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a14ef01c2b5de08a2ad5ebdb0cf96e620</anchor>
+      <arglist>(index_type n)</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION index_array_reference</type>
+      <name>column_indices</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>aba0db3be95b165224ba4439035cc5475</anchor>
+      <arglist>(index_type n)</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION value_array_reference</type>
+      <name>values</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a852fc43005c1c2ebf9810e2b3c0d94a7</anchor>
+      <arglist>(index_type n)</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference</type>
+      <name>crow_offsets</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>aea55043fa9260e28cb7392b67e970a3c</anchor>
+      <arglist>(index_type n) const</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference</type>
+      <name>ccolumn_indices</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>ac6334d91b68b5f254f6b4c8447731fbf</anchor>
+      <arglist>(index_type n) const</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION const_value_array_reference</type>
+      <name>cvalues</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a3990091dd8825461f4f1e74e3aecbf7e</anchor>
+      <arglist>(index_type n) const</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION index_array_type &amp;</type>
+      <name>row_offsets</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a1d1abf55922ec3b92866b5ec5baa71f2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION index_array_type &amp;</type>
+      <name>column_indices</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a117cbe3d6219cc5d385df80c9e7f7a8b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION value_array_type &amp;</type>
+      <name>values</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>acca85793cd7fde85ce6a40e395f45490</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION const_index_array_type &amp;</type>
+      <name>crow_offsets</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>af27776038514423089f4fdda9c2b1adf</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION const_index_array_type &amp;</type>
+      <name>ccolumn_indices</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>a3b6f1fcd352991e53cae017072df7ae6</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION const_value_array_type &amp;</type>
+      <name>cvalues</name>
+      <anchorfile>classMorpheus_1_1CsrMatrix.html</anchorfile>
+      <anchor>ad3532c85be54c2fdf173d702da79b542</anchor>
+      <arglist>() const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>Morpheus::Default</name>
@@ -2421,6 +2701,7 @@
     <title>2D Containers</title>
     <filename>group__containers__2d.html</filename>
     <class kind="class">Morpheus::CooMatrix</class>
+    <class kind="class">Morpheus::CsrMatrix</class>
   </compound>
   <compound kind="group">
     <name>containers</name>
