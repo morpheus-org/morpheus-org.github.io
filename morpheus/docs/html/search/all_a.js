@@ -2,7 +2,7 @@ var searchData=
 [
   ['introduction_91',['Introduction',['../index.html',1,'']]],
   ['index_5farray_5ftype_92',['index_array_type',['../classMorpheus_1_1CooMatrix.html#a92d668389d36874c7fb8a19152305a0f',1,'Morpheus::CooMatrix::index_array_type()'],['../classMorpheus_1_1CsrMatrix.html#a757fb9ecec53862870a6be04456a97d8',1,'Morpheus::CsrMatrix::index_array_type()']]],
-  ['index_5ftype_93',['index_type',['../classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b',1,'Morpheus::CooMatrix::index_type()'],['../classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86',1,'Morpheus::CsrMatrix::index_type()'],['../classMorpheus_1_1DenseVector.html#a4b8dac2a0ee1c3ea2074b3666e31d32a',1,'Morpheus::DenseVector::index_type()']]],
+  ['index_5ftype_93',['index_type',['../classMorpheus_1_1CooMatrix.html#a2016562cf53c66a6c331cb18d881726b',1,'Morpheus::CooMatrix::index_type()'],['../classMorpheus_1_1CsrMatrix.html#a5ba2c702b2806737e27a96e69a180b86',1,'Morpheus::CsrMatrix::index_type()'],['../classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f',1,'Morpheus::DenseMatrix::index_type()'],['../classMorpheus_1_1DenseVector.html#a4b8dac2a0ee1c3ea2074b3666e31d32a',1,'Morpheus::DenseVector::index_type()']]],
   ['indexedtypelist_94',['IndexedTypeList',['../structMorpheus_1_1IndexedTypeList.html',1,'Morpheus']]],
   ['indextype_95',['IndexType',['../structMorpheus_1_1IndexType.html',1,'Morpheus']]],
   ['initarguments_96',['InitArguments',['../structMorpheus_1_1InitArguments.html',1,'Morpheus']]],

@@ -728,10 +728,388 @@
     <filename>classMorpheus_1_1DenseMatrix.html</filename>
     <templarg></templarg>
     <templarg>Properties</templarg>
+    <member kind="typedef">
+      <type>Impl::ContainerTraits&lt; DenseMatrix, ValueType, Properties... &gt;</type>
+      <name>traits</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a6ce20cbcb37a71803d62630f65009cab</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::type</type>
+      <name>type</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a5a2a7d54d9db6a25814976bbdf93d890</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename MatrixFormatTag&lt; Morpheus::DenseMatrixFormatTag &gt;::tag</type>
+      <name>tag</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a1da17f30652ec21c218ec24dbcfa46c1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::value_type</type>
+      <name>value_type</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a8c9e284818def55dd6ff62ad754a7744</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::non_const_value_type</type>
+      <name>non_const_value_type</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>acb517e02ef952b182967bcbfef5ab247</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::index_type</type>
+      <name>index_type</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a7a948bd62a10c0729a4275dc9119f72f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::non_const_index_type</type>
+      <name>non_const_index_type</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a7c62163008da8f3f572ff3d1c49c2f6d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Kokkos::View&lt; value_type **, array_layout, execution_space, memory_traits &gt;</type>
+      <name>value_array_type</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a607bc439501003a59e430170a886e963</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>ad415c6b7e8c166c58ae4ee4b0466a492</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a1fd6cebd87a50e47c40ef1df3cdfd61c</anchor>
+      <arglist>(const DenseMatrix &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>aa4befe8f2391bac7a58475dd7de29f8d</anchor>
+      <arglist>(DenseMatrix &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>DenseMatrix &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>ac1013a560ee58fff1aa14346a26ac6b2</anchor>
+      <arglist>(const DenseMatrix &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>DenseMatrix &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>ad149710c060c25b8b544662460ad3d40</anchor>
+      <arglist>(DenseMatrix &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a6ae45ce20393bd84ca5890e4c748f88e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>aa75f71b94b86f3bce175ab16ccb3a8c6</anchor>
+      <arglist>(const index_type num_rows, const index_type num_cols, const value_type val=0)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a861ec1ffdb472fbf649da5bf9645b6a8</anchor>
+      <arglist>(const index_type num_rows, const index_type num_cols, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;is_same_value_type&lt; value_type, ValuePtr &gt;::value &amp;&amp;memory_traits::is_unmanaged &gt;::type *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>acecf9817cb2c867b525aa0c53782739c</anchor>
+      <arglist>(const DenseMatrix&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; is_format_compatible&lt; DenseMatrix, DenseMatrix&lt; VR, PR... &gt;&gt;::value &gt;::type *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::enable_if&lt; is_format_compatible&lt; DenseMatrix, DenseMatrix&lt; VR, PR... &gt; &gt;::value, DenseMatrix &amp; &gt;::type</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a957176869b676388c748fcaf817fc66d</anchor>
+      <arglist>(const DenseMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>aac5b1bcf54700a745dee7ba7758768e6</anchor>
+      <arglist>(const MatrixType &amp;src)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>reference</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>aa40cac23bad2d00887308307ce18940f</anchor>
+      <arglist>(const MatrixType &amp;src)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>assign</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a73d7868b807464b41e4bda26e9925e51</anchor>
+      <arglist>(index_type num_rows, index_type num_cols, const value_type val)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resize</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a717dcbec1625b475549a5cdd5bb8e851</anchor>
+      <arglist>(index_type num_rows, index_type num_cols)</arglist>
+    </member>
+    <member kind="function">
+      <type>DenseMatrix &amp;</type>
+      <name>allocate</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a6417c99db44d30ab5ec03ff3fd84579f</anchor>
+      <arglist>(const DenseMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION value_array_reference</type>
+      <name>operator()</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a312fdf6cbfb694e03dbb5c5ca2f77717</anchor>
+      <arglist>(index_type i, index_type j) const</arglist>
+    </member>
+    <member kind="function">
+      <type>value_array_pointer</type>
+      <name>data</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a11142f7ba7421896f4e160ffd7cb9aa1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>value_array_type &amp;</type>
+      <name>view</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>acdfe845d6b4928816a998b2ace040695</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const value_array_type &amp;</type>
+      <name>const_view</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a88ae85ca6f50242dbca6cae3b1e544d5</anchor>
+      <arglist>() const</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>DenseMatrix&lt; value_type, index_type, array_layout, execution_space, memory_traits &gt;</name>
     <filename>classMorpheus_1_1DenseMatrix.html</filename>
+    <member kind="typedef">
+      <type>Impl::ContainerTraits&lt; DenseMatrix, value_type, Properties... &gt;</type>
+      <name>traits</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a6ce20cbcb37a71803d62630f65009cab</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::type</type>
+      <name>type</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a5a2a7d54d9db6a25814976bbdf93d890</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename MatrixFormatTag&lt; Morpheus::DenseMatrixFormatTag &gt;::tag</type>
+      <name>tag</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a1da17f30652ec21c218ec24dbcfa46c1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::value_type</type>
+      <name>value_type</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a8c9e284818def55dd6ff62ad754a7744</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::non_const_value_type</type>
+      <name>non_const_value_type</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>acb517e02ef952b182967bcbfef5ab247</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::index_type</type>
+      <name>index_type</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a7a948bd62a10c0729a4275dc9119f72f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::non_const_index_type</type>
+      <name>non_const_index_type</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a7c62163008da8f3f572ff3d1c49c2f6d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Kokkos::View&lt; value_type **, array_layout, execution_space, memory_traits &gt;</type>
+      <name>value_array_type</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a607bc439501003a59e430170a886e963</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>ad415c6b7e8c166c58ae4ee4b0466a492</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a1fd6cebd87a50e47c40ef1df3cdfd61c</anchor>
+      <arglist>(const DenseMatrix &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>aa4befe8f2391bac7a58475dd7de29f8d</anchor>
+      <arglist>(DenseMatrix &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a6ae45ce20393bd84ca5890e4c748f88e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>aa75f71b94b86f3bce175ab16ccb3a8c6</anchor>
+      <arglist>(const index_type num_rows, const index_type num_cols, const value_type val=0)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a861ec1ffdb472fbf649da5bf9645b6a8</anchor>
+      <arglist>(const index_type num_rows, const index_type num_cols, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;is_same_value_type&lt; value_type, ValuePtr &gt;::value &amp;&amp;memory_traits::is_unmanaged &gt;::type *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>acecf9817cb2c867b525aa0c53782739c</anchor>
+      <arglist>(const DenseMatrix&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; is_format_compatible&lt; DenseMatrix, DenseMatrix&lt; VR, PR... &gt;&gt;::value &gt;::type *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DenseMatrix</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>aac5b1bcf54700a745dee7ba7758768e6</anchor>
+      <arglist>(const MatrixType &amp;src)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>DenseMatrix &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>ac1013a560ee58fff1aa14346a26ac6b2</anchor>
+      <arglist>(const DenseMatrix &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>DenseMatrix &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>ad149710c060c25b8b544662460ad3d40</anchor>
+      <arglist>(DenseMatrix &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>std::enable_if&lt; is_format_compatible&lt; DenseMatrix, DenseMatrix&lt; VR, PR... &gt; &gt;::value, DenseMatrix &amp; &gt;::type</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a957176869b676388c748fcaf817fc66d</anchor>
+      <arglist>(const DenseMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>reference</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>aa40cac23bad2d00887308307ce18940f</anchor>
+      <arglist>(const MatrixType &amp;src)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>assign</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a73d7868b807464b41e4bda26e9925e51</anchor>
+      <arglist>(index_type num_rows, index_type num_cols, const value_type val)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resize</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a717dcbec1625b475549a5cdd5bb8e851</anchor>
+      <arglist>(index_type num_rows, index_type num_cols)</arglist>
+    </member>
+    <member kind="function">
+      <type>DenseMatrix &amp;</type>
+      <name>allocate</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a6417c99db44d30ab5ec03ff3fd84579f</anchor>
+      <arglist>(const DenseMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>MORPHEUS_FORCEINLINE_FUNCTION value_array_reference</type>
+      <name>operator()</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a312fdf6cbfb694e03dbb5c5ca2f77717</anchor>
+      <arglist>(index_type i, index_type j) const</arglist>
+    </member>
+    <member kind="function">
+      <type>value_array_pointer</type>
+      <name>data</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a11142f7ba7421896f4e160ffd7cb9aa1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>value_array_type &amp;</type>
+      <name>view</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>acdfe845d6b4928816a998b2ace040695</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const value_array_type &amp;</type>
+      <name>const_view</name>
+      <anchorfile>classMorpheus_1_1DenseMatrix.html</anchorfile>
+      <anchor>a88ae85ca6f50242dbca6cae3b1e544d5</anchor>
+      <arglist>() const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>Morpheus::DenseMatrixFormatTag</name>
@@ -2702,6 +3080,7 @@
     <filename>group__containers__2d.html</filename>
     <class kind="class">Morpheus::CooMatrix</class>
     <class kind="class">Morpheus::CsrMatrix</class>
+    <class kind="class">Morpheus::DenseMatrix</class>
   </compound>
   <compound kind="group">
     <name>containers</name>

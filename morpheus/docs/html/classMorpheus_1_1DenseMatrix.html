@@ -72,38 +72,36 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classMorpheus_1_1DenseMatrix-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Morpheus::DenseMatrix&lt; ValueType, Properties &gt; Class Template Reference</div>  </div>
+<div class="title">Morpheus::DenseMatrix&lt; ValueType, Properties &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__containers.html">Containers</a> &raquo; <a class="el" href="group__containers__2d.html">2D Containers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container is a two-dimensional dense container that contains contiguous elements. It is a polymorphic container in the sense that it can store scalar or integer type values, on host or device depending how the template parameters are selected.  
+ <a href="classMorpheus_1_1DenseMatrix.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Morpheus__DenseMatrix_8hpp_source.html">Morpheus_DenseMatrix.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a6ce20cbcb37a71803d62630f65009cab"><td class="memItemLeft" align="right" valign="top"><a id="a6ce20cbcb37a71803d62630f65009cab"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>traits</b> = <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt; <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
+<tr class="memitem:a6ce20cbcb37a71803d62630f65009cab"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a6ce20cbcb37a71803d62630f65009cab">traits</a> = <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt; <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
 <tr class="separator:a6ce20cbcb37a71803d62630f65009cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a2a7d54d9db6a25814976bbdf93d890"><td class="memItemLeft" align="right" valign="top"><a id="a5a2a7d54d9db6a25814976bbdf93d890"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = typename traits::type</td></tr>
+<tr class="memitem:a5a2a7d54d9db6a25814976bbdf93d890"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a5a2a7d54d9db6a25814976bbdf93d890">type</a> = typename traits::type</td></tr>
 <tr class="separator:a5a2a7d54d9db6a25814976bbdf93d890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afffb208fb8cd537db6e2b81f232fadc6"><td class="memItemLeft" align="right" valign="top"><a id="afffb208fb8cd537db6e2b81f232fadc6"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> = <a class="el" href="classMorpheus_1_1Impl_1_1MatrixBase.html">Impl::MatrixBase</a>&lt; <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
 <tr class="separator:afffb208fb8cd537db6e2b81f232fadc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1da17f30652ec21c218ec24dbcfa46c1"><td class="memItemLeft" align="right" valign="top"><a id="a1da17f30652ec21c218ec24dbcfa46c1"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>tag</b> = typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt; <a class="el" href="structMorpheus_1_1DenseMatrixFormatTag.html">Morpheus::DenseMatrixFormatTag</a> &gt;::tag</td></tr>
+<tr class="memitem:a1da17f30652ec21c218ec24dbcfa46c1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a1da17f30652ec21c218ec24dbcfa46c1">tag</a> = typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt; <a class="el" href="structMorpheus_1_1DenseMatrixFormatTag.html">Morpheus::DenseMatrixFormatTag</a> &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a1da17f30652ec21c218ec24dbcfa46c1">tag</a></td></tr>
 <tr class="separator:a1da17f30652ec21c218ec24dbcfa46c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c9e284818def55dd6ff62ad754a7744"><td class="memItemLeft" align="right" valign="top"><a id="a8c9e284818def55dd6ff62ad754a7744"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td></tr>
+<tr class="memitem:a8c9e284818def55dd6ff62ad754a7744"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a8c9e284818def55dd6ff62ad754a7744">value_type</a> = typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td></tr>
 <tr class="separator:a8c9e284818def55dd6ff62ad754a7744"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb517e02ef952b182967bcbfef5ab247"><td class="memItemLeft" align="right" valign="top"><a id="acb517e02ef952b182967bcbfef5ab247"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>non_const_value_type</b> = typename traits::non_const_value_type</td></tr>
+<tr class="memitem:acb517e02ef952b182967bcbfef5ab247"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#acb517e02ef952b182967bcbfef5ab247">non_const_value_type</a> = typename traits::non_const_value_type</td></tr>
 <tr class="separator:acb517e02ef952b182967bcbfef5ab247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3171196eb37b1d9bb89d951c3ff6ea1c"><td class="memItemLeft" align="right" valign="top"><a id="a3171196eb37b1d9bb89d951c3ff6ea1c"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = typename traits::index_type</td></tr>
 <tr class="separator:a3171196eb37b1d9bb89d951c3ff6ea1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a948bd62a10c0729a4275dc9119f72f"><td class="memItemLeft" align="right" valign="top"><a id="a7a948bd62a10c0729a4275dc9119f72f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>index_type</b> = typename traits::index_type</td></tr>
+<tr class="memitem:a7a948bd62a10c0729a4275dc9119f72f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a> = typename traits::index_type</td></tr>
 <tr class="separator:a7a948bd62a10c0729a4275dc9119f72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c62163008da8f3f572ff3d1c49c2f6d"><td class="memItemLeft" align="right" valign="top"><a id="a7c62163008da8f3f572ff3d1c49c2f6d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>non_const_index_type</b> = typename traits::non_const_index_type</td></tr>
+<tr class="memitem:a7c62163008da8f3f572ff3d1c49c2f6d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a7c62163008da8f3f572ff3d1c49c2f6d">non_const_index_type</a> = typename traits::non_const_index_type</td></tr>
 <tr class="separator:a7c62163008da8f3f572ff3d1c49c2f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a197be389dea380b5bfa0d4f8fc09f940"><td class="memItemLeft" align="right" valign="top"><a id="a197be389dea380b5bfa0d4f8fc09f940"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>array_layout</b> = typename traits::array_layout</td></tr>
@@ -135,8 +133,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = type
 <tr class="memitem:a0353643edd0a12c16e6d88ab5ea78670"><td class="memItemLeft" align="right" valign="top"><a id="a0353643edd0a12c16e6d88ab5ea78670"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b> = typename traits::const_reference</td></tr>
 <tr class="separator:a0353643edd0a12c16e6d88ab5ea78670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a607bc439501003a59e430170a886e963"><td class="memItemLeft" align="right" valign="top"><a id="a607bc439501003a59e430170a886e963"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_array_type</b> = Kokkos::View&lt; value_type **, array_layout, execution_space, memory_traits &gt;</td></tr>
+<tr class="memitem:a607bc439501003a59e430170a886e963"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a607bc439501003a59e430170a886e963">value_array_type</a> = Kokkos::View&lt; <a class="el" href="classMorpheus_1_1DenseMatrix.html#a8c9e284818def55dd6ff62ad754a7744">value_type</a> **, array_layout, execution_space, memory_traits &gt;</td></tr>
 <tr class="separator:a607bc439501003a59e430170a886e963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1578bdcdb29980b3511de3ff8934dc3f"><td class="memItemLeft" align="right" valign="top"><a id="a1578bdcdb29980b3511de3ff8934dc3f"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>value_array_pointer</b> = typename value_array_type::pointer_type</td></tr>
@@ -147,69 +144,839 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>value_array_referenc
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad415c6b7e8c166c58ae4ee4b0466a492"><td class="memItemLeft" align="right" valign="top"><a id="ad415c6b7e8c166c58ae4ee4b0466a492"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#ad415c6b7e8c166c58ae4ee4b0466a492">~DenseMatrix</a> ()=default</td></tr>
+<tr class="memdesc:ad415c6b7e8c166c58ae4ee4b0466a492"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> destructor. <br /></td></tr>
+<tr class="separator:ad415c6b7e8c166c58ae4ee4b0466a492"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fd6cebd87a50e47c40ef1df3cdfd61c"><td class="memItemLeft" align="right" valign="top"><a id="a1fd6cebd87a50e47c40ef1df3cdfd61c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DenseMatrix</b> (const <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;)=default</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a1fd6cebd87a50e47c40ef1df3cdfd61c">DenseMatrix</a> (const <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;)=default</td></tr>
+<tr class="memdesc:a1fd6cebd87a50e47c40ef1df3cdfd61c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> copy contructor (shallow copy) of a <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container from another <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:a1fd6cebd87a50e47c40ef1df3cdfd61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4befe8f2391bac7a58475dd7de29f8d"><td class="memItemLeft" align="right" valign="top"><a id="aa4befe8f2391bac7a58475dd7de29f8d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DenseMatrix</b> (<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;&amp;)=default</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#aa4befe8f2391bac7a58475dd7de29f8d">DenseMatrix</a> (<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:aa4befe8f2391bac7a58475dd7de29f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> move contructor (shallow copy) of a <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container from another <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:aa4befe8f2391bac7a58475dd7de29f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1013a560ee58fff1aa14346a26ac6b2"><td class="memItemLeft" align="right" valign="top"><a id="ac1013a560ee58fff1aa14346a26ac6b2"></a>
-<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;)=default</td></tr>
+<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#ac1013a560ee58fff1aa14346a26ac6b2">operator=</a> (const <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;)=default</td></tr>
+<tr class="memdesc:ac1013a560ee58fff1aa14346a26ac6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> copy assignment (shallow copy) of a <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container from another <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:ac1013a560ee58fff1aa14346a26ac6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad149710c060c25b8b544662460ad3d40"><td class="memItemLeft" align="right" valign="top"><a id="ad149710c060c25b8b544662460ad3d40"></a>
-<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;&amp;)=default</td></tr>
+<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#ad149710c060c25b8b544662460ad3d40">operator=</a> (<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:ad149710c060c25b8b544662460ad3d40"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structMorpheus_1_1Default.html" title="A Default tag is used to denote the use of default types.">Default</a> move assignment (shallow copy) of a <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container from another <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:ad149710c060c25b8b544662460ad3d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa75f71b94b86f3bce175ab16ccb3a8c6"><td class="memItemLeft" align="right" valign="top"><a id="aa75f71b94b86f3bce175ab16ccb3a8c6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DenseMatrix</b> (const index_type num_rows, const index_type num_cols, const value_type val=0)</td></tr>
+<tr class="memitem:a6ae45ce20393bd84ca5890e4c748f88e"><td class="memItemLeft" align="right" valign="top"><a id="a6ae45ce20393bd84ca5890e4c748f88e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a6ae45ce20393bd84ca5890e4c748f88e">DenseMatrix</a> ()</td></tr>
+<tr class="memdesc:a6ae45ce20393bd84ca5890e4c748f88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty <a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a> object. <br /></td></tr>
+<tr class="separator:a6ae45ce20393bd84ca5890e4c748f88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75f71b94b86f3bce175ab16ccb3a8c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#aa75f71b94b86f3bce175ab16ccb3a8c6">DenseMatrix</a> (const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a> num_rows, const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a> num_cols, const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a8c9e284818def55dd6ff62ad754a7744">value_type</a> val=0)</td></tr>
+<tr class="memdesc:aa75f71b94b86f3bce175ab16ccb3a8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> object with shape (num_rows, num_cols) and values set to <code>val</code>.  <a href="classMorpheus_1_1DenseMatrix.html#aa75f71b94b86f3bce175ab16ccb3a8c6">More...</a><br /></td></tr>
 <tr class="separator:aa75f71b94b86f3bce175ab16ccb3a8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53747c20c8812b65ce61af4ff32a0c82"><td class="memTemplParams" colspan="2"><a id="a53747c20c8812b65ce61af4ff32a0c82"></a>
-template&lt;typename ValuePtr &gt; </td></tr>
-<tr class="memitem:a53747c20c8812b65ce61af4ff32a0c82"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DenseMatrix</b> (const index_type num_rows, const index_type num_cols, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &gt;::type *=nullptr)</td></tr>
-<tr class="separator:a53747c20c8812b65ce61af4ff32a0c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24ec10d9708d0224577b309cb7b2cfe1"><td class="memTemplParams" colspan="2"><a id="a24ec10d9708d0224577b309cb7b2cfe1"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a24ec10d9708d0224577b309cb7b2cfe1"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DenseMatrix</b> (const <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>, typename <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt;::type &gt;::value &gt;::type *=nullptr)</td></tr>
-<tr class="separator:a24ec10d9708d0224577b309cb7b2cfe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5df8ede1f641d39267f79e72dde4bc83"><td class="memTemplParams" colspan="2"><a id="a5df8ede1f641d39267f79e72dde4bc83"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a5df8ede1f641d39267f79e72dde4bc83"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>, typename <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt;::type &gt;::value, <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
-<tr class="separator:a5df8ede1f641d39267f79e72dde4bc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac5b1bcf54700a745dee7ba7758768e6"><td class="memTemplParams" colspan="2"><a id="aac5b1bcf54700a745dee7ba7758768e6"></a>
-template&lt;class MatrixType &gt; </td></tr>
-<tr class="memitem:aac5b1bcf54700a745dee7ba7758768e6"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DenseMatrix</b> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memitem:a861ec1ffdb472fbf649da5bf9645b6a8"><td class="memTemplParams" colspan="2">template&lt;typename ValuePtr &gt; </td></tr>
+<tr class="memitem:a861ec1ffdb472fbf649da5bf9645b6a8"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a861ec1ffdb472fbf649da5bf9645b6a8">DenseMatrix</a> (const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a> num_rows, const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a> num_cols, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__same__value__type.html">is_same_value_type</a>&lt; <a class="el" href="classMorpheus_1_1DenseMatrix.html#a8c9e284818def55dd6ff62ad754a7744">value_type</a>, ValuePtr &gt;::value &amp;&amp;memory_traits::is_unmanaged &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a5a2a7d54d9db6a25814976bbdf93d890">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:a861ec1ffdb472fbf649da5bf9645b6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> object from a raw pointer. This is only enabled if the <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> is an unmanaged container.  <a href="classMorpheus_1_1DenseMatrix.html#a861ec1ffdb472fbf649da5bf9645b6a8">More...</a><br /></td></tr>
+<tr class="separator:a861ec1ffdb472fbf649da5bf9645b6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acecf9817cb2c867b525aa0c53782739c"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:acecf9817cb2c867b525aa0c53782739c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#acecf9817cb2c867b525aa0c53782739c">DenseMatrix</a> (const <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>, <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a5a2a7d54d9db6a25814976bbdf93d890">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:acecf9817cb2c867b525aa0c53782739c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shallow Copy contrustor from another <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container with different properties. Note that this is only possible when the <code><a class="el" href="classMorpheus_1_1is__compatible.html" title="Checks if the two types are compatible containers i.e are in the same memory space and have the same ...">is_compatible</a></code> check is satisfied.  <a href="classMorpheus_1_1DenseMatrix.html#acecf9817cb2c867b525aa0c53782739c">More...</a><br /></td></tr>
+<tr class="separator:acecf9817cb2c867b525aa0c53782739c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957176869b676388c748fcaf817fc66d"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:a957176869b676388c748fcaf817fc66d"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>, <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt; &gt;::value, <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp; &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a5a2a7d54d9db6a25814976bbdf93d890">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a957176869b676388c748fcaf817fc66d">operator=</a> (const <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:a957176869b676388c748fcaf817fc66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shallow Copy Assignment from another <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container with different properties. Note that this is only possible when the <code><a class="el" href="classMorpheus_1_1is__compatible.html" title="Checks if the two types are compatible containers i.e are in the same memory space and have the same ...">is_compatible</a></code> check is satisfied.  <a href="classMorpheus_1_1DenseMatrix.html#a957176869b676388c748fcaf817fc66d">More...</a><br /></td></tr>
+<tr class="separator:a957176869b676388c748fcaf817fc66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5b1bcf54700a745dee7ba7758768e6"><td class="memTemplParams" colspan="2">template&lt;class MatrixType &gt; </td></tr>
+<tr class="memitem:aac5b1bcf54700a745dee7ba7758768e6"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#aac5b1bcf54700a745dee7ba7758768e6">DenseMatrix</a> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memdesc:aac5b1bcf54700a745dee7ba7758768e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a DenserMatrix object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations.  <a href="classMorpheus_1_1DenseMatrix.html#aac5b1bcf54700a745dee7ba7758768e6">More...</a><br /></td></tr>
 <tr class="separator:aac5b1bcf54700a745dee7ba7758768e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa40cac23bad2d00887308307ce18940f"><td class="memTemplParams" colspan="2"><a id="aa40cac23bad2d00887308307ce18940f"></a>
-template&lt;class MatrixType &gt; </td></tr>
-<tr class="memitem:aa40cac23bad2d00887308307ce18940f"><td class="memTemplItemLeft" align="right" valign="top">reference&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memitem:aa40cac23bad2d00887308307ce18940f"><td class="memTemplParams" colspan="2">template&lt;class MatrixType &gt; </td></tr>
+<tr class="memitem:aa40cac23bad2d00887308307ce18940f"><td class="memTemplItemLeft" align="right" valign="top">reference&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#aa40cac23bad2d00887308307ce18940f">operator=</a> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memdesc:aa40cac23bad2d00887308307ce18940f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign to <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations.  <a href="classMorpheus_1_1DenseMatrix.html#aa40cac23bad2d00887308307ce18940f">More...</a><br /></td></tr>
 <tr class="separator:aa40cac23bad2d00887308307ce18940f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73d7868b807464b41e4bda26e9925e51"><td class="memItemLeft" align="right" valign="top"><a id="a73d7868b807464b41e4bda26e9925e51"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (index_type num_rows, index_type num_cols, const value_type val)</td></tr>
+<tr class="memitem:a73d7868b807464b41e4bda26e9925e51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a73d7868b807464b41e4bda26e9925e51">assign</a> (<a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a> num_rows, <a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a> num_cols, const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a8c9e284818def55dd6ff62ad754a7744">value_type</a> val)</td></tr>
+<tr class="memdesc:a73d7868b807464b41e4bda26e9925e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns (num_rows * num_cols) elements of value <code>val</code> to the <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a>. The container will always resize to match the new shape.  <a href="classMorpheus_1_1DenseMatrix.html#a73d7868b807464b41e4bda26e9925e51">More...</a><br /></td></tr>
 <tr class="separator:a73d7868b807464b41e4bda26e9925e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a717dcbec1625b475549a5cdd5bb8e851"><td class="memItemLeft" align="right" valign="top"><a id="a717dcbec1625b475549a5cdd5bb8e851"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (index_type num_rows, index_type num_cols)</td></tr>
+<tr class="memitem:a717dcbec1625b475549a5cdd5bb8e851"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a717dcbec1625b475549a5cdd5bb8e851">resize</a> (<a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a> num_rows, <a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a> num_cols)</td></tr>
+<tr class="memdesc:a717dcbec1625b475549a5cdd5bb8e851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> with shape (num_rows * num_cols). Overlapping subextents will preserve their contents.  <a href="classMorpheus_1_1DenseMatrix.html#a717dcbec1625b475549a5cdd5bb8e851">More...</a><br /></td></tr>
 <tr class="separator:a717dcbec1625b475549a5cdd5bb8e851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3ee6d867895c90fed1fc1a6cb3d91c1"><td class="memTemplParams" colspan="2"><a id="ad3ee6d867895c90fed1fc1a6cb3d91c1"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:ad3ee6d867895c90fed1fc1a6cb3d91c1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>allocate</b> (const std::string name, const <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
-<tr class="separator:ad3ee6d867895c90fed1fc1a6cb3d91c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e84e13b9f232eed4a85502325ccbd3"><td class="memItemLeft" align="right" valign="top"><a id="a73e84e13b9f232eed4a85502325ccbd3"></a>
-value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (index_type i, index_type j) const</td></tr>
-<tr class="separator:a73e84e13b9f232eed4a85502325ccbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11142f7ba7421896f4e160ffd7cb9aa1"><td class="memItemLeft" align="right" valign="top"><a id="a11142f7ba7421896f4e160ffd7cb9aa1"></a>
-value_array_pointer&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> () const</td></tr>
+<tr class="memitem:a6417c99db44d30ab5ec03ff3fd84579f"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:a6417c99db44d30ab5ec03ff3fd84579f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a6417c99db44d30ab5ec03ff3fd84579f">allocate</a> (const <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:a6417c99db44d30ab5ec03ff3fd84579f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory from another <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container with different properties.  <a href="classMorpheus_1_1DenseMatrix.html#a6417c99db44d30ab5ec03ff3fd84579f">More...</a><br /></td></tr>
+<tr class="separator:a6417c99db44d30ab5ec03ff3fd84579f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312fdf6cbfb694e03dbb5c5ca2f77717"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a312fdf6cbfb694e03dbb5c5ca2f77717">operator()</a> (<a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a> i, <a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a> j) const</td></tr>
+<tr class="memdesc:a312fdf6cbfb694e03dbb5c5ca2f77717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the element with index (i,j)  <a href="classMorpheus_1_1DenseMatrix.html#a312fdf6cbfb694e03dbb5c5ca2f77717">More...</a><br /></td></tr>
+<tr class="separator:a312fdf6cbfb694e03dbb5c5ca2f77717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11142f7ba7421896f4e160ffd7cb9aa1"><td class="memItemLeft" align="right" valign="top">value_array_pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a11142f7ba7421896f4e160ffd7cb9aa1">data</a> () const</td></tr>
+<tr class="memdesc:a11142f7ba7421896f4e160ffd7cb9aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the data at the beginning of the container.  <a href="classMorpheus_1_1DenseMatrix.html#a11142f7ba7421896f4e160ffd7cb9aa1">More...</a><br /></td></tr>
 <tr class="separator:a11142f7ba7421896f4e160ffd7cb9aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdfe845d6b4928816a998b2ace040695"><td class="memItemLeft" align="right" valign="top"><a id="acdfe845d6b4928816a998b2ace040695"></a>
-value_array_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>view</b> ()</td></tr>
+<tr class="memitem:acdfe845d6b4928816a998b2ace040695"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a607bc439501003a59e430170a886e963">value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#acdfe845d6b4928816a998b2ace040695">view</a> ()</td></tr>
+<tr class="memdesc:acdfe845d6b4928816a998b2ace040695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the beginning of the view that holds the data.  <a href="classMorpheus_1_1DenseMatrix.html#acdfe845d6b4928816a998b2ace040695">More...</a><br /></td></tr>
 <tr class="separator:acdfe845d6b4928816a998b2ace040695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88ae85ca6f50242dbca6cae3b1e544d5"><td class="memItemLeft" align="right" valign="top"><a id="a88ae85ca6f50242dbca6cae3b1e544d5"></a>
-const value_array_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>const_view</b> () const</td></tr>
+<tr class="memitem:a88ae85ca6f50242dbca6cae3b1e544d5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a607bc439501003a59e430170a886e963">value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a88ae85ca6f50242dbca6cae3b1e544d5">const_view</a> () const</td></tr>
+<tr class="memdesc:a88ae85ca6f50242dbca6cae3b1e544d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a constant reference to the beginning of the view that holds the data.  <a href="classMorpheus_1_1DenseMatrix.html#a88ae85ca6f50242dbca6cae3b1e544d5">More...</a><br /></td></tr>
 <tr class="separator:a88ae85ca6f50242dbca6cae3b1e544d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class ValueType, class... Properties&gt;<br />
+class Morpheus::DenseMatrix&lt; ValueType, Properties &gt;</h3>
+
+<p>The <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container is a two-dimensional dense container that contains contiguous elements. It is a polymorphic container in the sense that it can store scalar or integer type values, on host or device depending how the template parameters are selected. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname"><a class="el" href="structMorpheus_1_1ValueType.html" title="A wrapper that checks if the provided type is a scalar type.">ValueType</a></td><td>type of values to store </td></tr>
+    <tr><td class="paramname">Properties</td><td>optional properties to modify the behaviour of the container. Sensible defaults are selected based on the configuration. Please refer to <a class="el" href="Morpheus__ContainerTraits_8hpp_source.html">impl/Morpheus_ContainerTraits.hpp</a> to find out more about the valid properties.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Overview</dt><dd>TODO</dd></dl>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;Morpheus_Core.hpp&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main(){</div>
+<div class="line"> <span class="comment">// Construct a vector on host, of size 10 and with values set to 5.0</span></div>
+<div class="line"> <a class="code" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix&lt;double, Kokkos::HostSpace&gt;</a> A(10, 10, 5.0);</div>
+<div class="line"> </div>
+<div class="line"> <span class="comment">// Set some values</span></div>
+<div class="line"> A(2,4) = 5.0;</div>
+<div class="line"> A(5,4) = -2.0;</div>
+<div class="line">}</div>
+</div><!-- fragment --> </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a7a948bd62a10c0729a4275dc9119f72f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a948bd62a10c0729a4275dc9119f72f">&#9670;&nbsp;</a></span>index_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a> =  typename traits::index_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of the indices held by the container - can be const </p>
+
+</div>
+</div>
+<a id="a7c62163008da8f3f572ff3d1c49c2f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c62163008da8f3f572ff3d1c49c2f6d">&#9670;&nbsp;</a></span>non_const_index_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a7c62163008da8f3f572ff3d1c49c2f6d">non_const_index_type</a> =  typename traits::non_const_index_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The non-constant type of the indices held by the container </p>
+
+</div>
+</div>
+<a id="acb517e02ef952b182967bcbfef5ab247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb517e02ef952b182967bcbfef5ab247">&#9670;&nbsp;</a></span>non_const_value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#acb517e02ef952b182967bcbfef5ab247">non_const_value_type</a> =  typename traits::non_const_value_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The non-constant type of the values held by the container </p>
+
+</div>
+</div>
+<a id="a1da17f30652ec21c218ec24dbcfa46c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da17f30652ec21c218ec24dbcfa46c1">&#9670;&nbsp;</a></span>tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a1da17f30652ec21c218ec24dbcfa46c1">tag</a> =  typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt;<a class="el" href="structMorpheus_1_1DenseMatrixFormatTag.html">Morpheus::DenseMatrixFormatTag</a>&gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a1da17f30652ec21c218ec24dbcfa46c1">tag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The tag associated specificaly to the particular container </p>
+
+</div>
+</div>
+<a id="a6ce20cbcb37a71803d62630f65009cab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce20cbcb37a71803d62630f65009cab">&#9670;&nbsp;</a></span>traits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a6ce20cbcb37a71803d62630f65009cab">traits</a> =  <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt;<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The traits associated with the particular container </p>
+
+</div>
+</div>
+<a id="a5a2a7d54d9db6a25814976bbdf93d890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2a7d54d9db6a25814976bbdf93d890">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a5a2a7d54d9db6a25814976bbdf93d890">type</a> =  typename traits::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The complete type of the container </p>
+
+</div>
+</div>
+<a id="a607bc439501003a59e430170a886e963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a607bc439501003a59e430170a886e963">&#9670;&nbsp;</a></span>value_array_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a607bc439501003a59e430170a886e963">value_array_type</a> =  Kokkos::View&lt;<a class="el" href="classMorpheus_1_1DenseMatrix.html#a8c9e284818def55dd6ff62ad754a7744">value_type</a> **, array_layout, execution_space, memory_traits&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of view that holds the value_type data </p>
+
+</div>
+</div>
+<a id="a8c9e284818def55dd6ff62ad754a7744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c9e284818def55dd6ff62ad754a7744">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a8c9e284818def55dd6ff62ad754a7744">value_type</a> =  typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of the values held by the container - can be const </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa75f71b94b86f3bce175ab16ccb3a8c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75f71b94b86f3bce175ab16ccb3a8c6">&#9670;&nbsp;</a></span>DenseMatrix() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a8c9e284818def55dd6ff62ad754a7744">value_type</a>&#160;</td>
+          <td class="paramname"><em>val</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> object with shape (num_rows, num_cols) and values set to <code>val</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_rows</td><td>Number of rows </td></tr>
+    <tr><td class="paramname">num_cols</td><td>Number of columns </td></tr>
+    <tr><td class="paramname">val</td><td>Value at which the elements of the <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> will be set to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a861ec1ffdb472fbf649da5bf9645b6a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a861ec1ffdb472fbf649da5bf9645b6a8">&#9670;&nbsp;</a></span>DenseMatrix() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;typename ValuePtr &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValuePtr&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__same__value__type.html">is_same_value_type</a>&lt; <a class="el" href="classMorpheus_1_1DenseMatrix.html#a8c9e284818def55dd6ff62ad754a7744">value_type</a>, ValuePtr &gt;::value &amp;&amp;memory_traits::is_unmanaged &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a5a2a7d54d9db6a25814976bbdf93d890">type</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> object from a raw pointer. This is only enabled if the <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> is an unmanaged container. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ValuePtr</td><td>Pointer type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_rows</td><td>Number of rows </td></tr>
+    <tr><td class="paramname">num_cols</td><td>Number of columns </td></tr>
+    <tr><td class="paramname">ptr</td><td>Pointer value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acecf9817cb2c867b525aa0c53782739c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acecf9817cb2c867b525aa0c53782739c">&#9670;&nbsp;</a></span>DenseMatrix() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;, <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a5a2a7d54d9db6a25814976bbdf93d890">type</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shallow Copy contrustor from another <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container with different properties. Note that this is only possible when the <code><a class="el" href="classMorpheus_1_1is__compatible.html" title="Checks if the two types are compatible containers i.e are in the same memory space and have the same ...">is_compatible</a></code> check is satisfied. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Value Type of the container we are constructing from. </td></tr>
+    <tr><td class="paramname">PR</td><td>Optional properties of the container we are constructing from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The <code><a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a></code> container we are constructing from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac5b1bcf54700a745dee7ba7758768e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac5b1bcf54700a745dee7ba7758768e6">&#9670;&nbsp;</a></span>DenseMatrix() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const MatrixType &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a DenserMatrix object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MatrixType</td><td>Any of the supported storage formats. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source container. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6417c99db44d30ab5ec03ff3fd84579f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6417c99db44d30ab5ec03ff3fd84579f">&#9670;&nbsp;</a></span>allocate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&amp; <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::allocate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allocates memory from another <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container with different properties. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Value Type of the container we are allocating from. </td></tr>
+    <tr><td class="paramname">PR</td><td>Optional properties of the container we are allocating from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The <code><a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a></code> container we are allocating from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a73d7868b807464b41e4bda26e9925e51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d7868b807464b41e4bda26e9925e51">&#9670;&nbsp;</a></span>assign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::assign </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a8c9e284818def55dd6ff62ad754a7744">value_type</a>&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns (num_rows * num_cols) elements of value <code>val</code> to the <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a>. The container will always resize to match the new shape. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_rows</td><td>Number of rows </td></tr>
+    <tr><td class="paramname">num_cols</td><td>Number of columns </td></tr>
+    <tr><td class="paramname">val</td><td>Value to assign </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a88ae85ca6f50242dbca6cae3b1e544d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88ae85ca6f50242dbca6cae3b1e544d5">&#9670;&nbsp;</a></span>const_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classMorpheus_1_1DenseMatrix.html#a607bc439501003a59e430170a886e963">value_array_type</a>&amp; <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::const_view </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a constant reference to the beginning of the view that holds the data. </p>
+<dl class="section return"><dt>Returns</dt><dd>Constant type of view that holds the data </dd></dl>
+
+</div>
+</div>
+<a id="a11142f7ba7421896f4e160ffd7cb9aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11142f7ba7421896f4e160ffd7cb9aa1">&#9670;&nbsp;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">value_array_pointer <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the data at the beginning of the container. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer type of the value_type data </dd></dl>
+
+</div>
+</div>
+<a id="a312fdf6cbfb694e03dbb5c5ca2f77717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a312fdf6cbfb694e03dbb5c5ca2f77717">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MORPHEUS_FORCEINLINE_FUNCTION value_array_reference <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a>&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a>&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the element with index (i,j) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>First index of the value to extract </td></tr>
+    <tr><td class="paramname">j</td><td>Second index of the value to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Element at index (i,j) </dd></dl>
+
+</div>
+</div>
+<a id="a957176869b676388c748fcaf817fc66d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957176869b676388c748fcaf817fc66d">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt;<a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>, <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt;VR, PR...&gt; &gt;::value, <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a> &amp;&gt;::<a class="el" href="classMorpheus_1_1DenseMatrix.html#a5a2a7d54d9db6a25814976bbdf93d890">type</a> <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DenseMatrix.html">DenseMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shallow Copy Assignment from another <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> container with different properties. Note that this is only possible when the <code><a class="el" href="classMorpheus_1_1is__compatible.html" title="Checks if the two types are compatible containers i.e are in the same memory space and have the same ...">is_compatible</a></code> check is satisfied. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Value Type of the container we are copying from. </td></tr>
+    <tr><td class="paramname">PR</td><td>Optional properties of the container we are copying from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The <code><a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a></code> container we are copying from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa40cac23bad2d00887308307ce18940f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa40cac23bad2d00887308307ce18940f">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">reference <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const MatrixType &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assign to <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MatrixType</td><td>Any of the supported storage formats. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source container. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a717dcbec1625b475549a5cdd5bb8e851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717dcbec1625b475549a5cdd5bb8e851">&#9670;&nbsp;</a></span>resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a7a948bd62a10c0729a4275dc9119f72f">index_type</a>&#160;</td>
+          <td class="paramname"><em>num_cols</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resizes <a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a> with shape (num_rows * num_cols). Overlapping subextents will preserve their contents. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_rows</td><td>Number of new rows </td></tr>
+    <tr><td class="paramname">num_cols</td><td>Number of new columns </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acdfe845d6b4928816a998b2ace040695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdfe845d6b4928816a998b2ace040695">&#9670;&nbsp;</a></span>view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1DenseMatrix.html#a607bc439501003a59e430170a886e963">value_array_type</a>&amp; <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::view </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the beginning of the view that holds the data. </p>
+<dl class="section return"><dt>Returns</dt><dd>Type of view that holds the data </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="Morpheus__Fwd__DenseMatrix_8hpp_source.html">Morpheus_Fwd_DenseMatrix.hpp</a></li>
 <li><a class="el" href="Morpheus__DenseMatrix_8hpp_source.html">Morpheus_DenseMatrix.hpp</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassMorpheus_1_1DenseMatrix_html"><div class="ttname"><a href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a></div><div class="ttdoc">The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....</div><div class="ttdef"><b>Definition:</b> Morpheus_Fwd_DenseMatrix.hpp:29</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
