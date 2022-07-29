@@ -72,207 +72,258 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classMorpheus_1_1DiaMatrix-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Morpheus::DiaMatrix&lt; ValueType, Properties &gt; Class Template Reference</div>  </div>
+<div class="title">Morpheus::DiaMatrix&lt; ValueType, Properties &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__containers.html">Containers</a> &raquo; <a class="el" href="group__containers__2d.html">2D Containers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.  
+ <a href="classMorpheus_1_1DiaMatrix.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Morpheus__DiaMatrix_8hpp_source.html">Morpheus_DiaMatrix.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a70663ac4a6fc0dae41a55c4cc0c78c86"><td class="memItemLeft" align="right" valign="top"><a id="a70663ac4a6fc0dae41a55c4cc0c78c86"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>traits</b> = <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt; <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
-<tr class="separator:a70663ac4a6fc0dae41a55c4cc0c78c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a28b3b4c827fd67e24a467fb05f63d5"><td class="memItemLeft" align="right" valign="top"><a id="a8a28b3b4c827fd67e24a467fb05f63d5"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = typename traits::type</td></tr>
-<tr class="separator:a8a28b3b4c827fd67e24a467fb05f63d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a1281b6270e3b1d28598aa99ce0d33"><td class="memItemLeft" align="right" valign="top"><a id="ae3a1281b6270e3b1d28598aa99ce0d33"></a>
+<tr class="memitem:ga70663ac4a6fc0dae41a55c4cc0c78c86"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga70663ac4a6fc0dae41a55c4cc0c78c86">traits</a> = <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt; <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
+<tr class="separator:ga70663ac4a6fc0dae41a55c4cc0c78c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a28b3b4c827fd67e24a467fb05f63d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga8a28b3b4c827fd67e24a467fb05f63d5">type</a> = typename traits::type</td></tr>
+<tr class="separator:ga8a28b3b4c827fd67e24a467fb05f63d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3a1281b6270e3b1d28598aa99ce0d33"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> = <a class="el" href="classMorpheus_1_1Impl_1_1MatrixBase.html">Impl::MatrixBase</a>&lt; <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
-<tr class="separator:ae3a1281b6270e3b1d28598aa99ce0d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab1e7877b1462c171abf31eed83ce167"><td class="memItemLeft" align="right" valign="top"><a id="aab1e7877b1462c171abf31eed83ce167"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>tag</b> = typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt; <a class="el" href="structMorpheus_1_1DiaFormatTag.html">DiaFormatTag</a> &gt;::tag</td></tr>
-<tr class="separator:aab1e7877b1462c171abf31eed83ce167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c171a84df61fc95fa51659777f17829"><td class="memItemLeft" align="right" valign="top"><a id="a9c171a84df61fc95fa51659777f17829"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td></tr>
-<tr class="separator:a9c171a84df61fc95fa51659777f17829"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf65e8d0bddfb9c4578c85d2d206f55a"><td class="memItemLeft" align="right" valign="top"><a id="abf65e8d0bddfb9c4578c85d2d206f55a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>non_const_value_type</b> = typename traits::non_const_value_type</td></tr>
-<tr class="separator:abf65e8d0bddfb9c4578c85d2d206f55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8e58a86543a1286e2f367d4d6bcbb70"><td class="memItemLeft" align="right" valign="top"><a id="ae8e58a86543a1286e2f367d4d6bcbb70"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>index_type</b> = typename traits::index_type</td></tr>
-<tr class="separator:ae8e58a86543a1286e2f367d4d6bcbb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab25b494ed4a0815e2fe8d7988c46113d"><td class="memItemLeft" align="right" valign="top"><a id="ab25b494ed4a0815e2fe8d7988c46113d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>non_const_index_type</b> = typename traits::non_const_index_type</td></tr>
-<tr class="separator:ab25b494ed4a0815e2fe8d7988c46113d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2122710460b247cbd5292a992d31dc54"><td class="memItemLeft" align="right" valign="top"><a id="a2122710460b247cbd5292a992d31dc54"></a>
+<tr class="separator:gae3a1281b6270e3b1d28598aa99ce0d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab1e7877b1462c171abf31eed83ce167"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#gaab1e7877b1462c171abf31eed83ce167">tag</a> = typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt; <a class="el" href="structMorpheus_1_1DiaFormatTag.html">DiaFormatTag</a> &gt;::<a class="el" href="group__containers__2d.html#gaab1e7877b1462c171abf31eed83ce167">tag</a></td></tr>
+<tr class="separator:gaab1e7877b1462c171abf31eed83ce167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c171a84df61fc95fa51659777f17829"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga9c171a84df61fc95fa51659777f17829">value_type</a> = typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td></tr>
+<tr class="separator:ga9c171a84df61fc95fa51659777f17829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf65e8d0bddfb9c4578c85d2d206f55a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#gabf65e8d0bddfb9c4578c85d2d206f55a">non_const_value_type</a> = typename traits::non_const_value_type</td></tr>
+<tr class="separator:gabf65e8d0bddfb9c4578c85d2d206f55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8e58a86543a1286e2f367d4d6bcbb70"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> = typename traits::index_type</td></tr>
+<tr class="separator:gae8e58a86543a1286e2f367d4d6bcbb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab25b494ed4a0815e2fe8d7988c46113d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#gab25b494ed4a0815e2fe8d7988c46113d">non_const_index_type</a> = typename traits::non_const_index_type</td></tr>
+<tr class="separator:gab25b494ed4a0815e2fe8d7988c46113d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2122710460b247cbd5292a992d31dc54"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>array_layout</b> = typename traits::array_layout</td></tr>
-<tr class="separator:a2122710460b247cbd5292a992d31dc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a784067f82f8ea1d647784155dacf7b32"><td class="memItemLeft" align="right" valign="top"><a id="a784067f82f8ea1d647784155dacf7b32"></a>
+<tr class="separator:ga2122710460b247cbd5292a992d31dc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga784067f82f8ea1d647784155dacf7b32"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>memory_space</b> = typename traits::memory_space</td></tr>
-<tr class="separator:a784067f82f8ea1d647784155dacf7b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76aab82bc3ab3dccf3df2fc921aa1e96"><td class="memItemLeft" align="right" valign="top"><a id="a76aab82bc3ab3dccf3df2fc921aa1e96"></a>
+<tr class="separator:ga784067f82f8ea1d647784155dacf7b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76aab82bc3ab3dccf3df2fc921aa1e96"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>execution_space</b> = typename traits::execution_space</td></tr>
-<tr class="separator:a76aab82bc3ab3dccf3df2fc921aa1e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab71d72cb8e3b9e4dac2560f8219fb088"><td class="memItemLeft" align="right" valign="top"><a id="ab71d72cb8e3b9e4dac2560f8219fb088"></a>
+<tr class="separator:ga76aab82bc3ab3dccf3df2fc921aa1e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab71d72cb8e3b9e4dac2560f8219fb088"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>device_type</b> = typename traits::device_type</td></tr>
-<tr class="separator:ab71d72cb8e3b9e4dac2560f8219fb088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d8ebd52e58a042e5ea5edc70fbe1d25"><td class="memItemLeft" align="right" valign="top"><a id="a1d8ebd52e58a042e5ea5edc70fbe1d25"></a>
+<tr class="separator:gab71d72cb8e3b9e4dac2560f8219fb088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d8ebd52e58a042e5ea5edc70fbe1d25"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>memory_traits</b> = typename traits::memory_traits</td></tr>
-<tr class="separator:a1d8ebd52e58a042e5ea5edc70fbe1d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accad933e1052f9c322007a97591ff447"><td class="memItemLeft" align="right" valign="top"><a id="accad933e1052f9c322007a97591ff447"></a>
+<tr class="separator:ga1d8ebd52e58a042e5ea5edc70fbe1d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccad933e1052f9c322007a97591ff447"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>HostMirror</b> = typename traits::HostMirror</td></tr>
-<tr class="separator:accad933e1052f9c322007a97591ff447"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e336cc682cfc589981d1e97072498cc"><td class="memItemLeft" align="right" valign="top"><a id="a1e336cc682cfc589981d1e97072498cc"></a>
+<tr class="separator:gaccad933e1052f9c322007a97591ff447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e336cc682cfc589981d1e97072498cc"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = typename traits::pointer</td></tr>
-<tr class="separator:a1e336cc682cfc589981d1e97072498cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac92039e42a45b5a0414599c10179f649"><td class="memItemLeft" align="right" valign="top"><a id="ac92039e42a45b5a0414599c10179f649"></a>
+<tr class="separator:ga1e336cc682cfc589981d1e97072498cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac92039e42a45b5a0414599c10179f649"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>const_pointer</b> = typename traits::const_pointer</td></tr>
-<tr class="separator:ac92039e42a45b5a0414599c10179f649"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78033260dd5b7f450e2be3826484d683"><td class="memItemLeft" align="right" valign="top"><a id="a78033260dd5b7f450e2be3826484d683"></a>
+<tr class="separator:gac92039e42a45b5a0414599c10179f649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78033260dd5b7f450e2be3826484d683"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = typename traits::reference</td></tr>
-<tr class="separator:a78033260dd5b7f450e2be3826484d683"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b440dec243d06a545c5486151572e4a"><td class="memItemLeft" align="right" valign="top"><a id="a7b440dec243d06a545c5486151572e4a"></a>
+<tr class="separator:ga78033260dd5b7f450e2be3826484d683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b440dec243d06a545c5486151572e4a"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b> = typename traits::const_reference</td></tr>
-<tr class="separator:a7b440dec243d06a545c5486151572e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e136ff8521ec135dbdb16f8375444c"><td class="memItemLeft" align="right" valign="top"><a id="a32e136ff8521ec135dbdb16f8375444c"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>index_array_type</b> = <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt; index_type, index_type, array_layout, execution_space, memory_traits &gt;</td></tr>
-<tr class="separator:a32e136ff8521ec135dbdb16f8375444c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5be71bab45f002174a0eff935b7674e8"><td class="memItemLeft" align="right" valign="top"><a id="a5be71bab45f002174a0eff935b7674e8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_index_array_type</b> = const <a class="el" href="classMorpheus_1_1DenseVector.html">index_array_type</a></td></tr>
-<tr class="separator:a5be71bab45f002174a0eff935b7674e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19a22c982e2b291433e21cb4b6eefc4e"><td class="memItemLeft" align="right" valign="top"><a id="a19a22c982e2b291433e21cb4b6eefc4e"></a>
+<tr class="separator:ga7b440dec243d06a545c5486151572e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32e136ff8521ec135dbdb16f8375444c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga32e136ff8521ec135dbdb16f8375444c">index_array_type</a> = <a class="el" href="classMorpheus_1_1DenseVector.html">Morpheus::DenseVector</a>&lt; <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a>, <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a>, array_layout, execution_space, memory_traits &gt;</td></tr>
+<tr class="separator:ga32e136ff8521ec135dbdb16f8375444c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5be71bab45f002174a0eff935b7674e8"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_index_array_type</b> = const <a class="el" href="group__containers__2d.html#ga32e136ff8521ec135dbdb16f8375444c">index_array_type</a></td></tr>
+<tr class="separator:ga5be71bab45f002174a0eff935b7674e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19a22c982e2b291433e21cb4b6eefc4e"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>index_array_pointer</b> = typename index_array_type::value_array_pointer</td></tr>
-<tr class="separator:a19a22c982e2b291433e21cb4b6eefc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828f6e5ac93c069c25bf1f18ec0ed9ee"><td class="memItemLeft" align="right" valign="top"><a id="a828f6e5ac93c069c25bf1f18ec0ed9ee"></a>
+<tr class="separator:ga19a22c982e2b291433e21cb4b6eefc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga828f6e5ac93c069c25bf1f18ec0ed9ee"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>index_array_reference</b> = typename index_array_type::value_array_reference</td></tr>
-<tr class="separator:a828f6e5ac93c069c25bf1f18ec0ed9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64b8fe98126f67156a3047bbf777973c"><td class="memItemLeft" align="right" valign="top"><a id="a64b8fe98126f67156a3047bbf777973c"></a>
+<tr class="separator:ga828f6e5ac93c069c25bf1f18ec0ed9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64b8fe98126f67156a3047bbf777973c"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>const_index_array_reference</b> = const index_array_reference</td></tr>
-<tr class="separator:a64b8fe98126f67156a3047bbf777973c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75eb935e2c69a1f18884faf892698808"><td class="memItemLeft" align="right" valign="top"><a id="a75eb935e2c69a1f18884faf892698808"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_array_type</b> = <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; value_type, index_type, array_layout, execution_space, memory_traits &gt;</td></tr>
-<tr class="separator:a75eb935e2c69a1f18884faf892698808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a084e6f9e78150dc606983b09174e6181"><td class="memItemLeft" align="right" valign="top"><a id="a084e6f9e78150dc606983b09174e6181"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_value_array_type</b> = const <a class="el" href="classMorpheus_1_1DenseMatrix.html">value_array_type</a></td></tr>
-<tr class="separator:a084e6f9e78150dc606983b09174e6181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37efc7b4f8c3d6a7a83c722d579884bf"><td class="memItemLeft" align="right" valign="top"><a id="a37efc7b4f8c3d6a7a83c722d579884bf"></a>
+<tr class="separator:ga64b8fe98126f67156a3047bbf777973c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75eb935e2c69a1f18884faf892698808"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga75eb935e2c69a1f18884faf892698808">value_array_type</a> = <a class="el" href="classMorpheus_1_1DenseMatrix.html">Morpheus::DenseMatrix</a>&lt; <a class="el" href="group__containers__2d.html#ga9c171a84df61fc95fa51659777f17829">value_type</a>, <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a>, array_layout, execution_space, memory_traits &gt;</td></tr>
+<tr class="separator:ga75eb935e2c69a1f18884faf892698808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga084e6f9e78150dc606983b09174e6181"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_value_array_type</b> = const <a class="el" href="group__containers__2d.html#ga75eb935e2c69a1f18884faf892698808">value_array_type</a></td></tr>
+<tr class="separator:ga084e6f9e78150dc606983b09174e6181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37efc7b4f8c3d6a7a83c722d579884bf"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>value_array_pointer</b> = typename value_array_type::value_array_pointer</td></tr>
-<tr class="separator:a37efc7b4f8c3d6a7a83c722d579884bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7011e278dbb9cb0fd5d08a57538add0f"><td class="memItemLeft" align="right" valign="top"><a id="a7011e278dbb9cb0fd5d08a57538add0f"></a>
+<tr class="separator:ga37efc7b4f8c3d6a7a83c722d579884bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7011e278dbb9cb0fd5d08a57538add0f"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>value_array_reference</b> = typename value_array_type::value_array_reference</td></tr>
-<tr class="separator:a7011e278dbb9cb0fd5d08a57538add0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac43f79f21845d09f2ea0cda077eea640"><td class="memItemLeft" align="right" valign="top"><a id="ac43f79f21845d09f2ea0cda077eea640"></a>
+<tr class="separator:ga7011e278dbb9cb0fd5d08a57538add0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac43f79f21845d09f2ea0cda077eea640"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>const_value_array_reference</b> = const value_array_reference</td></tr>
-<tr class="separator:ac43f79f21845d09f2ea0cda077eea640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:gac43f79f21845d09f2ea0cda077eea640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c6e4933a4261a11a666f919ed8c02e5"><td class="memItemLeft" align="right" valign="top"><a id="a8c6e4933a4261a11a666f919ed8c02e5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DiaMatrix</b> (const <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;)=default</td></tr>
-<tr class="separator:a8c6e4933a4261a11a666f919ed8c02e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09a8415fb139dd7ccaffdbaf56ddfeee"><td class="memItemLeft" align="right" valign="top"><a id="a09a8415fb139dd7ccaffdbaf56ddfeee"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DiaMatrix</b> (<a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a09a8415fb139dd7ccaffdbaf56ddfeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a808d226f4dd91f68ec5a4b0014920bd0"><td class="memItemLeft" align="right" valign="top"><a id="a808d226f4dd91f68ec5a4b0014920bd0"></a>
-<a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;)=default</td></tr>
-<tr class="separator:a808d226f4dd91f68ec5a4b0014920bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04c8b467dfae1dc8a8825c933d8f0da1"><td class="memItemLeft" align="right" valign="top"><a id="a04c8b467dfae1dc8a8825c933d8f0da1"></a>
-<a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a04c8b467dfae1dc8a8825c933d8f0da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70b3e4dd2db7f5634904af6c7b449141"><td class="memItemLeft" align="right" valign="top"><a id="a70b3e4dd2db7f5634904af6c7b449141"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DiaMatrix</b> (const index_type num_rows, const index_type num_cols, const index_type num_entries, const index_type num_diagonals, const index_type alignment=32)</td></tr>
-<tr class="separator:a70b3e4dd2db7f5634904af6c7b449141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5c1482e2a4225ea318755178db242da"><td class="memItemLeft" align="right" valign="top"><a id="ad5c1482e2a4225ea318755178db242da"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DiaMatrix</b> (const index_type num_rows, const index_type num_cols, const index_type num_entries, const <a class="el" href="classMorpheus_1_1DenseVector.html">index_array_type</a> &amp;diag_offsets, const <a class="el" href="classMorpheus_1_1DenseMatrix.html">value_array_type</a> &amp;vals)</td></tr>
-<tr class="separator:ad5c1482e2a4225ea318755178db242da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae1762192934dd6245eacf7f537b6042"><td class="memTemplParams" colspan="2"><a id="aae1762192934dd6245eacf7f537b6042"></a>
+<tr class="memitem:ga028fd0ed940f374d4b9595a456232a77"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga028fd0ed940f374d4b9595a456232a77">~DiaMatrix</a> ()=default</td></tr>
+<tr class="memdesc:ga028fd0ed940f374d4b9595a456232a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default destructor. <br /></td></tr>
+<tr class="separator:ga028fd0ed940f374d4b9595a456232a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c6e4933a4261a11a666f919ed8c02e5"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga8c6e4933a4261a11a666f919ed8c02e5">DiaMatrix</a> (const <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;)=default</td></tr>
+<tr class="memdesc:ga8c6e4933a4261a11a666f919ed8c02e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default copy contructor (shallow copy) of a <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> container from another <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> container with the same properties. <br /></td></tr>
+<tr class="separator:ga8c6e4933a4261a11a666f919ed8c02e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09a8415fb139dd7ccaffdbaf56ddfeee"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga09a8415fb139dd7ccaffdbaf56ddfeee">DiaMatrix</a> (<a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:ga09a8415fb139dd7ccaffdbaf56ddfeee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default move contructor (shallow copy) of a <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> container from another <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> container with the same properties. <br /></td></tr>
+<tr class="separator:ga09a8415fb139dd7ccaffdbaf56ddfeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga808d226f4dd91f68ec5a4b0014920bd0"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga808d226f4dd91f68ec5a4b0014920bd0">operator=</a> (const <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;)=default</td></tr>
+<tr class="memdesc:ga808d226f4dd91f68ec5a4b0014920bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default copy assignment (shallow copy) of a <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> container from another <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> container with the same properties. <br /></td></tr>
+<tr class="separator:ga808d226f4dd91f68ec5a4b0014920bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04c8b467dfae1dc8a8825c933d8f0da1"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga04c8b467dfae1dc8a8825c933d8f0da1">operator=</a> (<a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:ga04c8b467dfae1dc8a8825c933d8f0da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default move assignment (shallow copy) of a <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> container from another <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> container with the same properties. <br /></td></tr>
+<tr class="separator:ga04c8b467dfae1dc8a8825c933d8f0da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacccde8df0baa06e94e27e07b03dbc1ea"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#gacccde8df0baa06e94e27e07b03dbc1ea">DiaMatrix</a> ()</td></tr>
+<tr class="memdesc:gacccde8df0baa06e94e27e07b03dbc1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> object. <br /></td></tr>
+<tr class="separator:gacccde8df0baa06e94e27e07b03dbc1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70b3e4dd2db7f5634904af6c7b449141"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga70b3e4dd2db7f5634904af6c7b449141">DiaMatrix</a> (const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_rows, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_cols, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_entries, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_diagonals, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> <a class="el" href="group__containers__2d.html#gaa8c3a726769437433847b7cb0b3d83e1">alignment</a>=32)</td></tr>
+<tr class="memdesc:ga70b3e4dd2db7f5634904af6c7b449141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> object with shape (num_rows, num_cols) and number of non-zeros equal to num_entries concentrated around num_diagonals diagonals.  <a href="group__containers__2d.html#ga70b3e4dd2db7f5634904af6c7b449141">More...</a><br /></td></tr>
+<tr class="separator:ga70b3e4dd2db7f5634904af6c7b449141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6032b187b55315f1fc7d3cfbba8b41c4"><td class="memTemplParams" colspan="2">template&lt;typename ValueArray , typename IndexArray &gt; </td></tr>
+<tr class="memitem:ga6032b187b55315f1fc7d3cfbba8b41c4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga6032b187b55315f1fc7d3cfbba8b41c4">DiaMatrix</a> (const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_rows, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_cols, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_entries, const IndexArray &amp;diag_offsets, const ValueArray &amp;vals, typename std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dense__matrix__format__container.html">is_dense_matrix_format_container</a>&lt; ValueArray &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__dense__vector__format__container.html">is_dense_vector_format_container</a>&lt; IndexArray &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__compatible.html">is_compatible</a>&lt; typename <a class="el" href="group__containers__2d.html#ga75eb935e2c69a1f18884faf892698808">DiaMatrix::value_array_type</a>, ValueArray &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__compatible.html">is_compatible</a>&lt; typename <a class="el" href="group__containers__2d.html#ga32e136ff8521ec135dbdb16f8375444c">DiaMatrix::index_array_type</a>, IndexArray &gt;::value &amp;&amp;!ValueArray::memory_traits::is_unmanaged &amp;&amp;!IndexArray::memory_traits::is_unmanaged &gt;::<a class="el" href="group__containers__2d.html#ga8a28b3b4c827fd67e24a467fb05f63d5">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:ga6032b187b55315f1fc7d3cfbba8b41c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> object with shape (num_rows, num_cols) and number of non-zeros equal to num_entries and assign the diagonal offsets and values from <code><a class="el" href="classMorpheus_1_1DenseVector.html" title="The DenseVector container is a one-dimensional container that contains contiguous elements....">DenseVector</a></code> and <code><a class="el" href="classMorpheus_1_1DenseMatrix.html" title="The DenseMatrix container is a two-dimensional dense container that contains contiguous elements....">DenseMatrix</a></code> arrays equivalently.  <a href="group__containers__2d.html#ga6032b187b55315f1fc7d3cfbba8b41c4">More...</a><br /></td></tr>
+<tr class="separator:ga6032b187b55315f1fc7d3cfbba8b41c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90b89e6e025db164b8f20a2718d971da"><td class="memTemplParams" colspan="2">
 template&lt;typename ValuePtr , typename IndexPtr &gt; </td></tr>
-<tr class="memitem:aae1762192934dd6245eacf7f537b6042"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DiaMatrix</b> (const index_type num_rows, const index_type num_cols, const index_type num_entries, IndexPtr diag_offsets_ptr, ValuePtr vals_ptr, const index_type num_diagonals, const index_type alignment=32, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;std::is_pointer&lt; IndexPtr &gt;::value &gt;::type *=nullptr)</td></tr>
-<tr class="separator:aae1762192934dd6245eacf7f537b6042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80301737c7ff4f59a678f8957706aab4"><td class="memTemplParams" colspan="2"><a id="a80301737c7ff4f59a678f8957706aab4"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a80301737c7ff4f59a678f8957706aab4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DiaMatrix</b> (const <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>, typename <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>&lt; VR, PR... &gt;::type &gt;::value &gt;::type *=nullptr)</td></tr>
-<tr class="separator:a80301737c7ff4f59a678f8957706aab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c9eebbf09de3b0265c9fe12a9dbba5f"><td class="memTemplParams" colspan="2"><a id="a0c9eebbf09de3b0265c9fe12a9dbba5f"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a0c9eebbf09de3b0265c9fe12a9dbba5f"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>, typename <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>&lt; VR, PR... &gt;::type &gt;::value, <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
-<tr class="separator:a0c9eebbf09de3b0265c9fe12a9dbba5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8b5364e9de7e0c4a0a23ccac1b8088c"><td class="memTemplParams" colspan="2"><a id="ae8b5364e9de7e0c4a0a23ccac1b8088c"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:ae8b5364e9de7e0c4a0a23ccac1b8088c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DiaMatrix</b> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>, typename <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;::type &gt;::value &gt;::type *=nullptr)</td></tr>
-<tr class="separator:ae8b5364e9de7e0c4a0a23ccac1b8088c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6da0a75a04be122af506fdb1cd1caca"><td class="memTemplParams" colspan="2"><a id="ae6da0a75a04be122af506fdb1cd1caca"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:ae6da0a75a04be122af506fdb1cd1caca"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>, typename <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;::type &gt;::value, <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
-<tr class="separator:ae6da0a75a04be122af506fdb1cd1caca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac48c32cea6897e63837ae261aa48a4cd"><td class="memTemplParams" colspan="2"><a id="ac48c32cea6897e63837ae261aa48a4cd"></a>
-template&lt;typename MatrixType &gt; </td></tr>
-<tr class="memitem:ac48c32cea6897e63837ae261aa48a4cd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DiaMatrix</b> (const MatrixType &amp;src)=delete</td></tr>
-<tr class="separator:ac48c32cea6897e63837ae261aa48a4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0811b5f3fa9c1f4e473a9e9b79904b82"><td class="memTemplParams" colspan="2"><a id="a0811b5f3fa9c1f4e473a9e9b79904b82"></a>
-template&lt;typename MatrixType &gt; </td></tr>
-<tr class="memitem:a0811b5f3fa9c1f4e473a9e9b79904b82"><td class="memTemplItemLeft" align="right" valign="top">reference&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const MatrixType &amp;src)=delete</td></tr>
-<tr class="separator:a0811b5f3fa9c1f4e473a9e9b79904b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a137cdbb39a381229a76d5d81adc271d8"><td class="memItemLeft" align="right" valign="top"><a id="a137cdbb39a381229a76d5d81adc271d8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (const index_type num_rows, const index_type num_cols, const index_type num_entries, const index_type num_diagonals, const index_type alignment=32)</td></tr>
-<tr class="separator:a137cdbb39a381229a76d5d81adc271d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00a9da9a10947b499cf156f871a32537"><td class="memTemplParams" colspan="2"><a id="a00a9da9a10947b499cf156f871a32537"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a00a9da9a10947b499cf156f871a32537"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>resize</b> (const <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
-<tr class="separator:a00a9da9a10947b499cf156f871a32537"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf27fb6913410569fb2c7b07bc0ea545"><td class="memTemplParams" colspan="2"><a id="aaf27fb6913410569fb2c7b07bc0ea545"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:aaf27fb6913410569fb2c7b07bc0ea545"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>allocate</b> (const <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
-<tr class="separator:aaf27fb6913410569fb2c7b07bc0ea545"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0d524f122c62bf42299ab896b7010bb"><td class="memItemLeft" align="right" valign="top"><a id="aa0d524f122c62bf42299ab896b7010bb"></a>
-formats_e&#160;</td><td class="memItemRight" valign="bottom"><b>format_enum</b> () const</td></tr>
-<tr class="separator:aa0d524f122c62bf42299ab896b7010bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76ccb2017ab6c4eacc24a184915003b0"><td class="memItemLeft" align="right" valign="top"><a id="a76ccb2017ab6c4eacc24a184915003b0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>format_index</b> () const</td></tr>
-<tr class="separator:a76ccb2017ab6c4eacc24a184915003b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3ece2e14a52035027923284bb2de06c"><td class="memItemLeft" align="right" valign="top"><a id="aa3ece2e14a52035027923284bb2de06c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>exceeds_tolerance</b> (const index_type num_rows, const index_type num_entries, const index_type num_diagonals)</td></tr>
-<tr class="separator:aa3ece2e14a52035027923284bb2de06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9476102505254ad9af48c71dba341de4"><td class="memItemLeft" align="right" valign="top"><a id="a9476102505254ad9af48c71dba341de4"></a>
-MORPHEUS_FORCEINLINE_FUNCTION index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>diagonal_offsets</b> (index_type n)</td></tr>
-<tr class="separator:a9476102505254ad9af48c71dba341de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f37101fb09be20e32396f302d850ba9"><td class="memItemLeft" align="right" valign="top"><a id="a9f37101fb09be20e32396f302d850ba9"></a>
-MORPHEUS_FORCEINLINE_FUNCTION value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>values</b> (index_type i, index_type j)</td></tr>
-<tr class="separator:a9f37101fb09be20e32396f302d850ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20f8b417f04f946f76627f07f52c998b"><td class="memItemLeft" align="right" valign="top"><a id="a20f8b417f04f946f76627f07f52c998b"></a>
-MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>cdiagonal_offsets</b> (index_type n) const</td></tr>
-<tr class="separator:a20f8b417f04f946f76627f07f52c998b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3479b7daf85b42b0d109ef4571c19878"><td class="memItemLeft" align="right" valign="top"><a id="a3479b7daf85b42b0d109ef4571c19878"></a>
-MORPHEUS_FORCEINLINE_FUNCTION const_value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><b>cvalues</b> (index_type i, index_type j) const</td></tr>
-<tr class="separator:a3479b7daf85b42b0d109ef4571c19878"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8df62785c2cae9766343978e263cff4c"><td class="memItemLeft" align="right" valign="top"><a id="a8df62785c2cae9766343978e263cff4c"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>diagonal_offsets</b> ()</td></tr>
-<tr class="separator:a8df62785c2cae9766343978e263cff4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad73d085bdb6d7d2ebac083862e0c8593"><td class="memItemLeft" align="right" valign="top"><a id="ad73d085bdb6d7d2ebac083862e0c8593"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseMatrix.html">value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>values</b> ()</td></tr>
-<tr class="separator:ad73d085bdb6d7d2ebac083862e0c8593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37ec8a4474e1d4267748a8ddb25e5f4b"><td class="memItemLeft" align="right" valign="top"><a id="a37ec8a4474e1d4267748a8ddb25e5f4b"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>cdiagonal_offsets</b> () const</td></tr>
-<tr class="separator:a37ec8a4474e1d4267748a8ddb25e5f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa69e83a96ee9697eb31db0f59ab40758"><td class="memItemLeft" align="right" valign="top"><a id="aa69e83a96ee9697eb31db0f59ab40758"></a>
-MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseMatrix.html">const_value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>cvalues</b> () const</td></tr>
-<tr class="separator:aa69e83a96ee9697eb31db0f59ab40758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa233d3ea65b3c47fcac603a1b85fff09"><td class="memItemLeft" align="right" valign="top"><a id="aa233d3ea65b3c47fcac603a1b85fff09"></a>
-MORPHEUS_FORCEINLINE_FUNCTION index_type&#160;</td><td class="memItemRight" valign="bottom"><b>ndiags</b> () const</td></tr>
-<tr class="separator:aa233d3ea65b3c47fcac603a1b85fff09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8c3a726769437433847b7cb0b3d83e1"><td class="memItemLeft" align="right" valign="top"><a id="aa8c3a726769437433847b7cb0b3d83e1"></a>
-MORPHEUS_FORCEINLINE_FUNCTION index_type&#160;</td><td class="memItemRight" valign="bottom"><b>alignment</b> () const</td></tr>
-<tr class="separator:aa8c3a726769437433847b7cb0b3d83e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab685aab3b363b066cceea86f3666e693"><td class="memItemLeft" align="right" valign="top"><a id="ab685aab3b363b066cceea86f3666e693"></a>
-MORPHEUS_FORCEINLINE_FUNCTION void&#160;</td><td class="memItemRight" valign="bottom"><b>set_ndiags</b> (const index_type num_diagonals)</td></tr>
-<tr class="separator:ab685aab3b363b066cceea86f3666e693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69bea403bfe2b76817f79a1e675f6b95"><td class="memItemLeft" align="right" valign="top"><a id="a69bea403bfe2b76817f79a1e675f6b95"></a>
-MORPHEUS_FORCEINLINE_FUNCTION void&#160;</td><td class="memItemRight" valign="bottom"><b>set_alignment</b> (const index_type alignment)</td></tr>
-<tr class="separator:a69bea403bfe2b76817f79a1e675f6b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90b89e6e025db164b8f20a2718d971da"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DiaMatrix</b> (const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_rows, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_cols, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_entries, IndexPtr diag_offsets_ptr, ValuePtr vals_ptr, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_diagonals, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> <a class="el" href="group__containers__2d.html#gaa8c3a726769437433847b7cb0b3d83e1">alignment</a>=32, typename std::enable_if&lt;(std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__same__value__type.html">is_same_value_type</a>&lt; <a class="el" href="group__containers__2d.html#ga9c171a84df61fc95fa51659777f17829">value_type</a>, ValuePtr &gt;::value &amp;&amp;memory_traits::is_unmanaged) &amp;&amp;(std::is_pointer&lt; IndexPtr &gt;::value &amp;&amp;<a class="el" href="classMorpheus_1_1is__same__index__type.html">is_same_index_type</a>&lt; <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a>, IndexPtr &gt;::value &amp;&amp;memory_traits::is_unmanaged)&gt;::<a class="el" href="group__containers__2d.html#ga8a28b3b4c827fd67e24a467fb05f63d5">type</a> *=nullptr)</td></tr>
+<tr class="separator:ga90b89e6e025db164b8f20a2718d971da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2624d116ac00b02788b02d60fe1e4f5b"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:ga2624d116ac00b02788b02d60fe1e4f5b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga2624d116ac00b02788b02d60fe1e4f5b">DiaMatrix</a> (const <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>, <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="group__containers__2d.html#ga8a28b3b4c827fd67e24a467fb05f63d5">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:ga2624d116ac00b02788b02d60fe1e4f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a>.  <a href="group__containers__2d.html#ga2624d116ac00b02788b02d60fe1e4f5b">More...</a><br /></td></tr>
+<tr class="separator:ga2624d116ac00b02788b02d60fe1e4f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ca9562ea7fcc09bceca43ee0648ed6d"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:ga1ca9562ea7fcc09bceca43ee0648ed6d"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>, <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>&lt; VR, PR... &gt; &gt;::value, <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp; &gt;::<a class="el" href="group__containers__2d.html#ga8a28b3b4c827fd67e24a467fb05f63d5">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga1ca9562ea7fcc09bceca43ee0648ed6d">operator=</a> (const <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:ga1ca9562ea7fcc09bceca43ee0648ed6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a>.  <a href="group__containers__2d.html#ga1ca9562ea7fcc09bceca43ee0648ed6d">More...</a><br /></td></tr>
+<tr class="separator:ga1ca9562ea7fcc09bceca43ee0648ed6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b0b886a537100466f71592bdb70c21f"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:ga2b0b886a537100466f71592bdb70c21f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga2b0b886a537100466f71592bdb70c21f">DiaMatrix</a> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="group__containers__2d.html#ga8a28b3b4c827fd67e24a467fb05f63d5">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:ga2b0b886a537100466f71592bdb70c21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>.  <a href="group__containers__2d.html#ga2b0b886a537100466f71592bdb70c21f">More...</a><br /></td></tr>
+<tr class="separator:ga2b0b886a537100466f71592bdb70c21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97f3e34ed9ccfa2ad871875f52860f98"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:ga97f3e34ed9ccfa2ad871875f52860f98"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="classMorpheus_1_1is__dynamically__compatible.html">is_dynamically_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &gt;::value, <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp; &gt;::<a class="el" href="group__containers__2d.html#ga8a28b3b4c827fd67e24a467fb05f63d5">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga97f3e34ed9ccfa2ad871875f52860f98">operator=</a> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:ga97f3e34ed9ccfa2ad871875f52860f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a DiarMatrix from a compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>.  <a href="group__containers__2d.html#ga97f3e34ed9ccfa2ad871875f52860f98">More...</a><br /></td></tr>
+<tr class="separator:ga97f3e34ed9ccfa2ad871875f52860f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac48c32cea6897e63837ae261aa48a4cd"><td class="memTemplParams" colspan="2">template&lt;typename MatrixType &gt; </td></tr>
+<tr class="memitem:gac48c32cea6897e63837ae261aa48a4cd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#gac48c32cea6897e63837ae261aa48a4cd">DiaMatrix</a> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memdesc:gac48c32cea6897e63837ae261aa48a4cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations.  <a href="group__containers__2d.html#gac48c32cea6897e63837ae261aa48a4cd">More...</a><br /></td></tr>
+<tr class="separator:gac48c32cea6897e63837ae261aa48a4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0811b5f3fa9c1f4e473a9e9b79904b82"><td class="memTemplParams" colspan="2">template&lt;typename MatrixType &gt; </td></tr>
+<tr class="memitem:ga0811b5f3fa9c1f4e473a9e9b79904b82"><td class="memTemplItemLeft" align="right" valign="top">reference&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga0811b5f3fa9c1f4e473a9e9b79904b82">operator=</a> (const MatrixType &amp;src)=delete</td></tr>
+<tr class="memdesc:ga0811b5f3fa9c1f4e473a9e9b79904b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns to <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> object from another storage format. This functionality is disabled to avoid implicit copies and conversion operations.  <a href="group__containers__2d.html#ga0811b5f3fa9c1f4e473a9e9b79904b82">More...</a><br /></td></tr>
+<tr class="separator:ga0811b5f3fa9c1f4e473a9e9b79904b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga137cdbb39a381229a76d5d81adc271d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga137cdbb39a381229a76d5d81adc271d8">resize</a> (const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_rows, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_cols, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_entries, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_diagonals, const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> <a class="el" href="group__containers__2d.html#gaa8c3a726769437433847b7cb0b3d83e1">alignment</a>=32)</td></tr>
+<tr class="memdesc:ga137cdbb39a381229a76d5d81adc271d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> with shape of (num_rows, num_cols) and sets number of non-zero entries to num_entries, number of diagonals to num_diagonals and the alignment.  <a href="group__containers__2d.html#ga137cdbb39a381229a76d5d81adc271d8">More...</a><br /></td></tr>
+<tr class="separator:ga137cdbb39a381229a76d5d81adc271d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00a9da9a10947b499cf156f871a32537"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:ga00a9da9a10947b499cf156f871a32537"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga00a9da9a10947b499cf156f871a32537">resize</a> (const <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:ga00a9da9a10947b499cf156f871a32537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> with the shape and number of non-zero entries of another <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> with different parameters.  <a href="group__containers__2d.html#ga00a9da9a10947b499cf156f871a32537">More...</a><br /></td></tr>
+<tr class="separator:ga00a9da9a10947b499cf156f871a32537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf27fb6913410569fb2c7b07bc0ea545"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:gaaf27fb6913410569fb2c7b07bc0ea545"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#gaaf27fb6913410569fb2c7b07bc0ea545">allocate</a> (const <a class="el" href="classMorpheus_1_1DiaMatrix.html">DiaMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:gaaf27fb6913410569fb2c7b07bc0ea545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory from another <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> container with different properties.  <a href="group__containers__2d.html#gaaf27fb6913410569fb2c7b07bc0ea545">More...</a><br /></td></tr>
+<tr class="separator:gaaf27fb6913410569fb2c7b07bc0ea545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0d524f122c62bf42299ab896b7010bb"><td class="memItemLeft" align="right" valign="top">formats_e&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#gaa0d524f122c62bf42299ab896b7010bb">format_enum</a> () const</td></tr>
+<tr class="memdesc:gaa0d524f122c62bf42299ab896b7010bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the format enum assigned to the <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> container.  <a href="group__containers__2d.html#gaa0d524f122c62bf42299ab896b7010bb">More...</a><br /></td></tr>
+<tr class="separator:gaa0d524f122c62bf42299ab896b7010bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76ccb2017ab6c4eacc24a184915003b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga76ccb2017ab6c4eacc24a184915003b0">format_index</a> () const</td></tr>
+<tr class="memdesc:ga76ccb2017ab6c4eacc24a184915003b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the equivalent index to the format enum assigned to the <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> container.  <a href="group__containers__2d.html#ga76ccb2017ab6c4eacc24a184915003b0">More...</a><br /></td></tr>
+<tr class="separator:ga76ccb2017ab6c4eacc24a184915003b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9476102505254ad9af48c71dba341de4"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga9476102505254ad9af48c71dba341de4">diagonal_offsets</a> (<a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> n)</td></tr>
+<tr class="memdesc:ga9476102505254ad9af48c71dba341de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the diagonal offsets of the matrix with index <code>n</code>.  <a href="group__containers__2d.html#ga9476102505254ad9af48c71dba341de4">More...</a><br /></td></tr>
+<tr class="separator:ga9476102505254ad9af48c71dba341de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f37101fb09be20e32396f302d850ba9"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga9f37101fb09be20e32396f302d850ba9">values</a> (<a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> i, <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> j)</td></tr>
+<tr class="memdesc:ga9f37101fb09be20e32396f302d850ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the value of the matrix with indexes (i, j)  <a href="group__containers__2d.html#ga9f37101fb09be20e32396f302d850ba9">More...</a><br /></td></tr>
+<tr class="separator:ga9f37101fb09be20e32396f302d850ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20f8b417f04f946f76627f07f52c998b"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga20f8b417f04f946f76627f07f52c998b">cdiagonal_offsets</a> (<a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> n) const</td></tr>
+<tr class="memdesc:ga20f8b417f04f946f76627f07f52c998b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the diagonal offsets of the matrix with index <code>n</code>.  <a href="group__containers__2d.html#ga20f8b417f04f946f76627f07f52c998b">More...</a><br /></td></tr>
+<tr class="separator:ga20f8b417f04f946f76627f07f52c998b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3479b7daf85b42b0d109ef4571c19878"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION const_value_array_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga3479b7daf85b42b0d109ef4571c19878">cvalues</a> (<a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> i, <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> j) const</td></tr>
+<tr class="memdesc:ga3479b7daf85b42b0d109ef4571c19878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the value of the matrix with indexes (i, j)  <a href="group__containers__2d.html#ga3479b7daf85b42b0d109ef4571c19878">More...</a><br /></td></tr>
+<tr class="separator:ga3479b7daf85b42b0d109ef4571c19878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8df62785c2cae9766343978e263cff4c"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="group__containers__2d.html#ga32e136ff8521ec135dbdb16f8375444c">index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga8df62785c2cae9766343978e263cff4c">diagonal_offsets</a> ()</td></tr>
+<tr class="memdesc:ga8df62785c2cae9766343978e263cff4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the diagonal offsets of the matrix.  <a href="group__containers__2d.html#ga8df62785c2cae9766343978e263cff4c">More...</a><br /></td></tr>
+<tr class="separator:ga8df62785c2cae9766343978e263cff4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad73d085bdb6d7d2ebac083862e0c8593"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="group__containers__2d.html#ga75eb935e2c69a1f18884faf892698808">value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#gad73d085bdb6d7d2ebac083862e0c8593">values</a> ()</td></tr>
+<tr class="memdesc:gad73d085bdb6d7d2ebac083862e0c8593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the values of the matrix.  <a href="group__containers__2d.html#gad73d085bdb6d7d2ebac083862e0c8593">More...</a><br /></td></tr>
+<tr class="separator:gad73d085bdb6d7d2ebac083862e0c8593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37ec8a4474e1d4267748a8ddb25e5f4b"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseVector.html">const_index_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga37ec8a4474e1d4267748a8ddb25e5f4b">cdiagonal_offsets</a> () const</td></tr>
+<tr class="memdesc:ga37ec8a4474e1d4267748a8ddb25e5f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the diagonal offsets of the matrix.  <a href="group__containers__2d.html#ga37ec8a4474e1d4267748a8ddb25e5f4b">More...</a><br /></td></tr>
+<tr class="separator:ga37ec8a4474e1d4267748a8ddb25e5f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa69e83a96ee9697eb31db0f59ab40758"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="classMorpheus_1_1DenseMatrix.html">const_value_array_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#gaa69e83a96ee9697eb31db0f59ab40758">cvalues</a> () const</td></tr>
+<tr class="memdesc:gaa69e83a96ee9697eb31db0f59ab40758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the values of the matrix.  <a href="group__containers__2d.html#gaa69e83a96ee9697eb31db0f59ab40758">More...</a><br /></td></tr>
+<tr class="separator:gaa69e83a96ee9697eb31db0f59ab40758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa233d3ea65b3c47fcac603a1b85fff09"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#gaa233d3ea65b3c47fcac603a1b85fff09">ndiags</a> () const</td></tr>
+<tr class="memdesc:gaa233d3ea65b3c47fcac603a1b85fff09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of occupied diagonals of the matrix.  <a href="group__containers__2d.html#gaa233d3ea65b3c47fcac603a1b85fff09">More...</a><br /></td></tr>
+<tr class="separator:gaa233d3ea65b3c47fcac603a1b85fff09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8c3a726769437433847b7cb0b3d83e1"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#gaa8c3a726769437433847b7cb0b3d83e1">alignment</a> () const</td></tr>
+<tr class="memdesc:gaa8c3a726769437433847b7cb0b3d83e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of padding used to align the data.  <a href="group__containers__2d.html#gaa8c3a726769437433847b7cb0b3d83e1">More...</a><br /></td></tr>
+<tr class="separator:gaa8c3a726769437433847b7cb0b3d83e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab685aab3b363b066cceea86f3666e693"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#gab685aab3b363b066cceea86f3666e693">set_ndiags</a> (const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> num_diagonals)</td></tr>
+<tr class="memdesc:gab685aab3b363b066cceea86f3666e693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the number of occupied diagonals of the matrix.  <a href="group__containers__2d.html#gab685aab3b363b066cceea86f3666e693">More...</a><br /></td></tr>
+<tr class="separator:gab685aab3b363b066cceea86f3666e693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69bea403bfe2b76817f79a1e675f6b95"><td class="memItemLeft" align="right" valign="top">MORPHEUS_FORCEINLINE_FUNCTION void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__containers__2d.html#ga69bea403bfe2b76817f79a1e675f6b95">set_alignment</a> (const <a class="el" href="group__containers__2d.html#gae8e58a86543a1286e2f367d4d6bcbb70">index_type</a> <a class="el" href="group__containers__2d.html#gaa8c3a726769437433847b7cb0b3d83e1">alignment</a>)</td></tr>
+<tr class="memdesc:ga69bea403bfe2b76817f79a1e675f6b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets amount of padding with which to align the data.  <a href="group__containers__2d.html#ga69bea403bfe2b76817f79a1e675f6b95">More...</a><br /></td></tr>
+<tr class="separator:ga69bea403bfe2b76817f79a1e675f6b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class ValueType, class... Properties&gt;<br />
+class Morpheus::DiaMatrix&lt; ValueType, Properties &gt;</h3>
+
+<p>Implementation of the Diagonal (DIA) Sparse Matrix Format Representation. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname"><a class="el" href="structMorpheus_1_1ValueType.html" title="A wrapper that checks if the provided type is a scalar type.">ValueType</a></td><td>Type of values to store </td></tr>
+    <tr><td class="paramname">Properties</td><td>Optional properties to modify the behaviour of the container. Sensible defaults are selected based on the configuration. Please refer to <a class="el" href="Morpheus__ContainerTraits_8hpp_source.html">impl/Morpheus_ContainerTraits.hpp</a> to find out more about the valid properties.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Overview</dt><dd>The <a class="el" href="classMorpheus_1_1DiaMatrix.html" title="Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.">DiaMatrix</a> container is a two-dimensional container that represents a sparse matrix. This container stores the contents of a sparse matrix along its diagonals allowing for very quick arithmetic operations for matrices with very few non-zero diagonals. However, in the case if the number of non-zero diagonals becomes very large the performance is hindered because of the excessive zero padding required. It is a polymorphic container in the sense that it can store scalar or integer type values, on host or device depending how the template parameters are selected.</dd></dl>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;Morpheus_Core.hpp&gt;</span></div>
+<div class="line"><span class="comment">// Matrix to Build</span></div>
+<div class="line"><span class="comment">// [1 * 2]</span></div>
+<div class="line"><span class="comment">// [* * 3]</span></div>
+<div class="line"><span class="comment">// [* 4 *]</span></div>
+<div class="line"><span class="keywordtype">int</span> main(){</div>
+<div class="line"> <span class="keyword">using</span> Matrix = <a class="code" href="classMorpheus_1_1DiaMatrix.html">Morpheus::DiaMatrix&lt;double, Kokkos::HostSpace&gt;</a>;</div>
+<div class="line"> <span class="keyword">using</span> <a class="code" href="group__containers__2d.html#ga32e136ff8521ec135dbdb16f8375444c">index_array_type</a> = <span class="keyword">typename</span> Matrix::index_array_type;</div>
+<div class="line"> <span class="keyword">using</span> <a class="code" href="group__containers__2d.html#ga75eb935e2c69a1f18884faf892698808">value_array_type</a> = <span class="keyword">typename</span> Matrix::value_array_type;</div>
+<div class="line"> </div>
+<div class="line"> <a class="code" href="group__containers__2d.html#ga32e136ff8521ec135dbdb16f8375444c">index_array_type</a> offsets(4, 0);</div>
+<div class="line"> <a class="code" href="group__containers__2d.html#ga75eb935e2c69a1f18884faf892698808">value_array_type</a> <a class="code" href="group__containers__2d.html#gad73d085bdb6d7d2ebac083862e0c8593">values</a>(4,0);</div>
+<div class="line"> </div>
+<div class="line"> offset[0] = -1; offset[1] = 0; offset[2] = 1; offset[3] = 2;</div>
+<div class="line"><span class="comment">// [* 1 0 2]</span></div>
+<div class="line"><span class="comment">// [0 0 3 *]</span></div>
+<div class="line"><span class="comment">// [4 0 * *]</span></div>
+<div class="line"> value(0,0) = 0; value(1,0) = 0; value(2,0) = 4;</div>
+<div class="line"> value(0,1) = 1; value(1,1) = 0; value(2,1) = 0;</div>
+<div class="line"> value(0,2) = 0; value(1,2) = 3; value(2,2) = 0;</div>
+<div class="line"> value(0,3) = 2; value(1,3) = 0; value(2,3) = 0;</div>
+<div class="line"> </div>
+<div class="line"> <span class="comment">// Construct the matrix from diagonal offsets and values</span></div>
+<div class="line"> Matrix A(3, 3, 4, offset, <a class="code" href="group__containers__2d.html#gad73d085bdb6d7d2ebac083862e0c8593">values</a>);</div>
+<div class="line"> </div>
+<div class="line"> Morpheus::print(A); <span class="comment">// prints A</span></div>
+<div class="line">}</div>
+</div><!-- fragment --> </dd></dl>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="Morpheus__Fwd__DiaMatrix_8hpp_source.html">Morpheus_Fwd_DiaMatrix.hpp</a></li>
 <li><a class="el" href="Morpheus__DiaMatrix_8hpp_source.html">Morpheus_DiaMatrix.hpp</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassMorpheus_1_1DiaMatrix_html"><div class="ttname"><a href="classMorpheus_1_1DiaMatrix.html">Morpheus::DiaMatrix</a></div><div class="ttdoc">Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.</div><div class="ttdef"><b>Definition:</b> Morpheus_Fwd_DiaMatrix.hpp:29</div></div>
+<div class="ttc" id="agroup__containers__2d_html_ga75eb935e2c69a1f18884faf892698808"><div class="ttname"><a href="group__containers__2d.html#ga75eb935e2c69a1f18884faf892698808">Morpheus::DiaMatrix::value_array_type</a></div><div class="ttdeci">Morpheus::DenseMatrix&lt; value_type, index_type, array_layout, execution_space, memory_traits &gt; value_array_type</div><div class="ttdef"><b>Definition:</b> Morpheus_DiaMatrix.hpp:142</div></div>
+<div class="ttc" id="agroup__containers__2d_html_gad73d085bdb6d7d2ebac083862e0c8593"><div class="ttname"><a href="group__containers__2d.html#gad73d085bdb6d7d2ebac083862e0c8593">Morpheus::DiaMatrix::values</a></div><div class="ttdeci">MORPHEUS_FORCEINLINE_FUNCTION value_array_type &amp; values()</div><div class="ttdoc">Returns a reference to the values of the matrix.</div><div class="ttdef"><b>Definition:</b> Morpheus_DiaMatrix.hpp:511</div></div>
+<div class="ttc" id="agroup__containers__2d_html_ga32e136ff8521ec135dbdb16f8375444c"><div class="ttname"><a href="group__containers__2d.html#ga32e136ff8521ec135dbdb16f8375444c">Morpheus::DiaMatrix::index_array_type</a></div><div class="ttdeci">Morpheus::DenseVector&lt; index_type, index_type, array_layout, execution_space, memory_traits &gt; index_array_type</div><div class="ttdef"><b>Definition:</b> Morpheus_DiaMatrix.hpp:132</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
