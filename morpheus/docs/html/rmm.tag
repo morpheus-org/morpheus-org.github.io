@@ -1788,281 +1788,281 @@
     <member kind="typedef">
       <type>Impl::ContainerTraits&lt; DiaMatrix, ValueType, Properties... &gt;</type>
       <name>traits</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga70663ac4a6fc0dae41a55c4cc0c78c86</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a70663ac4a6fc0dae41a55c4cc0c78c86</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>typename traits::type</type>
       <name>type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga8a28b3b4c827fd67e24a467fb05f63d5</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a8a28b3b4c827fd67e24a467fb05f63d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>typename MatrixFormatTag&lt; DiaFormatTag &gt;::tag</type>
       <name>tag</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gaab1e7877b1462c171abf31eed83ce167</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>aab1e7877b1462c171abf31eed83ce167</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>typename traits::value_type</type>
       <name>value_type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga9c171a84df61fc95fa51659777f17829</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a9c171a84df61fc95fa51659777f17829</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>typename traits::non_const_value_type</type>
       <name>non_const_value_type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gabf65e8d0bddfb9c4578c85d2d206f55a</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>abf65e8d0bddfb9c4578c85d2d206f55a</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>typename traits::index_type</type>
       <name>index_type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gae8e58a86543a1286e2f367d4d6bcbb70</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>ae8e58a86543a1286e2f367d4d6bcbb70</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>typename traits::non_const_index_type</type>
       <name>non_const_index_type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gab25b494ed4a0815e2fe8d7988c46113d</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>ab25b494ed4a0815e2fe8d7988c46113d</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>Morpheus::DenseVector&lt; index_type, index_type, array_layout, execution_space, memory_traits &gt;</type>
       <name>index_array_type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga32e136ff8521ec135dbdb16f8375444c</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a32e136ff8521ec135dbdb16f8375444c</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>Morpheus::DenseMatrix&lt; value_type, index_type, array_layout, execution_space, memory_traits &gt;</type>
       <name>value_array_type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga75eb935e2c69a1f18884faf892698808</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a75eb935e2c69a1f18884faf892698808</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>~DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga028fd0ed940f374d4b9595a456232a77</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a028fd0ed940f374d4b9595a456232a77</anchor>
       <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga8c6e4933a4261a11a666f919ed8c02e5</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a8c6e4933a4261a11a666f919ed8c02e5</anchor>
       <arglist>(const DiaMatrix &amp;)=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga09a8415fb139dd7ccaffdbaf56ddfeee</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a09a8415fb139dd7ccaffdbaf56ddfeee</anchor>
       <arglist>(DiaMatrix &amp;&amp;)=default</arglist>
     </member>
     <member kind="function">
       <type>DiaMatrix &amp;</type>
       <name>operator=</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga808d226f4dd91f68ec5a4b0014920bd0</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a808d226f4dd91f68ec5a4b0014920bd0</anchor>
       <arglist>(const DiaMatrix &amp;)=default</arglist>
     </member>
     <member kind="function">
       <type>DiaMatrix &amp;</type>
       <name>operator=</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga04c8b467dfae1dc8a8825c933d8f0da1</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a04c8b467dfae1dc8a8825c933d8f0da1</anchor>
       <arglist>(DiaMatrix &amp;&amp;)=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gacccde8df0baa06e94e27e07b03dbc1ea</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>acccde8df0baa06e94e27e07b03dbc1ea</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga70b3e4dd2db7f5634904af6c7b449141</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a70b3e4dd2db7f5634904af6c7b449141</anchor>
       <arglist>(const index_type num_rows, const index_type num_cols, const index_type num_entries, const index_type num_diagonals, const index_type alignment=32)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga6032b187b55315f1fc7d3cfbba8b41c4</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a6032b187b55315f1fc7d3cfbba8b41c4</anchor>
       <arglist>(const index_type num_rows, const index_type num_cols, const index_type num_entries, const IndexArray &amp;diag_offsets, const ValueArray &amp;vals, typename std::enable_if&lt; is_dense_matrix_format_container&lt; ValueArray &gt;::value &amp;&amp;is_dense_vector_format_container&lt; IndexArray &gt;::value &amp;&amp;is_compatible&lt; typename DiaMatrix::value_array_type, ValueArray &gt;::value &amp;&amp;is_compatible&lt; typename DiaMatrix::index_array_type, IndexArray &gt;::value &amp;&amp;!ValueArray::memory_traits::is_unmanaged &amp;&amp;!IndexArray::memory_traits::is_unmanaged &gt;::type *=nullptr)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga2624d116ac00b02788b02d60fe1e4f5b</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a2624d116ac00b02788b02d60fe1e4f5b</anchor>
       <arglist>(const DiaMatrix&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; is_format_compatible&lt; DiaMatrix, DiaMatrix&lt; VR, PR... &gt;&gt;::value &gt;::type *=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>std::enable_if&lt; is_format_compatible&lt; DiaMatrix, DiaMatrix&lt; VR, PR... &gt; &gt;::value, DiaMatrix &amp; &gt;::type</type>
       <name>operator=</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga1ca9562ea7fcc09bceca43ee0648ed6d</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a1ca9562ea7fcc09bceca43ee0648ed6d</anchor>
       <arglist>(const DiaMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga2b0b886a537100466f71592bdb70c21f</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a2b0b886a537100466f71592bdb70c21f</anchor>
       <arglist>(const DynamicMatrix&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; is_dynamically_compatible&lt; DiaMatrix, DynamicMatrix&lt; VR, PR... &gt;&gt;::value &gt;::type *=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>std::enable_if&lt; is_dynamically_compatible&lt; DiaMatrix, DynamicMatrix&lt; VR, PR... &gt; &gt;::value, DiaMatrix &amp; &gt;::type</type>
       <name>operator=</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga97f3e34ed9ccfa2ad871875f52860f98</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a97f3e34ed9ccfa2ad871875f52860f98</anchor>
       <arglist>(const DynamicMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gac48c32cea6897e63837ae261aa48a4cd</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>ac48c32cea6897e63837ae261aa48a4cd</anchor>
       <arglist>(const MatrixType &amp;src)=delete</arglist>
     </member>
     <member kind="function">
       <type>reference</type>
       <name>operator=</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga0811b5f3fa9c1f4e473a9e9b79904b82</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a0811b5f3fa9c1f4e473a9e9b79904b82</anchor>
       <arglist>(const MatrixType &amp;src)=delete</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>resize</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga137cdbb39a381229a76d5d81adc271d8</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a137cdbb39a381229a76d5d81adc271d8</anchor>
       <arglist>(const index_type num_rows, const index_type num_cols, const index_type num_entries, const index_type num_diagonals, const index_type alignment=32)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>resize</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga00a9da9a10947b499cf156f871a32537</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a00a9da9a10947b499cf156f871a32537</anchor>
       <arglist>(const DiaMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
     </member>
     <member kind="function">
       <type>DiaMatrix &amp;</type>
       <name>allocate</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gaaf27fb6913410569fb2c7b07bc0ea545</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>aaf27fb6913410569fb2c7b07bc0ea545</anchor>
       <arglist>(const DiaMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
     </member>
     <member kind="function">
       <type>formats_e</type>
       <name>format_enum</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gaa0d524f122c62bf42299ab896b7010bb</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>aa0d524f122c62bf42299ab896b7010bb</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>format_index</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga76ccb2017ab6c4eacc24a184915003b0</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a76ccb2017ab6c4eacc24a184915003b0</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>MORPHEUS_FORCEINLINE_FUNCTION index_array_reference</type>
       <name>diagonal_offsets</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga9476102505254ad9af48c71dba341de4</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a9476102505254ad9af48c71dba341de4</anchor>
       <arglist>(index_type n)</arglist>
     </member>
     <member kind="function">
       <type>MORPHEUS_FORCEINLINE_FUNCTION value_array_reference</type>
       <name>values</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga9f37101fb09be20e32396f302d850ba9</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a9f37101fb09be20e32396f302d850ba9</anchor>
       <arglist>(index_type i, index_type j)</arglist>
     </member>
     <member kind="function">
       <type>MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference</type>
       <name>cdiagonal_offsets</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga20f8b417f04f946f76627f07f52c998b</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a20f8b417f04f946f76627f07f52c998b</anchor>
       <arglist>(index_type n) const</arglist>
     </member>
     <member kind="function">
       <type>MORPHEUS_FORCEINLINE_FUNCTION const_value_array_reference</type>
       <name>cvalues</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga3479b7daf85b42b0d109ef4571c19878</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a3479b7daf85b42b0d109ef4571c19878</anchor>
       <arglist>(index_type i, index_type j) const</arglist>
     </member>
     <member kind="function">
       <type>MORPHEUS_FORCEINLINE_FUNCTION index_array_type &amp;</type>
       <name>diagonal_offsets</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga8df62785c2cae9766343978e263cff4c</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a8df62785c2cae9766343978e263cff4c</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>MORPHEUS_FORCEINLINE_FUNCTION value_array_type &amp;</type>
       <name>values</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gad73d085bdb6d7d2ebac083862e0c8593</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>ad73d085bdb6d7d2ebac083862e0c8593</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>MORPHEUS_FORCEINLINE_FUNCTION const_index_array_type &amp;</type>
       <name>cdiagonal_offsets</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga37ec8a4474e1d4267748a8ddb25e5f4b</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a37ec8a4474e1d4267748a8ddb25e5f4b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>MORPHEUS_FORCEINLINE_FUNCTION const_value_array_type &amp;</type>
       <name>cvalues</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gaa69e83a96ee9697eb31db0f59ab40758</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>aa69e83a96ee9697eb31db0f59ab40758</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>MORPHEUS_FORCEINLINE_FUNCTION index_type</type>
       <name>ndiags</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gaa233d3ea65b3c47fcac603a1b85fff09</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>aa233d3ea65b3c47fcac603a1b85fff09</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>MORPHEUS_FORCEINLINE_FUNCTION index_type</type>
       <name>alignment</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gaa8c3a726769437433847b7cb0b3d83e1</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>aa8c3a726769437433847b7cb0b3d83e1</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>MORPHEUS_FORCEINLINE_FUNCTION void</type>
       <name>set_ndiags</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gab685aab3b363b066cceea86f3666e693</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>ab685aab3b363b066cceea86f3666e693</anchor>
       <arglist>(const index_type num_diagonals)</arglist>
     </member>
     <member kind="function">
       <type>MORPHEUS_FORCEINLINE_FUNCTION void</type>
       <name>set_alignment</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga69bea403bfe2b76817f79a1e675f6b95</anchor>
+      <anchorfile>classMorpheus_1_1DiaMatrix.html</anchorfile>
+      <anchor>a69bea403bfe2b76817f79a1e675f6b95</anchor>
       <arglist>(const index_type alignment)</arglist>
     </member>
   </compound>
@@ -2071,6 +2071,209 @@
     <filename>classMorpheus_1_1DynamicMatrix.html</filename>
     <templarg></templarg>
     <templarg>Properties</templarg>
+    <member kind="typedef">
+      <type>Impl::ContainerTraits&lt; DynamicMatrix, ValueType, Properties... &gt;</type>
+      <name>traits</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>ae48cc3650f1f46161741e07e9478f6d5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::type</type>
+      <name>type</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a253688f094d751e2af7b7c881f31567e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename MatrixFormatTag&lt; Morpheus::DynamicMatrixFormatTag &gt;::tag</type>
+      <name>tag</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>adaaa4e692d7edebc625ee1dd648d3061</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::value_type</type>
+      <name>value_type</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a35dcf09a3ff951ef3663551f64be27d8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::non_const_value_type</type>
+      <name>non_const_value_type</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a7c6ebf6adc66e9845e336334627185ad</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::index_type</type>
+      <name>index_type</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a8231f75239db9ff786de4396462939b8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename traits::non_const_index_type</type>
+      <name>non_const_index_type</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>ac5e10b3bd2debe8695e3a30dbfae8f1f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>typename MatrixFormats&lt; ValueType, Properties... &gt;::variant</type>
+      <name>variant_type</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a74231143ad416ef3c284f81959fc7315</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~DynamicMatrix</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a3f1e060e8dbc2a3340e735876126bc79</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DynamicMatrix</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a2ad6d99b4ad7bba367e32326a2e0b3d9</anchor>
+      <arglist>(const DynamicMatrix &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DynamicMatrix</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>aaf5c4e943080af2dc49a2cbf29527480</anchor>
+      <arglist>(DynamicMatrix &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>DynamicMatrix &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a1d8ff27e9750dabe67bb719026b2e22b</anchor>
+      <arglist>(const DynamicMatrix &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>DynamicMatrix &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a10861170122657e94424741562f43cca</anchor>
+      <arglist>(DynamicMatrix &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DynamicMatrix</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a6463c8665e6b2ff27a701d693885ebe4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DynamicMatrix</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a1abf11822b68c08f7adb8860d4e4ce2d</anchor>
+      <arglist>(const Matrix &amp;src, typename std::enable_if&lt; is_variant_member_v&lt; Matrix, variant_type &gt;&gt;::type *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::enable_if&lt; is_variant_member_v&lt; Matrix, variant_type &gt;, DynamicMatrix &amp; &gt;::type</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>aa7d782e61dd6c3494807a9a4fbbb90f3</anchor>
+      <arglist>(const Matrix &amp;matrix)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DynamicMatrix</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>ac6709c2b8cbaf7cdb8481d3a40dc4a66</anchor>
+      <arglist>(const DynamicMatrix&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; is_format_compatible&lt; DynamicMatrix, DynamicMatrix&lt; VR, PR... &gt;&gt;::value &gt;::type *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::enable_if&lt; is_format_compatible&lt; DynamicMatrix, DynamicMatrix&lt; VR, PR... &gt; &gt;::value, DynamicMatrix &amp; &gt;::type</type>
+      <name>operator=</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a24cdd6287a66aa38c782a6e88b78ced0</anchor>
+      <arglist>(const DynamicMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resize</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>aed0f7ec6f8a8a61120fb5400e750a887</anchor>
+      <arglist>(const DynamicMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resize</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a590f9e51dd1d435f5fa33c59afe87ef0</anchor>
+      <arglist>(const Matrix &amp;src, typename std::enable_if&lt; is_variant_member_v&lt; Matrix, variant_type &gt;&gt;::type *=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type>DynamicMatrix &amp;</type>
+      <name>allocate</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a7879c6b6bc2d1df7910129aa6edc3661</anchor>
+      <arglist>(const DynamicMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>active_index</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a263ac64b72fce5b3b2f1c99b9c59278a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>format_index</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a000071bc078cdde94ff2c74b220bc943</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>formats_e</type>
+      <name>active_enum</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a0a7cb73a936e8dab9c90b3cfd39114d0</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>formats_e</type>
+      <name>format_enum</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a65144a6877b37de352196adde26a6dda</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>activate</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>ae22c2792d3e33c4ff31de0cfc1e32b50</anchor>
+      <arglist>(const formats_e index)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>activate</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a176789742c59a72c26565aa3e9a38517</anchor>
+      <arglist>(const int index)</arglist>
+    </member>
+    <member kind="function">
+      <type>const variant_type &amp;</type>
+      <name>const_formats</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>ac4cf94165ce7ef8c10aef8eb2d31c17e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>variant_type &amp;</type>
+      <name>formats</name>
+      <anchorfile>classMorpheus_1_1DynamicMatrix.html</anchorfile>
+      <anchor>a654d4fb7dbab74f45b155338190476e6</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>Morpheus::DynamicMatrixFormatTag</name>
@@ -2407,6 +2610,12 @@
     <templarg></templarg>
   </compound>
   <compound kind="class">
+    <name>Morpheus::is_variant_member</name>
+    <filename>classMorpheus_1_1is__variant__member.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+  </compound>
+  <compound kind="class">
     <name>Morpheus::is_vector_container</name>
     <filename>classMorpheus_1_1is__vector__container.html</filename>
     <templarg></templarg>
@@ -2618,6 +2827,7 @@
     <class kind="class">Morpheus::is_same_value_type</class>
     <class kind="class">Morpheus::is_sparse_matrix_container</class>
     <class kind="class">Morpheus::is_value_type</class>
+    <class kind="class">Morpheus::is_variant_member</class>
     <class kind="class">Morpheus::is_vector_container</class>
     <class kind="struct">Morpheus::MatrixFormatTag</class>
     <class kind="class">Morpheus::NotImplementedException</class>
@@ -2993,6 +3203,7 @@
     <class kind="class">Morpheus::is_dense_matrix_format_container</class>
     <class kind="class">Morpheus::is_dense_vector_format_container</class>
     <class kind="class">Morpheus::has_generic_space</class>
+    <class kind="class">Morpheus::is_variant_member</class>
     <class kind="class">Morpheus::has_tag_trait</class>
     <class kind="class">Morpheus::is_matrix_container</class>
     <class kind="class">Morpheus::is_sparse_matrix_container</class>
@@ -3362,286 +3573,7 @@
     <class kind="class">Morpheus::CsrMatrix</class>
     <class kind="class">Morpheus::DenseMatrix</class>
     <class kind="class">Morpheus::DiaMatrix</class>
-    <member kind="typedef">
-      <type>Impl::ContainerTraits&lt; DiaMatrix, ValueType, Properties... &gt;</type>
-      <name>traits</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga70663ac4a6fc0dae41a55c4cc0c78c86</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>typename traits::type</type>
-      <name>type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga8a28b3b4c827fd67e24a467fb05f63d5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>typename MatrixFormatTag&lt; DiaFormatTag &gt;::tag</type>
-      <name>tag</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gaab1e7877b1462c171abf31eed83ce167</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>typename traits::value_type</type>
-      <name>value_type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga9c171a84df61fc95fa51659777f17829</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>typename traits::non_const_value_type</type>
-      <name>non_const_value_type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gabf65e8d0bddfb9c4578c85d2d206f55a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>typename traits::index_type</type>
-      <name>index_type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gae8e58a86543a1286e2f367d4d6bcbb70</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>typename traits::non_const_index_type</type>
-      <name>non_const_index_type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gab25b494ed4a0815e2fe8d7988c46113d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>Morpheus::DenseVector&lt; index_type, index_type, array_layout, execution_space, memory_traits &gt;</type>
-      <name>index_array_type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga32e136ff8521ec135dbdb16f8375444c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>Morpheus::DenseMatrix&lt; value_type, index_type, array_layout, execution_space, memory_traits &gt;</type>
-      <name>value_array_type</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga75eb935e2c69a1f18884faf892698808</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga028fd0ed940f374d4b9595a456232a77</anchor>
-      <arglist>()=default</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga8c6e4933a4261a11a666f919ed8c02e5</anchor>
-      <arglist>(const DiaMatrix &amp;)=default</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga09a8415fb139dd7ccaffdbaf56ddfeee</anchor>
-      <arglist>(DiaMatrix &amp;&amp;)=default</arglist>
-    </member>
-    <member kind="function">
-      <type>DiaMatrix &amp;</type>
-      <name>operator=</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga808d226f4dd91f68ec5a4b0014920bd0</anchor>
-      <arglist>(const DiaMatrix &amp;)=default</arglist>
-    </member>
-    <member kind="function">
-      <type>DiaMatrix &amp;</type>
-      <name>operator=</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga04c8b467dfae1dc8a8825c933d8f0da1</anchor>
-      <arglist>(DiaMatrix &amp;&amp;)=default</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gacccde8df0baa06e94e27e07b03dbc1ea</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga70b3e4dd2db7f5634904af6c7b449141</anchor>
-      <arglist>(const index_type num_rows, const index_type num_cols, const index_type num_entries, const index_type num_diagonals, const index_type alignment=32)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga6032b187b55315f1fc7d3cfbba8b41c4</anchor>
-      <arglist>(const index_type num_rows, const index_type num_cols, const index_type num_entries, const IndexArray &amp;diag_offsets, const ValueArray &amp;vals, typename std::enable_if&lt; is_dense_matrix_format_container&lt; ValueArray &gt;::value &amp;&amp;is_dense_vector_format_container&lt; IndexArray &gt;::value &amp;&amp;is_compatible&lt; typename DiaMatrix::value_array_type, ValueArray &gt;::value &amp;&amp;is_compatible&lt; typename DiaMatrix::index_array_type, IndexArray &gt;::value &amp;&amp;!ValueArray::memory_traits::is_unmanaged &amp;&amp;!IndexArray::memory_traits::is_unmanaged &gt;::type *=nullptr)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga2624d116ac00b02788b02d60fe1e4f5b</anchor>
-      <arglist>(const DiaMatrix&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; is_format_compatible&lt; DiaMatrix, DiaMatrix&lt; VR, PR... &gt;&gt;::value &gt;::type *=nullptr)</arglist>
-    </member>
-    <member kind="function">
-      <type>std::enable_if&lt; is_format_compatible&lt; DiaMatrix, DiaMatrix&lt; VR, PR... &gt; &gt;::value, DiaMatrix &amp; &gt;::type</type>
-      <name>operator=</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga1ca9562ea7fcc09bceca43ee0648ed6d</anchor>
-      <arglist>(const DiaMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga2b0b886a537100466f71592bdb70c21f</anchor>
-      <arglist>(const DynamicMatrix&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; is_dynamically_compatible&lt; DiaMatrix, DynamicMatrix&lt; VR, PR... &gt;&gt;::value &gt;::type *=nullptr)</arglist>
-    </member>
-    <member kind="function">
-      <type>std::enable_if&lt; is_dynamically_compatible&lt; DiaMatrix, DynamicMatrix&lt; VR, PR... &gt; &gt;::value, DiaMatrix &amp; &gt;::type</type>
-      <name>operator=</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga97f3e34ed9ccfa2ad871875f52860f98</anchor>
-      <arglist>(const DynamicMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>DiaMatrix</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gac48c32cea6897e63837ae261aa48a4cd</anchor>
-      <arglist>(const MatrixType &amp;src)=delete</arglist>
-    </member>
-    <member kind="function">
-      <type>reference</type>
-      <name>operator=</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga0811b5f3fa9c1f4e473a9e9b79904b82</anchor>
-      <arglist>(const MatrixType &amp;src)=delete</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>resize</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga137cdbb39a381229a76d5d81adc271d8</anchor>
-      <arglist>(const index_type num_rows, const index_type num_cols, const index_type num_entries, const index_type num_diagonals, const index_type alignment=32)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>resize</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga00a9da9a10947b499cf156f871a32537</anchor>
-      <arglist>(const DiaMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
-    </member>
-    <member kind="function">
-      <type>DiaMatrix &amp;</type>
-      <name>allocate</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gaaf27fb6913410569fb2c7b07bc0ea545</anchor>
-      <arglist>(const DiaMatrix&lt; VR, PR... &gt; &amp;src)</arglist>
-    </member>
-    <member kind="function">
-      <type>formats_e</type>
-      <name>format_enum</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gaa0d524f122c62bf42299ab896b7010bb</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>format_index</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga76ccb2017ab6c4eacc24a184915003b0</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>MORPHEUS_FORCEINLINE_FUNCTION index_array_reference</type>
-      <name>diagonal_offsets</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga9476102505254ad9af48c71dba341de4</anchor>
-      <arglist>(index_type n)</arglist>
-    </member>
-    <member kind="function">
-      <type>MORPHEUS_FORCEINLINE_FUNCTION value_array_reference</type>
-      <name>values</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga9f37101fb09be20e32396f302d850ba9</anchor>
-      <arglist>(index_type i, index_type j)</arglist>
-    </member>
-    <member kind="function">
-      <type>MORPHEUS_FORCEINLINE_FUNCTION const_index_array_reference</type>
-      <name>cdiagonal_offsets</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga20f8b417f04f946f76627f07f52c998b</anchor>
-      <arglist>(index_type n) const</arglist>
-    </member>
-    <member kind="function">
-      <type>MORPHEUS_FORCEINLINE_FUNCTION const_value_array_reference</type>
-      <name>cvalues</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga3479b7daf85b42b0d109ef4571c19878</anchor>
-      <arglist>(index_type i, index_type j) const</arglist>
-    </member>
-    <member kind="function">
-      <type>MORPHEUS_FORCEINLINE_FUNCTION index_array_type &amp;</type>
-      <name>diagonal_offsets</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga8df62785c2cae9766343978e263cff4c</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>MORPHEUS_FORCEINLINE_FUNCTION value_array_type &amp;</type>
-      <name>values</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gad73d085bdb6d7d2ebac083862e0c8593</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>MORPHEUS_FORCEINLINE_FUNCTION const_index_array_type &amp;</type>
-      <name>cdiagonal_offsets</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga37ec8a4474e1d4267748a8ddb25e5f4b</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>MORPHEUS_FORCEINLINE_FUNCTION const_value_array_type &amp;</type>
-      <name>cvalues</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gaa69e83a96ee9697eb31db0f59ab40758</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>MORPHEUS_FORCEINLINE_FUNCTION index_type</type>
-      <name>ndiags</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gaa233d3ea65b3c47fcac603a1b85fff09</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>MORPHEUS_FORCEINLINE_FUNCTION index_type</type>
-      <name>alignment</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gaa8c3a726769437433847b7cb0b3d83e1</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>MORPHEUS_FORCEINLINE_FUNCTION void</type>
-      <name>set_ndiags</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>gab685aab3b363b066cceea86f3666e693</anchor>
-      <arglist>(const index_type num_diagonals)</arglist>
-    </member>
-    <member kind="function">
-      <type>MORPHEUS_FORCEINLINE_FUNCTION void</type>
-      <name>set_alignment</name>
-      <anchorfile>group__containers__2d.html</anchorfile>
-      <anchor>ga69bea403bfe2b76817f79a1e675f6b95</anchor>
-      <arglist>(const index_type alignment)</arglist>
-    </member>
+    <class kind="class">Morpheus::DynamicMatrix</class>
   </compound>
   <compound kind="group">
     <name>containers</name>

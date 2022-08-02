@@ -72,38 +72,36 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classMorpheus_1_1DynamicMatrix-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Morpheus::DynamicMatrix&lt; ValueType, Properties &gt; Class Template Reference</div>  </div>
+<div class="title">Morpheus::DynamicMatrix&lt; ValueType, Properties &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__containers.html">Containers</a> &raquo; <a class="el" href="group__containers__2d.html">2D Containers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implementation of the Dynamic Sparse Matrix Format Representation.  
+ <a href="classMorpheus_1_1DynamicMatrix.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Morpheus__DynamicMatrix_8hpp_source.html">Morpheus_DynamicMatrix.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae48cc3650f1f46161741e07e9478f6d5"><td class="memItemLeft" align="right" valign="top"><a id="ae48cc3650f1f46161741e07e9478f6d5"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>traits</b> = <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt; <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
+<tr class="memitem:ae48cc3650f1f46161741e07e9478f6d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#ae48cc3650f1f46161741e07e9478f6d5">traits</a> = <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt; <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
 <tr class="separator:ae48cc3650f1f46161741e07e9478f6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a253688f094d751e2af7b7c881f31567e"><td class="memItemLeft" align="right" valign="top"><a id="a253688f094d751e2af7b7c881f31567e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = typename traits::type</td></tr>
+<tr class="memitem:a253688f094d751e2af7b7c881f31567e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a253688f094d751e2af7b7c881f31567e">type</a> = typename traits::type</td></tr>
 <tr class="separator:a253688f094d751e2af7b7c881f31567e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a285a34c068c10ed416123c1a04862201"><td class="memItemLeft" align="right" valign="top"><a id="a285a34c068c10ed416123c1a04862201"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> = <a class="el" href="classMorpheus_1_1Impl_1_1MatrixBase.html">Impl::MatrixBase</a>&lt; <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;</td></tr>
 <tr class="separator:a285a34c068c10ed416123c1a04862201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaaa4e692d7edebc625ee1dd648d3061"><td class="memItemLeft" align="right" valign="top"><a id="adaaa4e692d7edebc625ee1dd648d3061"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>tag</b> = typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt; <a class="el" href="structMorpheus_1_1DynamicMatrixFormatTag.html">Morpheus::DynamicMatrixFormatTag</a> &gt;::tag</td></tr>
+<tr class="memitem:adaaa4e692d7edebc625ee1dd648d3061"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#adaaa4e692d7edebc625ee1dd648d3061">tag</a> = typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt; <a class="el" href="structMorpheus_1_1DynamicMatrixFormatTag.html">Morpheus::DynamicMatrixFormatTag</a> &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#adaaa4e692d7edebc625ee1dd648d3061">tag</a></td></tr>
 <tr class="separator:adaaa4e692d7edebc625ee1dd648d3061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35dcf09a3ff951ef3663551f64be27d8"><td class="memItemLeft" align="right" valign="top"><a id="a35dcf09a3ff951ef3663551f64be27d8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td></tr>
+<tr class="memitem:a35dcf09a3ff951ef3663551f64be27d8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a35dcf09a3ff951ef3663551f64be27d8">value_type</a> = typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td></tr>
 <tr class="separator:a35dcf09a3ff951ef3663551f64be27d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c6ebf6adc66e9845e336334627185ad"><td class="memItemLeft" align="right" valign="top"><a id="a7c6ebf6adc66e9845e336334627185ad"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>non_const_value_type</b> = typename traits::non_const_value_type</td></tr>
+<tr class="memitem:a7c6ebf6adc66e9845e336334627185ad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a7c6ebf6adc66e9845e336334627185ad">non_const_value_type</a> = typename traits::non_const_value_type</td></tr>
 <tr class="separator:a7c6ebf6adc66e9845e336334627185ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e1e9ca212547de6ec489584dbf6761c"><td class="memItemLeft" align="right" valign="top"><a id="a9e1e9ca212547de6ec489584dbf6761c"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = typename traits::index_type</td></tr>
 <tr class="separator:a9e1e9ca212547de6ec489584dbf6761c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8231f75239db9ff786de4396462939b8"><td class="memItemLeft" align="right" valign="top"><a id="a8231f75239db9ff786de4396462939b8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>index_type</b> = typename traits::index_type</td></tr>
+<tr class="memitem:a8231f75239db9ff786de4396462939b8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a8231f75239db9ff786de4396462939b8">index_type</a> = typename traits::index_type</td></tr>
 <tr class="separator:a8231f75239db9ff786de4396462939b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5e10b3bd2debe8695e3a30dbfae8f1f"><td class="memItemLeft" align="right" valign="top"><a id="ac5e10b3bd2debe8695e3a30dbfae8f1f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>non_const_index_type</b> = typename traits::non_const_index_type</td></tr>
+<tr class="memitem:ac5e10b3bd2debe8695e3a30dbfae8f1f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#ac5e10b3bd2debe8695e3a30dbfae8f1f">non_const_index_type</a> = typename traits::non_const_index_type</td></tr>
 <tr class="separator:ac5e10b3bd2debe8695e3a30dbfae8f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a077b8ad12159154137d2f01b754d9fd6"><td class="memItemLeft" align="right" valign="top"><a id="a077b8ad12159154137d2f01b754d9fd6"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>array_layout</b> = typename traits::array_layout</td></tr>
@@ -135,86 +133,880 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = type
 <tr class="memitem:a8d5c142e39f3bb090c8ee541d980a0b0"><td class="memItemLeft" align="right" valign="top"><a id="a8d5c142e39f3bb090c8ee541d980a0b0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b> = typename traits::const_reference</td></tr>
 <tr class="separator:a8d5c142e39f3bb090c8ee541d980a0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74231143ad416ef3c284f81959fc7315"><td class="memItemLeft" align="right" valign="top"><a id="a74231143ad416ef3c284f81959fc7315"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>variant_type</b> = typename MatrixFormats&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;::variant</td></tr>
+<tr class="memitem:a74231143ad416ef3c284f81959fc7315"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a74231143ad416ef3c284f81959fc7315">variant_type</a> = typename MatrixFormats&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties... &gt;::variant</td></tr>
 <tr class="separator:a74231143ad416ef3c284f81959fc7315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a3f1e060e8dbc2a3340e735876126bc79"><td class="memItemLeft" align="right" valign="top"><a id="a3f1e060e8dbc2a3340e735876126bc79"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a3f1e060e8dbc2a3340e735876126bc79">~DynamicMatrix</a> ()=default</td></tr>
+<tr class="memdesc:a3f1e060e8dbc2a3340e735876126bc79"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default destructor. <br /></td></tr>
+<tr class="separator:a3f1e060e8dbc2a3340e735876126bc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ad6d99b4ad7bba367e32326a2e0b3d9"><td class="memItemLeft" align="right" valign="top"><a id="a2ad6d99b4ad7bba367e32326a2e0b3d9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicMatrix</b> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;)=default</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a2ad6d99b4ad7bba367e32326a2e0b3d9">DynamicMatrix</a> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;)=default</td></tr>
+<tr class="memdesc:a2ad6d99b4ad7bba367e32326a2e0b3d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default copy contructor (shallow copy) of a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container from another <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:a2ad6d99b4ad7bba367e32326a2e0b3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf5c4e943080af2dc49a2cbf29527480"><td class="memItemLeft" align="right" valign="top"><a id="aaf5c4e943080af2dc49a2cbf29527480"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicMatrix</b> (<a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;&amp;)=default</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#aaf5c4e943080af2dc49a2cbf29527480">DynamicMatrix</a> (<a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:aaf5c4e943080af2dc49a2cbf29527480"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default move contructor (shallow copy) of a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container from another <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:aaf5c4e943080af2dc49a2cbf29527480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d8ff27e9750dabe67bb719026b2e22b"><td class="memItemLeft" align="right" valign="top"><a id="a1d8ff27e9750dabe67bb719026b2e22b"></a>
-<a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;)=default</td></tr>
+<a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a1d8ff27e9750dabe67bb719026b2e22b">operator=</a> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;)=default</td></tr>
+<tr class="memdesc:a1d8ff27e9750dabe67bb719026b2e22b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default copy assignment (shallow copy) of a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container from another <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:a1d8ff27e9750dabe67bb719026b2e22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10861170122657e94424741562f43cca"><td class="memItemLeft" align="right" valign="top"><a id="a10861170122657e94424741562f43cca"></a>
-<a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;&amp;)=default</td></tr>
+<a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a10861170122657e94424741562f43cca">operator=</a> (<a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:a10861170122657e94424741562f43cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default move assignment (shallow copy) of a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container from another <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container with the same properties. <br /></td></tr>
 <tr class="separator:a10861170122657e94424741562f43cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa94dfd3174776ce6cf778ff6224e4223"><td class="memTemplParams" colspan="2"><a id="aa94dfd3174776ce6cf778ff6224e4223"></a>
-template&lt;typename Matrix &gt; </td></tr>
-<tr class="memitem:aa94dfd3174776ce6cf778ff6224e4223"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DynamicMatrix</b> (const Matrix &amp;src, typename std::enable_if&lt; <a class="el" href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">is_variant_member_v</a>&lt; typename Matrix::type, variant_type &gt;&gt;::type *=nullptr)</td></tr>
-<tr class="separator:aa94dfd3174776ce6cf778ff6224e4223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24914342f02bba8c002aa9d3b5a4ee22"><td class="memTemplParams" colspan="2"><a id="a24914342f02bba8c002aa9d3b5a4ee22"></a>
-template&lt;typename Matrix &gt; </td></tr>
-<tr class="memitem:a24914342f02bba8c002aa9d3b5a4ee22"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">is_variant_member_v</a>&lt; typename Matrix::type, variant_type &gt;, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const Matrix &amp;matrix)</td></tr>
-<tr class="separator:a24914342f02bba8c002aa9d3b5a4ee22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c34bc329753fcfc239e991cf9ffa942"><td class="memTemplParams" colspan="2"><a id="a8c34bc329753fcfc239e991cf9ffa942"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a8c34bc329753fcfc239e991cf9ffa942"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DynamicMatrix</b> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>, typename <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;::type &gt;::value &gt;::type *=nullptr)</td></tr>
-<tr class="separator:a8c34bc329753fcfc239e991cf9ffa942"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2c8b993a0b9e5f00e34f18c36023e5"><td class="memTemplParams" colspan="2"><a id="afa2c8b993a0b9e5f00e34f18c36023e5"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:afa2c8b993a0b9e5f00e34f18c36023e5"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>, typename <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;::type &gt;::value, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
-<tr class="separator:afa2c8b993a0b9e5f00e34f18c36023e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd3eab8effe2fff52565d2f494f36db7"><td class="memTemplParams" colspan="2"><a id="abd3eab8effe2fff52565d2f494f36db7"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:abd3eab8effe2fff52565d2f494f36db7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>resize</b> (const index_type m, const index_type n, const index_type nnz, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:abd3eab8effe2fff52565d2f494f36db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed0f7ec6f8a8a61120fb5400e750a887"><td class="memTemplParams" colspan="2"><a id="aed0f7ec6f8a8a61120fb5400e750a887"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:aed0f7ec6f8a8a61120fb5400e750a887"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>resize</b> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memitem:a6463c8665e6b2ff27a701d693885ebe4"><td class="memItemLeft" align="right" valign="top"><a id="a6463c8665e6b2ff27a701d693885ebe4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a6463c8665e6b2ff27a701d693885ebe4">DynamicMatrix</a> ()</td></tr>
+<tr class="memdesc:a6463c8665e6b2ff27a701d693885ebe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> object. <br /></td></tr>
+<tr class="separator:a6463c8665e6b2ff27a701d693885ebe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1abf11822b68c08f7adb8860d4e4ce2d"><td class="memTemplParams" colspan="2">template&lt;typename Matrix &gt; </td></tr>
+<tr class="memitem:a1abf11822b68c08f7adb8860d4e4ce2d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a1abf11822b68c08f7adb8860d4e4ce2d">DynamicMatrix</a> (const Matrix &amp;src, typename std::enable_if&lt; <a class="el" href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">is_variant_member_v</a>&lt; Matrix, <a class="el" href="classMorpheus_1_1DynamicMatrix.html#a74231143ad416ef3c284f81959fc7315">variant_type</a> &gt;&gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a253688f094d751e2af7b7c881f31567e">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:a1abf11822b68c08f7adb8860d4e4ce2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> from another concrete format.  <a href="classMorpheus_1_1DynamicMatrix.html#a1abf11822b68c08f7adb8860d4e4ce2d">More...</a><br /></td></tr>
+<tr class="separator:a1abf11822b68c08f7adb8860d4e4ce2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d782e61dd6c3494807a9a4fbbb90f3"><td class="memTemplParams" colspan="2">template&lt;typename Matrix &gt; </td></tr>
+<tr class="memitem:aa7d782e61dd6c3494807a9a4fbbb90f3"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">is_variant_member_v</a>&lt; Matrix, <a class="el" href="classMorpheus_1_1DynamicMatrix.html#a74231143ad416ef3c284f81959fc7315">variant_type</a> &gt;, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp; &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a253688f094d751e2af7b7c881f31567e">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#aa7d782e61dd6c3494807a9a4fbbb90f3">operator=</a> (const Matrix &amp;matrix)</td></tr>
+<tr class="memdesc:aa7d782e61dd6c3494807a9a4fbbb90f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> from another concrete format.  <a href="classMorpheus_1_1DynamicMatrix.html#aa7d782e61dd6c3494807a9a4fbbb90f3">More...</a><br /></td></tr>
+<tr class="separator:aa7d782e61dd6c3494807a9a4fbbb90f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6709c2b8cbaf7cdb8481d3a40dc4a66"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:ac6709c2b8cbaf7cdb8481d3a40dc4a66"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#ac6709c2b8cbaf7cdb8481d3a40dc4a66">DynamicMatrix</a> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src, typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a253688f094d751e2af7b7c881f31567e">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:ac6709c2b8cbaf7cdb8481d3a40dc4a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a>.  <a href="classMorpheus_1_1DynamicMatrix.html#ac6709c2b8cbaf7cdb8481d3a40dc4a66">More...</a><br /></td></tr>
+<tr class="separator:ac6709c2b8cbaf7cdb8481d3a40dc4a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24cdd6287a66aa38c782a6e88b78ced0"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:a24cdd6287a66aa38c782a6e88b78ced0"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &gt;::value, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp; &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a253688f094d751e2af7b7c881f31567e">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a24cdd6287a66aa38c782a6e88b78ced0">operator=</a> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:a24cdd6287a66aa38c782a6e88b78ced0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a>.  <a href="classMorpheus_1_1DynamicMatrix.html#a24cdd6287a66aa38c782a6e88b78ced0">More...</a><br /></td></tr>
+<tr class="separator:a24cdd6287a66aa38c782a6e88b78ced0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0f7ec6f8a8a61120fb5400e750a887"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:aed0f7ec6f8a8a61120fb5400e750a887"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#aed0f7ec6f8a8a61120fb5400e750a887">resize</a> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:aed0f7ec6f8a8a61120fb5400e750a887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> with the shape and number of non-zero entries of the active type of another <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> with different parameters.  <a href="classMorpheus_1_1DynamicMatrix.html#aed0f7ec6f8a8a61120fb5400e750a887">More...</a><br /></td></tr>
 <tr class="separator:aed0f7ec6f8a8a61120fb5400e750a887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0878a4ec231d2e3df4d5de57b0e2a48"><td class="memTemplParams" colspan="2"><a id="ac0878a4ec231d2e3df4d5de57b0e2a48"></a>
-template&lt;typename Matrix &gt; </td></tr>
-<tr class="memitem:ac0878a4ec231d2e3df4d5de57b0e2a48"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>resize</b> (const Matrix &amp;src, typename std::enable_if&lt; <a class="el" href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">is_variant_member_v</a>&lt; typename Matrix::type, variant_type &gt;&gt;::type *=nullptr)</td></tr>
-<tr class="separator:ac0878a4ec231d2e3df4d5de57b0e2a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7879c6b6bc2d1df7910129aa6edc3661"><td class="memTemplParams" colspan="2"><a id="a7879c6b6bc2d1df7910129aa6edc3661"></a>
-template&lt;class VR , class... PR&gt; </td></tr>
-<tr class="memitem:a7879c6b6bc2d1df7910129aa6edc3661"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>allocate</b> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memitem:a590f9e51dd1d435f5fa33c59afe87ef0"><td class="memTemplParams" colspan="2">template&lt;typename Matrix &gt; </td></tr>
+<tr class="memitem:a590f9e51dd1d435f5fa33c59afe87ef0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a590f9e51dd1d435f5fa33c59afe87ef0">resize</a> (const Matrix &amp;src, typename std::enable_if&lt; <a class="el" href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">is_variant_member_v</a>&lt; Matrix, <a class="el" href="classMorpheus_1_1DynamicMatrix.html#a74231143ad416ef3c284f81959fc7315">variant_type</a> &gt;&gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a253688f094d751e2af7b7c881f31567e">type</a> *=nullptr)</td></tr>
+<tr class="memdesc:a590f9e51dd1d435f5fa33c59afe87ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> with the shape and number of non-zero entries of another Matrix with possibly a different storage format. Note that upon resizing the new <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> will set to have the same active type as the source Matrix.  <a href="classMorpheus_1_1DynamicMatrix.html#a590f9e51dd1d435f5fa33c59afe87ef0">More...</a><br /></td></tr>
+<tr class="separator:a590f9e51dd1d435f5fa33c59afe87ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7879c6b6bc2d1df7910129aa6edc3661"><td class="memTemplParams" colspan="2">template&lt;class VR , class... PR&gt; </td></tr>
+<tr class="memitem:a7879c6b6bc2d1df7910129aa6edc3661"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a7879c6b6bc2d1df7910129aa6edc3661">allocate</a> (const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;src)</td></tr>
+<tr class="memdesc:a7879c6b6bc2d1df7910129aa6edc3661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> with the shape and number of non-zero entries of the active type of another <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> with different parameters. Note that upon allocation the new <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> will set to have the same active type as the source Matrix.  <a href="classMorpheus_1_1DynamicMatrix.html#a7879c6b6bc2d1df7910129aa6edc3661">More...</a><br /></td></tr>
 <tr class="separator:a7879c6b6bc2d1df7910129aa6edc3661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a263ac64b72fce5b3b2f1c99b9c59278a"><td class="memItemLeft" align="right" valign="top"><a id="a263ac64b72fce5b3b2f1c99b9c59278a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>active_index</b> () const</td></tr>
+<tr class="memitem:a263ac64b72fce5b3b2f1c99b9c59278a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a263ac64b72fce5b3b2f1c99b9c59278a">active_index</a> () const</td></tr>
+<tr class="memdesc:a263ac64b72fce5b3b2f1c99b9c59278a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the format index assigned to the active type of the <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container.  <a href="classMorpheus_1_1DynamicMatrix.html#a263ac64b72fce5b3b2f1c99b9c59278a">More...</a><br /></td></tr>
 <tr class="separator:a263ac64b72fce5b3b2f1c99b9c59278a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a000071bc078cdde94ff2c74b220bc943"><td class="memItemLeft" align="right" valign="top"><a id="a000071bc078cdde94ff2c74b220bc943"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>format_index</b> () const</td></tr>
+<tr class="memitem:a000071bc078cdde94ff2c74b220bc943"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a000071bc078cdde94ff2c74b220bc943">format_index</a> () const</td></tr>
+<tr class="memdesc:a000071bc078cdde94ff2c74b220bc943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the format index assigned to the active type of the <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container.  <a href="classMorpheus_1_1DynamicMatrix.html#a000071bc078cdde94ff2c74b220bc943">More...</a><br /></td></tr>
 <tr class="separator:a000071bc078cdde94ff2c74b220bc943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a7cb73a936e8dab9c90b3cfd39114d0"><td class="memItemLeft" align="right" valign="top"><a id="a0a7cb73a936e8dab9c90b3cfd39114d0"></a>
-formats_e&#160;</td><td class="memItemRight" valign="bottom"><b>active_enum</b> () const</td></tr>
+<tr class="memitem:a0a7cb73a936e8dab9c90b3cfd39114d0"><td class="memItemLeft" align="right" valign="top">formats_e&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a0a7cb73a936e8dab9c90b3cfd39114d0">active_enum</a> () const</td></tr>
+<tr class="memdesc:a0a7cb73a936e8dab9c90b3cfd39114d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the format enum assigned to the active type of the <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container.  <a href="classMorpheus_1_1DynamicMatrix.html#a0a7cb73a936e8dab9c90b3cfd39114d0">More...</a><br /></td></tr>
 <tr class="separator:a0a7cb73a936e8dab9c90b3cfd39114d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65144a6877b37de352196adde26a6dda"><td class="memItemLeft" align="right" valign="top"><a id="a65144a6877b37de352196adde26a6dda"></a>
-formats_e&#160;</td><td class="memItemRight" valign="bottom"><b>format_enum</b> () const</td></tr>
+<tr class="memitem:a65144a6877b37de352196adde26a6dda"><td class="memItemLeft" align="right" valign="top">formats_e&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a65144a6877b37de352196adde26a6dda">format_enum</a> () const</td></tr>
+<tr class="memdesc:a65144a6877b37de352196adde26a6dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the format enum assigned to the active type of the <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container.  <a href="classMorpheus_1_1DynamicMatrix.html#a65144a6877b37de352196adde26a6dda">More...</a><br /></td></tr>
 <tr class="separator:a65144a6877b37de352196adde26a6dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae22c2792d3e33c4ff31de0cfc1e32b50"><td class="memItemLeft" align="right" valign="top"><a id="ae22c2792d3e33c4ff31de0cfc1e32b50"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>activate</b> (const formats_e index)</td></tr>
+<tr class="memitem:ae22c2792d3e33c4ff31de0cfc1e32b50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#ae22c2792d3e33c4ff31de0cfc1e32b50">activate</a> (const formats_e index)</td></tr>
+<tr class="memdesc:ae22c2792d3e33c4ff31de0cfc1e32b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the active type of the <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container to the one given by the enum <code>index</code> parameter.  <a href="classMorpheus_1_1DynamicMatrix.html#ae22c2792d3e33c4ff31de0cfc1e32b50">More...</a><br /></td></tr>
 <tr class="separator:ae22c2792d3e33c4ff31de0cfc1e32b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a176789742c59a72c26565aa3e9a38517"><td class="memItemLeft" align="right" valign="top"><a id="a176789742c59a72c26565aa3e9a38517"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>activate</b> (const int index)</td></tr>
+<tr class="memitem:a176789742c59a72c26565aa3e9a38517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a176789742c59a72c26565aa3e9a38517">activate</a> (const int index)</td></tr>
+<tr class="memdesc:a176789742c59a72c26565aa3e9a38517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the active type of the <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container to the one given by the <code>index</code> parameter.  <a href="classMorpheus_1_1DynamicMatrix.html#a176789742c59a72c26565aa3e9a38517">More...</a><br /></td></tr>
 <tr class="separator:a176789742c59a72c26565aa3e9a38517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4cf94165ce7ef8c10aef8eb2d31c17e"><td class="memItemLeft" align="right" valign="top"><a id="ac4cf94165ce7ef8c10aef8eb2d31c17e"></a>
-const variant_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>const_formats</b> () const</td></tr>
+<tr class="memitem:ac4cf94165ce7ef8c10aef8eb2d31c17e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classMorpheus_1_1DynamicMatrix.html#a74231143ad416ef3c284f81959fc7315">variant_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#ac4cf94165ce7ef8c10aef8eb2d31c17e">const_formats</a> () const</td></tr>
+<tr class="memdesc:ac4cf94165ce7ef8c10aef8eb2d31c17e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const-reference to the variant container that holds the supported formats in the <code><a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a></code>.  <a href="classMorpheus_1_1DynamicMatrix.html#ac4cf94165ce7ef8c10aef8eb2d31c17e">More...</a><br /></td></tr>
 <tr class="separator:ac4cf94165ce7ef8c10aef8eb2d31c17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a654d4fb7dbab74f45b155338190476e6"><td class="memItemLeft" align="right" valign="top"><a id="a654d4fb7dbab74f45b155338190476e6"></a>
-variant_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>formats</b> ()</td></tr>
+<tr class="memitem:a654d4fb7dbab74f45b155338190476e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a74231143ad416ef3c284f81959fc7315">variant_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a654d4fb7dbab74f45b155338190476e6">formats</a> ()</td></tr>
+<tr class="memdesc:a654d4fb7dbab74f45b155338190476e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the variant container that holds the supported formats in the <code><a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a></code>.  <a href="classMorpheus_1_1DynamicMatrix.html#a654d4fb7dbab74f45b155338190476e6">More...</a><br /></td></tr>
 <tr class="separator:a654d4fb7dbab74f45b155338190476e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class ValueType, class... Properties&gt;<br />
+class Morpheus::DynamicMatrix&lt; ValueType, Properties &gt;</h3>
+
+<p>Implementation of the Dynamic Sparse Matrix Format Representation. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname"><a class="el" href="structMorpheus_1_1ValueType.html" title="A wrapper that checks if the provided type is a scalar type.">ValueType</a></td><td>Type of values to store </td></tr>
+    <tr><td class="paramname">Properties</td><td>Optional properties to modify the behaviour of the container. Sensible defaults are selected based on the configuration. Please refer to <a class="el" href="Morpheus__ContainerTraits_8hpp_source.html">impl/Morpheus_ContainerTraits.hpp</a> to find out more about the valid properties.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Overview</dt><dd>The <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container is a two-dimensional container that acts as a superset of all the available matrix storage formats supported in <a class="el" href="namespaceMorpheus.html">Morpheus</a>. The purpose of such a container is to enable run-time switching across the different formats under a single unified interface such that we can take advantage of the format that is best suited for the given computation and target hardware. It is a polymorphic container in the sense that it can store scalar or integer type values, on host or device depending how the template parameters are selected.</dd></dl>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;Morpheus_Core.hpp&gt;</span></div>
+<div class="line"><span class="comment">// Matrix to Build</span></div>
+<div class="line"><span class="comment">// [1 * 2]</span></div>
+<div class="line"><span class="comment">// [* * 3]</span></div>
+<div class="line"><span class="comment">// [* 4 *]</span></div>
+<div class="line"><span class="keywordtype">int</span> main(){</div>
+<div class="line"> <span class="keyword">using</span> <a class="code" href="classMorpheus_1_1DynamicMatrix.html#a6463c8665e6b2ff27a701d693885ebe4">DynamicMatrix</a> = <a class="code" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix&lt;double, Kokkos::HostSpace&gt;</a>;</div>
+<div class="line"> <span class="keyword">using</span> Matrix = <a class="code" href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix&lt;double, Kokkos::HostSpace&gt;</a>;</div>
+<div class="line"> <span class="keyword">using</span> index_array_type = <span class="keyword">typename</span> Matrix::index_array_type;</div>
+<div class="line"> <span class="keyword">using</span> value_array_type = <span class="keyword">typename</span> Matrix::value_array_type;</div>
+<div class="line"> </div>
+<div class="line"> <a class="code" href="classMorpheus_1_1DynamicMatrix.html#a6463c8665e6b2ff27a701d693885ebe4">DynamicMatrix</a> A;  <span class="comment">// A acts as COO format by default</span></div>
+<div class="line"> </div>
+<div class="line"> A.activate(Morpheus::DIA_FORMAT); <span class="comment">// Now acts as a DIA format</span></div>
+<div class="line"> </div>
+<div class="line"> index_array_type off(4, 0), j(4, 0);</div>
+<div class="line"> value_array_type v(4,0);</div>
+<div class="line"> </div>
+<div class="line"> off[0] = 0; off[1] = 2; off[2] = 3; off[3] = 4;</div>
+<div class="line"> </div>
+<div class="line"> j[0] = 0; v[0] = 1;</div>
+<div class="line"> j[1] = 2; v[1] = 2;</div>
+<div class="line"> j[2] = 2; v[2] = 3;</div>
+<div class="line"> j[3] = 1; v[3] = 4;</div>
+<div class="line"> </div>
+<div class="line"> <span class="comment">// Construct the matrix from off,j,v</span></div>
+<div class="line"> Matrix Acsr(3, 3, 4, off, j, v);</div>
+<div class="line"> </div>
+<div class="line"> A = Acsr; <span class="comment">// Now acts as CSR and holds the same data</span></div>
+<div class="line"> </div>
+<div class="line"> Morpheus::print(A); <span class="comment">// prints A</span></div>
+<div class="line">}</div>
+</div><!-- fragment --> </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a8231f75239db9ff786de4396462939b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8231f75239db9ff786de4396462939b8">&#9670;&nbsp;</a></span>index_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a8231f75239db9ff786de4396462939b8">index_type</a> =  typename traits::index_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of the indices held by the container - can be const </p>
+
+</div>
+</div>
+<a id="ac5e10b3bd2debe8695e3a30dbfae8f1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e10b3bd2debe8695e3a30dbfae8f1f">&#9670;&nbsp;</a></span>non_const_index_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#ac5e10b3bd2debe8695e3a30dbfae8f1f">non_const_index_type</a> =  typename traits::non_const_index_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The non-constant type of the indices held by the container </p>
+
+</div>
+</div>
+<a id="a7c6ebf6adc66e9845e336334627185ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c6ebf6adc66e9845e336334627185ad">&#9670;&nbsp;</a></span>non_const_value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a7c6ebf6adc66e9845e336334627185ad">non_const_value_type</a> =  typename traits::non_const_value_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The non-constant type of the values held by the container </p>
+
+</div>
+</div>
+<a id="adaaa4e692d7edebc625ee1dd648d3061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaaa4e692d7edebc625ee1dd648d3061">&#9670;&nbsp;</a></span>tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#adaaa4e692d7edebc625ee1dd648d3061">tag</a> =  typename <a class="el" href="structMorpheus_1_1MatrixFormatTag.html">MatrixFormatTag</a>&lt;<a class="el" href="structMorpheus_1_1DynamicMatrixFormatTag.html">Morpheus::DynamicMatrixFormatTag</a>&gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#adaaa4e692d7edebc625ee1dd648d3061">tag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The tag associated specificaly to the particular container </p>
+
+</div>
+</div>
+<a id="ae48cc3650f1f46161741e07e9478f6d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae48cc3650f1f46161741e07e9478f6d5">&#9670;&nbsp;</a></span>traits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#ae48cc3650f1f46161741e07e9478f6d5">traits</a> =  <a class="el" href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Impl::ContainerTraits</a>&lt;<a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>, <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The traits associated with the particular container </p>
+
+</div>
+</div>
+<a id="a253688f094d751e2af7b7c881f31567e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a253688f094d751e2af7b7c881f31567e">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a253688f094d751e2af7b7c881f31567e">type</a> =  typename traits::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The complete type of the container </p>
+
+</div>
+</div>
+<a id="a35dcf09a3ff951ef3663551f64be27d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35dcf09a3ff951ef3663551f64be27d8">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a35dcf09a3ff951ef3663551f64be27d8">value_type</a> =  typename <a class="el" href="structMorpheus_1_1ValueType.html">traits::value_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of the values held by the container - can be const </p>
+
+</div>
+</div>
+<a id="a74231143ad416ef3c284f81959fc7315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74231143ad416ef3c284f81959fc7315">&#9670;&nbsp;</a></span>variant_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a74231143ad416ef3c284f81959fc7315">variant_type</a> =  typename MatrixFormats&lt;<a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt;::variant</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The variant container that holds the various supported containers </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1abf11822b68c08f7adb8860d4e4ce2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1abf11822b68c08f7adb8860d4e4ce2d">&#9670;&nbsp;</a></span>DynamicMatrix() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;typename Matrix &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">is_variant_member_v</a>&lt; Matrix, <a class="el" href="classMorpheus_1_1DynamicMatrix.html#a74231143ad416ef3c284f81959fc7315">variant_type</a> &gt;&gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a253688f094d751e2af7b7c881f31567e">type</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> from another concrete format. </p>
+<dl class="section user"><dt>Overview</dt><dd>Constructs a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> from another concrete format supported in <a class="el" href="namespaceMorpheus.html">Morpheus</a>. For the construction to be valid the <code><a class="el" href="classMorpheus_1_1is__variant__member.html" title="Checks if the given type T is a member of Variant container such as std::variant or mpark::variant.">is_variant_member</a></code> check needs to be satisfied. In other words, we can only construct from one of the member types in the variant held by the <code><a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a></code>. Note that the <code><a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a></code> will change it's active type to the format type of the source Matrix.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Matrix</td><td>The type of the concrete matrix format. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source container we are constructing from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac6709c2b8cbaf7cdb8481d3a40dc4a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6709c2b8cbaf7cdb8481d3a40dc4a66">&#9670;&nbsp;</a></span>DynamicMatrix() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt; <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt;&gt;::value &gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a253688f094d751e2af7b7c881f31567e">type</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a>. </p>
+<dl class="section user"><dt>Overview</dt><dd>Constructs a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> i.e a matrix that satisfies the <code><a class="el" href="structMorpheus_1_1is__format__compatible.html" title="Checks if the two types are format compatible containers i.e are compatible containers and have the s...">is_format_compatible</a></code> check. Note that upon construction the new <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> will set to have the same active type as the source Matrix.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of Values the Other Matrix holds. </td></tr>
+    <tr><td class="paramname">PR</td><td>Properties of the Other Matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The matrix we are constructing from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae22c2792d3e33c4ff31de0cfc1e32b50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae22c2792d3e33c4ff31de0cfc1e32b50">&#9670;&nbsp;</a></span>activate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::activate </td>
+          <td>(</td>
+          <td class="paramtype">const formats_e&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Changes the active type of the <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container to the one given by the enum <code>index</code> parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The enum state representing the active type to change to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a176789742c59a72c26565aa3e9a38517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a176789742c59a72c26565aa3e9a38517">&#9670;&nbsp;</a></span>activate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::activate </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Changes the active type of the <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container to the one given by the <code>index</code> parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index representing the active type to change to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0a7cb73a936e8dab9c90b3cfd39114d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a7cb73a936e8dab9c90b3cfd39114d0">&#9670;&nbsp;</a></span>active_enum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">formats_e <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::active_enum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the format enum assigned to the active type of the <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container. </p>
+<dl class="section return"><dt>Returns</dt><dd>formats_e The format enum </dd></dl>
+
+</div>
+</div>
+<a id="a263ac64b72fce5b3b2f1c99b9c59278a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a263ac64b72fce5b3b2f1c99b9c59278a">&#9670;&nbsp;</a></span>active_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::active_index </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the format index assigned to the active type of the <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container. </p>
+<dl class="section return"><dt>Returns</dt><dd>formats_e The format enum </dd></dl>
+
+</div>
+</div>
+<a id="a7879c6b6bc2d1df7910129aa6edc3661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7879c6b6bc2d1df7910129aa6edc3661">&#9670;&nbsp;</a></span>allocate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&amp; <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::allocate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allocates <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> with the shape and number of non-zero entries of the active type of another <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> with different parameters. Note that upon allocation the new <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> will set to have the same active type as the source Matrix. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of values the source matrix stores. </td></tr>
+    <tr><td class="paramname">PR</td><td>Other properties of source matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> we are resizing from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac4cf94165ce7ef8c10aef8eb2d31c17e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4cf94165ce7ef8c10aef8eb2d31c17e">&#9670;&nbsp;</a></span>const_formats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classMorpheus_1_1DynamicMatrix.html#a74231143ad416ef3c284f81959fc7315">variant_type</a>&amp; <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::const_formats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a const-reference to the variant container that holds the supported formats in the <code><a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a></code>. </p>
+<dl class="section return"><dt>Returns</dt><dd>const variant_type&amp; A const-reference to the variant container. </dd></dl>
+
+</div>
+</div>
+<a id="a65144a6877b37de352196adde26a6dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65144a6877b37de352196adde26a6dda">&#9670;&nbsp;</a></span>format_enum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">formats_e <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::format_enum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the format enum assigned to the active type of the <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container. </p>
+<dl class="section return"><dt>Returns</dt><dd>formats_e The format enum </dd></dl>
+
+</div>
+</div>
+<a id="a000071bc078cdde94ff2c74b220bc943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a000071bc078cdde94ff2c74b220bc943">&#9670;&nbsp;</a></span>format_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::format_index </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the format index assigned to the active type of the <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> container. </p>
+<dl class="section return"><dt>Returns</dt><dd>formats_e The format enum </dd></dl>
+
+</div>
+</div>
+<a id="a654d4fb7dbab74f45b155338190476e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654d4fb7dbab74f45b155338190476e6">&#9670;&nbsp;</a></span>formats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMorpheus_1_1DynamicMatrix.html#a74231143ad416ef3c284f81959fc7315">variant_type</a>&amp; <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::formats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the variant container that holds the supported formats in the <code><a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a></code>. </p>
+<dl class="section return"><dt>Returns</dt><dd>variant_type&amp; A reference to the variant container. </dd></dl>
+
+</div>
+</div>
+<a id="a24cdd6287a66aa38c782a6e88b78ced0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24cdd6287a66aa38c782a6e88b78ced0">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt; <a class="el" href="structMorpheus_1_1is__format__compatible.html">is_format_compatible</a>&lt;<a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt;VR, PR...&gt; &gt;::value, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;&gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a253688f094d751e2af7b7c881f31567e">type</a> <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a>. </p>
+<dl class="section user"><dt>Overview</dt><dd>Assigns a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> from another compatible <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> i.e a matrix that satisfies the <code><a class="el" href="structMorpheus_1_1is__format__compatible.html" title="Checks if the two types are format compatible containers i.e are compatible containers and have the s...">is_format_compatible</a></code> check. Note that upon assignment the new <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> will set to have the same active type as the source Matrix.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of Values the Other Matrix holds. </td></tr>
+    <tr><td class="paramname">PR</td><td>Properties of the Other Matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The matrix we are assigning from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa7d782e61dd6c3494807a9a4fbbb90f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d782e61dd6c3494807a9a4fbbb90f3">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;typename Matrix &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;<a class="el" href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">is_variant_member_v</a>&lt;Matrix, <a class="el" href="classMorpheus_1_1DynamicMatrix.html#a74231143ad416ef3c284f81959fc7315">variant_type</a>&gt;, <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a> &amp;&gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a253688f094d751e2af7b7c881f31567e">type</a> <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> from another concrete format. </p>
+<dl class="section user"><dt>Overview</dt><dd>Assigns a <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> from another concrete format supported in <a class="el" href="namespaceMorpheus.html">Morpheus</a>. For the assignment to be valid the <code><a class="el" href="classMorpheus_1_1is__variant__member.html" title="Checks if the given type T is a member of Variant container such as std::variant or mpark::variant.">is_variant_member</a></code> check needs to be satisfied. In other words, we can only assign from one of the member types in the variant held by the <code><a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a></code>. Note that the <code><a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a></code> will change it's active type to the format type of the source Matrix.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Matrix</td><td>The type of the concrete matrix format. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source container we are assigning from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aed0f7ec6f8a8a61120fb5400e750a887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed0f7ec6f8a8a61120fb5400e750a887">&#9670;&nbsp;</a></span>resize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;class VR , class... PR&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a>&lt; VR, PR... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resizes <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> with the shape and number of non-zero entries of the active type of another <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> with different parameters. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of values the source matrix stores. </td></tr>
+    <tr><td class="paramname">PR</td><td>Other properties of source matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> we are resizing from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a590f9e51dd1d435f5fa33c59afe87ef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a590f9e51dd1d435f5fa33c59afe87ef0">&#9670;&nbsp;</a></span>resize() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ValueType , class... Properties&gt; </div>
+<div class="memtemplate">
+template&lt;typename Matrix &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a>&lt; <a class="el" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">is_variant_member_v</a>&lt; Matrix, <a class="el" href="classMorpheus_1_1DynamicMatrix.html#a74231143ad416ef3c284f81959fc7315">variant_type</a> &gt;&gt;::<a class="el" href="classMorpheus_1_1DynamicMatrix.html#a253688f094d751e2af7b7c881f31567e">type</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resizes <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> with the shape and number of non-zero entries of another Matrix with possibly a different storage format. Note that upon resizing the new <a class="el" href="classMorpheus_1_1DynamicMatrix.html" title="Implementation of the Dynamic Sparse Matrix Format Representation.">DynamicMatrix</a> will set to have the same active type as the source Matrix. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VR</td><td>Type of values the source matrix stores. </td></tr>
+    <tr><td class="paramname">PR</td><td>Other properties of source matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source Matrix we are resizing from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="Morpheus__Fwd__DynamicMatrix_8hpp_source.html">Morpheus_Fwd_DynamicMatrix.hpp</a></li>
 <li><a class="el" href="Morpheus__DynamicMatrix_8hpp_source.html">Morpheus_DynamicMatrix.hpp</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassMorpheus_1_1DynamicMatrix_html"><div class="ttname"><a href="classMorpheus_1_1DynamicMatrix.html">Morpheus::DynamicMatrix</a></div><div class="ttdoc">Implementation of the Dynamic Sparse Matrix Format Representation.</div><div class="ttdef"><b>Definition:</b> Morpheus_Fwd_DynamicMatrix.hpp:29</div></div>
+<div class="ttc" id="aclassMorpheus_1_1DynamicMatrix_html_a6463c8665e6b2ff27a701d693885ebe4"><div class="ttname"><a href="classMorpheus_1_1DynamicMatrix.html#a6463c8665e6b2ff27a701d693885ebe4">Morpheus::DynamicMatrix::DynamicMatrix</a></div><div class="ttdeci">DynamicMatrix()</div><div class="ttdoc">Constructs an empty DynamicMatrix object.</div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix.hpp:168</div></div>
+<div class="ttc" id="aclassMorpheus_1_1CsrMatrix_html"><div class="ttname"><a href="classMorpheus_1_1CsrMatrix.html">Morpheus::CsrMatrix</a></div><div class="ttdoc">Implementation of the Compressed-Sparse Row (CSR) Sparse Matrix Format Representation.</div><div class="ttdef"><b>Definition:</b> Morpheus_Fwd_CsrMatrix.hpp:29</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

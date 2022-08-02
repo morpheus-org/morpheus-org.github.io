@@ -114,164 +114,158 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">// Specialization for Dia resize with five arguments</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  result_type operator()(</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keyword">typename</span> <a class="code" href="group__containers__2d.html#ga8a28b3b4c827fd67e24a467fb05f63d5">DiaMatrix&lt;ValueType, Properties...&gt;::type</a> &amp;mat,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keyword">typename</span> <a class="code" href="classMorpheus_1_1DiaMatrix.html#a8a28b3b4c827fd67e24a467fb05f63d5">DiaMatrix&lt;ValueType, Properties...&gt;::type</a> &amp;mat,</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keyword">const</span> index_type nrows, <span class="keyword">const</span> index_type ncols, <span class="keyword">const</span> index_type nnnz,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keyword">const</span> index_type ndiag, <span class="keyword">const</span> index_type alignment = 32) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    mat.<a class="code" href="group__containers__2d.html#ga137cdbb39a381229a76d5d81adc271d8">resize</a>(nrows, ncols, nnnz, ndiag, alignment);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    mat.<a class="code" href="classMorpheus_1_1DiaMatrix.html#a137cdbb39a381229a76d5d81adc271d8">resize</a>(nrows, ncols, nnnz, ndiag, alignment);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">// Constrains any other overloads for supporting formats</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">// Unsupported formats won&#39;t compile</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  result_type operator()(</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keyword">typename</span> <a class="code" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">CooMatrix&lt;ValueType, Properties...&gt;::type</a> &amp;mat, Args &amp;&amp;...args) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a>(</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="stringliteral">&quot;Invalid use of the dynamic resize interface for current format (&quot;</span> +</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        std::to_string(mat.<a class="code" href="classMorpheus_1_1CooMatrix.html#ac4cff7ee3ae0ea90ff71dc96768de994">format_index</a>()) + <span class="stringliteral">&quot;).&quot;</span>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  result_type operator()(</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keyword">typename</span> <a class="code" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">CsrMatrix&lt;ValueType, Properties...&gt;::type</a> &amp;mat, Args &amp;&amp;...args) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a>(</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="stringliteral">&quot;Invalid use of the dynamic resize interface for current format (&quot;</span> +</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        std::to_string(mat.<a class="code" href="classMorpheus_1_1CsrMatrix.html#a7f00939dc9cb5b8bb210b582aadfe505">format_index</a>()) + <span class="stringliteral">&quot;).&quot;</span>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  result_type operator()(</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keyword">typename</span> <a class="code" href="group__containers__2d.html#ga8a28b3b4c827fd67e24a467fb05f63d5">DiaMatrix&lt;ValueType, Properties...&gt;::type</a> &amp;mat, Args &amp;&amp;...args) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a>(</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="stringliteral">&quot;Invalid use of the dynamic resize interface for current format (&quot;</span> +</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        std::to_string(mat.<a class="code" href="group__containers__2d.html#ga76ccb2017ab6c4eacc24a184915003b0">format_index</a>()) + <span class="stringliteral">&quot;).&quot;</span>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="structMorpheus_1_1Impl_1_1any__type__resize__from__mat.html">   99</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1Impl_1_1any__type__resize__from__mat.html">any_type_resize_from_mat</a> {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">using</span> result_type = void;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keyword">typename</span> <a class="code" href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">CooMatrix&lt;ValueType, Properties...&gt;::type</a> &amp;mat,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      Args &amp;&amp;... args) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a>(</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="stringliteral">&quot;Invalid use of the dynamic resize interface for current format (&quot;</span> +</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        std::to_string(mat.<a class="code" href="classMorpheus_1_1CooMatrix.html#ac4cff7ee3ae0ea90ff71dc96768de994">format_index</a>()) + <span class="stringliteral">&quot;).&quot;</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  result_type operator()(</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keyword">typename</span> <a class="code" href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">CsrMatrix&lt;ValueType, Properties...&gt;::type</a> &amp;mat,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      Args &amp;&amp;... args) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a>(</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="stringliteral">&quot;Invalid use of the dynamic resize interface for current format (&quot;</span> +</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        std::to_string(mat.<a class="code" href="classMorpheus_1_1CsrMatrix.html#a7f00939dc9cb5b8bb210b582aadfe505">format_index</a>()) + <span class="stringliteral">&quot;).&quot;</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  result_type operator()(</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keyword">typename</span> <a class="code" href="classMorpheus_1_1DiaMatrix.html#a8a28b3b4c827fd67e24a467fb05f63d5">DiaMatrix&lt;ValueType, Properties...&gt;::type</a> &amp;mat,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      Args &amp;&amp;... args) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a>(</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="stringliteral">&quot;Invalid use of the dynamic resize interface for current format (&quot;</span> +</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        std::to_string(mat.<a class="code" href="classMorpheus_1_1DiaMatrix.html#a76ccb2017ab6c4eacc24a184915003b0">format_index</a>()) + <span class="stringliteral">&quot;).&quot;</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  result_type operator()(</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keyword">const</span> T1 &amp;src, T2 &amp;dst,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;          std::is_same&lt;typename T1::tag, typename T2::tag&gt;::value&gt;::type * =</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;          <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    dst.resize(src);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  result_type operator()(</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keyword">const</span> T1 &amp;src, T2 &amp;dst,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;          !std::is_same&lt;typename T1::tag, typename T2::tag&gt;::value&gt;::type * =</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;          <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a>(</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="stringliteral">&quot;Invalid use of the dynamic resize interface. Src and dst tags must be &quot;</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="stringliteral">&quot;the same (&quot;</span> +</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        std::to_string(src.format_index()) +</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="stringliteral">&quot; != &quot;</span> + std::to_string(dst.format_index()) + <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;};</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="structMorpheus_1_1Impl_1_1any__type__allocate.html">  125</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1Impl_1_1any__type__allocate.html">any_type_allocate</a> {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keyword">using</span> result_type = void;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  result_type operator()(</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <span class="keyword">const</span> T1 &amp;src, T2 &amp;dst,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;          std::is_same&lt;typename T1::tag, typename T2::tag&gt;::value&gt;::type * =</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;          <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    dst = T2().allocate(src);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  result_type operator()(</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="keyword">const</span> T1 &amp;src, T2 &amp;dst,</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;          !std::is_same&lt;typename T1::tag, typename T2::tag&gt;::value&gt;::type * =</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;          <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a>(</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="stringliteral">&quot;Invalid use of the dynamic allocate interface. Src and std tags must &quot;</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="stringliteral">&quot;be the same (&quot;</span> +</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        std::to_string(src.format_index()) +</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="stringliteral">&quot; != &quot;</span> + std::to_string(dst.format_index()) + <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="structMorpheus_1_1Impl_1_1any__type__resize__from__mat.html">  102</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1Impl_1_1any__type__resize__from__mat.html">any_type_resize_from_mat</a> {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">using</span> result_type = void;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  result_type operator()(</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keyword">const</span> T1 &amp;src, T2 &amp;dst,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="keyword">typename</span> std::enable_if&lt;<a class="code" href="classMorpheus_1_1has__same__format.html">has_same_format&lt;T1, T2&gt;::value</a>&gt;::type * =</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;          <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    dst.resize(src);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  result_type operator()(</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keyword">const</span> T1 &amp;src, T2 &amp;dst,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keyword">typename</span> std::enable_if&lt;!<a class="code" href="classMorpheus_1_1has__same__format.html">has_same_format&lt;T1, T2&gt;::value</a>&gt;::type * =</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a>(</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="stringliteral">&quot;Invalid use of the dynamic resize interface. Src and dst tags must be &quot;</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="stringliteral">&quot;the same (&quot;</span> +</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        std::to_string(src.format_index()) +</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="stringliteral">&quot; != &quot;</span> + std::to_string(dst.format_index()) + <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="structMorpheus_1_1Impl_1_1any__type__allocate.html">  126</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1Impl_1_1any__type__allocate.html">any_type_allocate</a> {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keyword">using</span> result_type = void;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  result_type operator()(</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keyword">const</span> T1 &amp;src, T2 &amp;dst,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <span class="keyword">typename</span> std::enable_if &lt;<a class="code" href="classMorpheus_1_1has__same__format.html">has_same_format&lt;T1, T2&gt;::value</a>&gt;::type * = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    dst = T2().allocate(src);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  result_type operator()(</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      <span class="keyword">const</span> T1 &amp;src, T2 &amp;dst,</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="keyword">typename</span> std::enable_if &lt;!<a class="code" href="classMorpheus_1_1has__same__format.html">has_same_format&lt;T1, T2&gt;::value</a>&gt;::type * = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a>(</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="stringliteral">&quot;Invalid use of the dynamic allocate interface. Src and std tags must &quot;</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="stringliteral">&quot;be the same (&quot;</span> +</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        std::to_string(src.format_index()) +</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="stringliteral">&quot; != &quot;</span> + std::to_string(dst.format_index()) + <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;};</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="structMorpheus_1_1Impl_1_1any__type__assign.html">  148</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1Impl_1_1any__type__assign.html">any_type_assign</a> {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keyword">using</span> result_type = void;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="structMorpheus_1_1Impl_1_1any__type__assign.html">  151</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1Impl_1_1any__type__assign.html">any_type_assign</a> {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keyword">using</span> result_type = void;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  result_type operator()(</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="keyword">const</span> T1 &amp;src, T2 &amp;dst,</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;          std::is_same&lt;typename T1::tag, typename T2::tag&gt;::value&gt;::type * =</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    dst = src;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  }</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  result_type operator()(</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keyword">const</span> T1 &amp;src, T2 &amp;dst,</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;          !std::is_same&lt;typename T1::tag, typename T2::tag&gt;::value&gt;::type * =</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;          <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a>(</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="stringliteral">&quot;Invalid use of the dynamic assign interface. Src and dst tags must be &quot;</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="stringliteral">&quot;the same (&quot;</span> +</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        std::to_string(src.format_index()) +</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="stringliteral">&quot; != &quot;</span> + std::to_string(dst.format_index()) + <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;};</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> I, <span class="keyword">class </span><a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, <span class="keyword">typename</span>... Properties&gt;</div>
-<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="structMorpheus_1_1Impl_1_1activate__impl.html">  178</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1Impl_1_1activate__impl.html">activate_impl</a> {</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keyword">using</span> variant   = <span class="keyword">typename</span> MatrixFormats&lt;<a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt;::variant;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keyword">using</span> type_list = <span class="keyword">typename</span> MatrixFormats&lt;<a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt;::type_list;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> activate(variant &amp;A, <span class="keywordtype">size_t</span> idx) {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">if</span> (idx == I - 1) {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      A = <span class="keyword">typename</span> type_list::template type&lt;I - 1&gt;{};</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <a class="code" href="structMorpheus_1_1Impl_1_1activate__impl.html">activate_impl&lt;I - 1, ValueType, Properties...&gt;::activate</a>(A, idx);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;};</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">// Base case, activate to the first type in the variant</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span><a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, <span class="keyword">typename</span>... Properties&gt;</div>
-<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="structMorpheus_1_1Impl_1_1activate__impl_3_010_00_01ValueType_00_01Properties_8_8_8_01_4.html">  193</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1Impl_1_1activate__impl.html">activate_impl</a>&lt;0, <a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt; {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keyword">using</span> variant   = <span class="keyword">typename</span> MatrixFormats&lt;<a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt;::variant;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keyword">using</span> type_list = <span class="keyword">typename</span> MatrixFormats&lt;<a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt;::type_list;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> activate(variant &amp;A, <span class="keywordtype">size_t</span> idx) {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    idx = 0;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="structMorpheus_1_1Impl_1_1activate__impl.html">activate_impl&lt;1, ValueType, Properties...&gt;::activate</a>(A, idx);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;};</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}  <span class="comment">// namespace Impl</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DYNAMICMATRIX_IMPL_HPP</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  result_type operator()(</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <span class="keyword">const</span> T1 &amp;src, T2 &amp;dst,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <span class="keyword">typename</span> std::enable_if&lt;<a class="code" href="classMorpheus_1_1has__same__format.html">has_same_format&lt;T1, T2&gt;::value</a>&gt;::type* = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    dst = src;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  result_type operator()(</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <span class="keyword">const</span> T1 &amp;src, T2 &amp;dst,</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keyword">typename</span> std::enable_if&lt;!<a class="code" href="classMorpheus_1_1has__same__format.html">has_same_format&lt;T1, T2&gt;::value</a>&gt;::type* = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a>(</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="stringliteral">&quot;Invalid use of the dynamic assign interface. Src and dst tags must be &quot;</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="stringliteral">&quot;the same (&quot;</span> +</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        std::to_string(src.format_index()) +</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="stringliteral">&quot; != &quot;</span> + std::to_string(dst.format_index()) + <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;};</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> I, <span class="keyword">class </span><a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, <span class="keyword">typename</span>... Properties&gt;</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="structMorpheus_1_1Impl_1_1activate__impl.html">  171</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1Impl_1_1activate__impl.html">activate_impl</a> {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keyword">using</span> variant   = <span class="keyword">typename</span> MatrixFormats&lt;<a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt;::variant;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keyword">using</span> type_list = <span class="keyword">typename</span> MatrixFormats&lt;<a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt;::type_list;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> activate(variant &amp;A, <span class="keywordtype">size_t</span> idx) {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">if</span> (idx == I - 1) {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      A = <span class="keyword">typename</span> type_list::template type&lt;I - 1&gt;{};</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <a class="code" href="structMorpheus_1_1Impl_1_1activate__impl.html">activate_impl&lt;I - 1, ValueType, Properties...&gt;::activate</a>(A, idx);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;};</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">// Base case, activate to the first type in the variant</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span><a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, <span class="keyword">typename</span>... Properties&gt;</div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="structMorpheus_1_1Impl_1_1activate__impl_3_010_00_01ValueType_00_01Properties_8_8_8_01_4.html">  186</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1Impl_1_1activate__impl.html">activate_impl</a>&lt;0, <a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt; {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keyword">using</span> variant   = <span class="keyword">typename</span> MatrixFormats&lt;<a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt;::variant;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keyword">using</span> type_list = <span class="keyword">typename</span> MatrixFormats&lt;<a class="code" href="structMorpheus_1_1ValueType.html">ValueType</a>, Properties...&gt;::type_list;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> activate(variant &amp;A, <span class="keywordtype">size_t</span> idx) {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    idx = 0;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="structMorpheus_1_1Impl_1_1activate__impl.html">activate_impl&lt;1, ValueType, Properties...&gt;::activate</a>(A, idx);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;};</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}  <span class="comment">// namespace Impl</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DYNAMICMATRIX_IMPL_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="agroup__containers__2d_html_ga137cdbb39a381229a76d5d81adc271d8"><div class="ttname"><a href="group__containers__2d.html#ga137cdbb39a381229a76d5d81adc271d8">Morpheus::DiaMatrix::resize</a></div><div class="ttdeci">void resize(const index_type num_rows, const index_type num_cols, const index_type num_entries, const index_type num_diagonals, const index_type alignment=32)</div><div class="ttdoc">Resizes DiaMatrix with shape of (num_rows, num_cols) and sets number of non-zero entries to num_entri...</div><div class="ttdef"><b>Definition:</b> Morpheus_DiaMatrix.hpp:388</div></div>
+<div class="ttc" id="aclassMorpheus_1_1DiaMatrix_html_a137cdbb39a381229a76d5d81adc271d8"><div class="ttname"><a href="classMorpheus_1_1DiaMatrix.html#a137cdbb39a381229a76d5d81adc271d8">Morpheus::DiaMatrix::resize</a></div><div class="ttdeci">void resize(const index_type num_rows, const index_type num_cols, const index_type num_entries, const index_type num_diagonals, const index_type alignment=32)</div><div class="ttdoc">Resizes DiaMatrix with shape of (num_rows, num_cols) and sets number of non-zero entries to num_entri...</div><div class="ttdef"><b>Definition:</b> Morpheus_DiaMatrix.hpp:388</div></div>
 <div class="ttc" id="astructMorpheus_1_1ValueType_html"><div class="ttname"><a href="structMorpheus_1_1ValueType.html">Morpheus::ValueType</a></div><div class="ttdoc">A wrapper that checks if the provided type is a scalar type.</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:92</div></div>
 <div class="ttc" id="aclassMorpheus_1_1CooMatrix_html_ab2a15db3b6540417d805f0f5493bfe5c"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c">Morpheus::CooMatrix::type</a></div><div class="ttdeci">typename traits::type type</div><div class="ttdef"><b>Definition:</b> Morpheus_CooMatrix.hpp:97</div></div>
 <div class="ttc" id="aclassMorpheus_1_1CooMatrix_html_ac4cff7ee3ae0ea90ff71dc96768de994"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html#ac4cff7ee3ae0ea90ff71dc96768de994">Morpheus::CooMatrix::format_index</a></div><div class="ttdeci">int format_index() const</div><div class="ttdoc">Returns the equivalent index to the format enum assigned to the CooMatrix container.</div><div class="ttdef"><b>Definition:</b> Morpheus_CooMatrix.hpp:441</div></div>
-<div class="ttc" id="astructMorpheus_1_1Impl_1_1activate__impl_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1activate__impl.html">Morpheus::Impl::activate_impl</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:178</div></div>
+<div class="ttc" id="astructMorpheus_1_1Impl_1_1activate__impl_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1activate__impl.html">Morpheus::Impl::activate_impl</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:171</div></div>
 <div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
-<div class="ttc" id="astructMorpheus_1_1Impl_1_1any__type__allocate_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1any__type__allocate.html">Morpheus::Impl::any_type_allocate</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:125</div></div>
+<div class="ttc" id="astructMorpheus_1_1Impl_1_1any__type__allocate_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1any__type__allocate.html">Morpheus::Impl::any_type_allocate</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:126</div></div>
 <div class="ttc" id="aclassMorpheus_1_1RuntimeException_html"><div class="ttname"><a href="classMorpheus_1_1RuntimeException.html">Morpheus::RuntimeException</a></div><div class="ttdef"><b>Definition:</b> Morpheus_Exceptions.hpp:57</div></div>
 <div class="ttc" id="aclassMorpheus_1_1CsrMatrix_html_aabf852bb7393bf7ad392a205fa457259"><div class="ttname"><a href="classMorpheus_1_1CsrMatrix.html#aabf852bb7393bf7ad392a205fa457259">Morpheus::CsrMatrix::resize</a></div><div class="ttdeci">void resize(const index_type num_rows, const index_type num_cols, const index_type num_entries)</div><div class="ttdoc">Resizes CsrMatrix with shape of (num_rows, num_cols) and sets number of non-zero entries to num_entri...</div><div class="ttdef"><b>Definition:</b> Morpheus_CsrMatrix.hpp:367</div></div>
 <div class="ttc" id="astructMorpheus_1_1Impl_1_1ContainerTraits_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1ContainerTraits.html">Morpheus::Impl::ContainerTraits</a></div><div class="ttdoc">Traits class for accessing attributes of a Container (Matrix or Vector)</div><div class="ttdef"><b>Definition:</b> Morpheus_ContainerTraits.hpp:178</div></div>
-<div class="ttc" id="astructMorpheus_1_1Impl_1_1any__type__assign_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1any__type__assign.html">Morpheus::Impl::any_type_assign</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:151</div></div>
+<div class="ttc" id="aclassMorpheus_1_1DiaMatrix_html_a8a28b3b4c827fd67e24a467fb05f63d5"><div class="ttname"><a href="classMorpheus_1_1DiaMatrix.html#a8a28b3b4c827fd67e24a467fb05f63d5">Morpheus::DiaMatrix::type</a></div><div class="ttdeci">typename traits::type type</div><div class="ttdef"><b>Definition:</b> Morpheus_DiaMatrix.hpp:103</div></div>
+<div class="ttc" id="astructMorpheus_1_1Impl_1_1any__type__assign_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1any__type__assign.html">Morpheus::Impl::any_type_assign</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:148</div></div>
 <div class="ttc" id="aclassMorpheus_1_1CsrMatrix_html_a3a995aabda5c2c0a083e3cb394bfbc4a"><div class="ttname"><a href="classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a">Morpheus::CsrMatrix::type</a></div><div class="ttdeci">typename traits::type type</div><div class="ttdef"><b>Definition:</b> Morpheus_CsrMatrix.hpp:97</div></div>
-<div class="ttc" id="agroup__containers__2d_html_ga8a28b3b4c827fd67e24a467fb05f63d5"><div class="ttname"><a href="group__containers__2d.html#ga8a28b3b4c827fd67e24a467fb05f63d5">Morpheus::DiaMatrix::type</a></div><div class="ttdeci">typename traits::type type</div><div class="ttdef"><b>Definition:</b> Morpheus_DiaMatrix.hpp:103</div></div>
+<div class="ttc" id="aclassMorpheus_1_1DiaMatrix_html_a76ccb2017ab6c4eacc24a184915003b0"><div class="ttname"><a href="classMorpheus_1_1DiaMatrix.html#a76ccb2017ab6c4eacc24a184915003b0">Morpheus::DiaMatrix::format_index</a></div><div class="ttdeci">int format_index() const</div><div class="ttdoc">Returns the equivalent index to the format enum assigned to the DiaMatrix container.</div><div class="ttdef"><b>Definition:</b> Morpheus_DiaMatrix.hpp:446</div></div>
 <div class="ttc" id="astructMorpheus_1_1Impl_1_1any__type__resize_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1any__type__resize.html">Morpheus::Impl::any_type_resize</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:39</div></div>
-<div class="ttc" id="astructMorpheus_1_1Impl_1_1any__type__resize__from__mat_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1any__type__resize__from__mat.html">Morpheus::Impl::any_type_resize_from_mat</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:99</div></div>
-<div class="ttc" id="agroup__containers__2d_html_ga76ccb2017ab6c4eacc24a184915003b0"><div class="ttname"><a href="group__containers__2d.html#ga76ccb2017ab6c4eacc24a184915003b0">Morpheus::DiaMatrix::format_index</a></div><div class="ttdeci">int format_index() const</div><div class="ttdoc">Returns the equivalent index to the format enum assigned to the DiaMatrix container.</div><div class="ttdef"><b>Definition:</b> Morpheus_DiaMatrix.hpp:446</div></div>
+<div class="ttc" id="astructMorpheus_1_1Impl_1_1any__type__resize__from__mat_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1any__type__resize__from__mat.html">Morpheus::Impl::any_type_resize_from_mat</a></div><div class="ttdef"><b>Definition:</b> Morpheus_DynamicMatrix_Impl.hpp:102</div></div>
+<div class="ttc" id="aclassMorpheus_1_1has__same__format_html"><div class="ttname"><a href="classMorpheus_1_1has__same__format.html">Morpheus::has_same_format</a></div><div class="ttdoc">Checks if the two types have the same format i.e both are valid containers and have the same tag memb...</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:381</div></div>
 <div class="ttc" id="aclassMorpheus_1_1CsrMatrix_html_a7f00939dc9cb5b8bb210b582aadfe505"><div class="ttname"><a href="classMorpheus_1_1CsrMatrix.html#a7f00939dc9cb5b8bb210b582aadfe505">Morpheus::CsrMatrix::format_index</a></div><div class="ttdeci">int format_index() const</div><div class="ttdoc">Returns the equivalent index to the format enum assigned to the CsrMatrix container.</div><div class="ttdef"><b>Definition:</b> Morpheus_CsrMatrix.hpp:415</div></div>
 <div class="ttc" id="aclassMorpheus_1_1CooMatrix_html_ad3bba22770fe35c848636378adf3fafe"><div class="ttname"><a href="classMorpheus_1_1CooMatrix.html#ad3bba22770fe35c848636378adf3fafe">Morpheus::CooMatrix::resize</a></div><div class="ttdeci">void resize(const index_type num_rows, const index_type num_cols, const index_type num_entries)</div><div class="ttdoc">Resizes CooMatrix with shape of (num_rows, num_cols) and sets number of non-zero entries to num_entri...</div><div class="ttdef"><b>Definition:</b> Morpheus_CooMatrix.hpp:363</div></div>
 <!-- start footer part -->

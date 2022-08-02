@@ -90,12 +90,12 @@ $(function() {
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">bool</span> exceeds_tolerance(<span class="keyword">const</span> T num_rows, <span class="keyword">const</span> T num_entries,</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                       <span class="keyword">const</span> T num_diagonals) {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> max_fill   = 10.0;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> threshold  = 10e9;  <span class="comment">// 100M entries</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> threshold  = 100e6;  <span class="comment">// 10M entries</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> size       = float(num_diagonals) * float(num_rows);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> fill_ratio = size / std::max(1.0f, <span class="keywordtype">float</span>(num_entries));</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">bool</span> res = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">if</span> (max_fill &lt; fill_ratio &amp;&amp; size &gt; threshold) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">if</span> (fill_ratio &gt; max_fill &amp;&amp; size &gt; threshold) {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    res = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>

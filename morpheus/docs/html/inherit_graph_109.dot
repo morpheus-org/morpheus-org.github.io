@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Morpheus::ValueType\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMorpheus_1_1ValueType.html",tooltip="A wrapper that checks if the provided type is a scalar type."];
+  Node0 [label="Morpheus::UnaryContainer\l\< ContainerType, TypeSet \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMorpheus_1_1UnaryContainer.html",tooltip="A wrapper that constructs a new container type from ContainerType using as arguments the types in Typ..."];
 }

@@ -106,6 +106,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1has__generic__space.html">Morpheus::has_generic_space&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> has a valid generic space.  <a href="classMorpheus_1_1has__generic__space.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1is__variant__member.html">Morpheus::is_variant_member&lt; T, Variant &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> is a member of <code>Variant</code> container such as <code>std::variant</code> or <code>mpark::variant</code>.  <a href="classMorpheus_1_1is__variant__member.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1has__tag__trait.html">Morpheus::has_tag_trait&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <code>T</code> has <code>tag</code> as a member trait.  <a href="classMorpheus_1_1has__tag__trait.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,7 +260,7 @@ Variables</h2></td></tr>
 <tr class="separator:ga068f260f8aa20e138749efb5b8e65614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaedc7ab203e4f7d440fbe0cf76e5370d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Variant &gt; </td></tr>
 <tr class="memitem:gaaedc7ab203e4f7d440fbe0cf76e5370d"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">Morpheus::is_variant_member_v</a></td></tr>
-<tr class="memdesc:gaaedc7ab203e4f7d440fbe0cf76e5370d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> is a member of <code>Variant</code> container such as <code>std::variant</code> or <code>mpark::variant</code>.  <a href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">More...</a><br /></td></tr>
+<tr class="memdesc:gaaedc7ab203e4f7d440fbe0cf76e5370d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Short-hand for <code><a class="el" href="classMorpheus_1_1is__variant__member.html" title="Checks if the given type T is a member of Variant container such as std::variant or mpark::variant.">is_variant_member</a></code>.  <a href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">More...</a><br /></td></tr>
 <tr class="separator:gaaedc7ab203e4f7d440fbe0cf76e5370d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6d697024e667b8b50e2faea74464020b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga6d697024e667b8b50e2faea74464020b"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typetraits.html#ga6d697024e667b8b50e2faea74464020b">Morpheus::has_tag_trait_v</a> = <a class="el" href="classMorpheus_1_1has__tag__trait.html">has_tag_trait</a>&lt;T&gt;::value</td></tr>
@@ -1751,13 +1754,12 @@ template&lt;typename T , typename Variant &gt; </div>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    Impl::is_variant_member&lt;T, Variant&gt;::value</div>
+<div class="line">    is_variant_member&lt;T, Variant&gt;::value</div>
 </div><!-- fragment -->
-<p>Checks if the given type <code>T</code> is a member of <code>Variant</code> container such as <code>std::variant</code> or <code>mpark::variant</code>. </p>
+<p>Short-hand for <code><a class="el" href="classMorpheus_1_1is__variant__member.html" title="Checks if the given type T is a member of Variant container such as std::variant or mpark::variant.">is_variant_member</a></code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Type passed for check </td></tr>
-    <tr><td class="paramname">Variant</td><td>A variant container </td></tr>
   </table>
   </dd>
 </dl>

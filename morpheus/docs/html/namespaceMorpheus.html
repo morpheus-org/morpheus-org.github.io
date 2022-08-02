@@ -119,6 +119,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the Diagonal (DIA) Sparse Matrix Format Representation.  <a href="classMorpheus_1_1DiaMatrix.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1DynamicMatrix.html">DynamicMatrix</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the Dynamic Sparse Matrix Format Representation.  <a href="classMorpheus_1_1DynamicMatrix.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMorpheus_1_1DynamicMatrixFormatTag.html">DynamicMatrixFormatTag</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tag used to mark containers as Matrix container with Dynamic Storage Format.  <a href="structMorpheus_1_1DynamicMatrixFormatTag.html#details">More...</a><br /></td></tr>
@@ -264,6 +265,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1is__value__type.html">is_value_type</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> is a valid value type i.e a scalar.  <a href="classMorpheus_1_1is__value__type.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1is__variant__member.html">is_variant_member</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> is a member of <code>Variant</code> container such as <code>std::variant</code> or <code>mpark::variant</code>.  <a href="classMorpheus_1_1is__variant__member.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1is__vector__container.html">is_vector_container</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A valid Vector container is the one that has a valid Vector tag i.e satisfies the <code>has_vector_tag</code> check. Note that a Vector container could be either dense or sparse.  <a href="classMorpheus_1_1is__vector__container.html#details">More...</a><br /></td></tr>
@@ -504,7 +508,7 @@ Variables</h2></td></tr>
 <tr class="separator:ga068f260f8aa20e138749efb5b8e65614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaedc7ab203e4f7d440fbe0cf76e5370d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Variant &gt; </td></tr>
 <tr class="memitem:gaaedc7ab203e4f7d440fbe0cf76e5370d"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">is_variant_member_v</a></td></tr>
-<tr class="memdesc:gaaedc7ab203e4f7d440fbe0cf76e5370d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> is a member of <code>Variant</code> container such as <code>std::variant</code> or <code>mpark::variant</code>.  <a href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">More...</a><br /></td></tr>
+<tr class="memdesc:gaaedc7ab203e4f7d440fbe0cf76e5370d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Short-hand for <code><a class="el" href="classMorpheus_1_1is__variant__member.html" title="Checks if the given type T is a member of Variant container such as std::variant or mpark::variant.">is_variant_member</a></code>.  <a href="group__typetraits.html#gaaedc7ab203e4f7d440fbe0cf76e5370d">More...</a><br /></td></tr>
 <tr class="separator:gaaedc7ab203e4f7d440fbe0cf76e5370d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6d697024e667b8b50e2faea74464020b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga6d697024e667b8b50e2faea74464020b"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typetraits.html#ga6d697024e667b8b50e2faea74464020b">has_tag_trait_v</a> = <a class="el" href="classMorpheus_1_1has__tag__trait.html">has_tag_trait</a>&lt;T&gt;::value</td></tr>
