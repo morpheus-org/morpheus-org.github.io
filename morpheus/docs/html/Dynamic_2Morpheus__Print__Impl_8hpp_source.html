@@ -83,37 +83,29 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceMorpheus.html">Morpheus</a> {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>Impl {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structMorpheus_1_1Impl_1_1print__fn.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1Impl_1_1print__fn.html">print_fn</a> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">using</span> result_type = void;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// TODO: Specify the stream to print to</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// template &lt;typename T, typename S&gt;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// result_type operator()(const T&amp; mat, S&amp; s) const {</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">//   Morpheus::print(mat, s);</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">// }</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Pr<span class="keywordtype">int</span>able&gt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  result_type operator()(<span class="keyword">const</span> Printable&amp; p)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Impl::print(p);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Pr<span class="keywordtype">int</span>able, <span class="keyword">typename</span> Stream&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> print(<span class="keyword">const</span> Printable&amp; p, Stream&amp; s,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;           <span class="keyword">typename</span> std::enable_if&lt;<a class="code" href="classMorpheus_1_1is__dynamic__matrix__format__container.html">Morpheus::is_dynamic_matrix_format_container</a>&lt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;               Printable&gt;::value&gt;::type* = <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  print_matrix_header(p, s);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// TODO: Using a stream in this way doesn&#39;t seem to work</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  Morpheus::Impl::Variant::visit([&amp;](<span class="keyword">auto</span>&amp;&amp; arg) { Impl::print(arg); },</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                 p.const_formats());</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}  <span class="comment">// namespace Impl</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DYNAMIC_PRINT_IMPL_HPP</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Pr<span class="keywordtype">int</span>able, <span class="keyword">typename</span> Stream&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> print(<span class="keyword">const</span> Printable&amp; p, Stream&amp; s,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;           <span class="keyword">typename</span> std::enable_if&lt;<a class="code" href="classMorpheus_1_1is__dynamic__matrix__format__container.html">Morpheus::is_dynamic_matrix_format_container</a>&lt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;               Printable&gt;::value&gt;::type* = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  print_matrix_header(p, s);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Morpheus::Impl::Variant::visit([&amp;](<span class="keyword">auto</span>&amp;&amp; arg) { Impl::print(arg, s); },</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                 p.const_formats());</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Pr<span class="keywordtype">int</span>able&gt;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> print(<span class="keyword">const</span> Printable&amp; p,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;           <span class="keyword">typename</span> std::enable_if&lt;<a class="code" href="classMorpheus_1_1is__dynamic__matrix__format__container.html">Morpheus::is_dynamic_matrix_format_container</a>&lt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;               Printable&gt;::value&gt;::type* = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  Impl::print(p, std::cout);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}  <span class="comment">// namespace Impl</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DYNAMIC_PRINT_IMPL_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
+<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdoc">Generic Morpheus interfaces.</div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
 <div class="ttc" id="aclassMorpheus_1_1is__dynamic__matrix__format__container_html"><div class="ttname"><a href="classMorpheus_1_1is__dynamic__matrix__format__container.html">Morpheus::is_dynamic_matrix_format_container</a></div><div class="ttdoc">Checks if the given type T is a valid Dynamic Matrix Format Container i.e is valid matrix container a...</div><div class="ttdef"><b>Definition:</b> Morpheus_FormatTags.hpp:201</div></div>
-<div class="ttc" id="astructMorpheus_1_1Impl_1_1print__fn_html"><div class="ttname"><a href="structMorpheus_1_1Impl_1_1print__fn.html">Morpheus::Impl::print_fn</a></div><div class="ttdef"><b>Definition:</b> Dynamic/Morpheus_Print_Impl.hpp:35</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

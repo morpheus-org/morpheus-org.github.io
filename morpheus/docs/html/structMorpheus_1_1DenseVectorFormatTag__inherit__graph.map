@@ -1,5 +1,0 @@
-<map id="Morpheus::DenseVectorFormatTag" name="Morpheus::DenseVectorFormatTag">
-<area shape="rect" id="node1" title="Tag used to mark containers as Vector Containers (Dense) with Dense Format." alt="" coords="5,155,249,181"/>
-<area shape="rect" id="node2" href="$structMorpheus_1_1Impl_1_1DenseVectorTag.html" title="Tag used to mark containers as Dense Vectors." alt="" coords="10,80,245,107"/>
-<area shape="rect" id="node3" href="$structMorpheus_1_1Impl_1_1VectorTag.html" title="Tag used to mark containers as Vectors." alt="" coords="30,5,225,32"/>
-</map>

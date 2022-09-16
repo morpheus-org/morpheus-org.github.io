@@ -1,19 +1,10 @@
 var searchData=
 [
-  ['set_199',['Set',['../structMorpheus_1_1Set.html',1,'Morpheus']]],
-  ['set_5falignment_200',['set_alignment',['../classMorpheus_1_1DiaMatrix.html#a69bea403bfe2b76817f79a1e675f6b95',1,'Morpheus::DiaMatrix']]],
-  ['set_5ffunctor_201',['set_functor',['../structMorpheus_1_1Impl_1_1set__functor.html',1,'Morpheus::Impl']]],
-  ['set_5ffunctor_3c_20view_2c_20valuetype_20_3e_202',['set_functor&lt; View, ValueType &gt;',['../structMorpheus_1_1Impl_1_1set__functor_3_01View_00_01ValueType_01_4.html',1,'Morpheus::Impl']]],
-  ['set_5ffunctor_3c_20view_2c_20valuetype_2c_20indextype_20_3e_203',['set_functor&lt; View, ValueType, IndexType &gt;',['../structMorpheus_1_1Impl_1_1set__functor_3_01View_00_01ValueType_00_01IndexType_01_4.html',1,'Morpheus::Impl']]],
-  ['set_5fndiags_204',['set_ndiags',['../classMorpheus_1_1DiaMatrix.html#ab685aab3b363b066cceea86f3666e693',1,'Morpheus::DiaMatrix']]],
-  ['set_5fvalue_205',['set_value',['../namespaceMorpheus.html#a3dea2af2fbe8ae1d3d1d263ef89e3bd1',1,'Morpheus']]],
-  ['set_5fvalues_206',['set_values',['../namespaceMorpheus.html#aa46f7d39fdcad442287ea4f159c3cb7d',1,'Morpheus']]],
-  ['sharedmemory_207',['SharedMemory',['../structMorpheus_1_1Impl_1_1Kernels_1_1SharedMemory.html',1,'Morpheus::Impl::Kernels']]],
-  ['sharedmemory_3c_20double_20_3e_208',['SharedMemory&lt; double &gt;',['../structMorpheus_1_1Impl_1_1Kernels_1_1SharedMemory_3_01double_01_4.html',1,'Morpheus::Impl::Kernels']]],
-  ['size_209',['size',['../classMorpheus_1_1DenseVector.html#af81ce5e3ac507d627726017510c06781',1,'Morpheus::DenseVector']]],
-  ['sort_210',['sort',['../classMorpheus_1_1CooMatrix.html#ab7e3815ae0a5b256954ae3d94b1e401e',1,'Morpheus::CooMatrix']]],
-  ['sort_5fby_5frow_211',['sort_by_row',['../classMorpheus_1_1CooMatrix.html#a7a4d0e2ef238a05ad472a78fb4819705',1,'Morpheus::CooMatrix']]],
-  ['sparsematrixtag_212',['SparseMatrixTag',['../structMorpheus_1_1Impl_1_1SparseMatrixTag.html',1,'Morpheus::Impl']]],
-  ['sparsevectortag_213',['SparseVectorTag',['../structMorpheus_1_1Impl_1_1SparseVectorTag.html',1,'Morpheus::Impl']]],
-  ['storage_20format_20tags_214',['Storage Format Tags',['../group__storage__format__tags.html',1,'']]]
+  ['tag_214',['tag',['../classMorpheus_1_1CooMatrix.html#a4da283479022caa6e2d3326a1de37a08',1,'Morpheus::CooMatrix::tag()'],['../classMorpheus_1_1CsrMatrix.html#ab894a393c9ef519a9de4b062bbeb6a90',1,'Morpheus::CsrMatrix::tag()'],['../classMorpheus_1_1DenseMatrix.html#a1da17f30652ec21c218ec24dbcfa46c1',1,'Morpheus::DenseMatrix::tag()'],['../classMorpheus_1_1DenseVector.html#ad3fb1fa5af09d8f09d59d037774c5246',1,'Morpheus::DenseVector::tag()'],['../classMorpheus_1_1DiaMatrix.html#aab1e7877b1462c171abf31eed83ce167',1,'Morpheus::DiaMatrix::tag()'],['../classMorpheus_1_1DynamicMatrix.html#adaaa4e692d7edebc625ee1dd648d3061',1,'Morpheus::DynamicMatrix::tag()']]],
+  ['traits_215',['traits',['../classMorpheus_1_1CooMatrix.html#aa7cc14457039a1de139df6c15771c5d0',1,'Morpheus::CooMatrix::traits()'],['../classMorpheus_1_1CsrMatrix.html#ae87f0386e567f7b512c95b3626524aec',1,'Morpheus::CsrMatrix::traits()'],['../classMorpheus_1_1DenseMatrix.html#a6ce20cbcb37a71803d62630f65009cab',1,'Morpheus::DenseMatrix::traits()'],['../classMorpheus_1_1DenseVector.html#afa62e1f7b71748d785ea3416f415fa48',1,'Morpheus::DenseVector::traits()'],['../classMorpheus_1_1DiaMatrix.html#a70663ac4a6fc0dae41a55c4cc0c78c86',1,'Morpheus::DiaMatrix::traits()'],['../classMorpheus_1_1DynamicMatrix.html#ae48cc3650f1f46161741e07e9478f6d5',1,'Morpheus::DynamicMatrix::traits()']]],
+  ['transpose_216',['transpose',['../namespaceMorpheus.html#a2d66ed2eb8f52705f5ef927091184c27',1,'Morpheus']]],
+  ['type_217',['type',['../classMorpheus_1_1CooMatrix.html#ab2a15db3b6540417d805f0f5493bfe5c',1,'Morpheus::CooMatrix::type()'],['../classMorpheus_1_1CsrMatrix.html#a3a995aabda5c2c0a083e3cb394bfbc4a',1,'Morpheus::CsrMatrix::type()'],['../classMorpheus_1_1DenseMatrix.html#a5a2a7d54d9db6a25814976bbdf93d890',1,'Morpheus::DenseMatrix::type()'],['../classMorpheus_1_1DenseVector.html#a622350d4a72fcad1ca8e235041fe6da4',1,'Morpheus::DenseVector::type()'],['../classMorpheus_1_1DiaMatrix.html#a8a28b3b4c827fd67e24a467fb05f63d5',1,'Morpheus::DiaMatrix::type()'],['../classMorpheus_1_1DynamicMatrix.html#a253688f094d751e2af7b7c881f31567e',1,'Morpheus::DynamicMatrix::type()']]],
+  ['typelist_218',['TypeList',['../structMorpheus_1_1TypeList.html',1,'Morpheus']]],
+  ['typelist_3c_20set_3c_20head_5f_2e_2e_2e_20_3e_2c_20tail_5f_2e_2e_2e_20_3e_219',['TypeList&lt; Set&lt; Head_... &gt;, Tail_... &gt;',['../structMorpheus_1_1TypeList_3_01Set_3_01Head___8_8_8_01_4_00_01Tail___8_8_8_01_4.html',1,'Morpheus']]],
+  ['type_20traits_220',['Type Traits',['../group__typetraits.html',1,'']]]
 ];

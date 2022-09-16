@@ -125,7 +125,7 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> Matrix, <span class="keyword">typename</span> Vector&gt;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceMorpheus.html#a15b3f14de5849f379c2938ac6032f635">get_diagonal</a>(</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    Matrix&amp; A, <span class="keyword">const</span> Vector&amp; diagonal,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    Matrix&amp;, <span class="keyword">const</span> Vector&amp;,</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">typename</span> std::enable_if_t&lt;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;Matrix&gt; &amp;&amp;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        Morpheus::is_dense_vector_format_container_v&lt;Vector&gt; &amp;&amp;</div>
@@ -138,7 +138,7 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> Matrix, <span class="keyword">typename</span> IndexType,</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          <span class="keyword">typename</span> ValueType&gt;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceMorpheus.html#a3dea2af2fbe8ae1d3d1d263ef89e3bd1">set_value</a>(</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    Matrix&amp; A, IndexType row, IndexType col, ValueType value,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    Matrix&amp;, IndexType, IndexType, ValueType,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">typename</span> std::enable_if_t&lt;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;Matrix&gt; &amp;&amp;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        Morpheus::is_generic_space_v&lt;ExecSpace&gt; &amp;&amp;</div>
@@ -150,42 +150,41 @@ $(function() {
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> Matrix, <span class="keyword">typename</span> IndexVector,</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          <span class="keyword">typename</span> ValueVector&gt;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceMorpheus.html#aa46f7d39fdcad442287ea4f159c3cb7d">set_values</a>(</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    Matrix&amp; A, <span class="keyword">typename</span> IndexVector::value_type m, <span class="keyword">const</span> IndexVector idxm,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">typename</span> IndexVector::value_type n, <span class="keyword">const</span> IndexVector idxn,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">const</span> ValueVector values,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">typename</span> std::enable_if_t&lt;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;Matrix&gt; &amp;&amp;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        Morpheus::is_dense_vector_format_container_v&lt;IndexVector&gt; &amp;&amp;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        Morpheus::is_dense_vector_format_container_v&lt;ValueVector&gt; &amp;&amp;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        Morpheus::is_generic_space_v&lt;ExecSpace&gt; &amp;&amp;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a>&lt;<span class="keyword">typename</span> ExecSpace::execution_space, Matrix,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                               IndexVector, ValueVector&gt;&gt;* = <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1NotImplementedException.html">Morpheus::NotImplementedException</a>(<span class="stringliteral">&quot;set_values not implemented yet&quot;</span>);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> Matrix, <span class="keyword">typename</span> TransposeMatrix&gt;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceMorpheus.html#a2d66ed2eb8f52705f5ef927091184c27">transpose</a>(</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">const</span> Matrix&amp; A, TransposeMatrix&amp; At,</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">typename</span> std::enable_if_t&lt;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;Matrix&gt; &amp;&amp;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;TransposeMatrix&gt; &amp;&amp;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        Morpheus::is_generic_space_v&lt;ExecSpace&gt; &amp;&amp;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a>&lt;<span class="keyword">typename</span> ExecSpace::execution_space, Matrix,</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                               TransposeMatrix&gt;&gt;* = <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1NotImplementedException.html">Morpheus::NotImplementedException</a>(<span class="stringliteral">&quot;transpose not implemented yet&quot;</span>);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}  <span class="comment">// namespace Impl</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DIA_KOKKOS_MATRIXOPERATIONS_IMPL_HPP</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    Matrix&amp;, <span class="keyword">typename</span> IndexVector::value_type, <span class="keyword">const</span> IndexVector,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">typename</span> IndexVector::value_type, <span class="keyword">const</span> IndexVector, <span class="keyword">const</span> ValueVector,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">typename</span> std::enable_if_t&lt;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;Matrix&gt; &amp;&amp;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        Morpheus::is_dense_vector_format_container_v&lt;IndexVector&gt; &amp;&amp;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        Morpheus::is_dense_vector_format_container_v&lt;ValueVector&gt; &amp;&amp;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        Morpheus::is_generic_space_v&lt;ExecSpace&gt; &amp;&amp;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a>&lt;<span class="keyword">typename</span> ExecSpace::execution_space, Matrix,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                               IndexVector, ValueVector&gt;&gt;* = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1NotImplementedException.html">Morpheus::NotImplementedException</a>(<span class="stringliteral">&quot;set_values not implemented yet&quot;</span>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> Matrix, <span class="keyword">typename</span> TransposeMatrix&gt;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceMorpheus.html#a2d66ed2eb8f52705f5ef927091184c27">transpose</a>(</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">const</span> Matrix&amp;, TransposeMatrix&amp;,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">typename</span> std::enable_if_t&lt;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;Matrix&gt; &amp;&amp;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;TransposeMatrix&gt; &amp;&amp;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        Morpheus::is_generic_space_v&lt;ExecSpace&gt; &amp;&amp;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a>&lt;<span class="keyword">typename</span> ExecSpace::execution_space, Matrix,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                               TransposeMatrix&gt;&gt;* = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">throw</span> <a class="code" href="classMorpheus_1_1NotImplementedException.html">Morpheus::NotImplementedException</a>(<span class="stringliteral">&quot;transpose not implemented yet&quot;</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}  <span class="comment">// namespace Impl</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DIA_KOKKOS_MATRIXOPERATIONS_IMPL_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespaceMorpheus_html_aa46f7d39fdcad442287ea4f159c3cb7d"><div class="ttname"><a href="namespaceMorpheus.html#aa46f7d39fdcad442287ea4f159c3cb7d">Morpheus::set_values</a></div><div class="ttdeci">void set_values(Matrix &amp;A, typename IndexVector::value_type m, const IndexVector idxm, typename IndexVector::value_type n, const IndexVector idxn, ValueVector values)</div><div class="ttdef"><b>Definition:</b> Morpheus_MatrixOperations.hpp:103</div></div>
-<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
+<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdoc">Generic Morpheus interfaces.</div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
 <div class="ttc" id="anamespaceMorpheus_html_a15b3f14de5849f379c2938ac6032f635"><div class="ttname"><a href="namespaceMorpheus.html#a15b3f14de5849f379c2938ac6032f635">Morpheus::get_diagonal</a></div><div class="ttdeci">void get_diagonal(const Matrix &amp;A, Vector &amp;diagonal)</div><div class="ttdef"><b>Definition:</b> Morpheus_MatrixOperations.hpp:63</div></div>
 <div class="ttc" id="aclassMorpheus_1_1NotImplementedException_html"><div class="ttname"><a href="classMorpheus_1_1NotImplementedException.html">Morpheus::NotImplementedException</a></div><div class="ttdef"><b>Definition:</b> Morpheus_Exceptions.hpp:43</div></div>
 <div class="ttc" id="anamespaceMorpheus_html_a213be408019d572f3984ff2651d2bc17"><div class="ttname"><a href="namespaceMorpheus.html#a213be408019d572f3984ff2651d2bc17">Morpheus::update_diagonal</a></div><div class="ttdeci">void update_diagonal(Matrix &amp;A, const Vector &amp;diagonal)</div><div class="ttdef"><b>Definition:</b> Morpheus_MatrixOperations.hpp:47</div></div>
-<div class="ttc" id="agroup__typetraits_html_gaa2fd006ec837487875370c9ce30ea1c8"><div class="ttname"><a href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a></div><div class="ttdeci">constexpr bool has_access_v</div><div class="ttdoc">Short-hand to has_access.</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:1363</div></div>
+<div class="ttc" id="agroup__typetraits_html_gaa2fd006ec837487875370c9ce30ea1c8"><div class="ttname"><a href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a></div><div class="ttdeci">constexpr bool has_access_v</div><div class="ttdoc">Short-hand to has_access.</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:1405</div></div>
 <div class="ttc" id="anamespaceMorpheus_html_a3dea2af2fbe8ae1d3d1d263ef89e3bd1"><div class="ttname"><a href="namespaceMorpheus.html#a3dea2af2fbe8ae1d3d1d263ef89e3bd1">Morpheus::set_value</a></div><div class="ttdeci">void set_value(Matrix &amp;A, IndexType row, IndexType col, ValueType value)</div><div class="ttdef"><b>Definition:</b> Morpheus_MatrixOperations.hpp:82</div></div>
 <div class="ttc" id="anamespaceMorpheus_html_a2d66ed2eb8f52705f5ef927091184c27"><div class="ttname"><a href="namespaceMorpheus.html#a2d66ed2eb8f52705f5ef927091184c27">Morpheus::transpose</a></div><div class="ttdeci">void transpose(const Matrix &amp;A, TransposeMatrix &amp;At)</div><div class="ttdef"><b>Definition:</b> Morpheus_MatrixOperations.hpp:120</div></div>
 <!-- start footer part -->

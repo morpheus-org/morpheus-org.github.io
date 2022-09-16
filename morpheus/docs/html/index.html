@@ -68,8 +68,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Sparse matrices are a key component of the performance critical computations in many numerical simulations. A desire to represent sparse matrices efficiently in memory and optimise , in particular given the evolution of hardware architectures, has over the years led to the development of a plethora of sparse matrix storage formats. Each format is designed to exploit the particular strengths of an architecture or the specific sparsity pattern of a matrix. The choice of the format can be crucial in order to achieve optimal performance. Being able to dynamically select storage formats at runtime is therefore highly desirable.</p>
-<p><code><a class="el" href="namespaceMorpheus.html">Morpheus</a></code>, is a library of sparse matrix storage formats that is designed for efficient and transparent format switching across architectures without introducing prohibitive overheads and that, at the same time, enables the straightforward addition of new storage formats without major application code changes. The library has a functional design which separates the containers that implement the storage formats from the algorithm that implement operations such as multiplication. Each container is aware of the memory space it resides in, and the algorithms require knowledge of the execution space that they will be running in. This design allows <a class="el" href="namespaceMorpheus.html">Morpheus</a> to target multiple heterogeneous architectures.</p>
-<p>To enable efficient yet flexible dynamic switching, <a class="el" href="namespaceMorpheus.html">Morpheus</a> uses the <code>std::variant</code> introduced in C++17 - hence it requires a <b>C++17</b> compliant compiler - as a type-safe union. It offers a polymorphic variable called <code>DynamicMatrix</code> which abstracts the notion of sparse matrix storage formats away from users and can hold any of the supported formats internally.</p>
+<p><code><a class="el" href="namespaceMorpheus.html" title="Generic Morpheus interfaces.">Morpheus</a></code>, is a library of sparse matrix storage formats that is designed for efficient and transparent format switching across architectures without introducing prohibitive overheads and that, at the same time, enables the straightforward addition of new storage formats without major application code changes. The library has a functional design which separates the containers that implement the storage formats from the algorithm that implement operations such as multiplication. Each container is aware of the memory space it resides in, and the algorithms require knowledge of the execution space that they will be running in. This design allows <a class="el" href="namespaceMorpheus.html" title="Generic Morpheus interfaces.">Morpheus</a> to target multiple heterogeneous architectures.</p>
+<p>To enable efficient yet flexible dynamic switching, <a class="el" href="namespaceMorpheus.html" title="Generic Morpheus interfaces.">Morpheus</a> uses the <code>std::variant</code> introduced in C++17 - hence it requires a <b>C++17</b> compliant compiler - as a type-safe union. It offers a polymorphic variable called <code>DynamicMatrix</code> which abstracts the notion of sparse matrix storage formats away from users and can hold any of the supported formats internally.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Installation</h1>
 <p>A very basic installation using CMake is done with:</p>
@@ -79,14 +79,14 @@ Installation</h1>
 <div class="line">   -DKokkos_ROOT=${kokkos_install_prefix}</div>
 <div class="line">$ make</div>
 <div class="line">$ make install</div>
-</div><!-- fragment --><p>which configures, builds and installs a default <a class="el" href="namespaceMorpheus.html">Morpheus</a>. Note that <code><a class="el" href="namespaceMorpheus.html">Morpheus</a></code> <b>REQUIRES</b> <a href="https://github.com/kokkos/kokkos">Kokkos</a> to be installed. Note that <code><a class="el" href="namespaceMorpheus.html">Morpheus</a></code> inherits the enabled devices and compiler optimization flags from <code>Kokkos</code>.</p>
-<p>Once <a class="el" href="namespaceMorpheus.html">Morpheus</a> is installed In your <code>CMakeLists.txt</code> simply use:</p>
+</div><!-- fragment --><p>which configures, builds and installs a default <a class="el" href="namespaceMorpheus.html" title="Generic Morpheus interfaces.">Morpheus</a>. Note that <code><a class="el" href="namespaceMorpheus.html" title="Generic Morpheus interfaces.">Morpheus</a></code> <b>REQUIRES</b> <a href="https://github.com/kokkos/kokkos">Kokkos</a> to be installed. Note that <code><a class="el" href="namespaceMorpheus.html" title="Generic Morpheus interfaces.">Morpheus</a></code> inherits the enabled devices and compiler optimization flags from <code>Kokkos</code>.</p>
+<p>Once <a class="el" href="namespaceMorpheus.html" title="Generic Morpheus interfaces.">Morpheus</a> is installed In your <code>CMakeLists.txt</code> simply use:</p>
 <div class="fragment"><div class="line">find_package(Morpheus REQUIRED)</div>
 </div><!-- fragment --><p>Then for every executable or library in your project: </p><div class="fragment"><div class="line">target_link_libraries(myTarget Morpheus::morpheus)</div>
 </div><!-- fragment --><p>More information can be found at BUILD.md</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Documentation</h1>
-<p>Currently <code><a class="el" href="namespaceMorpheus.html">Morpheus</a></code> is under development so no documentation is available yet. Examples in <code>examples/</code> and <code>core/examples</code> can be a good source of information.</p>
+<p>Currently <code><a class="el" href="namespaceMorpheus.html" title="Generic Morpheus interfaces.">Morpheus</a></code> is under development so no documentation is available yet. Examples in <code>examples/</code> and <code>core/examples</code> can be a good source of information.</p>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Supported Formats</h2>
 <table class="markdownTable">
@@ -105,7 +105,7 @@ Specifying a container</h2>
 <li><code>ValueType</code>: The type of the values the container will hold. Valid types must satisfy <code>std::is_arithmetic</code> i.e to be an arithmetic type.</li>
 <li><code>IndexType</code>: The type of the indices the container will hold. Valid types must satisfy <code>std::is_integral</code> i.e to be an integral type.</li>
 <li><code>Layout</code>: Orientation of data in memory. Valid layouts are either <code>Kokkos::LayoutLeft</code> (Column-Major) or <code>Kokkos::LayoutRight</code> (Row-Major).</li>
-<li><code>Space</code>: A memory or execution space supported by Kokkos. Valid <em>Memory</em> Spaces are <code>Kokkos::HostSpace</code>, <code>Kokkos::CudaSpace</code> and <code>Kokkos::HipSpace</code>. Valid <em>Execution</em> Spaces are <code>Kokkos::Serial</code>, <code>Kokkos::OpenMP</code>, <code>Kokkos::Cuda</code> and <code>Kokkos::HIP</code>. Note that specifying the execution space will determine in which space each member function will be executed. By not providing a space parameter <code><a class="el" href="namespaceMorpheus.html">Morpheus</a></code> will choose a default one for you.</li>
+<li><code>Space</code>: A memory or execution space supported by Kokkos. Valid <em>Memory</em> Spaces are <code>Kokkos::HostSpace</code>, <code>Kokkos::CudaSpace</code> and <code>Kokkos::HipSpace</code>. Valid <em>Execution</em> Spaces are <code>Kokkos::Serial</code>, <code>Kokkos::OpenMP</code>, <code>Kokkos::Cuda</code> and <code>Kokkos::HIP</code>. Note that specifying the execution space will determine in which space each member function will be executed. By not providing a space parameter <code><a class="el" href="namespaceMorpheus.html" title="Generic Morpheus interfaces.">Morpheus</a></code> will choose a default one for you.</li>
 </ul>
 <p>Note that only <code>ValueType</code> is mandatory. For the rest of the arguments, if not provided, sensible defaults will be selected.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;Morpheus_Core.hpp&gt;</span></div>
@@ -174,7 +174,7 @@ Use of dynamic matrix</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md7"></a>
 Building and Running the Tests and Examples</h1>
-<p>Building the tests and examples requires the <a href="https://github.com/google/googletest">GTest</a> testing framework, which ships together with <code><a class="el" href="namespaceMorpheus.html">Morpheus</a></code>.</p>
+<p>Building the tests and examples requires the <a href="https://github.com/google/googletest">GTest</a> testing framework, which ships together with <code><a class="el" href="namespaceMorpheus.html" title="Generic Morpheus interfaces.">Morpheus</a></code>.</p>
 <p>To build and run the tests add the <code>-DMorpheus_ENABLE_TESTS=On</code> during configuration stage respectively. Note that tests for different devices are enabled based on how <code>Kokkos</code> was configured.</p>
 <p>After configuration, to build and run the <code>Serial</code> tests do: </p><div class="fragment"><div class="line">$ cd  ${srcdir}</div>
 <div class="line">$ make MorpheusCore_UnitTest_Serial</div>

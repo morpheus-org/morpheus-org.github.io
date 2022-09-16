@@ -83,26 +83,24 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceMorpheus.html">Morpheus</a> {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>Impl {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> Matrix, <span class="keyword">typename</span> Vector1,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;          <span class="keyword">typename</span> Vector2&gt;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> multiply(</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">const</span> Matrix&amp; A, <span class="keyword">const</span> Vector1&amp; x, Vector2&amp; y, <span class="keyword">const</span> <span class="keywordtype">bool</span> init,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classMorpheus_1_1is__dynamic__matrix__format__container.html">Morpheus::is_dynamic_matrix_format_container&lt;Matrix&gt;::value</a> &amp;&amp;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classMorpheus_1_1is__dense__vector__format__container.html">Morpheus::is_dense_vector_format_container&lt;Vector1&gt;::value</a> &amp;&amp;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classMorpheus_1_1is__dense__vector__format__container.html">Morpheus::is_dense_vector_format_container&lt;Vector2&gt;::value</a>&gt;::type* =</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  std::visit([&amp;](<span class="keyword">auto</span>&amp;&amp; arg) { Impl::multiply&lt;ExecSpace&gt;(arg, x, y, init); },</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;             A.const_formats());</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}  <span class="comment">// namespace Impl</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DYNAMIC_MULTIPLY_IMPL_HPP</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> Matrix, <span class="keyword">typename</span> Vector&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> multiply(</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> Matrix&amp; A, <span class="keyword">const</span> Vector&amp; x, Vector&amp; y, <span class="keyword">const</span> <span class="keywordtype">bool</span> init,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">typename</span> std::enable_if&lt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classMorpheus_1_1is__dynamic__matrix__format__container.html">Morpheus::is_dynamic_matrix_format_container&lt;Matrix&gt;::value</a> &amp;&amp;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classMorpheus_1_1is__dense__vector__format__container.html">Morpheus::is_dense_vector_format_container&lt;Vector&gt;::value</a>&gt;::type* =</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  std::visit([&amp;](<span class="keyword">auto</span>&amp;&amp; arg) { Impl::multiply&lt;ExecSpace&gt;(arg, x, y, init); },</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;             A.const_formats());</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}  <span class="comment">// namespace Impl</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DYNAMIC_MULTIPLY_IMPL_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassMorpheus_1_1is__dense__vector__format__container_html"><div class="ttname"><a href="classMorpheus_1_1is__dense__vector__format__container.html">Morpheus::is_dense_vector_format_container</a></div><div class="ttdoc">Checks if the given type T is a valid Dense Vector Format Container i.e is valid vector container and...</div><div class="ttdef"><b>Definition:</b> Morpheus_FormatTags.hpp:273</div></div>
-<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
+<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdoc">Generic Morpheus interfaces.</div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
 <div class="ttc" id="aclassMorpheus_1_1is__dynamic__matrix__format__container_html"><div class="ttname"><a href="classMorpheus_1_1is__dynamic__matrix__format__container.html">Morpheus::is_dynamic_matrix_format_container</a></div><div class="ttdoc">Checks if the given type T is a valid Dynamic Matrix Format Container i.e is valid matrix container a...</div><div class="ttdef"><b>Definition:</b> Morpheus_FormatTags.hpp:201</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

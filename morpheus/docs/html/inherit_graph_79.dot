@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Morpheus::is_default\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMorpheus_1_1is__default.html",tooltip="Checks if the given type T is a Default type."];
+  Node0 [label="Morpheus::is_dense\l_matrix_container\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMorpheus_1_1is__dense__matrix__container.html",tooltip="A valid Dense Matrix container is the one that has a valid Dense Matrix tag i.e satisfies the has_den..."];
 }

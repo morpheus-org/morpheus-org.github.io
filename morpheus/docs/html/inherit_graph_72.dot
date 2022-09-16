@@ -4,5 +4,7 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Morpheus::IndexType\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMorpheus_1_1IndexType.html",tooltip="A wrapper that checks if the provided type is an integral type."];
+  Node69 [label="InitArguments",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node69 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="Morpheus::InitArguments",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMorpheus_1_1InitArguments.html",tooltip=" "];
 }

@@ -1,5 +1,0 @@
-<map id="Morpheus::Impl::DenseMatrixTag" name="Morpheus::Impl::DenseMatrixTag">
-<area shape="rect" id="node1" title="Tag used to mark containers as Dense Matrices." alt="" coords="10,80,246,107"/>
-<area shape="rect" id="node3" href="$structMorpheus_1_1DenseMatrixFormatTag.html" title="Tag used to mark containers as Matrix containers (Dense) with Dense Format." alt="" coords="5,155,251,181"/>
-<area shape="rect" id="node2" href="$structMorpheus_1_1Impl_1_1MatrixTag.html" title="Tag used to mark containers as Matrices." alt="" coords="31,5,225,32"/>
-</map>

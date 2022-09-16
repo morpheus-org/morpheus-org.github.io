@@ -88,62 +88,60 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceMorpheus.html">Morpheus</a> {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>Impl {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> Matrix, <span class="keyword">typename</span> Vector1,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;          <span class="keyword">typename</span> Vector2&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> multiply(</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> Matrix&amp; A, <span class="keyword">const</span> Vector1&amp; x, Vector2&amp; y, <span class="keyword">const</span> <span class="keywordtype">bool</span> init,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">typename</span> std::enable_if_t&lt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;Matrix&gt; &amp;&amp;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        Morpheus::is_dense_vector_format_container_v&lt;Vector1&gt; &amp;&amp;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        Morpheus::is_dense_vector_format_container_v&lt;Vector2&gt; &amp;&amp;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        !Morpheus::is_generic_space_v&lt;ExecSpace&gt; &amp;&amp;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        Morpheus::is_cuda_execution_space_v&lt;ExecSpace&gt; &amp;&amp;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a>&lt;<span class="keyword">typename</span> ExecSpace::execution_space, Matrix,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                               Vector1, Vector2&gt;&gt;* = <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">using</span> index_type = <span class="keyword">typename</span> Matrix::index_type;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">using</span> value_type = <span class="keyword">typename</span> Matrix::value_type;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> BLOCK_SIZE = 256;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> MAX_BLOCKS = max_active_blocks(</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      Kernels::spmv_dia_kernel&lt;index_type, value_type, BLOCK_SIZE&gt;, BLOCK_SIZE,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      (<span class="keywordtype">size_t</span>)<span class="keyword">sizeof</span>(index_type) * BLOCK_SIZE);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> NUM_BLOCKS =</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      std::min&lt;size_t&gt;(MAX_BLOCKS, DIVIDE_INTO(A.nrows(), BLOCK_SIZE));</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">const</span> index_type* D     = A.cdiagonal_offsets().data();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">const</span> value_type* V     = A.cvalues().data();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> value_type* x_ptr = x.data();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  value_type* y_ptr       = y.data();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">const</span> index_type num_diagonals = A.cvalues().ncols();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">const</span> index_type pitch         = A.cvalues().nrows();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">if</span> (num_diagonals == 0) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// empty matrix</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">if</span> (init) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    y.assign(y.size(), 0);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  Kernels::spmv_dia_kernel&lt;index_type, value_type, BLOCK_SIZE&gt;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      &lt;&lt;&lt;NUM_BLOCKS, BLOCK_SIZE, 0&gt;&gt;&gt;(A.nrows(), A.ncols(), num_diagonals,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                      pitch, D, V, x_ptr, y_ptr);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#if defined(DEBUG) || defined(MORPHEUS_DEBUG)</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  getLastCudaError(<span class="stringliteral">&quot;spmv_dia_kernel: Kernel execution failed&quot;</span>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}  <span class="comment">// namespace Impl</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_ENABLE_CUDA</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DIA_CUDA_MULTIPLY_IMPL_HPP</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> Matrix, <span class="keyword">typename</span> Vector&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> multiply(</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> Matrix&amp; A, <span class="keyword">const</span> Vector&amp; x, Vector&amp; y, <span class="keyword">const</span> <span class="keywordtype">bool</span> init,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">typename</span> std::enable_if_t&lt;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;Matrix&gt; &amp;&amp;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        Morpheus::is_dense_vector_format_container_v&lt;Vector&gt; &amp;&amp;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        !Morpheus::is_generic_space_v&lt;ExecSpace&gt; &amp;&amp;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        Morpheus::is_cuda_execution_space_v&lt;ExecSpace&gt; &amp;&amp;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a>&lt;<span class="keyword">typename</span> ExecSpace::execution_space, Matrix,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                               Vector&gt;&gt;* = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">using</span> index_type = <span class="keyword">typename</span> Matrix::index_type;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">using</span> value_type = <span class="keyword">typename</span> Matrix::value_type;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> BLOCK_SIZE = 256;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> MAX_BLOCKS = max_active_blocks(</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      Kernels::spmv_dia_kernel&lt;index_type, value_type, BLOCK_SIZE&gt;, BLOCK_SIZE,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      (<span class="keywordtype">size_t</span>)<span class="keyword">sizeof</span>(index_type) * BLOCK_SIZE);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> NUM_BLOCKS =</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      std::min&lt;size_t&gt;(MAX_BLOCKS, DIVIDE_INTO(A.nrows(), BLOCK_SIZE));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">const</span> index_type* D     = A.cdiagonal_offsets().data();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">const</span> value_type* V     = A.cvalues().data();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">const</span> value_type* x_ptr = x.data();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  value_type* y_ptr       = y.data();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> index_type num_diagonals = A.cvalues().ncols();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> index_type pitch         = A.cvalues().nrows();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">if</span> (num_diagonals == 0) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// empty matrix</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">if</span> (init) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    y.assign(y.size(), 0);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  Kernels::spmv_dia_kernel&lt;index_type, value_type, BLOCK_SIZE&gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      &lt;&lt;&lt;NUM_BLOCKS, BLOCK_SIZE, 0&gt;&gt;&gt;(A.nrows(), A.ncols(), num_diagonals,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                      pitch, D, V, x_ptr, y_ptr);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#if defined(DEBUG) || defined(MORPHEUS_DEBUG)</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  getLastCudaError(<span class="stringliteral">&quot;spmv_dia_kernel: Kernel execution failed&quot;</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}  <span class="comment">// namespace Impl</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_ENABLE_CUDA</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DIA_CUDA_MULTIPLY_IMPL_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
-<div class="ttc" id="agroup__typetraits_html_gaa2fd006ec837487875370c9ce30ea1c8"><div class="ttname"><a href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a></div><div class="ttdeci">constexpr bool has_access_v</div><div class="ttdoc">Short-hand to has_access.</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:1363</div></div>
+<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdoc">Generic Morpheus interfaces.</div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
+<div class="ttc" id="agroup__typetraits_html_gaa2fd006ec837487875370c9ce30ea1c8"><div class="ttname"><a href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a></div><div class="ttdeci">constexpr bool has_access_v</div><div class="ttdoc">Short-hand to has_access.</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:1405</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

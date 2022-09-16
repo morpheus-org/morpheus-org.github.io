@@ -1,5 +1,0 @@
-<map id="Morpheus::Impl::DynamicMatrixTag" name="Morpheus::Impl::DynamicMatrixTag">
-<area shape="rect" id="node1" title="Tag used to mark containers as Dynamic Matrices." alt="" coords="10,80,263,107"/>
-<area shape="rect" id="node3" href="$structMorpheus_1_1DynamicMatrixFormatTag.html" title="Tag used to mark containers as Matrix container with Dynamic Storage Format." alt="" coords="5,155,268,181"/>
-<area shape="rect" id="node2" href="$structMorpheus_1_1Impl_1_1MatrixTag.html" title="Tag used to mark containers as Matrices." alt="" coords="39,5,234,32"/>
-</map>

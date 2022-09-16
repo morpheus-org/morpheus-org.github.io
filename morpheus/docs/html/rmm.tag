@@ -1235,8 +1235,8 @@
       <type></type>
       <name>DenseVector</name>
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
-      <anchor>adfd8ad0ed4f43dab650924cff29b3adc</anchor>
-      <arglist>(const size_t n, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;is_same_value_type&lt; value_type, ValuePtr &gt;::value &amp;&amp;memory_traits::is_unmanaged &gt;::type *=nullptr)</arglist>
+      <anchor>a4259e4e63473280f7567be9a6048265f</anchor>
+      <arglist>(const size_t n, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &gt;::type *=nullptr)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -1435,8 +1435,8 @@
       <type></type>
       <name>DenseVector</name>
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
-      <anchor>adfd8ad0ed4f43dab650924cff29b3adc</anchor>
-      <arglist>(const size_t n, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;is_same_value_type&lt; value_type, ValuePtr &gt;::value &amp;&amp;memory_traits::is_unmanaged &gt;::type *=nullptr)</arglist>
+      <anchor>a4259e4e63473280f7567be9a6048265f</anchor>
+      <arglist>(const size_t n, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &gt;::type *=nullptr)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -1649,8 +1649,8 @@
       <type></type>
       <name>DenseVector</name>
       <anchorfile>classMorpheus_1_1DenseVector.html</anchorfile>
-      <anchor>adfd8ad0ed4f43dab650924cff29b3adc</anchor>
-      <arglist>(const size_t n, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &amp;&amp;is_same_value_type&lt; value_type, ValuePtr &gt;::value &amp;&amp;memory_traits::is_unmanaged &gt;::type *=nullptr)</arglist>
+      <anchor>a4259e4e63473280f7567be9a6048265f</anchor>
+      <arglist>(const size_t n, ValuePtr ptr, typename std::enable_if&lt; std::is_pointer&lt; ValuePtr &gt;::value &gt;::type *=nullptr)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -2670,10 +2670,6 @@
     <name>Morpheus::NotImplementedException</name>
     <filename>classMorpheus_1_1NotImplementedException.html</filename>
     <base>Morpheus::Exception</base>
-  </compound>
-  <compound kind="struct">
-    <name>Morpheus::Impl::print_fn</name>
-    <filename>structMorpheus_1_1Impl_1_1print__fn.html</filename>
   </compound>
   <compound kind="struct">
     <name>Morpheus::remove_cvref</name>

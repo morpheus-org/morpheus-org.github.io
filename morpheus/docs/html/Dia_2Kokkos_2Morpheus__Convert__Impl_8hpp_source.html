@@ -84,7 +84,7 @@ $(function() {
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> SourceType, <span class="keyword">typename</span> DestinationType&gt;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> convert(</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> SourceType&amp; src, DestinationType&amp; dst,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> SourceType&amp;, DestinationType&amp;,</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">typename</span> std::enable_if_t&lt;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;SourceType&gt; &amp;&amp;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;DestinationType&gt; &amp;&amp;</div>
@@ -96,7 +96,7 @@ $(function() {
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> SourceType, <span class="keyword">typename</span> DestinationType&gt;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> convert(</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> SourceType&amp; src, DestinationType&amp; dst,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> SourceType&amp;, DestinationType&amp;,</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">typename</span> std::enable_if_t&lt;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;SourceType&gt; &amp;&amp;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        Morpheus::is_coo_matrix_format_container_v&lt;DestinationType&gt; &amp;&amp;</div>
@@ -108,7 +108,7 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> SourceType, <span class="keyword">typename</span> DestinationType&gt;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> convert(</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> SourceType&amp; src, DestinationType&amp; dst,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> SourceType&amp;, DestinationType&amp;,</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">typename</span> std::enable_if_t&lt;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        Morpheus::is_coo_matrix_format_container_v&lt;SourceType&gt; &amp;&amp;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;DestinationType&gt; &amp;&amp;</div>
@@ -123,9 +123,9 @@ $(function() {
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DIA_KOKKOS_CONVERT_IMPL_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
+<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdoc">Generic Morpheus interfaces.</div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
 <div class="ttc" id="aclassMorpheus_1_1NotImplementedException_html"><div class="ttname"><a href="classMorpheus_1_1NotImplementedException.html">Morpheus::NotImplementedException</a></div><div class="ttdef"><b>Definition:</b> Morpheus_Exceptions.hpp:43</div></div>
-<div class="ttc" id="agroup__typetraits_html_gaa2fd006ec837487875370c9ce30ea1c8"><div class="ttname"><a href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a></div><div class="ttdeci">constexpr bool has_access_v</div><div class="ttdoc">Short-hand to has_access.</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:1363</div></div>
+<div class="ttc" id="agroup__typetraits_html_gaa2fd006ec837487875370c9ce30ea1c8"><div class="ttname"><a href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a></div><div class="ttdeci">constexpr bool has_access_v</div><div class="ttdoc">Short-hand to has_access.</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:1405</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

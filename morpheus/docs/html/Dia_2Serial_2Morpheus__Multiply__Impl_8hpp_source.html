@@ -82,43 +82,41 @@ $(function() {
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceMorpheus.html">Morpheus</a> {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>Impl {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> Matrix, <span class="keyword">typename</span> Vector1,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;          <span class="keyword">typename</span> Vector2&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> multiply(</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> Matrix&amp; A, <span class="keyword">const</span> Vector1&amp; x, Vector2&amp; y, <span class="keyword">const</span> <span class="keywordtype">bool</span> init,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">typename</span> std::enable_if_t&lt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;Matrix&gt; &amp;&amp;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        Morpheus::is_dense_vector_format_container_v&lt;Vector1&gt; &amp;&amp;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        Morpheus::is_dense_vector_format_container_v&lt;Vector2&gt; &amp;&amp;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        !Morpheus::is_generic_space_v&lt;ExecSpace&gt; &amp;&amp;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        Morpheus::is_serial_execution_space_v&lt;ExecSpace&gt; &amp;&amp;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a>&lt;<span class="keyword">typename</span> ExecSpace::execution_space, Matrix,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                               Vector1, Vector2&gt;&gt;* = <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">using</span> index_type       = <span class="keyword">typename</span> Matrix::index_type;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">using</span> value_type       = <span class="keyword">typename</span> Matrix::value_type;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> index_type ndiag = A.cvalues().ncols();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">for</span> (index_type row = 0; row &lt; A.nrows(); row++) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    value_type sum = init ? value_type(0) : y[row];</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span> (index_type n = 0; n &lt; ndiag; n++) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keyword">const</span> index_type col = row + A.cdiagonal_offsets(n);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">if</span> (col &gt;= 0 &amp;&amp; col &lt; A.ncols()) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        sum += A.cvalues(row, n) * x[col];</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    y[row] = sum;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}  <span class="comment">// namespace Impl</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DIA_SERIAL_MULTIPLY_IMPL_HPP</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ExecSpace, <span class="keyword">typename</span> Matrix, <span class="keyword">typename</span> Vector&gt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> multiply(</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> Matrix&amp; A, <span class="keyword">const</span> Vector&amp; x, Vector&amp; y, <span class="keyword">const</span> <span class="keywordtype">bool</span> init,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">typename</span> std::enable_if_t&lt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        Morpheus::is_dia_matrix_format_container_v&lt;Matrix&gt; &amp;&amp;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        Morpheus::is_dense_vector_format_container_v&lt;Vector&gt; &amp;&amp;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        !Morpheus::is_generic_space_v&lt;ExecSpace&gt; &amp;&amp;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        Morpheus::is_serial_execution_space_v&lt;ExecSpace&gt; &amp;&amp;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a>&lt;<span class="keyword">typename</span> ExecSpace::execution_space, Matrix,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                               Vector&gt;&gt;* = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">using</span> index_type       = <span class="keyword">typename</span> Matrix::index_type;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">using</span> value_type       = <span class="keyword">typename</span> Matrix::value_type;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">const</span> index_type ndiag = A.cvalues().ncols();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">for</span> (index_type row = 0; row &lt; A.nrows(); row++) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    value_type sum = init ? value_type(0) : y[row];</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> (index_type n = 0; n &lt; ndiag; n++) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keyword">const</span> index_type col = row + A.cdiagonal_offsets(n);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">if</span> (col &gt;= 0 &amp;&amp; col &lt; A.ncols()) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        sum += A.cvalues(row, n) * x[col];</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    y[row] = sum;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}  <span class="comment">// namespace Impl</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_DIA_SERIAL_MULTIPLY_IMPL_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
-<div class="ttc" id="agroup__typetraits_html_gaa2fd006ec837487875370c9ce30ea1c8"><div class="ttname"><a href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a></div><div class="ttdeci">constexpr bool has_access_v</div><div class="ttdoc">Short-hand to has_access.</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:1363</div></div>
+<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdoc">Generic Morpheus interfaces.</div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
+<div class="ttc" id="agroup__typetraits_html_gaa2fd006ec837487875370c9ce30ea1c8"><div class="ttname"><a href="group__typetraits.html#gaa2fd006ec837487875370c9ce30ea1c8">Morpheus::has_access_v</a></div><div class="ttdeci">constexpr bool has_access_v</div><div class="ttdoc">Short-hand to has_access.</div><div class="ttdef"><b>Definition:</b> Morpheus_TypeTraits.hpp:1405</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

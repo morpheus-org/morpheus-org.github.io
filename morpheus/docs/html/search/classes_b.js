@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['print_5ffn_353',['print_fn',['../structMorpheus_1_1Impl_1_1print__fn.html',1,'Morpheus::Impl']]]
+  ['remove_5fcvref_352',['remove_cvref',['../structMorpheus_1_1remove__cvref.html',1,'Morpheus']]],
+  ['runtimeexception_353',['RuntimeException',['../classMorpheus_1_1RuntimeException.html',1,'Morpheus']]]
 ];

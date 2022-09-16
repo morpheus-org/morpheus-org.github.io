@@ -73,6 +73,9 @@ $(function() {
 <div class="title">Morpheus Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Generic <a class="el" href="namespaceMorpheus.html" title="Generic Morpheus interfaces.">Morpheus</a> interfaces.  
+<a href="namespaceMorpheus.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -189,7 +192,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the two types are compatible containers i.e are in the same memory space and have the same layout, index and value type.  <a href="classMorpheus_1_1is__compatible.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1is__container.html">is_container</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> is a valid <a class="el" href="namespaceMorpheus.html">Morpheus</a> Container i.e is either a valid matrix or a vector container that satisfies <code><a class="el" href="classMorpheus_1_1is__matrix__container.html" title="A valid Matrix container is the one that has a valid Matrix tag i.e satisfies the has_matrix_tag chec...">is_matrix_container</a></code> or <code><a class="el" href="classMorpheus_1_1is__vector__container.html" title="A valid Vector container is the one that has a valid Vector tag i.e satisfies the has_vector_tag chec...">is_vector_container</a></code>.  <a href="classMorpheus_1_1is__container.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> is a valid <a class="el" href="namespaceMorpheus.html" title="Generic Morpheus interfaces.">Morpheus</a> Container i.e is either a valid matrix or a vector container that satisfies <code><a class="el" href="classMorpheus_1_1is__matrix__container.html" title="A valid Matrix container is the one that has a valid Matrix tag i.e satisfies the has_matrix_tag chec...">is_matrix_container</a></code> or <code><a class="el" href="classMorpheus_1_1is__vector__container.html" title="A valid Vector container is the one that has a valid Vector tag i.e satisfies the has_vector_tag chec...">is_vector_container</a></code>.  <a href="classMorpheus_1_1is__container.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMorpheus_1_1is__coo__matrix__format__container.html">is_coo_matrix_format_container</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given type <code>T</code> is a valid COO Sparse Matrix Format Container i.e is valid matrix container and has <code><a class="el" href="structMorpheus_1_1CooFormatTag.html" title="Tag used to mark containers as Matrix containers (Sparse) with Coordinate (COO) Storage Format.">CooFormatTag</a></code> as <code>tag</code> member trait.  <a href="classMorpheus_1_1is__coo__matrix__format__container.html#details">More...</a><br /></td></tr>
@@ -419,14 +422,14 @@ template&lt;class Space , template&lt; class, class... &gt; class Container, cla
 template&lt;class Space , template&lt; class, class... &gt; class Container, class T , class... P&gt; </td></tr>
 <tr class="memitem:abc1c30c34f61f80de542493fb8c3d3be"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structMorpheus_1_1Impl_1_1MirrorContainerType.html">Impl::MirrorContainerType</a>&lt; Space, Container, T, P... &gt;::container_type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>create_mirror_container</b> (const Container&lt; T, P... &gt; &amp;src, typename std::enable_if&lt;!<a class="el" href="structMorpheus_1_1Impl_1_1MirrorContainerType.html">Impl::MirrorContainerType</a>&lt; Space, Container, T, P... &gt;::is_same_memspace &amp;&amp;<a class="el" href="classMorpheus_1_1is__container.html">is_container</a>&lt; Container&lt; T, P... &gt;&gt;::value &gt;::type *=nullptr)</td></tr>
 <tr class="separator:abc1c30c34f61f80de542493fb8c3d3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7254da18144718d8486b4fc7b2a2ca5d"><td class="memTemplParams" colspan="2"><a id="a7254da18144718d8486b4fc7b2a2ca5d"></a>
-template&lt;typename ExecSpace , typename Matrix , typename Vector1 , typename Vector2 &gt; </td></tr>
-<tr class="memitem:a7254da18144718d8486b4fc7b2a2ca5d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>multiply</b> (const Matrix &amp;A, const Vector1 &amp;x, Vector2 &amp;y, const bool init)</td></tr>
-<tr class="separator:a7254da18144718d8486b4fc7b2a2ca5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40df395710841bb116e360ac18233af0"><td class="memTemplParams" colspan="2"><a id="a40df395710841bb116e360ac18233af0"></a>
-template&lt;typename ExecSpace , typename Matrix , typename Vector1 , typename Vector2 &gt; </td></tr>
-<tr class="memitem:a40df395710841bb116e360ac18233af0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>multiply</b> (const Matrix &amp;A, const Vector1 &amp;x, Vector2 &amp;y)</td></tr>
-<tr class="separator:a40df395710841bb116e360ac18233af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a690deca082a51a248917685a8cc519"><td class="memTemplParams" colspan="2"><a id="a9a690deca082a51a248917685a8cc519"></a>
+template&lt;typename ExecSpace , typename Matrix , typename Vector &gt; </td></tr>
+<tr class="memitem:a9a690deca082a51a248917685a8cc519"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>multiply</b> (const Matrix &amp;A, const Vector &amp;x, Vector &amp;y, const bool init)</td></tr>
+<tr class="separator:a9a690deca082a51a248917685a8cc519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63908542123cc14d288dd74d1316120b"><td class="memTemplParams" colspan="2"><a id="a63908542123cc14d288dd74d1316120b"></a>
+template&lt;typename ExecSpace , typename Matrix , typename Vector &gt; </td></tr>
+<tr class="memitem:a63908542123cc14d288dd74d1316120b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>multiply</b> (const Matrix &amp;A, const Vector &amp;x, Vector &amp;y)</td></tr>
+<tr class="separator:a63908542123cc14d288dd74d1316120b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b39c8c5e801a2df12e995021c316c4e"><td class="memTemplParams" colspan="2"><a id="a2b39c8c5e801a2df12e995021c316c4e"></a>
 template&lt;typename Printable , typename Stream &gt; </td></tr>
 <tr class="memitem:a2b39c8c5e801a2df12e995021c316c4e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>print</b> (const Printable &amp;p, Stream &amp;s)</td></tr>
@@ -636,7 +639,8 @@ Variables</h2></td></tr>
 <tr class="separator:gaa2fd006ec837487875370c9ce30ea1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>dummy.cpp</p>
+<div class="textblock"><p>Generic <a class="el" href="namespaceMorpheus.html" title="Generic Morpheus interfaces.">Morpheus</a> interfaces. </p>
+<p>dummy.cpp</p>
 <p>EPCC, The University of Edinburgh</p>
 <p>(c) 2021 The University of Edinburgh</p>
 <p>Contributing Authors: Christodoulos Stylianou (<a href="#" onclick="location.href='mai'+'lto:'+'c.s'+'ty'+'lia'+'no'+'u@e'+'d.'+'ac.'+'uk'; return false;">c.sty<span style="display: none;">.nosp@m.</span>lian<span style="display: none;">.nosp@m.</span>ou@ed<span style="display: none;">.nosp@m.</span>.ac.<span style="display: none;">.nosp@m.</span>uk</a>)</p>

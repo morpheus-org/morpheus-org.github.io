@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structMorpheus_1_1Impl_1_1VectorTag.html" title="Tag used to mark containers as Vectors." alt="" coords="5,31,200,57"/>
-<area shape="rect" id="node2" href="$structMorpheus_1_1Impl_1_1DenseVectorTag.html" title="Tag used to mark containers as Dense Vectors." alt="" coords="250,5,485,32"/>
-<area shape="rect" id="node4" href="$structMorpheus_1_1Impl_1_1SparseVectorTag.html" title="Tag used to mark containers as Sparse Vectors." alt="" coords="248,56,487,83"/>
-<area shape="rect" id="node3" href="$structMorpheus_1_1DenseVectorFormatTag.html" title="Tag used to mark containers as Vector Containers (Dense) with Dense Format." alt="" coords="535,5,779,32"/>
-</map>

@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Morpheus::is_matrix\l_container\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMorpheus_1_1is__matrix__container.html",tooltip="A valid Matrix container is the one that has a valid Matrix tag i.e satisfies the has_matrix_tag chec..."];
+  Node0 [label="Morpheus::is_memory\l_space\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMorpheus_1_1is__memory__space.html",tooltip="Checks if the given type T is a valid supported memory space."];
 }

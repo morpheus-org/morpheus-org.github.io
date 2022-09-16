@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Morpheus::is_dynamic\l_matrix_container\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMorpheus_1_1is__dynamic__matrix__container.html",tooltip="A valid Dynamic Matrix container is the one that has a valid Dynamic Matrix tag i...."];
+  Node0 [label="Morpheus::is_dynamic\l_matrix_format_container\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMorpheus_1_1is__dynamic__matrix__format__container.html",tooltip="Checks if the given type T is a valid Dynamic Matrix Format Container i.e is valid matrix container a..."];
 }

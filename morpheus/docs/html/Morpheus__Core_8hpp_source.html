@@ -112,30 +112,30 @@ $(function() {
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#include &lt;Morpheus_Metaprogramming.hpp&gt;</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#include &lt;Morpheus_ContainerFactory.hpp&gt;</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceMorpheus.html">Morpheus</a> {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structMorpheus_1_1InitArguments.html">   66</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1InitArguments.html">InitArguments</a> : <span class="keyword">public</span> Kokkos::InitArguments {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">using</span> base = Kokkos::InitArguments;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">int</span> dynamic_format;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="structMorpheus_1_1InitArguments.html">InitArguments</a>(<span class="keywordtype">int</span> dyn_fmt = 0, <span class="keywordtype">int</span> nt = -1, <span class="keywordtype">int</span> nn = -1, <span class="keywordtype">int</span> dv = -1,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordtype">bool</span> dw = <span class="keyword">false</span>, <span class="keywordtype">bool</span> ti = <span class="keyword">false</span>)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      : base(nt, nn, dv, dw, ti), dynamic_format(dyn_fmt) {}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> initialize(<span class="keywordtype">int</span>&amp; argc, <span class="keywordtype">char</span>* argv[], <span class="keywordtype">bool</span> banner = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span> initialize(<span class="keywordtype">int</span>&amp; argc, <span class="keywordtype">char</span>* argv[], <a class="code" href="structMorpheus_1_1InitArguments.html">InitArguments</a>&amp; args,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordtype">bool</span> banner = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> print_configuration(std::ostream&amp; out, <span class="keyword">const</span> <span class="keywordtype">bool</span> detail = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> initialize(<a class="code" href="structMorpheus_1_1InitArguments.html">InitArguments</a> args = <a class="code" href="structMorpheus_1_1InitArguments.html">InitArguments</a>(), <span class="keywordtype">bool</span> banner = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> finalize();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_CORE_HPP</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceMorpheus.html">Morpheus</a> {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="structMorpheus_1_1InitArguments.html">   67</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMorpheus_1_1InitArguments.html">InitArguments</a> : <span class="keyword">public</span> Kokkos::InitArguments {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">using</span> base = Kokkos::InitArguments;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">int</span> dynamic_format;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="structMorpheus_1_1InitArguments.html">InitArguments</a>(<span class="keywordtype">int</span> dyn_fmt = 0, <span class="keywordtype">int</span> nt = -1, <span class="keywordtype">int</span> nn = -1, <span class="keywordtype">int</span> dv = -1,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordtype">bool</span> dw = <span class="keyword">false</span>, <span class="keywordtype">bool</span> ti = <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      : base(nt, nn, dv, dw, ti), dynamic_format(dyn_fmt) {}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span> initialize(<span class="keywordtype">int</span>&amp; argc, <span class="keywordtype">char</span>* argv[], <span class="keywordtype">bool</span> banner = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> initialize(<span class="keywordtype">int</span>&amp; argc, <span class="keywordtype">char</span>* argv[], <a class="code" href="structMorpheus_1_1InitArguments.html">InitArguments</a>&amp; args,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <span class="keywordtype">bool</span> banner = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> print_configuration(std::ostream&amp; out, <span class="keyword">const</span> <span class="keywordtype">bool</span> detail = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> initialize(<a class="code" href="structMorpheus_1_1InitArguments.html">InitArguments</a> args = <a class="code" href="structMorpheus_1_1InitArguments.html">InitArguments</a>(), <span class="keywordtype">bool</span> banner = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> finalize();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}  <span class="comment">// namespace Morpheus</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif  // MORPHEUS_CORE_HPP</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
-<div class="ttc" id="astructMorpheus_1_1InitArguments_html"><div class="ttname"><a href="structMorpheus_1_1InitArguments.html">Morpheus::InitArguments</a></div><div class="ttdef"><b>Definition:</b> Morpheus_Core.hpp:66</div></div>
+<div class="ttc" id="anamespaceMorpheus_html"><div class="ttname"><a href="namespaceMorpheus.html">Morpheus</a></div><div class="ttdoc">Generic Morpheus interfaces.</div><div class="ttdef"><b>Definition:</b> dummy.cpp:24</div></div>
+<div class="ttc" id="astructMorpheus_1_1InitArguments_html"><div class="ttname"><a href="structMorpheus_1_1InitArguments.html">Morpheus::InitArguments</a></div><div class="ttdef"><b>Definition:</b> Morpheus_Core.hpp:67</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
