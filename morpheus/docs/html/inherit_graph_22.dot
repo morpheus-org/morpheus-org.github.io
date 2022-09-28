@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="Morpheus::has_same\l_format\< T1, T2 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMorpheus_1_1has__same__format.html",tooltip="Checks if the two types have the same format i.e both are valid containers and have the same tag memb..."];
-}

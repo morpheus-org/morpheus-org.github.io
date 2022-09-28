@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notimplementedexception_351',['NotImplementedException',['../classMorpheus_1_1NotImplementedException.html',1,'Morpheus']]]
+  ['notimplementedexception_0',['NotImplementedException',['../classMorpheus_1_1NotImplementedException.html',1,'Morpheus']]]
 ];

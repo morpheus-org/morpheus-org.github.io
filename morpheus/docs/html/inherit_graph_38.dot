@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="Morpheus::Impl::Container\lTraits_Impl\< typename std\l::enable_if_t\< Kokkos::Impl\l::is_array_layout\< ArrayLayout\l \>::value \>, ArrayLayout, Prop... \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMorpheus_1_1Impl_1_1ContainerTraits__Impl_3_01typename_01std_1_1enable__if__t_3_01Kokkos_193d964cf42522f7d43cc45c62f061c5c.html",tooltip=" "];
-}
