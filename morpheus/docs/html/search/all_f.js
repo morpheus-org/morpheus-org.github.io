@@ -1,19 +1,14 @@
 var searchData=
 [
-  ['set_0',['Set',['../structMorpheus_1_1Set.html',1,'Morpheus']]],
-  ['set_5falignment_1',['set_alignment',['../classMorpheus_1_1DiaMatrix.html#a69bea403bfe2b76817f79a1e675f6b95',1,'Morpheus::DiaMatrix']]],
-  ['set_5ffunctor_2',['set_functor',['../structMorpheus_1_1Impl_1_1set__functor.html',1,'Morpheus::Impl']]],
-  ['set_5ffunctor_3c_20view_2c_20valuetype_20_3e_3',['set_functor&lt; View, ValueType &gt;',['../structMorpheus_1_1Impl_1_1set__functor_3_01View_00_01ValueType_01_4.html',1,'Morpheus::Impl']]],
-  ['set_5ffunctor_3c_20view_2c_20valuetype_2c_20indextype_20_3e_4',['set_functor&lt; View, ValueType, IndexType &gt;',['../structMorpheus_1_1Impl_1_1set__functor_3_01View_00_01ValueType_00_01IndexType_01_4.html',1,'Morpheus::Impl']]],
-  ['set_5fndiags_5',['set_ndiags',['../classMorpheus_1_1DiaMatrix.html#ab685aab3b363b066cceea86f3666e693',1,'Morpheus::DiaMatrix']]],
-  ['set_5fvalue_6',['set_value',['../namespaceMorpheus.html#a3dea2af2fbe8ae1d3d1d263ef89e3bd1',1,'Morpheus']]],
-  ['set_5fvalues_7',['set_values',['../namespaceMorpheus.html#aa46f7d39fdcad442287ea4f159c3cb7d',1,'Morpheus']]],
-  ['sharedmemory_8',['SharedMemory',['../structMorpheus_1_1Impl_1_1Kernels_1_1SharedMemory.html',1,'Morpheus::Impl::Kernels']]],
-  ['sharedmemory_3c_20double_20_3e_9',['SharedMemory&lt; double &gt;',['../structMorpheus_1_1Impl_1_1Kernels_1_1SharedMemory_3_01double_01_4.html',1,'Morpheus::Impl::Kernels']]],
-  ['size_10',['size',['../classMorpheus_1_1DenseVector.html#af81ce5e3ac507d627726017510c06781',1,'Morpheus::DenseVector']]],
-  ['sort_11',['sort',['../classMorpheus_1_1CooMatrix.html#ab7e3815ae0a5b256954ae3d94b1e401e',1,'Morpheus::CooMatrix']]],
-  ['sort_5fby_5frow_12',['sort_by_row',['../classMorpheus_1_1CooMatrix.html#a7a4d0e2ef238a05ad472a78fb4819705',1,'Morpheus::CooMatrix']]],
-  ['sparsematrixtag_13',['SparseMatrixTag',['../structMorpheus_1_1Impl_1_1SparseMatrixTag.html',1,'Morpheus::Impl']]],
-  ['sparsevectortag_14',['SparseVectorTag',['../structMorpheus_1_1Impl_1_1SparseVectorTag.html',1,'Morpheus::Impl']]],
-  ['storage_20format_20tags_15',['Storage Format Tags',['../group__storage__format__tags.html',1,'']]]
+  ['read_5fmatrix_5fmarket_5ffile_0',['read_matrix_market_file',['../group__readers.html#gaa5e5ff30b54d800569b5ab4f93d3a4dc',1,'Morpheus::IO']]],
+  ['read_5fmatrix_5fmarket_5fstream_1',['read_matrix_market_stream',['../group__readers.html#gaa9896bcbf31a5f0c8fb95ca7dcac0853',1,'Morpheus::IO']]],
+  ['readers_2',['Readers',['../group__readers.html',1,'']]],
+  ['reduce_3',['reduce',['../group__dense__vector__algorithms.html#ga1a4a9f89a8dd8215e1008cad6f8f1c9b',1,'Morpheus']]],
+  ['reference_4',['reference',['../structMorpheus_1_1ContainerTraits.html#ada7e3a6e2fa0572420605e4c206b522e',1,'Morpheus::ContainerTraits']]],
+  ['remove_5fcvref_5',['remove_cvref',['../structMorpheus_1_1remove__cvref.html',1,'Morpheus']]],
+  ['remove_5fcvref_5ft_6',['remove_cvref_t',['../group__type__traits.html#gad32c93c9ff637e7ece7c5b6fb12d0b76',1,'Morpheus']]],
+  ['resize_7',['resize',['../classMorpheus_1_1CooMatrix.html#aad45ea64fc3ddb9740f6ae7d9b7ea67a',1,'Morpheus::CooMatrix::resize(const size_type num_rows, const size_type num_cols, const size_type num_entries)'],['../classMorpheus_1_1CooMatrix.html#a534784002f83aac5d582d36532c99ad8',1,'Morpheus::CooMatrix::resize(const CooMatrix&lt; VR, PR... &gt; &amp;src)'],['../classMorpheus_1_1CsrMatrix.html#ae6d41d64c8f0d1c1296a3ef9b1018189',1,'Morpheus::CsrMatrix::resize(const size_type num_rows, const size_type num_cols, const size_type num_entries)'],['../classMorpheus_1_1CsrMatrix.html#ad7c2fe84864cc4d9bc0febe92753661a',1,'Morpheus::CsrMatrix::resize(const CsrMatrix&lt; VR, PR... &gt; &amp;src)'],['../classMorpheus_1_1DenseMatrix.html#a9577b3c8eb6b8099ff3be8ffdf98fb3b',1,'Morpheus::DenseMatrix::resize(size_type num_rows, size_type num_cols)'],['../classMorpheus_1_1DenseMatrix.html#a0c07da27dae8e72dd780afe77794dccd',1,'Morpheus::DenseMatrix::resize(const DenseMatrix&lt; VR, PR... &gt; &amp;src)'],['../classMorpheus_1_1DenseVector.html#a709674bc2506a9fa704c19d0d7770146',1,'Morpheus::DenseVector::resize(const size_type n)'],['../classMorpheus_1_1DenseVector.html#a8379ab15669088ee27db0d6e3855ef98',1,'Morpheus::DenseVector::resize(const size_type n, const value_type val)'],['../classMorpheus_1_1DenseVector.html#ae49c374477d1f7ccc4c929f36c90a956',1,'Morpheus::DenseVector::resize(const DenseVector&lt; VR, PR... &gt; &amp;src)'],['../classMorpheus_1_1DiaMatrix.html#a3c4960dc28c542452a39738dba71a9ee',1,'Morpheus::DiaMatrix::resize(const size_type num_rows, const size_type num_cols, const size_type num_entries, const size_type num_diagonals, const size_type alignment=32)'],['../classMorpheus_1_1DiaMatrix.html#a00a9da9a10947b499cf156f871a32537',1,'Morpheus::DiaMatrix::resize(const DiaMatrix&lt; VR, PR... &gt; &amp;src)'],['../classMorpheus_1_1DynamicMatrix.html#aed0f7ec6f8a8a61120fb5400e750a887',1,'Morpheus::DynamicMatrix::resize(const DynamicMatrix&lt; VR, PR... &gt; &amp;src)'],['../classMorpheus_1_1DynamicMatrix.html#a1f6c336447508af3bbd6180e3d206ae5',1,'Morpheus::DynamicMatrix::resize(const Matrix &amp;src, typename std::enable_if&lt; is_variant_member_v&lt; Matrix, variant_type &gt; &gt;::type *=nullptr)'],['../classMorpheus_1_1MatrixBase.html#a6333e9e6b3fa828db0d68944e4f478a5',1,'Morpheus::MatrixBase::resize()']]],
+  ['row_5findices_8',['row_indices',['../classMorpheus_1_1CooMatrix.html#af884ba08b991a77e54b6622830516280',1,'Morpheus::CooMatrix::row_indices(size_type n)'],['../classMorpheus_1_1CooMatrix.html#ac72af0445649ca5eac981a8275462aa5',1,'Morpheus::CooMatrix::row_indices()']]],
+  ['row_5foffsets_9',['row_offsets',['../classMorpheus_1_1CsrMatrix.html#aa6b89a5baa219dd26a88ceaa739cc77a',1,'Morpheus::CsrMatrix::row_offsets(size_type n)'],['../classMorpheus_1_1CsrMatrix.html#abba302697414ebd339beb9dbccf3b361',1,'Morpheus::CsrMatrix::row_offsets()']]],
+  ['runtimeexception_10',['RuntimeException',['../classMorpheus_1_1RuntimeException.html',1,'Morpheus']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type_20traits_0',['Type Traits',['../group__typetraits.html',1,'']]]
+  ['generic_20containers_0',['Generic Containers',['../group__generic__containers.html',1,'']]]
 ];

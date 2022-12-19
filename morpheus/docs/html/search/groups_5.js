@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['other_20tags_0',['Other Tags',['../group__other__tags.html',1,'']]]
+  ['data_20management_0',['Data Management',['../group__data__management.html',1,'']]],
+  ['densevector_20algorithms_1',['DenseVector Algorithms',['../group__dense__vector__algorithms.html',1,'']]]
 ];

@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['_7ecoomatrix_0',['~CooMatrix',['../classMorpheus_1_1CooMatrix.html#a4cb7f63463b15247a095c96ab6701f5f',1,'Morpheus::CooMatrix']]],
-  ['_7ecsrmatrix_1',['~CsrMatrix',['../classMorpheus_1_1CsrMatrix.html#a4be1c1c94f672036b4ea9f1b3700dca1',1,'Morpheus::CsrMatrix']]],
-  ['_7edensematrix_2',['~DenseMatrix',['../classMorpheus_1_1DenseMatrix.html#ad415c6b7e8c166c58ae4ee4b0466a492',1,'Morpheus::DenseMatrix']]],
-  ['_7edensevector_3',['~DenseVector',['../classMorpheus_1_1DenseVector.html#adebea5003f4cffe808ecac634ea855a1',1,'Morpheus::DenseVector']]],
-  ['_7ediamatrix_4',['~DiaMatrix',['../classMorpheus_1_1DiaMatrix.html#a028fd0ed940f374d4b9595a456232a77',1,'Morpheus::DiaMatrix']]],
-  ['_7edynamicmatrix_5',['~DynamicMatrix',['../classMorpheus_1_1DynamicMatrix.html#a3f1e060e8dbc2a3340e735876126bc79',1,'Morpheus::DynamicMatrix']]]
+  ['values_0',['values',['../classMorpheus_1_1CooMatrix.html#aafedede3e667a64349c75ec4d07582a2',1,'Morpheus::CooMatrix::values(size_type n)'],['../classMorpheus_1_1CooMatrix.html#a5d0f182ea25491822865f9f90f3b26ed',1,'Morpheus::CooMatrix::values()'],['../classMorpheus_1_1CsrMatrix.html#a89a2ae085e6b0f8bf777abdf3ac97cd4',1,'Morpheus::CsrMatrix::values(size_type n)'],['../classMorpheus_1_1CsrMatrix.html#a4e7d360183f59775735eb2f3d56d35f2',1,'Morpheus::CsrMatrix::values()'],['../classMorpheus_1_1DiaMatrix.html#ace8420fcb18a951c24e6115080453c3e',1,'Morpheus::DiaMatrix::values(size_type i, size_type j)'],['../classMorpheus_1_1DiaMatrix.html#a3232cf7ba666c24dba9f501c9cc8f3eb',1,'Morpheus::DiaMatrix::values()']]],
+  ['view_1',['view',['../classMorpheus_1_1DenseMatrix.html#a5c67031362e07dea32d5016a6b7438c7',1,'Morpheus::DenseMatrix::view()'],['../classMorpheus_1_1DenseVector.html#a088a3496a50419fbfa8794d36f6ab058',1,'Morpheus::DenseVector::view()']]]
 ];
